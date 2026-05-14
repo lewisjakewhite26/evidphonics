@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import type { GraphemeData } from '@/data/types'
@@ -11,6 +11,24 @@ import { TactileButton } from '@/components/ui/TactileButton'
 import { generateTileGradient } from '@/lib/tileGradient'
 import { sortActivitiesByPedagogy } from '@/lib/lessonConstants'
 import type { ActivityType } from '@/data/types'
+
+type BrandHeaderMarkStyle = CSSProperties & {
+  WebkitMaskSourceType?: 'luminance' | 'alpha'
+}
+
+const GRAPHEME_HEADER_MARK_STYLE: BrandHeaderMarkStyle = {
+  background: 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)',
+  WebkitMaskImage: 'url(/company-mark.png)',
+  WebkitMaskSize: 'contain',
+  WebkitMaskRepeat: 'no-repeat',
+  WebkitMaskPosition: 'center',
+  WebkitMaskSourceType: 'luminance',
+  maskImage: 'url(/company-mark.png)',
+  maskSize: 'contain',
+  maskRepeat: 'no-repeat',
+  maskPosition: 'center',
+  maskMode: 'luminance',
+}
 
 const PHASE_SECTION_TITLE: Record<number, string> = {
   2: 'Phase 2 — Basic Code',
@@ -138,23 +156,7 @@ export default function GraphemePickerPage() {
 
       <div className="relative z-10 flex min-h-screen flex-col">
         <header className="flex shrink-0 flex-row items-start gap-4 pr-8 pl-10 pt-8">
-          <div
-            className="h-12 w-12 shrink-0"
-            style={{
-              background: 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)',
-              WebkitMaskImage: 'url(/company-mark.png)',
-              WebkitMaskSize: 'contain',
-              WebkitMaskRepeat: 'no-repeat',
-              WebkitMaskPosition: 'center',
-              WebkitMaskSourceType: 'luminance',
-              maskImage: 'url(/company-mark.png)',
-              maskSize: 'contain',
-              maskRepeat: 'no-repeat',
-              maskPosition: 'center',
-              maskMode: 'luminance',
-            }}
-            aria-hidden
-          />
+          <div className="h-12 w-12 shrink-0" style={GRAPHEME_HEADER_MARK_STYLE} aria-hidden />
           <div>
             <h1 className="text-2xl font-extrabold tracking-tight text-[#1A0033]">EvidPhonics</h1>
             <p className="mt-1 text-sm text-[#718096]">Interactive phonics for every classroom</p>
