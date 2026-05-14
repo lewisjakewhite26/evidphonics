@@ -1,0 +1,7286 @@
+{
+  "phase": 6,
+  "graphemes": [
+    {
+      "grapheme": "tion",
+      "keyword": "station",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "sion",
+      "relatedGraphemes": [
+        "sion",
+        "cian",
+        "ssion"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "station",
+        "fiction",
+        "motion",
+        "nation",
+        "option",
+        "action",
+        "potion",
+        "caption",
+        "fraction",
+        "section",
+        "mention",
+        "invention",
+        "direction",
+        "collection",
+        "education"
+      ],
+      "alienWords": [
+        "glotion",
+        "fraption",
+        "soption",
+        "blation",
+        "driction",
+        "plotion",
+        "trumtion",
+        "fruction"
+      ],
+      "segments": {
+        "station": [
+          "s",
+          "t",
+          "a",
+          "tion"
+        ],
+        "fiction": [
+          "f",
+          "i",
+          "c",
+          "tion"
+        ],
+        "motion": [
+          "m",
+          "o",
+          "tion"
+        ],
+        "nation": [
+          "n",
+          "a",
+          "tion"
+        ],
+        "option": [
+          "o",
+          "p",
+          "tion"
+        ],
+        "action": [
+          "a",
+          "c",
+          "tion"
+        ],
+        "potion": [
+          "p",
+          "o",
+          "tion"
+        ],
+        "caption": [
+          "c",
+          "a",
+          "p",
+          "tion"
+        ],
+        "fraction": [
+          "f",
+          "r",
+          "a",
+          "c",
+          "tion"
+        ],
+        "section": [
+          "s",
+          "e",
+          "c",
+          "tion"
+        ],
+        "mention": [
+          "m",
+          "e",
+          "n",
+          "tion"
+        ],
+        "invention": [
+          "i",
+          "n",
+          "v",
+          "e",
+          "n",
+          "tion"
+        ],
+        "direction": [
+          "d",
+          "i",
+          "r",
+          "e",
+          "c",
+          "tion"
+        ],
+        "collection": [
+          "c",
+          "o",
+          "ll",
+          "e",
+          "c",
+          "tion"
+        ],
+        "education": [
+          "e",
+          "d",
+          "u",
+          "c",
+          "a",
+          "tion"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The train stopped at the ___.",
+          "missingWord": "station",
+          "missingIndex": 6,
+          "options": [
+            "station",
+            "nation",
+            "motion"
+          ]
+        },
+        {
+          "text": "This book is ___.",
+          "missingWord": "fiction",
+          "missingIndex": 3,
+          "options": [
+            "fiction",
+            "option",
+            "action"
+          ]
+        },
+        {
+          "text": "We must take ___.",
+          "missingWord": "action",
+          "missingIndex": 3,
+          "options": [
+            "action",
+            "fraction",
+            "section"
+          ]
+        },
+        {
+          "text": "She drank the magic ___.",
+          "missingWord": "potion",
+          "missingIndex": 4,
+          "options": [
+            "potion",
+            "motion",
+            "option"
+          ]
+        },
+        {
+          "text": "Her ___ was brilliant.",
+          "missingWord": "invention",
+          "missingIndex": 2,
+          "options": [
+            "invention",
+            "direction",
+            "collection"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "action",
+            "fiction",
+            "potion",
+            "singer"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'singer' does not end with /tion/ — the others all do!"
+        },
+        {
+          "words": [
+            "motion",
+            "nation",
+            "section",
+            "decision"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'decision' ends with /sion/ — the others all end with /tion/!"
+        },
+        {
+          "words": [
+            "fraction",
+            "direction",
+            "collection",
+            "mention"
+          ],
+          "oddOneOut": 0,
+          "explanation": "'fraction' is shorter — but all end with /tion/! Trick question — they all match!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The station has one platform.",
+          "targetSounds": [
+            "tion"
+          ],
+          "trickyWords": [
+            "the",
+            "has",
+            "one"
+          ]
+        },
+        {
+          "text": "Action and motion are important.",
+          "targetSounds": [
+            "tion"
+          ],
+          "trickyWords": [
+            "and",
+            "are"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "station": [
+          "stat",
+          "ion"
+        ],
+        "fiction": [
+          "fict",
+          "ion"
+        ],
+        "motion": [
+          "mot",
+          "ion"
+        ],
+        "nation": [
+          "nat",
+          "ion"
+        ],
+        "option": [
+          "opt",
+          "ion"
+        ],
+        "action": [
+          "act",
+          "ion"
+        ],
+        "potion": [
+          "pot",
+          "ion"
+        ],
+        "caption": [
+          "capt",
+          "ion"
+        ],
+        "fraction": [
+          "fract",
+          "ion"
+        ],
+        "section": [
+          "sect",
+          "ion"
+        ],
+        "mention": [
+          "ment",
+          "ion"
+        ],
+        "invention": [
+          "in",
+          "vent",
+          "ion"
+        ],
+        "direction": [
+          "di",
+          "rect",
+          "ion"
+        ],
+        "collection": [
+          "col",
+          "lect",
+          "ion"
+        ],
+        "education": [
+          "educat",
+          "ion"
+        ]
+      },
+      "roots": {
+        "station": "stat",
+        "fiction": "fict",
+        "motion": "mot",
+        "nation": "nat",
+        "option": "opt",
+        "action": "act",
+        "potion": "pot",
+        "caption": "capt",
+        "fraction": "fract",
+        "section": "sect",
+        "mention": "ment",
+        "invention": "vent",
+        "direction": "rect",
+        "collection": "lect",
+        "education": "educat"
+      }
+    },
+    {
+      "grapheme": "sion",
+      "keyword": "vision",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "tion",
+      "relatedGraphemes": [
+        "tion",
+        "ssion",
+        "cian"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "vision",
+        "decision",
+        "division",
+        "occasion",
+        "invasion",
+        "revision",
+        "confusion",
+        "explosion",
+        "conclusion",
+        "television",
+        "expansion",
+        "collision",
+        "illusion",
+        "tension",
+        "extension"
+      ],
+      "alienWords": [
+        "blision",
+        "dravision",
+        "stovision",
+        "frusion",
+        "clusion",
+        "provibion",
+        "grision",
+        "trevision"
+      ],
+      "segments": {
+        "vision": [
+          "v",
+          "i",
+          "sion"
+        ],
+        "decision": [
+          "d",
+          "e",
+          "c",
+          "i",
+          "sion"
+        ],
+        "division": [
+          "d",
+          "i",
+          "v",
+          "i",
+          "sion"
+        ],
+        "occasion": [
+          "o",
+          "cc",
+          "a",
+          "sion"
+        ],
+        "invasion": [
+          "i",
+          "n",
+          "v",
+          "a",
+          "sion"
+        ],
+        "revision": [
+          "r",
+          "e",
+          "v",
+          "i",
+          "sion"
+        ],
+        "confusion": [
+          "c",
+          "o",
+          "n",
+          "f",
+          "u",
+          "sion"
+        ],
+        "explosion": [
+          "e",
+          "x",
+          "p",
+          "l",
+          "o",
+          "sion"
+        ],
+        "conclusion": [
+          "c",
+          "o",
+          "n",
+          "c",
+          "l",
+          "u",
+          "sion"
+        ],
+        "television": [
+          "t",
+          "e",
+          "l",
+          "e",
+          "v",
+          "i",
+          "sion"
+        ],
+        "expansion": [
+          "e",
+          "x",
+          "p",
+          "a",
+          "n",
+          "sion"
+        ],
+        "collision": [
+          "c",
+          "o",
+          "ll",
+          "i",
+          "sion"
+        ],
+        "illusion": [
+          "i",
+          "ll",
+          "u",
+          "sion"
+        ],
+        "tension": [
+          "t",
+          "e",
+          "n",
+          "sion"
+        ],
+        "extension": [
+          "e",
+          "x",
+          "t",
+          "e",
+          "n",
+          "sion"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "She had perfect ___.",
+          "missingWord": "vision",
+          "missingIndex": 3,
+          "options": [
+            "vision",
+            "division",
+            "revision"
+          ]
+        },
+        {
+          "text": "It was a tough ___ to make.",
+          "missingWord": "decision",
+          "missingIndex": 4,
+          "options": [
+            "decision",
+            "division",
+            "revision"
+          ]
+        },
+        {
+          "text": "There was a loud ___ outside.",
+          "missingWord": "explosion",
+          "missingIndex": 4,
+          "options": [
+            "explosion",
+            "collision",
+            "conclusion"
+          ]
+        },
+        {
+          "text": "I watch ___ every evening.",
+          "missingWord": "television",
+          "missingIndex": 2,
+          "options": [
+            "television",
+            "vision",
+            "division"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "vision",
+            "decision",
+            "station",
+            "division"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'station' ends with /tion/ — the others all end with /sion/!"
+        },
+        {
+          "words": [
+            "explosion",
+            "collision",
+            "conclusion",
+            "fraction"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'fraction' ends with /tion/ — the others all end with /sion/!"
+        },
+        {
+          "words": [
+            "television",
+            "revision",
+            "invasion",
+            "mention"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'mention' ends with /tion/ — the others all end with /sion/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "She made the right decision.",
+          "targetSounds": [
+            "sion"
+          ],
+          "trickyWords": [
+            "she",
+            "the"
+          ]
+        },
+        {
+          "text": "The explosion caused a lot of confusion.",
+          "targetSounds": [
+            "sion"
+          ],
+          "trickyWords": [
+            "the",
+            "a",
+            "lot",
+            "of"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "vision": [
+          "vis",
+          "ion"
+        ],
+        "decision": [
+          "de",
+          "cis",
+          "ion"
+        ],
+        "division": [
+          "di",
+          "vis",
+          "ion"
+        ],
+        "occasion": [
+          "occas",
+          "ion"
+        ],
+        "invasion": [
+          "in",
+          "vas",
+          "ion"
+        ],
+        "revision": [
+          "re",
+          "vis",
+          "ion"
+        ],
+        "confusion": [
+          "con",
+          "fus",
+          "ion"
+        ],
+        "explosion": [
+          "ex",
+          "plos",
+          "ion"
+        ],
+        "conclusion": [
+          "con",
+          "clus",
+          "ion"
+        ],
+        "television": [
+          "tele",
+          "vis",
+          "ion"
+        ],
+        "collision": [
+          "col",
+          "lis",
+          "ion"
+        ],
+        "illusion": [
+          "il",
+          "lus",
+          "ion"
+        ],
+        "expansion": [
+          "expans",
+          "ion"
+        ],
+        "tension": [
+          "tens",
+          "ion"
+        ],
+        "extension": [
+          "extens",
+          "ion"
+        ]
+      },
+      "roots": {
+        "vision": "vis",
+        "decision": "decide",
+        "division": "divide",
+        "occasion": "occur",
+        "invasion": "invade",
+        "revision": "revise",
+        "confusion": "confuse",
+        "explosion": "explode",
+        "conclusion": "conclude",
+        "television": "vision",
+        "collision": "collide",
+        "illusion": "illuse",
+        "expansion": "expand",
+        "tension": "tense",
+        "extension": "extend"
+      }
+    },
+    {
+      "grapheme": "ssion",
+      "keyword": "mission",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "tion",
+      "relatedGraphemes": [
+        "tion",
+        "sion",
+        "cian"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "mission",
+        "passion",
+        "session",
+        "permission",
+        "admission",
+        "discussion",
+        "emission",
+        "possession",
+        "impression",
+        "expression",
+        "obsession",
+        "succession",
+        "profession",
+        "confession",
+        "aggression"
+      ],
+      "alienWords": [
+        "blission",
+        "dravission",
+        "stovission",
+        "frussion",
+        "clussion",
+        "provibssion",
+        "grission",
+        "trevission"
+      ],
+      "segments": {
+        "mission": [
+          "m",
+          "i",
+          "ssion"
+        ],
+        "passion": [
+          "p",
+          "a",
+          "ssion"
+        ],
+        "session": [
+          "s",
+          "e",
+          "ssion"
+        ],
+        "permission": [
+          "p",
+          "er",
+          "m",
+          "i",
+          "ssion"
+        ],
+        "admission": [
+          "a",
+          "d",
+          "m",
+          "i",
+          "ssion"
+        ],
+        "discussion": [
+          "d",
+          "i",
+          "s",
+          "c",
+          "u",
+          "ssion"
+        ],
+        "emission": [
+          "e",
+          "m",
+          "i",
+          "ssion"
+        ],
+        "possession": [
+          "p",
+          "o",
+          "ss",
+          "e",
+          "ssion"
+        ],
+        "impression": [
+          "i",
+          "m",
+          "p",
+          "r",
+          "e",
+          "ssion"
+        ],
+        "expression": [
+          "e",
+          "x",
+          "p",
+          "r",
+          "e",
+          "ssion"
+        ],
+        "obsession": [
+          "o",
+          "b",
+          "s",
+          "e",
+          "ssion"
+        ],
+        "succession": [
+          "s",
+          "u",
+          "cc",
+          "e",
+          "ssion"
+        ],
+        "profession": [
+          "p",
+          "r",
+          "o",
+          "f",
+          "e",
+          "ssion"
+        ],
+        "confession": [
+          "c",
+          "o",
+          "n",
+          "f",
+          "e",
+          "ssion"
+        ],
+        "aggression": [
+          "a",
+          "gg",
+          "re",
+          "ssion"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The astronaut went on a ___.",
+          "missingWord": "mission",
+          "missingIndex": 5,
+          "options": [
+            "mission",
+            "passion",
+            "session"
+          ]
+        },
+        {
+          "text": "She has a ___ for art.",
+          "missingWord": "passion",
+          "missingIndex": 4,
+          "options": [
+            "passion",
+            "mission",
+            "session"
+          ]
+        },
+        {
+          "text": "We had a long ___ about it.",
+          "missingWord": "discussion",
+          "missingIndex": 4,
+          "options": [
+            "discussion",
+            "permission",
+            "admission"
+          ]
+        },
+        {
+          "text": "Can I have ___ to go?",
+          "missingWord": "permission",
+          "missingIndex": 3,
+          "options": [
+            "permission",
+            "admission",
+            "impression"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "mission",
+            "passion",
+            "station",
+            "session"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'station' ends with /tion/ — the others all end with /ssion/!"
+        },
+        {
+          "words": [
+            "discussion",
+            "permission",
+            "admission",
+            "vision"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'vision' ends with /sion/ — the others all end with /ssion/!"
+        },
+        {
+          "words": [
+            "impression",
+            "expression",
+            "obsession",
+            "action"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'action' ends with /tion/ — the others all end with /ssion/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "She asked for permission.",
+          "targetSounds": [
+            "ssion"
+          ],
+          "trickyWords": [
+            "she",
+            "for"
+          ]
+        },
+        {
+          "text": "The discussion was very long.",
+          "targetSounds": [
+            "ssion"
+          ],
+          "trickyWords": [
+            "the",
+            "was",
+            "very"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "mission": [
+          "miss",
+          "ion"
+        ],
+        "passion": [
+          "pass",
+          "ion"
+        ],
+        "session": [
+          "sess",
+          "ion"
+        ],
+        "permission": [
+          "per",
+          "miss",
+          "ion"
+        ],
+        "admission": [
+          "ad",
+          "miss",
+          "ion"
+        ],
+        "discussion": [
+          "dis",
+          "cuss",
+          "ion"
+        ],
+        "possession": [
+          "pos",
+          "sess",
+          "ion"
+        ],
+        "impression": [
+          "im",
+          "press",
+          "ion"
+        ],
+        "expression": [
+          "ex",
+          "press",
+          "ion"
+        ],
+        "obsession": [
+          "ob",
+          "sess",
+          "ion"
+        ],
+        "succession": [
+          "suc",
+          "cess",
+          "ion"
+        ],
+        "profession": [
+          "pro",
+          "fess",
+          "ion"
+        ],
+        "confession": [
+          "con",
+          "fess",
+          "ion"
+        ],
+        "aggression": [
+          "ag",
+          "gress",
+          "ion"
+        ],
+        "emission": [
+          "emiss",
+          "ion"
+        ]
+      },
+      "roots": {
+        "mission": "miss",
+        "passion": "pass",
+        "session": "sess",
+        "permission": "permit",
+        "admission": "admit",
+        "discussion": "discuss",
+        "possession": "possess",
+        "impression": "impress",
+        "expression": "express",
+        "obsession": "obsess",
+        "succession": "succeed",
+        "profession": "profess",
+        "confession": "confess",
+        "aggression": "aggress",
+        "emission": "emit"
+      }
+    },
+    {
+      "grapheme": "cian",
+      "keyword": "magician",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "tion",
+      "relatedGraphemes": [
+        "tion",
+        "sion",
+        "ssion"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "magician",
+        "musician",
+        "electrician",
+        "technician",
+        "optician",
+        "politician",
+        "physician",
+        "beautician",
+        "dietician",
+        "clinician"
+      ],
+      "alienWords": [
+        "blician",
+        "dravician",
+        "stovician",
+        "frucian",
+        "clucian",
+        "provibcian",
+        "grician",
+        "trevician"
+      ],
+      "segments": {
+        "magician": [
+          "m",
+          "a",
+          "g",
+          "i",
+          "cian"
+        ],
+        "musician": [
+          "m",
+          "u",
+          "s",
+          "i",
+          "cian"
+        ],
+        "electrician": [
+          "e",
+          "l",
+          "e",
+          "c",
+          "t",
+          "r",
+          "i",
+          "cian"
+        ],
+        "technician": [
+          "t",
+          "e",
+          "ch",
+          "n",
+          "i",
+          "cian"
+        ],
+        "optician": [
+          "o",
+          "p",
+          "t",
+          "i",
+          "cian"
+        ],
+        "politician": [
+          "p",
+          "o",
+          "l",
+          "i",
+          "t",
+          "i",
+          "cian"
+        ],
+        "physician": [
+          "ph",
+          "y",
+          "s",
+          "i",
+          "cian"
+        ],
+        "beautician": [
+          "b",
+          "ea",
+          "u",
+          "t",
+          "i",
+          "cian"
+        ],
+        "dietician": [
+          "d",
+          "ie",
+          "t",
+          "i",
+          "cian"
+        ],
+        "clinician": [
+          "c",
+          "l",
+          "i",
+          "n",
+          "i",
+          "cian"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The ___ pulled a rabbit from a hat.",
+          "missingWord": "magician",
+          "missingIndex": 1,
+          "options": [
+            "magician",
+            "musician",
+            "technician"
+          ]
+        },
+        {
+          "text": "She is a talented ___.",
+          "missingWord": "musician",
+          "missingIndex": 4,
+          "options": [
+            "musician",
+            "magician",
+            "optician"
+          ]
+        },
+        {
+          "text": "The ___ fixed the wiring.",
+          "missingWord": "electrician",
+          "missingIndex": 1,
+          "options": [
+            "electrician",
+            "technician",
+            "politician"
+          ]
+        },
+        {
+          "text": "I need to see the ___ about my glasses.",
+          "missingWord": "optician",
+          "missingIndex": 5,
+          "options": [
+            "optician",
+            "physician",
+            "technician"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "magician",
+            "musician",
+            "station",
+            "optician"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'station' ends with /tion/ — the others all end with /cian/!"
+        },
+        {
+          "words": [
+            "electrician",
+            "technician",
+            "politician",
+            "vision"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'vision' ends with /sion/ — the others all end with /cian/!"
+        },
+        {
+          "words": [
+            "physician",
+            "beautician",
+            "dietician",
+            "mission"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'mission' ends with /ssion/ — the others all end with /cian/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The magician was amazing.",
+          "targetSounds": [
+            "cian"
+          ],
+          "trickyWords": [
+            "the",
+            "was"
+          ]
+        },
+        {
+          "text": "She wants to be a musician.",
+          "targetSounds": [
+            "cian"
+          ],
+          "trickyWords": [
+            "she",
+            "to",
+            "be",
+            "a"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "magician": [
+          "magic",
+          "ian"
+        ],
+        "musician": [
+          "music",
+          "ian"
+        ],
+        "electrician": [
+          "electric",
+          "ian"
+        ],
+        "technician": [
+          "technic",
+          "ian"
+        ],
+        "optician": [
+          "optic",
+          "ian"
+        ],
+        "politician": [
+          "politic",
+          "ian"
+        ],
+        "physician": [
+          "physic",
+          "ian"
+        ],
+        "beautician": [
+          "beaut",
+          "ic",
+          "ian"
+        ],
+        "dietician": [
+          "diet",
+          "ic",
+          "ian"
+        ],
+        "clinician": [
+          "clinic",
+          "ian"
+        ]
+      },
+      "roots": {
+        "magician": "magic",
+        "musician": "music",
+        "electrician": "electric",
+        "technician": "technic",
+        "optician": "optic",
+        "politician": "politic",
+        "physician": "physic",
+        "beautician": "beauty",
+        "dietician": "diet",
+        "clinician": "clinic"
+      }
+    },
+    {
+      "grapheme": "kn",
+      "keyword": "knee",
+      "phase": 6,
+      "sortPair": "wr",
+      "relatedGraphemes": [
+        "wr",
+        "gn",
+        "mb"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "knee",
+        "knoll",
+        "knife",
+        "knight",
+        "knit",
+        "knot",
+        "knock",
+        "know",
+        "knowledge",
+        "knuckle",
+        "knave",
+        "knob",
+        "knew",
+        "knitter",
+        "knack"
+      ],
+      "alienWords": [
+        "kneb",
+        "knig",
+        "knolt",
+        "knusp",
+        "knasp",
+        "knimp",
+        "knoct",
+        "knern"
+      ],
+      "segments": {
+        "knee": [
+          "kn",
+          "ee"
+        ],
+        "knoll": [
+          "kn",
+          "o",
+          "ll"
+        ],
+        "knife": [
+          "kn",
+          "i-e",
+          "f"
+        ],
+        "knight": [
+          "kn",
+          "igh",
+          "t"
+        ],
+        "knit": [
+          "kn",
+          "i",
+          "t"
+        ],
+        "knot": [
+          "kn",
+          "o",
+          "t"
+        ],
+        "knock": [
+          "kn",
+          "o",
+          "ck"
+        ],
+        "know": [
+          "kn",
+          "ow"
+        ],
+        "knowledge": [
+          "kn",
+          "ow",
+          "l",
+          "e",
+          "dge"
+        ],
+        "knuckle": [
+          "kn",
+          "u",
+          "ck",
+          "l",
+          "e"
+        ],
+        "knave": [
+          "kn",
+          "a-e",
+          "v"
+        ],
+        "knob": [
+          "kn",
+          "o",
+          "b"
+        ],
+        "knew": [
+          "kn",
+          "ew"
+        ],
+        "knitter": [
+          "kn",
+          "i",
+          "tt",
+          "er"
+        ],
+        "knack": [
+          "kn",
+          "a",
+          "ck"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "I hurt my ___ when I fell.",
+          "missingWord": "knee",
+          "missingIndex": 3,
+          "options": [
+            "knee",
+            "knoll",
+            "knot"
+          ]
+        },
+        {
+          "text": "She used a ___ to cut the bread.",
+          "missingWord": "knife",
+          "missingIndex": 3,
+          "options": [
+            "knife",
+            "knight",
+            "knot"
+          ]
+        },
+        {
+          "text": "Tie a ___ in the rope.",
+          "missingWord": "knot",
+          "missingIndex": 2,
+          "options": [
+            "knot",
+            "knock",
+            "know"
+          ]
+        },
+        {
+          "text": "Did you ___ the answer?",
+          "missingWord": "know",
+          "missingIndex": 2,
+          "options": [
+            "know",
+            "knock",
+            "knit"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "knee",
+            "knife",
+            "write",
+            "knot"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'write' has the /wr/ silent letter — the others all have the silent /kn/!"
+        },
+        {
+          "words": [
+            "knock",
+            "know",
+            "knit",
+            "lamb"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'lamb' has the silent /mb/ — the others all have the silent /kn/!"
+        },
+        {
+          "words": [
+            "knight",
+            "knoll",
+            "knuckle",
+            "gnome"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'gnome' has the silent /gn/ — the others all have the silent /kn/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The knight had a sharp knife.",
+          "targetSounds": [
+            "kn"
+          ],
+          "trickyWords": [
+            "the",
+            "had",
+            "a"
+          ]
+        },
+        {
+          "text": "I know she can knit.",
+          "targetSounds": [
+            "kn"
+          ],
+          "trickyWords": [
+            "I",
+            "she",
+            "can"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "knee": [
+          "kn",
+          "ee"
+        ],
+        "knife": [
+          "kn",
+          "ife"
+        ],
+        "knight": [
+          "kn",
+          "ight"
+        ],
+        "knit": [
+          "kn",
+          "it"
+        ],
+        "knot": [
+          "kn",
+          "ot"
+        ],
+        "knock": [
+          "kn",
+          "ock"
+        ],
+        "know": [
+          "kn",
+          "ow"
+        ],
+        "knowledge": [
+          "kn",
+          "owl",
+          "edge"
+        ],
+        "knuckle": [
+          "kn",
+          "uckle"
+        ],
+        "knave": [
+          "kn",
+          "ave"
+        ],
+        "knob": [
+          "kn",
+          "ob"
+        ],
+        "knew": [
+          "kn",
+          "ew"
+        ],
+        "knack": [
+          "kn",
+          "ack"
+        ],
+        "knoll": [
+          "kn",
+          "oll"
+        ],
+        "knitter": [
+          "kn",
+          "itter"
+        ]
+      },
+      "roots": {
+        "knee": "knee",
+        "knife": "knife",
+        "knight": "knight",
+        "knit": "knit",
+        "knot": "knot",
+        "knock": "knock",
+        "know": "know",
+        "knowledge": "know",
+        "knuckle": "knuckle",
+        "knave": "knave",
+        "knob": "knob",
+        "knew": "know",
+        "knack": "knack",
+        "knoll": "knoll",
+        "knitter": "knit"
+      }
+    },
+    {
+      "grapheme": "wr",
+      "keyword": "write",
+      "phase": 6,
+      "sortPair": "kn",
+      "relatedGraphemes": [
+        "kn",
+        "gn",
+        "mb"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "write",
+        "wrote",
+        "written",
+        "wrong",
+        "wrap",
+        "wrist",
+        "wreck",
+        "wrestle",
+        "wriggle",
+        "wrinkle",
+        "wrath",
+        "wrung",
+        "wren",
+        "writhe",
+        "screenplay"
+      ],
+      "alienWords": [
+        "wreb",
+        "wrig",
+        "wrolt",
+        "wrusp",
+        "wrasp",
+        "wrimp",
+        "wroct",
+        "wrern"
+      ],
+      "segments": {
+        "write": [
+          "wr",
+          "i-e",
+          "t"
+        ],
+        "wrote": [
+          "wr",
+          "o-e",
+          "t"
+        ],
+        "written": [
+          "wr",
+          "i",
+          "tt",
+          "e",
+          "n"
+        ],
+        "wrong": [
+          "wr",
+          "o",
+          "ng"
+        ],
+        "wrap": [
+          "wr",
+          "a",
+          "p"
+        ],
+        "wrist": [
+          "wr",
+          "i",
+          "s",
+          "t"
+        ],
+        "wreck": [
+          "wr",
+          "e",
+          "ck"
+        ],
+        "wrestle": [
+          "wr",
+          "e",
+          "s",
+          "t",
+          "l",
+          "e"
+        ],
+        "wriggle": [
+          "wr",
+          "i",
+          "gg",
+          "l",
+          "e"
+        ],
+        "wrinkle": [
+          "wr",
+          "i",
+          "nk",
+          "l",
+          "e"
+        ],
+        "wrath": [
+          "wr",
+          "a",
+          "th"
+        ],
+        "wrung": [
+          "wr",
+          "u",
+          "ng"
+        ],
+        "wren": [
+          "wr",
+          "e",
+          "n"
+        ],
+        "writhe": [
+          "wr",
+          "i",
+          "th",
+          "e"
+        ],
+        "screenplay": [
+          "s",
+          "c",
+          "re",
+          "e",
+          "n",
+          "p",
+          "l",
+          "ay"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "I need to ___ a letter.",
+          "missingWord": "write",
+          "missingIndex": 3,
+          "options": [
+            "write",
+            "wrote",
+            "wrong"
+          ]
+        },
+        {
+          "text": "She ___ a story last week.",
+          "missingWord": "wrote",
+          "missingIndex": 1,
+          "options": [
+            "wrote",
+            "write",
+            "wrong"
+          ]
+        },
+        {
+          "text": "That answer is ___.",
+          "missingWord": "wrong",
+          "missingIndex": 3,
+          "options": [
+            "wrong",
+            "wrap",
+            "wrist"
+          ]
+        },
+        {
+          "text": "She had a bruise on her ___.",
+          "missingWord": "wrist",
+          "missingIndex": 6,
+          "options": [
+            "wrist",
+            "wreck",
+            "wren"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "write",
+            "wrote",
+            "knee",
+            "wrong"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'knee' has the silent /kn/ — the others all have the silent /wr/!"
+        },
+        {
+          "words": [
+            "wrap",
+            "wrist",
+            "wreck",
+            "gnome"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'gnome' has the silent /gn/ — the others all have the silent /wr/!"
+        },
+        {
+          "words": [
+            "wrestle",
+            "wriggle",
+            "wrinkle",
+            "lamb"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'lamb' has the silent /mb/ — the others all have the silent /wr/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "She wrote the wrong word.",
+          "targetSounds": [
+            "wr"
+          ],
+          "trickyWords": [
+            "she",
+            "the"
+          ]
+        },
+        {
+          "text": "Wrap the gift and write a card.",
+          "targetSounds": [
+            "wr"
+          ],
+          "trickyWords": [
+            "the",
+            "and",
+            "a"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "write": [
+          "wr",
+          "ite"
+        ],
+        "wrote": [
+          "wr",
+          "ote"
+        ],
+        "written": [
+          "wr",
+          "itten"
+        ],
+        "wrong": [
+          "wr",
+          "ong"
+        ],
+        "wrap": [
+          "wr",
+          "ap"
+        ],
+        "wrist": [
+          "wr",
+          "ist"
+        ],
+        "wreck": [
+          "wr",
+          "eck"
+        ],
+        "wrestle": [
+          "wr",
+          "estle"
+        ],
+        "wriggle": [
+          "wr",
+          "iggle"
+        ],
+        "wrinkle": [
+          "wr",
+          "inkle"
+        ],
+        "wrath": [
+          "wr",
+          "ath"
+        ],
+        "wrung": [
+          "wr",
+          "ung"
+        ],
+        "wren": [
+          "wr",
+          "en"
+        ]
+      },
+      "roots": {
+        "write": "write",
+        "wrote": "write",
+        "written": "write",
+        "wrong": "wrong",
+        "wrap": "wrap",
+        "wrist": "wrist",
+        "wreck": "wreck",
+        "wrestle": "wrestle",
+        "wriggle": "wriggle",
+        "wrinkle": "wrinkle",
+        "wrath": "wrath",
+        "wrung": "wring",
+        "wren": "wren"
+      }
+    },
+    {
+      "grapheme": "gn",
+      "keyword": "gnome",
+      "phase": 6,
+      "sortPair": "kn",
+      "relatedGraphemes": [
+        "kn",
+        "wr",
+        "mb"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "gnome",
+        "gnat",
+        "gnaw",
+        "gnarly",
+        "gnarled",
+        "gnu",
+        "sign",
+        "reign",
+        "foreign",
+        "campaign",
+        "champagne",
+        "align",
+        "assign",
+        "design",
+        "resign"
+      ],
+      "alienWords": [
+        "gneb",
+        "gnig",
+        "gnolt",
+        "gnusp",
+        "gnasp",
+        "gnimp",
+        "gnoct",
+        "gnern"
+      ],
+      "segments": {
+        "gnome": [
+          "gn",
+          "o-e",
+          "m"
+        ],
+        "gnat": [
+          "gn",
+          "a",
+          "t"
+        ],
+        "gnaw": [
+          "gn",
+          "aw"
+        ],
+        "gnu": [
+          "gn",
+          "u"
+        ],
+        "sign": [
+          "s",
+          "i",
+          "gn"
+        ],
+        "reign": [
+          "re",
+          "i",
+          "gn"
+        ],
+        "foreign": [
+          "f",
+          "ore",
+          "i",
+          "gn"
+        ],
+        "campaign": [
+          "c",
+          "a",
+          "m",
+          "p",
+          "ai",
+          "gn"
+        ],
+        "champagne": [
+          "ch",
+          "a",
+          "m",
+          "p",
+          "a",
+          "gn",
+          "e"
+        ],
+        "align": [
+          "a",
+          "l",
+          "i",
+          "gn"
+        ],
+        "assign": [
+          "a",
+          "ss",
+          "i",
+          "gn"
+        ],
+        "design": [
+          "d",
+          "e",
+          "s",
+          "i",
+          "gn"
+        ],
+        "resign": [
+          "re",
+          "s",
+          "i",
+          "gn"
+        ],
+        "gnarly": [
+          "gn",
+          "ar",
+          "l",
+          "y"
+        ],
+        "gnarled": [
+          "gn",
+          "ar",
+          "l",
+          "e",
+          "d"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "A little ___ sat in the garden.",
+          "missingWord": "gnome",
+          "missingIndex": 2,
+          "options": [
+            "gnome",
+            "gnat",
+            "gnu"
+          ]
+        },
+        {
+          "text": "The dog likes to ___ on bones.",
+          "missingWord": "gnaw",
+          "missingIndex": 4,
+          "options": [
+            "gnaw",
+            "gnome",
+            "gnat"
+          ]
+        },
+        {
+          "text": "She helped ___ the poster.",
+          "missingWord": "design",
+          "missingIndex": 2,
+          "options": [
+            "design",
+            "resign",
+            "assign"
+          ]
+        },
+        {
+          "text": "The queen had a long ___.",
+          "missingWord": "reign",
+          "missingIndex": 4,
+          "options": [
+            "reign",
+            "sign",
+            "align"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "gnome",
+            "gnat",
+            "write",
+            "gnaw"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'write' has the silent /wr/ — the others all have the silent /gn/!"
+        },
+        {
+          "words": [
+            "sign",
+            "reign",
+            "foreign",
+            "knife"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'knife' has the silent /kn/ — the others all have the silent /gn/!"
+        },
+        {
+          "words": [
+            "design",
+            "assign",
+            "align",
+            "lamb"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'lamb' has the silent /mb/ — the others all have the silent /gn/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The gnome sat by the sign.",
+          "targetSounds": [
+            "gn"
+          ],
+          "trickyWords": [
+            "the",
+            "by"
+          ]
+        },
+        {
+          "text": "She helped design the campaign.",
+          "targetSounds": [
+            "gn"
+          ],
+          "trickyWords": [
+            "she",
+            "the"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "gnome": [
+          "gn",
+          "ome"
+        ],
+        "gnat": [
+          "gn",
+          "at"
+        ],
+        "gnaw": [
+          "gn",
+          "aw"
+        ],
+        "gnu": [
+          "gn",
+          "u"
+        ],
+        "sign": [
+          "si",
+          "gn"
+        ],
+        "reign": [
+          "rei",
+          "gn"
+        ],
+        "foreign": [
+          "forei",
+          "gn"
+        ],
+        "campaign": [
+          "campai",
+          "gn"
+        ],
+        "align": [
+          "a",
+          "li",
+          "gn"
+        ],
+        "assign": [
+          "as",
+          "si",
+          "gn"
+        ],
+        "design": [
+          "de",
+          "si",
+          "gn"
+        ],
+        "resign": [
+          "re",
+          "si",
+          "gn"
+        ]
+      },
+      "roots": {
+        "gnome": "gnome",
+        "gnat": "gnat",
+        "gnaw": "gnaw",
+        "gnu": "gnu",
+        "sign": "sign",
+        "reign": "reign",
+        "foreign": "foreign",
+        "campaign": "campaign",
+        "champagne": "champagne",
+        "align": "line",
+        "assign": "sign",
+        "design": "sign",
+        "resign": "sign"
+      }
+    },
+    {
+      "grapheme": "mb",
+      "keyword": "lamb",
+      "phase": 6,
+      "sortPair": "kn",
+      "relatedGraphemes": [
+        "kn",
+        "wr",
+        "gn"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "lamb",
+        "climb",
+        "bomb",
+        "thumb",
+        "comb",
+        "crumb",
+        "limb",
+        "dumb",
+        "numb",
+        "tomb",
+        "womb",
+        "plumb",
+        "succumb",
+        "catacomb",
+        "coulomb"
+      ],
+      "alienWords": [
+        "lambt",
+        "climbt",
+        "bombt",
+        "thumbt",
+        "combt",
+        "crumbt",
+        "limbt",
+        "dumbt"
+      ],
+      "segments": {
+        "lamb": [
+          "l",
+          "a",
+          "mb"
+        ],
+        "climb": [
+          "c",
+          "l",
+          "i",
+          "mb"
+        ],
+        "bomb": [
+          "b",
+          "o",
+          "mb"
+        ],
+        "thumb": [
+          "th",
+          "u",
+          "mb"
+        ],
+        "comb": [
+          "c",
+          "o",
+          "mb"
+        ],
+        "crumb": [
+          "c",
+          "r",
+          "u",
+          "mb"
+        ],
+        "limb": [
+          "l",
+          "i",
+          "mb"
+        ],
+        "dumb": [
+          "d",
+          "u",
+          "mb"
+        ],
+        "numb": [
+          "n",
+          "u",
+          "mb"
+        ],
+        "tomb": [
+          "t",
+          "o",
+          "mb"
+        ],
+        "womb": [
+          "w",
+          "o",
+          "mb"
+        ],
+        "plumb": [
+          "p",
+          "l",
+          "u",
+          "mb"
+        ],
+        "succumb": [
+          "s",
+          "u",
+          "cc",
+          "u",
+          "mb"
+        ],
+        "catacomb": [
+          "c",
+          "a",
+          "t",
+          "a",
+          "c",
+          "o",
+          "mb"
+        ],
+        "coulomb": [
+          "c",
+          "ou",
+          "l",
+          "o",
+          "mb"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The ___ played in the field.",
+          "missingWord": "lamb",
+          "missingIndex": 1,
+          "options": [
+            "lamb",
+            "limb",
+            "bomb"
+          ]
+        },
+        {
+          "text": "She can ___ to the top.",
+          "missingWord": "climb",
+          "missingIndex": 2,
+          "options": [
+            "climb",
+            "limb",
+            "thumb"
+          ]
+        },
+        {
+          "text": "I hurt my ___.",
+          "missingWord": "thumb",
+          "missingIndex": 3,
+          "options": [
+            "thumb",
+            "bomb",
+            "comb"
+          ]
+        },
+        {
+          "text": "She left a ___ on her plate.",
+          "missingWord": "crumb",
+          "missingIndex": 3,
+          "options": [
+            "crumb",
+            "climb",
+            "limb"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "lamb",
+            "climb",
+            "knife",
+            "bomb"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'knife' has the silent /kn/ — the others all have the silent /mb/!"
+        },
+        {
+          "words": [
+            "thumb",
+            "comb",
+            "crumb",
+            "write"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'write' has the silent /wr/ — the others all have the silent /mb/!"
+        },
+        {
+          "words": [
+            "limb",
+            "dumb",
+            "numb",
+            "gnome"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'gnome' has the silent /gn/ — the others all have the silent /mb/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The lamb sat near the tomb.",
+          "targetSounds": [
+            "mb"
+          ],
+          "trickyWords": [
+            "the",
+            "near"
+          ]
+        },
+        {
+          "text": "My thumb is numb.",
+          "targetSounds": [
+            "mb"
+          ],
+          "trickyWords": [
+            "my",
+            "is"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "lamb": [
+          "la",
+          "mb"
+        ],
+        "climb": [
+          "cli",
+          "mb"
+        ],
+        "bomb": [
+          "bo",
+          "mb"
+        ],
+        "thumb": [
+          "thu",
+          "mb"
+        ],
+        "comb": [
+          "co",
+          "mb"
+        ],
+        "crumb": [
+          "cru",
+          "mb"
+        ],
+        "limb": [
+          "li",
+          "mb"
+        ],
+        "dumb": [
+          "du",
+          "mb"
+        ],
+        "numb": [
+          "nu",
+          "mb"
+        ],
+        "tomb": [
+          "to",
+          "mb"
+        ],
+        "womb": [
+          "wo",
+          "mb"
+        ],
+        "plumb": [
+          "plu",
+          "mb"
+        ],
+        "succumb": [
+          "suc",
+          "cu",
+          "mb"
+        ]
+      },
+      "roots": {
+        "lamb": "lamb",
+        "climb": "climb",
+        "bomb": "bomb",
+        "thumb": "thumb",
+        "comb": "comb",
+        "crumb": "crumb",
+        "limb": "limb",
+        "dumb": "dumb",
+        "numb": "numb",
+        "tomb": "tomb",
+        "womb": "womb",
+        "plumb": "plumb",
+        "succumb": "cumb"
+      }
+    },
+    {
+      "grapheme": "tch",
+      "keyword": "catch",
+      "phase": 6,
+      "sortPair": "ch",
+      "relatedGraphemes": [
+        "ch"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "catch",
+        "match",
+        "hatch",
+        "patch",
+        "batch",
+        "scratch",
+        "stretch",
+        "switch",
+        "stitch",
+        "fetch",
+        "sketch",
+        "watch",
+        "snatch",
+        "dispatch",
+        "attach"
+      ],
+      "alienWords": [
+        "catcht",
+        "matcht",
+        "hatcht",
+        "patcht",
+        "batcht",
+        "scratcht",
+        "stretcht",
+        "switcht"
+      ],
+      "segments": {
+        "catch": [
+          "c",
+          "a",
+          "tch"
+        ],
+        "match": [
+          "m",
+          "a",
+          "tch"
+        ],
+        "hatch": [
+          "h",
+          "a",
+          "tch"
+        ],
+        "patch": [
+          "p",
+          "a",
+          "tch"
+        ],
+        "batch": [
+          "b",
+          "a",
+          "tch"
+        ],
+        "scratch": [
+          "s",
+          "c",
+          "r",
+          "a",
+          "tch"
+        ],
+        "stretch": [
+          "s",
+          "t",
+          "r",
+          "e",
+          "tch"
+        ],
+        "switch": [
+          "s",
+          "w",
+          "i",
+          "tch"
+        ],
+        "stitch": [
+          "s",
+          "t",
+          "i",
+          "tch"
+        ],
+        "fetch": [
+          "f",
+          "e",
+          "tch"
+        ],
+        "sketch": [
+          "s",
+          "k",
+          "e",
+          "tch"
+        ],
+        "watch": [
+          "w",
+          "a",
+          "tch"
+        ],
+        "snatch": [
+          "s",
+          "n",
+          "a",
+          "tch"
+        ],
+        "dispatch": [
+          "d",
+          "i",
+          "s",
+          "p",
+          "a",
+          "tch"
+        ],
+        "attach": [
+          "a",
+          "tt",
+          "a",
+          "ch"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "Can you ___ the ball?",
+          "missingWord": "catch",
+          "missingIndex": 2,
+          "options": [
+            "catch",
+            "match",
+            "fetch"
+          ]
+        },
+        {
+          "text": "It was a close ___.",
+          "missingWord": "match",
+          "missingIndex": 4,
+          "options": [
+            "match",
+            "catch",
+            "hatch"
+          ]
+        },
+        {
+          "text": "She put a ___ on her jeans.",
+          "missingWord": "patch",
+          "missingIndex": 4,
+          "options": [
+            "patch",
+            "hatch",
+            "batch"
+          ]
+        },
+        {
+          "text": "I need to ___ my watch.",
+          "missingWord": "fetch",
+          "missingIndex": 3,
+          "options": [
+            "fetch",
+            "sketch",
+            "stretch"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "catch",
+            "match",
+            "chip",
+            "hatch"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'chip' uses /ch/ — the others all use /tch/ after a short vowel!"
+        },
+        {
+          "words": [
+            "stretch",
+            "switch",
+            "stitch",
+            "church"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'church' uses /ch/ — the others all use /tch/!"
+        },
+        {
+          "words": [
+            "scratch",
+            "snatch",
+            "dispatch",
+            "reach"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'reach' uses /ch/ — the others all use /tch/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "She can catch and fetch.",
+          "targetSounds": [
+            "tch"
+          ],
+          "trickyWords": [
+            "she",
+            "can",
+            "and"
+          ]
+        },
+        {
+          "text": "He drew a sketch to match.",
+          "targetSounds": [
+            "tch"
+          ],
+          "trickyWords": [
+            "he",
+            "drew",
+            "a",
+            "to"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "catch": [
+          "ca",
+          "tch"
+        ],
+        "match": [
+          "ma",
+          "tch"
+        ],
+        "hatch": [
+          "ha",
+          "tch"
+        ],
+        "patch": [
+          "pa",
+          "tch"
+        ],
+        "batch": [
+          "ba",
+          "tch"
+        ],
+        "scratch": [
+          "scra",
+          "tch"
+        ],
+        "stretch": [
+          "stre",
+          "tch"
+        ],
+        "switch": [
+          "swi",
+          "tch"
+        ],
+        "stitch": [
+          "sti",
+          "tch"
+        ],
+        "fetch": [
+          "fe",
+          "tch"
+        ],
+        "sketch": [
+          "ske",
+          "tch"
+        ],
+        "watch": [
+          "wa",
+          "tch"
+        ],
+        "snatch": [
+          "sna",
+          "tch"
+        ],
+        "dispatch": [
+          "dis",
+          "pa",
+          "tch"
+        ]
+      },
+      "roots": {
+        "catch": "catch",
+        "match": "match",
+        "hatch": "hatch",
+        "patch": "patch",
+        "batch": "batch",
+        "scratch": "scratch",
+        "stretch": "stretch",
+        "switch": "switch",
+        "stitch": "stitch",
+        "fetch": "fetch",
+        "sketch": "sketch",
+        "watch": "watch",
+        "snatch": "snatch",
+        "dispatch": "patch",
+        "attach": "attach"
+      }
+    },
+    {
+      "grapheme": "dge",
+      "keyword": "bridge",
+      "phase": 6,
+      "sortPair": "j",
+      "relatedGraphemes": [
+        "j",
+        "g"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "bridge",
+        "hedge",
+        "ledge",
+        "wedge",
+        "badge",
+        "edge",
+        "dodge",
+        "lodge",
+        "fudge",
+        "judge",
+        "nudge",
+        "ridge",
+        "smudge",
+        "grudge",
+        "knowledge"
+      ],
+      "alienWords": [
+        "bridgep",
+        "hedgep",
+        "ledgep",
+        "wedgep",
+        "badgep",
+        "edgep",
+        "dodgep",
+        "lodgep"
+      ],
+      "segments": {
+        "bridge": [
+          "b",
+          "r",
+          "i",
+          "dge"
+        ],
+        "hedge": [
+          "h",
+          "e",
+          "dge"
+        ],
+        "ledge": [
+          "l",
+          "e",
+          "dge"
+        ],
+        "wedge": [
+          "w",
+          "e",
+          "dge"
+        ],
+        "badge": [
+          "b",
+          "a",
+          "dge"
+        ],
+        "edge": [
+          "e",
+          "dge"
+        ],
+        "dodge": [
+          "d",
+          "o",
+          "dge"
+        ],
+        "lodge": [
+          "l",
+          "o",
+          "dge"
+        ],
+        "fudge": [
+          "f",
+          "u",
+          "dge"
+        ],
+        "judge": [
+          "j",
+          "u",
+          "dge"
+        ],
+        "nudge": [
+          "n",
+          "u",
+          "dge"
+        ],
+        "ridge": [
+          "r",
+          "i",
+          "dge"
+        ],
+        "smudge": [
+          "s",
+          "m",
+          "u",
+          "dge"
+        ],
+        "grudge": [
+          "g",
+          "r",
+          "u",
+          "dge"
+        ],
+        "knowledge": [
+          "kn",
+          "ow",
+          "l",
+          "e",
+          "dge"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "We crossed the ___.",
+          "missingWord": "bridge",
+          "missingIndex": 3,
+          "options": [
+            "bridge",
+            "ridge",
+            "hedge"
+          ]
+        },
+        {
+          "text": "She wore a shiny ___.",
+          "missingWord": "badge",
+          "missingIndex": 3,
+          "options": [
+            "badge",
+            "edge",
+            "wedge"
+          ]
+        },
+        {
+          "text": "The ___ made a fair decision.",
+          "missingWord": "judge",
+          "missingIndex": 1,
+          "options": [
+            "judge",
+            "fudge",
+            "nudge"
+          ]
+        },
+        {
+          "text": "She gave him a ___ to wake up.",
+          "missingWord": "nudge",
+          "missingIndex": 4,
+          "options": [
+            "nudge",
+            "judge",
+            "fudge"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "bridge",
+            "hedge",
+            "jet",
+            "ledge"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'jet' uses /j/ — the others all use /dge/ after a short vowel!"
+        },
+        {
+          "words": [
+            "badge",
+            "edge",
+            "dodge",
+            "gem"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'gem' uses /g/ — the others all use /dge/!"
+        },
+        {
+          "words": [
+            "fudge",
+            "judge",
+            "nudge",
+            "cage"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'cage' uses /g/ with a long vowel — the others all use /dge/ after a short vowel!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The judge sat on the ledge.",
+          "targetSounds": [
+            "dge"
+          ],
+          "trickyWords": [
+            "the",
+            "on"
+          ]
+        },
+        {
+          "text": "She had a badge and a fudge bar.",
+          "targetSounds": [
+            "dge"
+          ],
+          "trickyWords": [
+            "she",
+            "had",
+            "a",
+            "and"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "bridge": [
+          "bri",
+          "dge"
+        ],
+        "hedge": [
+          "he",
+          "dge"
+        ],
+        "ledge": [
+          "le",
+          "dge"
+        ],
+        "wedge": [
+          "we",
+          "dge"
+        ],
+        "badge": [
+          "ba",
+          "dge"
+        ],
+        "edge": [
+          "e",
+          "dge"
+        ],
+        "dodge": [
+          "do",
+          "dge"
+        ],
+        "lodge": [
+          "lo",
+          "dge"
+        ],
+        "fudge": [
+          "fu",
+          "dge"
+        ],
+        "judge": [
+          "ju",
+          "dge"
+        ],
+        "nudge": [
+          "nu",
+          "dge"
+        ],
+        "ridge": [
+          "ri",
+          "dge"
+        ],
+        "smudge": [
+          "smu",
+          "dge"
+        ],
+        "grudge": [
+          "gru",
+          "dge"
+        ],
+        "knowledge": [
+          "know",
+          "le",
+          "dge"
+        ]
+      },
+      "roots": {
+        "bridge": "bridge",
+        "hedge": "hedge",
+        "ledge": "ledge",
+        "wedge": "wedge",
+        "badge": "badge",
+        "edge": "edge",
+        "dodge": "dodge",
+        "lodge": "lodge",
+        "fudge": "fudge",
+        "judge": "judge",
+        "nudge": "nudge",
+        "ridge": "ridge",
+        "smudge": "smudge",
+        "grudge": "grudge",
+        "knowledge": "know"
+      }
+    },
+    {
+      "grapheme": "un-",
+      "keyword": "unhappy",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "dis-",
+      "relatedGraphemes": [
+        "dis-",
+        "mis-",
+        "re-"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "unhappy",
+        "unkind",
+        "untidy",
+        "unfair",
+        "unlock",
+        "unsafe",
+        "unwell",
+        "unpack",
+        "undo",
+        "unclear",
+        "unusual",
+        "unknown",
+        "unlucky",
+        "unopened",
+        "untried"
+      ],
+      "alienWords": [
+        "unblib",
+        "unkrob",
+        "untrop",
+        "unflib",
+        "unglob",
+        "unslab",
+        "unwrob",
+        "undrop"
+      ],
+      "segments": {
+        "unhappy": [
+          "un",
+          "h",
+          "a",
+          "pp",
+          "y"
+        ],
+        "unkind": [
+          "un",
+          "k",
+          "i",
+          "n",
+          "d"
+        ],
+        "untidy": [
+          "un",
+          "t",
+          "i",
+          "d",
+          "y"
+        ],
+        "unfair": [
+          "u",
+          "n",
+          "f",
+          "air"
+        ],
+        "unlock": [
+          "u",
+          "n",
+          "l",
+          "o",
+          "ck"
+        ],
+        "unsafe": [
+          "u",
+          "n",
+          "s",
+          "a-e",
+          "f"
+        ],
+        "unwell": [
+          "u",
+          "n",
+          "w",
+          "e",
+          "ll"
+        ],
+        "unpack": [
+          "u",
+          "n",
+          "p",
+          "a",
+          "ck"
+        ],
+        "undo": [
+          "un",
+          "d",
+          "o"
+        ],
+        "unclear": [
+          "u",
+          "n",
+          "c",
+          "l",
+          "ear"
+        ],
+        "unusual": [
+          "un",
+          "u",
+          "s",
+          "u",
+          "a",
+          "l"
+        ],
+        "unknown": [
+          "u",
+          "n",
+          "kn",
+          "ow",
+          "n"
+        ],
+        "unlucky": [
+          "un",
+          "l",
+          "u",
+          "ck",
+          "y"
+        ],
+        "unopened": [
+          "un",
+          "o",
+          "p",
+          "e",
+          "n",
+          "e",
+          "d"
+        ],
+        "untried": [
+          "un",
+          "t",
+          "r",
+          "ie",
+          "d"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "She was ___ about the result.",
+          "missingWord": "unhappy",
+          "missingIndex": 2,
+          "options": [
+            "unhappy",
+            "unkind",
+            "unwell"
+          ]
+        },
+        {
+          "text": "It was ___ to say that.",
+          "missingWord": "unkind",
+          "missingIndex": 3,
+          "options": [
+            "unkind",
+            "unfair",
+            "unclear"
+          ]
+        },
+        {
+          "text": "Can you ___ your bag?",
+          "missingWord": "unpack",
+          "missingIndex": 2,
+          "options": [
+            "unpack",
+            "unlock",
+            "undo"
+          ]
+        },
+        {
+          "text": "The answer is ___.",
+          "missingWord": "unclear",
+          "missingIndex": 3,
+          "options": [
+            "unclear",
+            "unusual",
+            "unknown"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "unhappy",
+            "unkind",
+            "disagree",
+            "untidy"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'disagree' uses the prefix /dis-/ — the others all use the prefix /un-/!"
+        },
+        {
+          "words": [
+            "unlock",
+            "unsafe",
+            "unwell",
+            "misbehave"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'misbehave' uses the prefix /mis-/ — the others all use the prefix /un-/!"
+        },
+        {
+          "words": [
+            "unclear",
+            "unusual",
+            "unknown",
+            "rewrite"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'rewrite' uses the prefix /re-/ — the others all use the prefix /un-/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "It was unfair and unkind.",
+          "targetSounds": [
+            "un-"
+          ],
+          "trickyWords": [
+            "it",
+            "was",
+            "and"
+          ]
+        },
+        {
+          "text": "She felt unwell and unhappy.",
+          "targetSounds": [
+            "un-"
+          ],
+          "trickyWords": [
+            "she",
+            "felt",
+            "and"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "unhappy": [
+          "un",
+          "happy"
+        ],
+        "unkind": [
+          "un",
+          "kind"
+        ],
+        "untidy": [
+          "un",
+          "tidy"
+        ],
+        "unfair": [
+          "un",
+          "fair"
+        ],
+        "unlock": [
+          "un",
+          "lock"
+        ],
+        "unsafe": [
+          "un",
+          "safe"
+        ],
+        "unwell": [
+          "un",
+          "well"
+        ],
+        "unpack": [
+          "un",
+          "pack"
+        ],
+        "undo": [
+          "un",
+          "do"
+        ],
+        "unclear": [
+          "un",
+          "clear"
+        ],
+        "unusual": [
+          "un",
+          "usual"
+        ],
+        "unknown": [
+          "un",
+          "known"
+        ],
+        "unlucky": [
+          "un",
+          "lucky"
+        ],
+        "unopened": [
+          "un",
+          "opened"
+        ],
+        "untried": [
+          "un",
+          "tried"
+        ]
+      },
+      "roots": {
+        "unhappy": "happy",
+        "unkind": "kind",
+        "untidy": "tidy",
+        "unfair": "fair",
+        "unlock": "lock",
+        "unsafe": "safe",
+        "unwell": "well",
+        "unpack": "pack",
+        "undo": "do",
+        "unclear": "clear",
+        "unusual": "usual",
+        "unknown": "known",
+        "unlucky": "lucky",
+        "unopened": "opened",
+        "untried": "tried"
+      }
+    },
+    {
+      "grapheme": "dis-",
+      "keyword": "disagree",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "un-",
+      "relatedGraphemes": [
+        "un-",
+        "mis-",
+        "re-"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "disagree",
+        "disappear",
+        "dislike",
+        "discover",
+        "disconnect",
+        "disorder",
+        "distrust",
+        "disturb",
+        "dishonest",
+        "disobey",
+        "disappoint",
+        "dismiss",
+        "discomfort",
+        "disallow",
+        "disapprove"
+      ],
+      "alienWords": [
+        "disblib",
+        "diskrob",
+        "distrop",
+        "disflib",
+        "disglob",
+        "disslab",
+        "diswrob",
+        "disdrop"
+      ],
+      "segments": {
+        "disagree": [
+          "d",
+          "i",
+          "s",
+          "a",
+          "g",
+          "r",
+          "ee"
+        ],
+        "disappear": [
+          "dis",
+          "a",
+          "pp",
+          "ear"
+        ],
+        "dislike": [
+          "dis",
+          "l",
+          "i",
+          "k",
+          "e"
+        ],
+        "discover": [
+          "dis",
+          "c",
+          "o",
+          "ve",
+          "r"
+        ],
+        "disconnect": [
+          "d",
+          "i",
+          "s",
+          "c",
+          "o",
+          "nn",
+          "e",
+          "ct"
+        ],
+        "disorder": [
+          "d",
+          "i",
+          "s",
+          "or",
+          "d",
+          "er"
+        ],
+        "distrust": [
+          "d",
+          "i",
+          "s",
+          "t",
+          "r",
+          "u",
+          "s",
+          "t"
+        ],
+        "disturb": [
+          "d",
+          "i",
+          "s",
+          "t",
+          "ur",
+          "b"
+        ],
+        "dishonest": [
+          "dis",
+          "h",
+          "o",
+          "n",
+          "e",
+          "s",
+          "t"
+        ],
+        "disobey": [
+          "dis",
+          "o",
+          "b",
+          "ey"
+        ],
+        "disappoint": [
+          "dis",
+          "a",
+          "pp",
+          "oi",
+          "n",
+          "t"
+        ],
+        "dismiss": [
+          "d",
+          "i",
+          "s",
+          "m",
+          "i",
+          "ss"
+        ],
+        "discomfort": [
+          "dis",
+          "c",
+          "o",
+          "m",
+          "f",
+          "or",
+          "t"
+        ],
+        "disallow": [
+          "dis",
+          "a",
+          "ll",
+          "ow"
+        ],
+        "disapprove": [
+          "dis",
+          "a",
+          "p",
+          "p",
+          "r",
+          "o",
+          "ve"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "They began to ___.",
+          "missingWord": "disagree",
+          "missingIndex": 3,
+          "options": [
+            "disagree",
+            "disappear",
+            "dislike"
+          ]
+        },
+        {
+          "text": "The rabbit seemed to ___.",
+          "missingWord": "disappear",
+          "missingIndex": 3,
+          "options": [
+            "disappear",
+            "disagree",
+            "discover"
+          ]
+        },
+        {
+          "text": "She did not want to ___ her parents.",
+          "missingWord": "disappoint",
+          "missingIndex": 5,
+          "options": [
+            "disappoint",
+            "disobey",
+            "distrust"
+          ]
+        },
+        {
+          "text": "He chose to ___ the rules.",
+          "missingWord": "disobey",
+          "missingIndex": 3,
+          "options": [
+            "disobey",
+            "distrust",
+            "disturb"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "disagree",
+            "disappear",
+            "unhappy",
+            "dislike"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'unhappy' uses the prefix /un-/ — the others all use the prefix /dis-/!"
+        },
+        {
+          "words": [
+            "discover",
+            "disorder",
+            "distrust",
+            "misplace"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'misplace' uses the prefix /mis-/ — the others all use the prefix /dis-/!"
+        },
+        {
+          "words": [
+            "disturb",
+            "dishonest",
+            "disobey",
+            "rewrite"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'rewrite' uses the prefix /re-/ — the others all use the prefix /dis-/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "They began to disagree.",
+          "targetSounds": [
+            "dis-"
+          ],
+          "trickyWords": [
+            "they",
+            "to"
+          ]
+        },
+        {
+          "text": "She did not want to disobey.",
+          "targetSounds": [
+            "dis-"
+          ],
+          "trickyWords": [
+            "she",
+            "did",
+            "not",
+            "want",
+            "to"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "disagree": [
+          "dis",
+          "agree"
+        ],
+        "disappear": [
+          "dis",
+          "appear"
+        ],
+        "dislike": [
+          "dis",
+          "like"
+        ],
+        "discover": [
+          "dis",
+          "cover"
+        ],
+        "disconnect": [
+          "dis",
+          "connect"
+        ],
+        "disorder": [
+          "dis",
+          "order"
+        ],
+        "distrust": [
+          "dis",
+          "trust"
+        ],
+        "disturb": [
+          "dis",
+          "turb"
+        ],
+        "dishonest": [
+          "dis",
+          "honest"
+        ],
+        "disobey": [
+          "dis",
+          "obey"
+        ],
+        "disappoint": [
+          "dis",
+          "appoint"
+        ],
+        "dismiss": [
+          "dis",
+          "miss"
+        ],
+        "discomfort": [
+          "dis",
+          "comfort"
+        ],
+        "disallow": [
+          "dis",
+          "allow"
+        ],
+        "disapprove": [
+          "dis",
+          "approve"
+        ]
+      },
+      "roots": {
+        "disagree": "agree",
+        "disappear": "appear",
+        "dislike": "like",
+        "discover": "cover",
+        "disconnect": "connect",
+        "disorder": "order",
+        "distrust": "trust",
+        "disturb": "turb",
+        "dishonest": "honest",
+        "disobey": "obey",
+        "disappoint": "appoint",
+        "dismiss": "miss",
+        "discomfort": "comfort",
+        "disallow": "allow",
+        "disapprove": "approve"
+      }
+    },
+    {
+      "grapheme": "mis-",
+      "keyword": "mistake",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "dis-",
+      "relatedGraphemes": [
+        "un-",
+        "dis-",
+        "re-"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "mistake",
+        "misplace",
+        "misbehave",
+        "misread",
+        "mislead",
+        "misuse",
+        "mishap",
+        "mistrust",
+        "misspell",
+        "miscount",
+        "misjudge",
+        "misstep",
+        "misprint",
+        "mishear",
+        "misname"
+      ],
+      "alienWords": [
+        "misblib",
+        "miskrob",
+        "mistrop",
+        "misflib",
+        "misglob",
+        "misslab",
+        "miswrob",
+        "misdrop"
+      ],
+      "segments": {
+        "mistake": [
+          "m",
+          "i",
+          "s",
+          "t",
+          "a-e",
+          "k"
+        ],
+        "misplace": [
+          "m",
+          "i",
+          "s",
+          "p",
+          "l",
+          "a-e",
+          "s"
+        ],
+        "misbehave": [
+          "m",
+          "i",
+          "s",
+          "b",
+          "e",
+          "h",
+          "a-e",
+          "v"
+        ],
+        "misread": [
+          "m",
+          "i",
+          "s",
+          "r",
+          "ea",
+          "d"
+        ],
+        "mislead": [
+          "m",
+          "i",
+          "s",
+          "l",
+          "ea",
+          "d"
+        ],
+        "misuse": [
+          "mis",
+          "u",
+          "s",
+          "e"
+        ],
+        "mishap": [
+          "m",
+          "i",
+          "s",
+          "h",
+          "a",
+          "p"
+        ],
+        "mistrust": [
+          "m",
+          "i",
+          "s",
+          "t",
+          "r",
+          "u",
+          "s",
+          "t"
+        ],
+        "misspell": [
+          "m",
+          "i",
+          "s",
+          "s",
+          "p",
+          "e",
+          "ll"
+        ],
+        "miscount": [
+          "m",
+          "i",
+          "s",
+          "c",
+          "ou",
+          "n",
+          "t"
+        ],
+        "misjudge": [
+          "mis",
+          "j",
+          "u",
+          "d",
+          "ge"
+        ],
+        "misstep": [
+          "mis",
+          "s",
+          "t",
+          "e",
+          "p"
+        ],
+        "misprint": [
+          "mis",
+          "p",
+          "r",
+          "i",
+          "n",
+          "t"
+        ],
+        "mishear": [
+          "mis",
+          "h",
+          "ear"
+        ],
+        "misname": [
+          "mis",
+          "n",
+          "a",
+          "m",
+          "e"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "I made a ___.",
+          "missingWord": "mistake",
+          "missingIndex": 3,
+          "options": [
+            "mistake",
+            "misplace",
+            "mishap"
+          ]
+        },
+        {
+          "text": "She tends to ___ her keys.",
+          "missingWord": "misplace",
+          "missingIndex": 3,
+          "options": [
+            "misplace",
+            "mistake",
+            "misread"
+          ]
+        },
+        {
+          "text": "He was told not to ___ in class.",
+          "missingWord": "misbehave",
+          "missingIndex": 5,
+          "options": [
+            "misbehave",
+            "mistrust",
+            "mislead"
+          ]
+        },
+        {
+          "text": "I always ___ that word.",
+          "missingWord": "misspell",
+          "missingIndex": 2,
+          "options": [
+            "misspell",
+            "miscount",
+            "misprint"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "mistake",
+            "misplace",
+            "unhappy",
+            "mishap"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'unhappy' uses the prefix /un-/ — the others all use the prefix /mis-/!"
+        },
+        {
+          "words": [
+            "misbehave",
+            "misread",
+            "mislead",
+            "disagree"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'disagree' uses the prefix /dis-/ — the others all use the prefix /mis-/!"
+        },
+        {
+          "words": [
+            "misspell",
+            "miscount",
+            "misprint",
+            "rewrite"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'rewrite' uses the prefix /re-/ — the others all use the prefix /mis-/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "I made a mistake.",
+          "targetSounds": [
+            "mis-"
+          ],
+          "trickyWords": [
+            "I",
+            "a"
+          ]
+        },
+        {
+          "text": "Do not misplace your things.",
+          "targetSounds": [
+            "mis-"
+          ],
+          "trickyWords": [
+            "do",
+            "not",
+            "your"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "mistake": [
+          "mis",
+          "take"
+        ],
+        "misplace": [
+          "mis",
+          "place"
+        ],
+        "misbehave": [
+          "mis",
+          "behave"
+        ],
+        "misread": [
+          "mis",
+          "read"
+        ],
+        "mislead": [
+          "mis",
+          "lead"
+        ],
+        "misuse": [
+          "mis",
+          "use"
+        ],
+        "mishap": [
+          "mis",
+          "hap"
+        ],
+        "mistrust": [
+          "mis",
+          "trust"
+        ],
+        "misspell": [
+          "mis",
+          "spell"
+        ],
+        "miscount": [
+          "mis",
+          "count"
+        ],
+        "misjudge": [
+          "mis",
+          "judge"
+        ],
+        "misstep": [
+          "mis",
+          "step"
+        ],
+        "misprint": [
+          "mis",
+          "print"
+        ],
+        "mishear": [
+          "mis",
+          "hear"
+        ],
+        "misname": [
+          "mis",
+          "name"
+        ]
+      },
+      "roots": {
+        "mistake": "take",
+        "misplace": "place",
+        "misbehave": "behave",
+        "misread": "read",
+        "mislead": "lead",
+        "misuse": "use",
+        "mishap": "hap",
+        "mistrust": "trust",
+        "misspell": "spell",
+        "miscount": "count",
+        "misjudge": "judge",
+        "misstep": "step",
+        "misprint": "print",
+        "mishear": "hear",
+        "misname": "name"
+      }
+    },
+    {
+      "grapheme": "re-",
+      "keyword": "rewrite",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "un-",
+      "relatedGraphemes": [
+        "un-",
+        "dis-",
+        "mis-"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "rewrite",
+        "reread",
+        "replay",
+        "rebuild",
+        "reuse",
+        "recycle",
+        "return",
+        "remind",
+        "replace",
+        "review",
+        "restart",
+        "refresh",
+        "refill",
+        "rethink",
+        "repaint"
+      ],
+      "alienWords": [
+        "reblib",
+        "rekrob",
+        "retrop",
+        "reflib",
+        "reglob",
+        "reslab",
+        "rewrob",
+        "redrop"
+      ],
+      "segments": {
+        "rewrite": [
+          "re",
+          "wr",
+          "i",
+          "t",
+          "e"
+        ],
+        "reread": [
+          "r",
+          "e",
+          "r",
+          "ea",
+          "d"
+        ],
+        "replay": [
+          "r",
+          "e",
+          "p",
+          "l",
+          "ay"
+        ],
+        "rebuild": [
+          "re",
+          "b",
+          "ui",
+          "l",
+          "d"
+        ],
+        "reuse": [
+          "re",
+          "u",
+          "s",
+          "e"
+        ],
+        "recycle": [
+          "re",
+          "c",
+          "y",
+          "c",
+          "l",
+          "e"
+        ],
+        "return": [
+          "r",
+          "e",
+          "t",
+          "ur",
+          "n"
+        ],
+        "remind": [
+          "re",
+          "m",
+          "i",
+          "n",
+          "d"
+        ],
+        "replace": [
+          "r",
+          "e",
+          "p",
+          "l",
+          "a-e",
+          "s"
+        ],
+        "review": [
+          "re",
+          "v",
+          "ie",
+          "w"
+        ],
+        "restart": [
+          "r",
+          "e",
+          "s",
+          "t",
+          "ar",
+          "t"
+        ],
+        "refresh": [
+          "r",
+          "e",
+          "f",
+          "r",
+          "e",
+          "sh"
+        ],
+        "refill": [
+          "r",
+          "e",
+          "f",
+          "i",
+          "ll"
+        ],
+        "rethink": [
+          "re",
+          "th",
+          "i",
+          "nk"
+        ],
+        "repaint": [
+          "re",
+          "p",
+          "ai",
+          "n",
+          "t"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "Can you ___ that paragraph?",
+          "missingWord": "rewrite",
+          "missingIndex": 2,
+          "options": [
+            "rewrite",
+            "reread",
+            "replay"
+          ]
+        },
+        {
+          "text": "Let us ___ the match.",
+          "missingWord": "replay",
+          "missingIndex": 3,
+          "options": [
+            "replay",
+            "rewrite",
+            "return"
+          ]
+        },
+        {
+          "text": "She needs to ___ her water bottle.",
+          "missingWord": "refill",
+          "missingIndex": 4,
+          "options": [
+            "refill",
+            "refresh",
+            "rethink"
+          ]
+        },
+        {
+          "text": "We should ___ our plastic.",
+          "missingWord": "recycle",
+          "missingIndex": 3,
+          "options": [
+            "recycle",
+            "reuse",
+            "return"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "rewrite",
+            "reread",
+            "unhappy",
+            "replay"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'unhappy' uses the prefix /un-/ — the others all use the prefix /re-/!"
+        },
+        {
+          "words": [
+            "rebuild",
+            "reuse",
+            "recycle",
+            "disagree"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'disagree' uses the prefix /dis-/ — the others all use the prefix /re-/!"
+        },
+        {
+          "words": [
+            "return",
+            "remind",
+            "replace",
+            "mistake"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'mistake' uses the prefix /mis-/ — the others all use the prefix /re-/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "Please rewrite and review.",
+          "targetSounds": [
+            "re-"
+          ],
+          "trickyWords": [
+            "please",
+            "and"
+          ]
+        },
+        {
+          "text": "We should reuse and recycle.",
+          "targetSounds": [
+            "re-"
+          ],
+          "trickyWords": [
+            "we",
+            "should",
+            "and"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "rewrite": [
+          "re",
+          "write"
+        ],
+        "reread": [
+          "re",
+          "read"
+        ],
+        "replay": [
+          "re",
+          "play"
+        ],
+        "rebuild": [
+          "re",
+          "build"
+        ],
+        "reuse": [
+          "re",
+          "use"
+        ],
+        "recycle": [
+          "re",
+          "cycle"
+        ],
+        "return": [
+          "re",
+          "turn"
+        ],
+        "remind": [
+          "re",
+          "mind"
+        ],
+        "replace": [
+          "re",
+          "place"
+        ],
+        "review": [
+          "re",
+          "view"
+        ],
+        "restart": [
+          "re",
+          "start"
+        ],
+        "refresh": [
+          "re",
+          "fresh"
+        ],
+        "refill": [
+          "re",
+          "fill"
+        ],
+        "rethink": [
+          "re",
+          "think"
+        ],
+        "repaint": [
+          "re",
+          "paint"
+        ]
+      },
+      "roots": {
+        "rewrite": "write",
+        "reread": "read",
+        "replay": "play",
+        "rebuild": "build",
+        "reuse": "use",
+        "recycle": "cycle",
+        "return": "turn",
+        "remind": "mind",
+        "replace": "place",
+        "review": "view",
+        "restart": "start",
+        "refresh": "fresh",
+        "refill": "fill",
+        "rethink": "think",
+        "repaint": "paint"
+      }
+    },
+    {
+      "grapheme": "-tion suffix",
+      "keyword": "information",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "sion",
+      "relatedGraphemes": [
+        "sion",
+        "tion"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "information",
+        "celebration",
+        "decoration",
+        "imagination",
+        "vacation",
+        "location",
+        "emotion",
+        "presentation",
+        "suggestion",
+        "situation",
+        "communication",
+        "invitation",
+        "expectation",
+        "relation"
+      ],
+      "alienWords": [
+        "informotion",
+        "celebrotion",
+        "decorotion",
+        "imaginotion",
+        "organisotion",
+        "determirotion",
+        "cooperotion",
+        "presentotion"
+      ],
+      "segments": {
+        "information": [
+          "i",
+          "n",
+          "f",
+          "or",
+          "m",
+          "a",
+          "tion"
+        ],
+        "celebration": [
+          "ce",
+          "l",
+          "e",
+          "b",
+          "r",
+          "a",
+          "tion"
+        ],
+        "decoration": [
+          "d",
+          "e",
+          "c",
+          "or",
+          "a",
+          "tion"
+        ],
+        "imagination": [
+          "i",
+          "m",
+          "a",
+          "g",
+          "i",
+          "n",
+          "a",
+          "tion"
+        ],
+        "vacation": [
+          "v",
+          "a",
+          "c",
+          "a",
+          "tion"
+        ],
+        "location": [
+          "l",
+          "o",
+          "c",
+          "a",
+          "tion"
+        ],
+        "emotion": [
+          "e",
+          "m",
+          "o",
+          "tion"
+        ],
+        "presentation": [
+          "p",
+          "re",
+          "s",
+          "e",
+          "n",
+          "t",
+          "a",
+          "tion"
+        ],
+        "suggestion": [
+          "s",
+          "u",
+          "gg",
+          "e",
+          "s",
+          "tion"
+        ],
+        "situation": [
+          "s",
+          "i",
+          "t",
+          "u",
+          "a",
+          "tion"
+        ],
+        "communication": [
+          "c",
+          "o",
+          "mm",
+          "un",
+          "i",
+          "c",
+          "a",
+          "tion"
+        ],
+        "invitation": [
+          "i",
+          "n",
+          "v",
+          "i",
+          "t",
+          "a",
+          "tion"
+        ],
+        "expectation": [
+          "e",
+          "x",
+          "p",
+          "e",
+          "c",
+          "t",
+          "a",
+          "tion"
+        ],
+        "relation": [
+          "r",
+          "e",
+          "l",
+          "a",
+          "tion"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "Can I have some ___ about this?",
+          "missingWord": "information",
+          "missingIndex": 4,
+          "options": [
+            "information",
+            "celebration",
+            "imagination"
+          ]
+        },
+        {
+          "text": "The party was a big ___.",
+          "missingWord": "celebration",
+          "missingIndex": 5,
+          "options": [
+            "celebration",
+            "decoration",
+            "imagination"
+          ]
+        },
+        {
+          "text": "She has a great ___.",
+          "missingWord": "imagination",
+          "missingIndex": 4,
+          "options": [
+            "imagination",
+            "information",
+            "situation"
+          ]
+        },
+        {
+          "text": "She gave a brilliant ___.",
+          "missingWord": "presentation",
+          "missingIndex": 3,
+          "options": [
+            "presentation",
+            "situation",
+            "communication"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "information",
+            "celebration",
+            "decision",
+            "imagination"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'decision' ends with /sion/ — the others all end with /tion/!"
+        },
+        {
+          "words": [
+            "vacation",
+            "location",
+            "emotion",
+            "confusion"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'confusion' ends with /sion/ — the others all end with /tion/!"
+        },
+        {
+          "words": [
+            "presentation",
+            "situation",
+            "communication",
+            "explosion"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'explosion' ends with /sion/ — the others all end with /tion/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The celebration was full of decoration.",
+          "targetSounds": [
+            "-tion suffix"
+          ],
+          "trickyWords": [
+            "the",
+            "was",
+            "full",
+            "of"
+          ]
+        },
+        {
+          "text": "We planned a vacation after the celebration.",
+          "targetSounds": [
+            "-tion suffix"
+          ],
+          "trickyWords": [
+            "use",
+            "your",
+            "and"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "information": [
+          "inform",
+          "ation"
+        ],
+        "celebration": [
+          "celebr",
+          "ation"
+        ],
+        "decoration": [
+          "decor",
+          "ation"
+        ],
+        "imagination": [
+          "imagin",
+          "ation"
+        ],
+        "presentation": [
+          "present",
+          "ation"
+        ],
+        "communication": [
+          "communic",
+          "ation"
+        ],
+        "vacation": [
+          "vacat",
+          "ion"
+        ],
+        "location": [
+          "locat",
+          "ion"
+        ],
+        "emotion": [
+          "emot",
+          "ion"
+        ],
+        "suggestion": [
+          "suggest",
+          "ion"
+        ],
+        "situation": [
+          "situat",
+          "ion"
+        ],
+        "relation": [
+          "relat",
+          "ion"
+        ],
+        "invitation": [
+          "invit",
+          "ation"
+        ],
+        "expectation": [
+          "expect",
+          "ation"
+        ]
+      },
+      "roots": {
+        "information": "inform",
+        "celebration": "celebr",
+        "decoration": "decor",
+        "imagination": "imagin",
+        "presentation": "present",
+        "communication": "communic",
+        "vacation": "vacat",
+        "location": "locat",
+        "emotion": "emot",
+        "suggestion": "suggest",
+        "situation": "situat",
+        "relation": "relat",
+        "invitation": "invit",
+        "expectation": "expect"
+      }
+    },
+    {
+      "grapheme": "-ly",
+      "keyword": "quickly",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "-ful",
+      "relatedGraphemes": [
+        "-ful",
+        "-less",
+        "-ness",
+        "-ment"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "quickly",
+        "slowly",
+        "kindly",
+        "loudly",
+        "softly",
+        "brightly",
+        "clearly",
+        "closely",
+        "deeply",
+        "firmly",
+        "gently",
+        "happily",
+        "neatly",
+        "nicely",
+        "quietly"
+      ],
+      "alienWords": [
+        "quicklop",
+        "slowlop",
+        "kindlop",
+        "loudlop",
+        "softlop",
+        "brightlop",
+        "clearlop",
+        "closelop"
+      ],
+      "segments": {
+        "quickly": [
+          "qu",
+          "i",
+          "ck",
+          "l",
+          "y"
+        ],
+        "slowly": [
+          "s",
+          "l",
+          "ow",
+          "l",
+          "y"
+        ],
+        "kindly": [
+          "k",
+          "i",
+          "n",
+          "d",
+          "l",
+          "y"
+        ],
+        "loudly": [
+          "l",
+          "ou",
+          "d",
+          "l",
+          "y"
+        ],
+        "softly": [
+          "s",
+          "o",
+          "f",
+          "t",
+          "l",
+          "y"
+        ],
+        "brightly": [
+          "b",
+          "r",
+          "igh",
+          "t",
+          "l",
+          "y"
+        ],
+        "clearly": [
+          "c",
+          "l",
+          "ear",
+          "l",
+          "y"
+        ],
+        "closely": [
+          "c",
+          "l",
+          "o",
+          "s",
+          "e",
+          "l",
+          "y"
+        ],
+        "deeply": [
+          "d",
+          "ee",
+          "p",
+          "l",
+          "y"
+        ],
+        "firmly": [
+          "f",
+          "ir",
+          "m",
+          "l",
+          "y"
+        ],
+        "gently": [
+          "ge",
+          "n",
+          "t",
+          "l",
+          "y"
+        ],
+        "happily": [
+          "h",
+          "a",
+          "pp",
+          "i",
+          "l",
+          "y"
+        ],
+        "neatly": [
+          "n",
+          "ea",
+          "t",
+          "l",
+          "y"
+        ],
+        "nicely": [
+          "n",
+          "i-e",
+          "s",
+          "l",
+          "y"
+        ],
+        "quietly": [
+          "qu",
+          "ie",
+          "t",
+          "l",
+          "y"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "She ran ___ to catch the bus.",
+          "missingWord": "quickly",
+          "missingIndex": 2,
+          "options": [
+            "quickly",
+            "slowly",
+            "kindly"
+          ]
+        },
+        {
+          "text": "The tortoise moved ___.",
+          "missingWord": "slowly",
+          "missingIndex": 3,
+          "options": [
+            "slowly",
+            "quickly",
+            "softly"
+          ]
+        },
+        {
+          "text": "She spoke ___ to the baby.",
+          "missingWord": "gently",
+          "missingIndex": 2,
+          "options": [
+            "gently",
+            "firmly",
+            "loudly"
+          ]
+        },
+        {
+          "text": "He smiled ___ at the news.",
+          "missingWord": "happily",
+          "missingIndex": 2,
+          "options": [
+            "happily",
+            "neatly",
+            "nicely"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "quickly",
+            "slowly",
+            "kindness",
+            "loudly"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'kindness' uses the suffix /-ness/ — the others all use the suffix /-ly/!"
+        },
+        {
+          "words": [
+            "softly",
+            "brightly",
+            "clearly",
+            "joyful"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'joyful' uses the suffix /-ful/ — the others all use the suffix /-ly/!"
+        },
+        {
+          "words": [
+            "deeply",
+            "firmly",
+            "gently",
+            "helpless"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'helpless' uses the suffix /-less/ — the others all use the suffix /-ly/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "She spoke gently and kindly.",
+          "targetSounds": [
+            "-ly"
+          ],
+          "trickyWords": [
+            "she",
+            "and"
+          ]
+        },
+        {
+          "text": "He quickly and quietly left.",
+          "targetSounds": [
+            "-ly"
+          ],
+          "trickyWords": [
+            "he",
+            "and"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "quickly": [
+          "quick",
+          "ly"
+        ],
+        "slowly": [
+          "slow",
+          "ly"
+        ],
+        "kindly": [
+          "kind",
+          "ly"
+        ],
+        "loudly": [
+          "loud",
+          "ly"
+        ],
+        "softly": [
+          "soft",
+          "ly"
+        ],
+        "brightly": [
+          "bright",
+          "ly"
+        ],
+        "clearly": [
+          "clear",
+          "ly"
+        ],
+        "closely": [
+          "close",
+          "ly"
+        ],
+        "deeply": [
+          "deep",
+          "ly"
+        ],
+        "firmly": [
+          "firm",
+          "ly"
+        ],
+        "happily": [
+          "happi",
+          "ly"
+        ],
+        "neatly": [
+          "neat",
+          "ly"
+        ],
+        "nicely": [
+          "nice",
+          "ly"
+        ],
+        "quietly": [
+          "quiet",
+          "ly"
+        ]
+      },
+      "roots": {
+        "quickly": "quick",
+        "slowly": "slow",
+        "kindly": "kind",
+        "loudly": "loud",
+        "softly": "soft",
+        "brightly": "bright",
+        "clearly": "clear",
+        "closely": "close",
+        "deeply": "deep",
+        "firmly": "firm",
+        "gently": "gentle",
+        "happily": "happy",
+        "neatly": "neat",
+        "nicely": "nice",
+        "quietly": "quiet"
+      }
+    },
+    {
+      "grapheme": "-ful",
+      "keyword": "helpful",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "-less",
+      "relatedGraphemes": [
+        "-less",
+        "-ly",
+        "-ness",
+        "-ment"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "helpful",
+        "thankful",
+        "cheerful",
+        "peaceful",
+        "powerful",
+        "colourful",
+        "beautiful",
+        "wonderful",
+        "grateful",
+        "fearful",
+        "hopeful",
+        "playful",
+        "graceful",
+        "joyful",
+        "skillful"
+      ],
+      "alienWords": [
+        "helpfub",
+        "thankfub",
+        "cheerfub",
+        "peacefub",
+        "powerfub",
+        "colourfub",
+        "beautifub",
+        "wonderfub"
+      ],
+      "segments": {
+        "helpful": [
+          "h",
+          "e",
+          "l",
+          "p",
+          "f",
+          "u",
+          "l"
+        ],
+        "thankful": [
+          "th",
+          "a",
+          "nk",
+          "f",
+          "u",
+          "l"
+        ],
+        "cheerful": [
+          "ch",
+          "eer",
+          "f",
+          "u",
+          "l"
+        ],
+        "peaceful": [
+          "p",
+          "ea",
+          "ce",
+          "f",
+          "u",
+          "l"
+        ],
+        "powerful": [
+          "p",
+          "ow",
+          "er",
+          "f",
+          "u",
+          "l"
+        ],
+        "colourful": [
+          "c",
+          "o",
+          "l",
+          "our",
+          "f",
+          "u",
+          "l"
+        ],
+        "beautiful": [
+          "b",
+          "ea",
+          "u",
+          "t",
+          "i",
+          "f",
+          "u",
+          "l"
+        ],
+        "wonderful": [
+          "w",
+          "o",
+          "n",
+          "d",
+          "er",
+          "f",
+          "u",
+          "l"
+        ],
+        "grateful": [
+          "g",
+          "r",
+          "a",
+          "t",
+          "e",
+          "f",
+          "u",
+          "l"
+        ],
+        "fearful": [
+          "f",
+          "ear",
+          "f",
+          "u",
+          "l"
+        ],
+        "hopeful": [
+          "h",
+          "o",
+          "p",
+          "e",
+          "f",
+          "u",
+          "l"
+        ],
+        "playful": [
+          "p",
+          "l",
+          "ay",
+          "f",
+          "u",
+          "l"
+        ],
+        "graceful": [
+          "g",
+          "r",
+          "a",
+          "ce",
+          "f",
+          "u",
+          "l"
+        ],
+        "joyful": [
+          "j",
+          "oy",
+          "f",
+          "u",
+          "l"
+        ],
+        "skillful": [
+          "s",
+          "k",
+          "i",
+          "ll",
+          "f",
+          "u",
+          "l"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "She was very ___ to everyone.",
+          "missingWord": "helpful",
+          "missingIndex": 3,
+          "options": [
+            "helpful",
+            "thankful",
+            "hopeful"
+          ]
+        },
+        {
+          "text": "I am so ___ for your help.",
+          "missingWord": "thankful",
+          "missingIndex": 4,
+          "options": [
+            "thankful",
+            "helpful",
+            "joyful"
+          ]
+        },
+        {
+          "text": "The garden is very ___.",
+          "missingWord": "colourful",
+          "missingIndex": 4,
+          "options": [
+            "colourful",
+            "peaceful",
+            "powerful"
+          ]
+        },
+        {
+          "text": "She was ___ after her win.",
+          "missingWord": "joyful",
+          "missingIndex": 3,
+          "options": [
+            "joyful",
+            "graceful",
+            "skillful"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "helpful",
+            "thankful",
+            "helpless",
+            "cheerful"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'helpless' uses the suffix /-less/ — the others all use the suffix /-ful/!"
+        },
+        {
+          "words": [
+            "peaceful",
+            "powerful",
+            "colourful",
+            "quickly"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'quickly' uses the suffix /-ly/ — the others all use the suffix /-ful/!"
+        },
+        {
+          "words": [
+            "beautiful",
+            "wonderful",
+            "grateful",
+            "kindness"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'kindness' uses the suffix /-ness/ — the others all use the suffix /-ful/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "She was helpful and cheerful.",
+          "targetSounds": [
+            "-ful"
+          ],
+          "trickyWords": [
+            "she",
+            "was",
+            "and"
+          ]
+        },
+        {
+          "text": "The garden was colourful and peaceful.",
+          "targetSounds": [
+            "-ful"
+          ],
+          "trickyWords": [
+            "the",
+            "was",
+            "and"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "helpful": [
+          "help",
+          "ful"
+        ],
+        "thankful": [
+          "thank",
+          "ful"
+        ],
+        "cheerful": [
+          "cheer",
+          "ful"
+        ],
+        "peaceful": [
+          "peace",
+          "ful"
+        ],
+        "powerful": [
+          "power",
+          "ful"
+        ],
+        "colourful": [
+          "colour",
+          "ful"
+        ],
+        "beautiful": [
+          "beauti",
+          "ful"
+        ],
+        "wonderful": [
+          "wonder",
+          "ful"
+        ],
+        "hopeful": [
+          "hope",
+          "ful"
+        ],
+        "playful": [
+          "play",
+          "ful"
+        ],
+        "graceful": [
+          "grace",
+          "ful"
+        ],
+        "joyful": [
+          "joy",
+          "ful"
+        ],
+        "skillful": [
+          "skill",
+          "ful"
+        ],
+        "grateful": [
+          "grate",
+          "ful"
+        ],
+        "fearful": [
+          "fear",
+          "ful"
+        ]
+      },
+      "roots": {
+        "helpful": "help",
+        "thankful": "thank",
+        "cheerful": "cheer",
+        "peaceful": "peace",
+        "powerful": "power",
+        "colourful": "colour",
+        "beautiful": "beauty",
+        "wonderful": "wonder",
+        "hopeful": "hope",
+        "playful": "play",
+        "graceful": "grace",
+        "joyful": "joy",
+        "skillful": "skill",
+        "grateful": "grate",
+        "fearful": "fear"
+      }
+    },
+    {
+      "grapheme": "-less",
+      "keyword": "helpless",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "-ful",
+      "relatedGraphemes": [
+        "-ful",
+        "-ly",
+        "-ness",
+        "-ment"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "helpless",
+        "hopeless",
+        "homeless",
+        "harmless",
+        "careless",
+        "useless",
+        "pointless",
+        "speechless",
+        "worthless",
+        "endless",
+        "fearless",
+        "powerless",
+        "restless",
+        "thoughtless",
+        "breathless"
+      ],
+      "alienWords": [
+        "helplest",
+        "hopelest",
+        "homelest",
+        "harmlest",
+        "carelest",
+        "uselest",
+        "pointlest",
+        "speechlest"
+      ],
+      "segments": {
+        "helpless": [
+          "h",
+          "e",
+          "l",
+          "p",
+          "l",
+          "e",
+          "ss"
+        ],
+        "hopeless": [
+          "h",
+          "o",
+          "p",
+          "e",
+          "l",
+          "e",
+          "ss"
+        ],
+        "homeless": [
+          "h",
+          "o",
+          "m",
+          "e",
+          "l",
+          "e",
+          "ss"
+        ],
+        "harmless": [
+          "h",
+          "ar",
+          "m",
+          "l",
+          "e",
+          "ss"
+        ],
+        "careless": [
+          "c",
+          "are",
+          "l",
+          "e",
+          "ss"
+        ],
+        "useless": [
+          "u",
+          "s",
+          "e",
+          "l",
+          "e",
+          "ss"
+        ],
+        "pointless": [
+          "p",
+          "oi",
+          "n",
+          "t",
+          "l",
+          "e",
+          "ss"
+        ],
+        "speechless": [
+          "s",
+          "p",
+          "ee",
+          "ch",
+          "l",
+          "e",
+          "ss"
+        ],
+        "worthless": [
+          "w",
+          "or",
+          "th",
+          "l",
+          "e",
+          "ss"
+        ],
+        "endless": [
+          "e",
+          "n",
+          "d",
+          "l",
+          "e",
+          "ss"
+        ],
+        "fearless": [
+          "f",
+          "ear",
+          "l",
+          "e",
+          "ss"
+        ],
+        "powerless": [
+          "p",
+          "ow",
+          "er",
+          "l",
+          "e",
+          "ss"
+        ],
+        "restless": [
+          "r",
+          "e",
+          "s",
+          "t",
+          "l",
+          "e",
+          "ss"
+        ],
+        "thoughtless": [
+          "th",
+          "ough",
+          "t",
+          "l",
+          "e",
+          "ss"
+        ],
+        "breathless": [
+          "b",
+          "re",
+          "a",
+          "th",
+          "l",
+          "e",
+          "ss"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The situation felt ___.",
+          "missingWord": "hopeless",
+          "missingIndex": 3,
+          "options": [
+            "hopeless",
+            "helpless",
+            "homeless"
+          ]
+        },
+        {
+          "text": "The snake is ___ to humans.",
+          "missingWord": "harmless",
+          "missingIndex": 4,
+          "options": [
+            "harmless",
+            "helpless",
+            "homeless"
+          ]
+        },
+        {
+          "text": "She was ___ after the race.",
+          "missingWord": "breathless",
+          "missingIndex": 3,
+          "options": [
+            "breathless",
+            "restless",
+            "speechless"
+          ]
+        },
+        {
+          "text": "He felt ___ after the match.",
+          "missingWord": "powerless",
+          "missingIndex": 2,
+          "options": [
+            "powerless",
+            "fearless",
+            "restless"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "helpless",
+            "hopeless",
+            "helpful",
+            "homeless"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'helpful' uses the suffix /-ful/ — the others all use the suffix /-less/!"
+        },
+        {
+          "words": [
+            "harmless",
+            "careless",
+            "useless",
+            "quickly"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'quickly' uses the suffix /-ly/ — the others all use the suffix /-less/!"
+        },
+        {
+          "words": [
+            "fearless",
+            "endless",
+            "restless",
+            "kindness"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'kindness' uses the suffix /-ness/ — the others all use the suffix /-less/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The dog is harmless and fearless.",
+          "targetSounds": [
+            "-less"
+          ],
+          "trickyWords": [
+            "the",
+            "is",
+            "and"
+          ]
+        },
+        {
+          "text": "She felt helpless and hopeless.",
+          "targetSounds": [
+            "-less"
+          ],
+          "trickyWords": [
+            "she",
+            "felt",
+            "and"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "helpless": [
+          "help",
+          "less"
+        ],
+        "hopeless": [
+          "hope",
+          "less"
+        ],
+        "homeless": [
+          "home",
+          "less"
+        ],
+        "harmless": [
+          "harm",
+          "less"
+        ],
+        "careless": [
+          "care",
+          "less"
+        ],
+        "useless": [
+          "use",
+          "less"
+        ],
+        "pointless": [
+          "point",
+          "less"
+        ],
+        "speechless": [
+          "speech",
+          "less"
+        ],
+        "worthless": [
+          "worth",
+          "less"
+        ],
+        "endless": [
+          "end",
+          "less"
+        ],
+        "fearless": [
+          "fear",
+          "less"
+        ],
+        "powerless": [
+          "power",
+          "less"
+        ],
+        "restless": [
+          "rest",
+          "less"
+        ],
+        "thoughtless": [
+          "thought",
+          "less"
+        ],
+        "breathless": [
+          "breath",
+          "less"
+        ]
+      },
+      "roots": {
+        "helpless": "help",
+        "hopeless": "hope",
+        "homeless": "home",
+        "harmless": "harm",
+        "careless": "care",
+        "useless": "use",
+        "pointless": "point",
+        "speechless": "speech",
+        "worthless": "worth",
+        "endless": "end",
+        "fearless": "fear",
+        "powerless": "power",
+        "restless": "rest",
+        "thoughtless": "thought",
+        "breathless": "breath"
+      }
+    },
+    {
+      "grapheme": "-ness",
+      "keyword": "kindness",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "-ment",
+      "relatedGraphemes": [
+        "-ment",
+        "-ful",
+        "-less",
+        "-ly"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "kindness",
+        "darkness",
+        "sadness",
+        "madness",
+        "illness",
+        "goodness",
+        "fitness",
+        "weakness",
+        "happiness",
+        "silliness",
+        "sweetness",
+        "tidiness",
+        "laziness",
+        "boldness",
+        "softness"
+      ],
+      "alienWords": [
+        "kindnest",
+        "darknest",
+        "sadnest",
+        "madnest",
+        "illnest",
+        "goodnest",
+        "fitnest",
+        "weaknest"
+      ],
+      "segments": {
+        "kindness": [
+          "k",
+          "i",
+          "n",
+          "d",
+          "n",
+          "e",
+          "ss"
+        ],
+        "darkness": [
+          "d",
+          "ar",
+          "k",
+          "n",
+          "e",
+          "ss"
+        ],
+        "sadness": [
+          "s",
+          "a",
+          "d",
+          "n",
+          "e",
+          "ss"
+        ],
+        "madness": [
+          "m",
+          "a",
+          "d",
+          "n",
+          "e",
+          "ss"
+        ],
+        "illness": [
+          "i",
+          "ll",
+          "n",
+          "e",
+          "ss"
+        ],
+        "goodness": [
+          "g",
+          "oo",
+          "d",
+          "n",
+          "e",
+          "ss"
+        ],
+        "fitness": [
+          "f",
+          "i",
+          "t",
+          "n",
+          "e",
+          "ss"
+        ],
+        "weakness": [
+          "w",
+          "ea",
+          "kn",
+          "e",
+          "ss"
+        ],
+        "happiness": [
+          "h",
+          "a",
+          "pp",
+          "i",
+          "n",
+          "e",
+          "ss"
+        ],
+        "silliness": [
+          "s",
+          "i",
+          "ll",
+          "i",
+          "n",
+          "e",
+          "ss"
+        ],
+        "sweetness": [
+          "s",
+          "w",
+          "ee",
+          "t",
+          "n",
+          "e",
+          "ss"
+        ],
+        "tidiness": [
+          "t",
+          "i",
+          "d",
+          "i",
+          "n",
+          "e",
+          "ss"
+        ],
+        "laziness": [
+          "l",
+          "a",
+          "z",
+          "i",
+          "n",
+          "e",
+          "ss"
+        ],
+        "boldness": [
+          "b",
+          "o",
+          "l",
+          "d",
+          "n",
+          "e",
+          "ss"
+        ],
+        "softness": [
+          "s",
+          "o",
+          "f",
+          "t",
+          "n",
+          "e",
+          "ss"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "She showed great ___.",
+          "missingWord": "kindness",
+          "missingIndex": 3,
+          "options": [
+            "kindness",
+            "darkness",
+            "sadness"
+          ]
+        },
+        {
+          "text": "The room was full of ___.",
+          "missingWord": "darkness",
+          "missingIndex": 5,
+          "options": [
+            "darkness",
+            "madness",
+            "sadness"
+          ]
+        },
+        {
+          "text": "Her ___ made everyone smile.",
+          "missingWord": "happiness",
+          "missingIndex": 2,
+          "options": [
+            "happiness",
+            "silliness",
+            "laziness"
+          ]
+        },
+        {
+          "text": "She had an ___.",
+          "missingWord": "illness",
+          "missingIndex": 3,
+          "options": [
+            "illness",
+            "fitness",
+            "goodness"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "kindness",
+            "darkness",
+            "helpful",
+            "sadness"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'helpful' uses the suffix /-ful/ — the others all use the suffix /-ness/!"
+        },
+        {
+          "words": [
+            "illness",
+            "goodness",
+            "fitness",
+            "quickly"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'quickly' uses the suffix /-ly/ — the others all use the suffix /-ness/!"
+        },
+        {
+          "words": [
+            "happiness",
+            "sweetness",
+            "laziness",
+            "hopeless"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'hopeless' uses the suffix /-less/ — the others all use the suffix /-ness/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "Her kindness filled the darkness.",
+          "targetSounds": [
+            "-ness"
+          ],
+          "trickyWords": [
+            "her",
+            "the"
+          ]
+        },
+        {
+          "text": "Sadness and illness made her weak.",
+          "targetSounds": [
+            "-ness"
+          ],
+          "trickyWords": [
+            "and",
+            "made",
+            "her"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "kindness": [
+          "kind",
+          "ness"
+        ],
+        "darkness": [
+          "dark",
+          "ness"
+        ],
+        "sadness": [
+          "sad",
+          "ness"
+        ],
+        "madness": [
+          "mad",
+          "ness"
+        ],
+        "illness": [
+          "ill",
+          "ness"
+        ],
+        "goodness": [
+          "good",
+          "ness"
+        ],
+        "fitness": [
+          "fit",
+          "ness"
+        ],
+        "weakness": [
+          "weak",
+          "ness"
+        ],
+        "happiness": [
+          "happi",
+          "ness"
+        ],
+        "silliness": [
+          "silli",
+          "ness"
+        ],
+        "sweetness": [
+          "sweet",
+          "ness"
+        ],
+        "boldness": [
+          "bold",
+          "ness"
+        ],
+        "softness": [
+          "soft",
+          "ness"
+        ]
+      },
+      "roots": {
+        "kindness": "kind",
+        "darkness": "dark",
+        "sadness": "sad",
+        "madness": "mad",
+        "illness": "ill",
+        "goodness": "good",
+        "fitness": "fit",
+        "weakness": "weak",
+        "happiness": "happy",
+        "tidiness": "tidy",
+        "laziness": "lazy",
+        "silliness": "silly",
+        "sweetness": "sweet",
+        "boldness": "bold",
+        "softness": "soft"
+      }
+    },
+    {
+      "grapheme": "-ment",
+      "keyword": "enjoyment",
+      "phase": 6,
+      "type": "morpheme",
+      "sortPair": "-ness",
+      "relatedGraphemes": [
+        "-ness",
+        "-ful",
+        "-less",
+        "-ly"
+      ],
+      "trickyWords": [
+        {
+          "word": "their",
+          "trickyLetters": [
+            2,
+            3,
+            4
+          ],
+          "explanation": "The 'eir' makes an /air/ sound here."
+        },
+        {
+          "word": "people",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'eo' makes an /ee/ sound."
+        },
+        {
+          "word": "could",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "would",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        },
+        {
+          "word": "should",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'ou' is silent here — just /oo/."
+        }
+      ],
+      "words": [
+        "enjoyment",
+        "treatment",
+        "movement",
+        "payment",
+        "agreement",
+        "excitement",
+        "improvement",
+        "basement",
+        "moment",
+        "achievement",
+        "argument",
+        "appointment",
+        "amusement",
+        "punishment",
+        "shipment"
+      ],
+      "alienWords": [
+        "enjoymenp",
+        "treatmenp",
+        "movemenp",
+        "paymenp",
+        "agreemenp",
+        "excitemenp",
+        "improvemenp",
+        "developmenp"
+      ],
+      "segments": {
+        "enjoyment": [
+          "e",
+          "n",
+          "j",
+          "oy",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "treatment": [
+          "t",
+          "r",
+          "ea",
+          "t",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "movement": [
+          "m",
+          "o",
+          "ve",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "payment": [
+          "p",
+          "ay",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "agreement": [
+          "a",
+          "g",
+          "r",
+          "ee",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "excitement": [
+          "e",
+          "x",
+          "c",
+          "i",
+          "t",
+          "e",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "improvement": [
+          "i",
+          "m",
+          "p",
+          "r",
+          "o",
+          "ve",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "basement": [
+          "b",
+          "a",
+          "s",
+          "e",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "moment": [
+          "m",
+          "o",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "achievement": [
+          "a",
+          "ch",
+          "ie",
+          "ve",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "argument": [
+          "ar",
+          "g",
+          "u",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "appointment": [
+          "a",
+          "p",
+          "p",
+          "oi",
+          "n",
+          "t",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "amusement": [
+          "a",
+          "m",
+          "u",
+          "s",
+          "e",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "punishment": [
+          "p",
+          "u",
+          "n",
+          "i",
+          "sh",
+          "m",
+          "e",
+          "n",
+          "t"
+        ],
+        "shipment": [
+          "sh",
+          "i",
+          "p",
+          "m",
+          "e",
+          "n",
+          "t"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The show was great ___.",
+          "missingWord": "amusement",
+          "missingIndex": 4,
+          "options": [
+            "amusement",
+            "enjoyment",
+            "excitement"
+          ]
+        },
+        {
+          "text": "She showed great ___ in class.",
+          "missingWord": "improvement",
+          "missingIndex": 3,
+          "options": [
+            "improvement",
+            "achievement",
+            "excitement"
+          ]
+        },
+        {
+          "text": "They reached an ___.",
+          "missingWord": "agreement",
+          "missingIndex": 3,
+          "options": [
+            "agreement",
+            "argument",
+            "movement"
+          ]
+        },
+        {
+          "text": "The ___ was not fair.",
+          "missingWord": "punishment",
+          "missingIndex": 1,
+          "options": [
+            "punishment",
+            "payment",
+            "shipment"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "enjoyment",
+            "treatment",
+            "hopeful",
+            "movement"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'hopeful' uses the suffix /-ful/ — the others all use the suffix /-ment/!"
+        },
+        {
+          "words": [
+            "payment",
+            "agreement",
+            "excitement",
+            "kindness"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'kindness' uses the suffix /-ness/ — the others all use the suffix /-ment/!"
+        },
+        {
+          "words": [
+            "achievement",
+            "argument",
+            "basement",
+            "helpless"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'helpless' uses the suffix /-less/ — the others all use the suffix /-ment/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The movement brought great enjoyment.",
+          "targetSounds": [
+            "-ment"
+          ],
+          "trickyWords": [
+            "the",
+            "great"
+          ]
+        },
+        {
+          "text": "Her achievement brought excitement.",
+          "targetSounds": [
+            "-ment"
+          ],
+          "trickyWords": [
+            "her"
+          ]
+        }
+      ],
+      "pinned": null,
+      "morphemes": {
+        "enjoyment": [
+          "enjoy",
+          "ment"
+        ],
+        "treatment": [
+          "treat",
+          "ment"
+        ],
+        "movement": [
+          "move",
+          "ment"
+        ],
+        "payment": [
+          "pay",
+          "ment"
+        ],
+        "agreement": [
+          "agree",
+          "ment"
+        ],
+        "excitement": [
+          "excite",
+          "ment"
+        ],
+        "improvement": [
+          "improve",
+          "ment"
+        ],
+        "achievement": [
+          "achieve",
+          "ment"
+        ],
+        "argument": [
+          "argu",
+          "ment"
+        ],
+        "punishment": [
+          "punish",
+          "ment"
+        ],
+        "basement": [
+          "base",
+          "ment"
+        ],
+        "moment": [
+          "mo",
+          "ment"
+        ],
+        "appointment": [
+          "appoint",
+          "ment"
+        ],
+        "amusement": [
+          "amuse",
+          "ment"
+        ],
+        "shipment": [
+          "ship",
+          "ment"
+        ]
+      },
+      "roots": {
+        "enjoyment": "enjoy",
+        "treatment": "treat",
+        "movement": "move",
+        "payment": "pay",
+        "agreement": "agree",
+        "excitement": "excite",
+        "improvement": "improve",
+        "achievement": "achieve",
+        "argument": "argue",
+        "punishment": "punish",
+        "basement": "base",
+        "moment": "mo",
+        "appointment": "appoint",
+        "amusement": "amuse",
+        "shipment": "ship"
+      }
+    }
+  ]
+}

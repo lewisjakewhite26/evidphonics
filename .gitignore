@@ -9,12 +9,13 @@
 # testing
 /coverage
 
-# next.js
+# next.js (if you switch stack back)
 /.next/
 /out/
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -33,4 +34,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# Design system (internal only)
+docs/DESIGN.md

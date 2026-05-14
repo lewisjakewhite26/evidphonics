@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EvidPhonics
 
-## Getting Started
+Interactive phonics planner and lesson runner (**Vite + React**). Core lesson data and UI live under `components/`, `data/`, and `lib/` and are meant to stay **framework-agnostic** so you can adopt **Next.js** again later (e.g. `app/page.tsx` + `app/lesson/page.tsx` that import the same `@/components` and `@/data` modules).
 
-First, run the development server:
+## Scripts
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # Vite dev server (default http://localhost:5173)
+npm run build    # Typecheck + production bundle to dist/
+npm run preview  # Serve dist/ locally
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Routes (React Router)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `/` — planner (phase / step, day, activities)
+- `/lesson?step=&day=&activities=` — fullscreen lesson runner (`week=` still accepted for older links)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Returning to Next.js (later)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Add `next` and wire an `app/` layout (fonts can stay Google CSS or use `next/font` again).
+2. Re-create `app/page.tsx` and `app/lesson/page.tsx` using `useRouter` / `useSearchParams` from `next/navigation`, calling the same handlers as `src/pages/PlannerPage.tsx` and `src/pages/LessonPage.tsx`.
+3. Keep imports as `@/components/...` and `@/data/...` — paths already match the repo root via `tsconfig` `paths`.

@@ -1,19 +1,75 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ['./index.html', './src/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bg: '#FAF7FF',
+        surface: '#FFFFFF',
+        'surface-raised': '#FAF7FF',
+        primary: '#8B00FF',
+        'primary-dark': '#6A00C7',
+        'primary-darker': '#520099',
+        'primary-container': '#7C00E6',
+        'primary-accent': '#FF69B4',
+        'primary-light': 'rgba(139, 0, 255, 0.14)',
+        'primary-mid': '#6A00C7',
+        'text-main': '#2D3748',
+        'text-sub': '#718096',
+        'text-hint': '#718096',
+        success: '#16A34A',
+        'success-light': '#DCFCE7',
+        warning: '#F59E0B',
+        'warning-light': '#FEF3C7',
+        error: '#DC2626',
+        'error-light': '#FEE2E2',
+        border: 'rgba(139, 0, 255, 0.12)',
+        'border-strong': 'rgba(139, 0, 255, 0.2)',
+      },
+      fontFamily: {
+        sans: ['var(--font-poppins)', 'Poppins', 'system-ui', 'sans-serif'],
+        andika: ['var(--font-andika)', 'Andika', 'sans-serif'],
+      },
+      fontSize: {
+        grapheme: ['96px', { lineHeight: '1.0', fontWeight: '700' }],
+        display: ['48px', { lineHeight: '1.1', fontWeight: '700' }],
+        heading: ['32px', { lineHeight: '1.2', fontWeight: '700' }],
+        subheading: ['24px', { lineHeight: '1.3', fontWeight: '700' }],
+        body: ['20px', { lineHeight: '1.5', fontWeight: '400' }],
+        label: ['16px', { lineHeight: '1.2', fontWeight: '700' }],
+        keyword: ['16px', { lineHeight: '1.2', fontWeight: '400' }],
+      },
+      borderRadius: {
+        sm: '12px',
+        md: '20px',
+        lg: '32px',
+        xl: '48px',
+      },
+      spacing: {
+        xs: '8px',
+        sm: '16px',
+        md: '24px',
+        lg: '40px',
+        xl: '64px',
+        '2xl': '96px',
+      },
+      boxShadow: {
+        card: '0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -1px rgba(0,0,0,0.04)',
+        'card-lg': '0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04)',
+        'card-xl': '0 20px 25px -5px rgba(0,0,0,0.10), 0 10px 10px -5px rgba(0,0,0,0.04)',
+        'evid-soft': '0 10px 30px rgba(139, 0, 255, 0.08)',
+        'evid-hover': '0 20px 40px rgba(139, 0, 255, 0.15)',
+        'evid-btn': '0 8px 20px rgba(139, 0, 255, 0.3)',
+        'evid-btn-hover': '0 12px 25px rgba(139, 0, 255, 0.4)',
+        'evid-modal': '0 25px 50px rgba(0, 0, 0, 0.25)',
+        'evid-activity': '0 4px 12px rgba(139, 0, 255, 0.06)',
+        tactile: '0 8px 20px rgba(139, 0, 255, 0.3)',
+        'tactile-success': '0 4px 0 0 #15803D',
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+
+export default config

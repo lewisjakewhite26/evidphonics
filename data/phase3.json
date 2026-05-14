@@ -1,0 +1,7093 @@
+{
+  "phase": 3,
+  "graphemes": [
+    {
+      "grapheme": "j",
+      "keyword": "jam",
+      "phase": 3,
+      "sortPair": "v",
+      "relatedGraphemes": [
+        "g"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "jam",
+        "jet",
+        "jug",
+        "jot",
+        "jab",
+        "jig",
+        "job",
+        "jut",
+        "jack",
+        "jell"
+      ],
+      "alienWords": [
+        "jom",
+        "jib",
+        "jelt",
+        "jup",
+        "jav",
+        "jasp",
+        "jimp",
+        "joct"
+      ],
+      "segments": {
+        "jam": [
+          "j",
+          "a",
+          "m"
+        ],
+        "jet": [
+          "j",
+          "e",
+          "t"
+        ],
+        "jug": [
+          "j",
+          "u",
+          "g"
+        ],
+        "jot": [
+          "j",
+          "o",
+          "t"
+        ],
+        "jab": [
+          "j",
+          "a",
+          "b"
+        ],
+        "jig": [
+          "j",
+          "i",
+          "g"
+        ],
+        "job": [
+          "j",
+          "o",
+          "b"
+        ],
+        "jut": [
+          "j",
+          "u",
+          "t"
+        ],
+        "jack": [
+          "j",
+          "a",
+          "ck"
+        ],
+        "jell": [
+          "j",
+          "e",
+          "ll"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "A jar of ___ is on the shelf.",
+          "missingWord": "jam",
+          "missingIndex": 4,
+          "options": [
+            "jam",
+            "jet",
+            "jug"
+          ]
+        },
+        {
+          "text": "The ___ is very fast.",
+          "missingWord": "jet",
+          "missingIndex": 1,
+          "options": [
+            "jet",
+            "jug",
+            "jot"
+          ]
+        },
+        {
+          "text": "I drank from the ___.",
+          "missingWord": "jug",
+          "missingIndex": 4,
+          "options": [
+            "jug",
+            "jam",
+            "jab"
+          ]
+        },
+        {
+          "text": "He did a ___ in the gym.",
+          "missingWord": "jig",
+          "missingIndex": 4,
+          "options": [
+            "jig",
+            "jot",
+            "jab"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "jam",
+            "jet",
+            "jug",
+            "van"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'van' starts with /v/ — the others all start with /j/!"
+        },
+        {
+          "words": [
+            "jot",
+            "jab",
+            "jig",
+            "fox"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'fox' ends with /x/ — the others all start with /j/!"
+        },
+        {
+          "words": [
+            "jet",
+            "jug",
+            "jam",
+            "web"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'web' starts with /w/ — the others all start with /j/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "A jar of jam.",
+          "targetSounds": [
+            "j"
+          ],
+          "trickyWords": [
+            "a",
+            "of"
+          ]
+        },
+        {
+          "text": "The jet is big.",
+          "targetSounds": [
+            "j"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        },
+        {
+          "text": "I got a jab.",
+          "targetSounds": [
+            "j"
+          ],
+          "trickyWords": [
+            "I",
+            "got",
+            "a"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "v",
+      "keyword": "van",
+      "phase": 3,
+      "sortPair": "j",
+      "relatedGraphemes": [
+        "f"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "van",
+        "vet",
+        "vat",
+        "vex",
+        "vast",
+        "vest",
+        "vivid",
+        "visit",
+        "velvet"
+      ],
+      "alienWords": [
+        "vop",
+        "vib",
+        "velt",
+        "vum",
+        "vasp",
+        "vimp",
+        "voct",
+        "varn"
+      ],
+      "segments": {
+        "van": [
+          "v",
+          "a",
+          "n"
+        ],
+        "vet": [
+          "v",
+          "e",
+          "t"
+        ],
+        "vat": [
+          "v",
+          "a",
+          "t"
+        ],
+        "vex": [
+          "v",
+          "e",
+          "x"
+        ],
+        "vast": [
+          "v",
+          "a",
+          "s",
+          "t"
+        ],
+        "vest": [
+          "v",
+          "e",
+          "s",
+          "t"
+        ],
+        "vivid": [
+          "v",
+          "i",
+          "v",
+          "i",
+          "d"
+        ],
+        "visit": [
+          "v",
+          "i",
+          "s",
+          "i",
+          "t"
+        ],
+        "velvet": [
+          "v",
+          "e",
+          "l",
+          "v",
+          "e",
+          "t"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The red ___ drove down the road.",
+          "missingWord": "van",
+          "missingIndex": 2,
+          "options": [
+            "van",
+            "vet",
+            "vat"
+          ]
+        },
+        {
+          "text": "My dog went to the ___.",
+          "missingWord": "vet",
+          "missingIndex": 5,
+          "options": [
+            "vet",
+            "van",
+            "vat"
+          ]
+        },
+        {
+          "text": "She put on her warm ___.",
+          "missingWord": "vest",
+          "missingIndex": 5,
+          "options": [
+            "vest",
+            "vast",
+            "vet"
+          ]
+        },
+        {
+          "text": "The ___ was full of water.",
+          "missingWord": "vat",
+          "missingIndex": 1,
+          "options": [
+            "vat",
+            "van",
+            "visit"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "van",
+            "vet",
+            "vat",
+            "jam"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'jam' starts with /j/ — the others all start with /v/!"
+        },
+        {
+          "words": [
+            "vest",
+            "vast",
+            "visit",
+            "web"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'web' starts with /w/ — the others all start with /v/!"
+        },
+        {
+          "words": [
+            "van",
+            "vet",
+            "visit",
+            "fox"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'fox' ends with /x/ — the others all start with /v/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The van is red.",
+          "targetSounds": [
+            "v"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        },
+        {
+          "text": "I go to the vet.",
+          "targetSounds": [
+            "v"
+          ],
+          "trickyWords": [
+            "I",
+            "go",
+            "to",
+            "the"
+          ]
+        },
+        {
+          "text": "A vest is warm.",
+          "targetSounds": [
+            "v"
+          ],
+          "trickyWords": [
+            "a",
+            "is"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "w",
+      "keyword": "web",
+      "phase": 3,
+      "sortPair": "x",
+      "relatedGraphemes": [
+        "wh"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "web",
+        "wig",
+        "wet",
+        "win",
+        "wag",
+        "wit",
+        "wok",
+        "well",
+        "will",
+        "wind"
+      ],
+      "alienWords": [
+        "wob",
+        "wib",
+        "welt",
+        "wup",
+        "wasp",
+        "wimp",
+        "woct",
+        "wern"
+      ],
+      "segments": {
+        "web": [
+          "w",
+          "e",
+          "b"
+        ],
+        "wig": [
+          "w",
+          "i",
+          "g"
+        ],
+        "wet": [
+          "w",
+          "e",
+          "t"
+        ],
+        "win": [
+          "w",
+          "i",
+          "n"
+        ],
+        "wag": [
+          "w",
+          "a",
+          "g"
+        ],
+        "wit": [
+          "w",
+          "i",
+          "t"
+        ],
+        "wok": [
+          "w",
+          "o",
+          "k"
+        ],
+        "well": [
+          "w",
+          "e",
+          "ll"
+        ],
+        "will": [
+          "w",
+          "i",
+          "ll"
+        ],
+        "wind": [
+          "w",
+          "i",
+          "n",
+          "d"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "A spider spun a ___.",
+          "missingWord": "web",
+          "missingIndex": 3,
+          "options": [
+            "web",
+            "wig",
+            "wet"
+          ]
+        },
+        {
+          "text": "She wore a funny ___ on her head.",
+          "missingWord": "wig",
+          "missingIndex": 4,
+          "options": [
+            "wig",
+            "web",
+            "win"
+          ]
+        },
+        {
+          "text": "My socks are ___.",
+          "missingWord": "wet",
+          "missingIndex": 3,
+          "options": [
+            "wet",
+            "win",
+            "wag"
+          ]
+        },
+        {
+          "text": "I want to ___ the game.",
+          "missingWord": "win",
+          "missingIndex": 3,
+          "options": [
+            "win",
+            "wet",
+            "wag"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "web",
+            "wig",
+            "wet",
+            "van"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'van' starts with /v/ — the others all start with /w/!"
+        },
+        {
+          "words": [
+            "win",
+            "wag",
+            "well",
+            "jet"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'jet' starts with /j/ — the others all start with /w/!"
+        },
+        {
+          "words": [
+            "wet",
+            "web",
+            "wig",
+            "six"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'six' ends with /x/ — the others all start with /w/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The web is wet.",
+          "targetSounds": [
+            "w"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        },
+        {
+          "text": "I can win.",
+          "targetSounds": [
+            "w"
+          ],
+          "trickyWords": [
+            "I",
+            "can"
+          ]
+        },
+        {
+          "text": "The wig fell off.",
+          "targetSounds": [
+            "w"
+          ],
+          "trickyWords": [
+            "the",
+            "off"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "x",
+      "keyword": "fox",
+      "phase": 3,
+      "sortPair": "w",
+      "relatedGraphemes": [
+        "ks"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "fox",
+        "box",
+        "six",
+        "mix",
+        "fix",
+        "wax",
+        "tax",
+        "hex",
+        "ox",
+        "axe"
+      ],
+      "alienWords": [
+        "xob",
+        "dox",
+        "pax",
+        "nix",
+        "xolt",
+        "bux",
+        "zox",
+        "mux"
+      ],
+      "segments": {
+        "fox": [
+          "f",
+          "o",
+          "x"
+        ],
+        "box": [
+          "b",
+          "o",
+          "x"
+        ],
+        "six": [
+          "s",
+          "i",
+          "x"
+        ],
+        "mix": [
+          "m",
+          "i",
+          "x"
+        ],
+        "fix": [
+          "f",
+          "i",
+          "x"
+        ],
+        "wax": [
+          "w",
+          "a",
+          "x"
+        ],
+        "tax": [
+          "t",
+          "a",
+          "x"
+        ],
+        "hex": [
+          "h",
+          "e",
+          "x"
+        ],
+        "ox": [
+          "o",
+          "x"
+        ],
+        "axe": [
+          "a",
+          "x",
+          "e"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "A ___ ran into the woods.",
+          "missingWord": "fox",
+          "missingIndex": 1,
+          "options": [
+            "fox",
+            "box",
+            "mix"
+          ]
+        },
+        {
+          "text": "Put the toys in the ___.",
+          "missingWord": "box",
+          "missingIndex": 4,
+          "options": [
+            "box",
+            "fox",
+            "wax"
+          ]
+        },
+        {
+          "text": "I can count to ___.",
+          "missingWord": "six",
+          "missingIndex": 4,
+          "options": [
+            "six",
+            "mix",
+            "fix"
+          ]
+        },
+        {
+          "text": "Can you ___ the broken toy?",
+          "missingWord": "fix",
+          "missingIndex": 2,
+          "options": [
+            "fix",
+            "mix",
+            "six"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "fox",
+            "box",
+            "six",
+            "wig"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'wig' starts with /w/ — the others all end with /x/!"
+        },
+        {
+          "words": [
+            "mix",
+            "fix",
+            "wax",
+            "jam"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'jam' starts with /j/ — the others all end with /x/!"
+        },
+        {
+          "words": [
+            "fox",
+            "box",
+            "mix",
+            "van"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'van' starts with /v/ — the others all end with /x/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "A fox in a box.",
+          "targetSounds": [
+            "x"
+          ],
+          "trickyWords": [
+            "a",
+            "in"
+          ]
+        },
+        {
+          "text": "I can mix it.",
+          "targetSounds": [
+            "x"
+          ],
+          "trickyWords": [
+            "I",
+            "can"
+          ]
+        },
+        {
+          "text": "Fix the big box.",
+          "targetSounds": [
+            "x"
+          ],
+          "trickyWords": [
+            "the"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "y",
+      "keyword": "yes",
+      "phase": 3,
+      "sortPair": "z",
+      "relatedGraphemes": [
+        "i-e"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "yet",
+        "yam",
+        "yap",
+        "yell",
+        "yes",
+        "yob",
+        "yuk",
+        "yuck",
+        "yep",
+        "yard"
+      ],
+      "alienWords": [
+        "yult",
+        "yib",
+        "yelt",
+        "yump",
+        "yasp",
+        "yimp",
+        "yoct",
+        "yern"
+      ],
+      "segments": {
+        "yet": [
+          "y",
+          "e",
+          "t"
+        ],
+        "yam": [
+          "y",
+          "a",
+          "m"
+        ],
+        "yap": [
+          "y",
+          "a",
+          "p"
+        ],
+        "yell": [
+          "y",
+          "e",
+          "ll"
+        ],
+        "yes": [
+          "y",
+          "e",
+          "s"
+        ],
+        "yuk": [
+          "y",
+          "u",
+          "k"
+        ],
+        "yep": [
+          "y",
+          "e",
+          "p"
+        ],
+        "yard": [
+          "y",
+          "ar",
+          "d"
+        ],
+        "yob": [
+          "y",
+          "o",
+          "b"
+        ],
+        "yuck": [
+          "y",
+          "u",
+          "ck"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "___, I can do it!",
+          "missingWord": "yes",
+          "missingIndex": 0,
+          "options": [
+            "yes",
+            "yet",
+            "yam"
+          ]
+        },
+        {
+          "text": "I am not ready ___.",
+          "missingWord": "yet",
+          "missingIndex": 5,
+          "options": [
+            "yet",
+            "yes",
+            "yap"
+          ]
+        },
+        {
+          "text": "The dog began to ___ at the cat.",
+          "missingWord": "yap",
+          "missingIndex": 4,
+          "options": [
+            "yap",
+            "yam",
+            "yell"
+          ]
+        },
+        {
+          "text": "She had to ___ to be heard.",
+          "missingWord": "yell",
+          "missingIndex": 4,
+          "options": [
+            "yell",
+            "yap",
+            "yet"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "yet",
+            "yam",
+            "yap",
+            "zip"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'zip' starts with /z/ — the others all start with /y/!"
+        },
+        {
+          "words": [
+            "yell",
+            "yes",
+            "yuk",
+            "van"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'van' starts with /v/ — the others all start with /y/!"
+        },
+        {
+          "words": [
+            "yam",
+            "yap",
+            "yet",
+            "web"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'web' starts with /w/ — the others all start with /y/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "Yes I can yell.",
+          "targetSounds": [
+            "y"
+          ],
+          "trickyWords": [
+            "I",
+            "can"
+          ]
+        },
+        {
+          "text": "The yam is hot.",
+          "targetSounds": [
+            "y"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        },
+        {
+          "text": "Not yet!",
+          "targetSounds": [
+            "y"
+          ],
+          "trickyWords": [
+            "not"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "z",
+      "keyword": "zip",
+      "phase": 3,
+      "sortPair": "y",
+      "relatedGraphemes": [
+        "zz",
+        "s"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "zip",
+        "zap",
+        "zit",
+        "zen",
+        "zoom",
+        "zone",
+        "zero",
+        "zinc",
+        "zest",
+        "zigzag"
+      ],
+      "alienWords": [
+        "zob",
+        "zib",
+        "zelt",
+        "zump",
+        "zasp",
+        "zimp",
+        "zoct",
+        "zern"
+      ],
+      "segments": {
+        "zip": [
+          "z",
+          "i",
+          "p"
+        ],
+        "zap": [
+          "z",
+          "a",
+          "p"
+        ],
+        "zit": [
+          "z",
+          "i",
+          "t"
+        ],
+        "zen": [
+          "z",
+          "e",
+          "n"
+        ],
+        "zoom": [
+          "z",
+          "oo",
+          "m"
+        ],
+        "zone": [
+          "z",
+          "o",
+          "n",
+          "e"
+        ],
+        "zero": [
+          "z",
+          "er",
+          "o"
+        ],
+        "zinc": [
+          "z",
+          "i",
+          "n",
+          "c"
+        ],
+        "zest": [
+          "z",
+          "e",
+          "s",
+          "t"
+        ],
+        "zigzag": [
+          "z",
+          "i",
+          "g",
+          "z",
+          "a",
+          "g"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "Can you ___ up your coat?",
+          "missingWord": "zip",
+          "missingIndex": 2,
+          "options": [
+            "zip",
+            "zap",
+            "zit"
+          ]
+        },
+        {
+          "text": "The car drove off at ___.",
+          "missingWord": "zoom",
+          "missingIndex": 5,
+          "options": [
+            "zoom",
+            "zone",
+            "zero"
+          ]
+        },
+        {
+          "text": "The score was ___.",
+          "missingWord": "zero",
+          "missingIndex": 3,
+          "options": [
+            "zero",
+            "zone",
+            "zinc"
+          ]
+        },
+        {
+          "text": "The superhero will ___ past.",
+          "missingWord": "zap",
+          "missingIndex": 3,
+          "options": [
+            "zap",
+            "zip",
+            "zen"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "zip",
+            "zap",
+            "zit",
+            "yam"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'yam' starts with /y/ — the others all start with /z/!"
+        },
+        {
+          "words": [
+            "zoom",
+            "zone",
+            "zero",
+            "jet"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'jet' starts with /j/ — the others all start with /z/!"
+        },
+        {
+          "words": [
+            "zap",
+            "zip",
+            "zen",
+            "web"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'web' starts with /w/ — the others all start with /z/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "Zip up the bag.",
+          "targetSounds": [
+            "z"
+          ],
+          "trickyWords": [
+            "up",
+            "the"
+          ]
+        },
+        {
+          "text": "I can zoom past.",
+          "targetSounds": [
+            "z"
+          ],
+          "trickyWords": [
+            "I",
+            "can"
+          ]
+        },
+        {
+          "text": "The score is zero.",
+          "targetSounds": [
+            "z"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "zz",
+      "keyword": "buzz",
+      "phase": 3,
+      "sortPair": "z",
+      "relatedGraphemes": [
+        "z",
+        "s"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "buzz",
+        "fizz",
+        "jazz",
+        "fuzz",
+        "razz",
+        "whizz",
+        "pizzazz",
+        "dazzle",
+        "puzzle",
+        "nozzle"
+      ],
+      "alienWords": [
+        "bozz",
+        "dozz",
+        "luzz",
+        "muzz",
+        "tazz",
+        "guzz",
+        "nazz",
+        "wuzz"
+      ],
+      "segments": {
+        "buzz": [
+          "b",
+          "u",
+          "zz"
+        ],
+        "fizz": [
+          "f",
+          "i",
+          "zz"
+        ],
+        "jazz": [
+          "j",
+          "a",
+          "zz"
+        ],
+        "fuzz": [
+          "f",
+          "u",
+          "zz"
+        ],
+        "whizz": [
+          "wh",
+          "i",
+          "zz"
+        ],
+        "dazzle": [
+          "d",
+          "a",
+          "zz",
+          "l",
+          "e"
+        ],
+        "puzzle": [
+          "p",
+          "u",
+          "zz",
+          "l",
+          "e"
+        ],
+        "nozzle": [
+          "n",
+          "o",
+          "zz",
+          "l",
+          "e"
+        ],
+        "razz": [
+          "r",
+          "a",
+          "zz"
+        ],
+        "pizzazz": [
+          "p",
+          "i",
+          "zz",
+          "a",
+          "zz"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "A bee can ___.",
+          "missingWord": "buzz",
+          "missingIndex": 3,
+          "options": [
+            "buzz",
+            "fizz",
+            "fuzz"
+          ]
+        },
+        {
+          "text": "The lemonade has a lot of ___.",
+          "missingWord": "fizz",
+          "missingIndex": 6,
+          "options": [
+            "fizz",
+            "buzz",
+            "jazz"
+          ]
+        },
+        {
+          "text": "I love listening to ___.",
+          "missingWord": "jazz",
+          "missingIndex": 4,
+          "options": [
+            "jazz",
+            "buzz",
+            "fizz"
+          ]
+        },
+        {
+          "text": "Can you solve this ___?",
+          "missingWord": "puzzle",
+          "missingIndex": 4,
+          "options": [
+            "puzzle",
+            "nozzle",
+            "dazzle"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "buzz",
+            "fizz",
+            "jazz",
+            "zip"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'zip' has one z — the others all end with /zz/!"
+        },
+        {
+          "words": [
+            "fuzz",
+            "buzz",
+            "whizz",
+            "yell"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'yell' ends with /ll/ — the others all end with /zz/!"
+        },
+        {
+          "words": [
+            "puzzle",
+            "nozzle",
+            "dazzle",
+            "van"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'van' has no /zz/ — the others all have /zz/ in the middle!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "A bee can buzz.",
+          "targetSounds": [
+            "zz"
+          ],
+          "trickyWords": [
+            "a",
+            "can"
+          ]
+        },
+        {
+          "text": "The fizz went pop.",
+          "targetSounds": [
+            "zz"
+          ],
+          "trickyWords": [
+            "the"
+          ]
+        },
+        {
+          "text": "I love jazz.",
+          "targetSounds": [
+            "zz"
+          ],
+          "trickyWords": [
+            "I"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "qu",
+      "keyword": "queen",
+      "phase": 3,
+      "sortPair": "z",
+      "relatedGraphemes": [
+        "kw"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "queen",
+        "quiz",
+        "quit",
+        "quack",
+        "quick",
+        "quiet",
+        "quite",
+        "quest",
+        "quill",
+        "quilt"
+      ],
+      "alienWords": [
+        "quob",
+        "quib",
+        "quelt",
+        "quolt",
+        "quasp",
+        "quimp",
+        "quoct",
+        "queft"
+      ],
+      "segments": {
+        "queen": [
+          "qu",
+          "ee",
+          "n"
+        ],
+        "quiz": [
+          "qu",
+          "i",
+          "z"
+        ],
+        "quit": [
+          "qu",
+          "i",
+          "t"
+        ],
+        "quack": [
+          "qu",
+          "a",
+          "ck"
+        ],
+        "quick": [
+          "qu",
+          "i",
+          "ck"
+        ],
+        "quiet": [
+          "qu",
+          "ie",
+          "t"
+        ],
+        "quest": [
+          "qu",
+          "e",
+          "s",
+          "t"
+        ],
+        "quill": [
+          "qu",
+          "i",
+          "ll"
+        ],
+        "quite": [
+          "qu",
+          "i",
+          "t",
+          "e"
+        ],
+        "quilt": [
+          "qu",
+          "i",
+          "l",
+          "t"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The duck said ___.",
+          "missingWord": "quack",
+          "missingIndex": 3,
+          "options": [
+            "quack",
+            "quick",
+            "quit"
+          ]
+        },
+        {
+          "text": "She is the ___ of the castle.",
+          "missingWord": "queen",
+          "missingIndex": 3,
+          "options": [
+            "queen",
+            "quiz",
+            "quest"
+          ]
+        },
+        {
+          "text": "We did a ___ in class today.",
+          "missingWord": "quiz",
+          "missingIndex": 4,
+          "options": [
+            "quiz",
+            "quit",
+            "quest"
+          ]
+        },
+        {
+          "text": "Please be ___ in the library.",
+          "missingWord": "quiet",
+          "missingIndex": 2,
+          "options": [
+            "quiet",
+            "quite",
+            "quick"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "queen",
+            "quiz",
+            "quit",
+            "yam"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'yam' starts with /y/ — the others all start with /qu/!"
+        },
+        {
+          "words": [
+            "quack",
+            "quick",
+            "quest",
+            "buzz"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'buzz' ends with /zz/ — the others all start with /qu/!"
+        },
+        {
+          "words": [
+            "quit",
+            "quiz",
+            "queen",
+            "web"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'web' starts with /w/ — the others all start with /qu/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The queen sat down.",
+          "targetSounds": [
+            "qu"
+          ],
+          "trickyWords": [
+            "the"
+          ]
+        },
+        {
+          "text": "I can do a quiz.",
+          "targetSounds": [
+            "qu"
+          ],
+          "trickyWords": [
+            "I",
+            "can",
+            "a"
+          ]
+        },
+        {
+          "text": "The duck went quack.",
+          "targetSounds": [
+            "qu"
+          ],
+          "trickyWords": [
+            "the"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "ch",
+      "keyword": "chip",
+      "phase": 3,
+      "sortPair": "sh",
+      "relatedGraphemes": [
+        "sh",
+        "tch"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "chip",
+        "chat",
+        "chin",
+        "chop",
+        "chest",
+        "check",
+        "chain",
+        "chair",
+        "charm",
+        "chick",
+        "much",
+        "rich",
+        "such",
+        "each",
+        "teach"
+      ],
+      "alienWords": [
+        "chom",
+        "chib",
+        "chelt",
+        "chup",
+        "chasp",
+        "chimp",
+        "choct",
+        "chern"
+      ],
+      "segments": {
+        "chip": [
+          "ch",
+          "i",
+          "p"
+        ],
+        "chat": [
+          "ch",
+          "a",
+          "t"
+        ],
+        "chin": [
+          "ch",
+          "i",
+          "n"
+        ],
+        "chop": [
+          "ch",
+          "o",
+          "p"
+        ],
+        "chest": [
+          "ch",
+          "e",
+          "s",
+          "t"
+        ],
+        "check": [
+          "ch",
+          "e",
+          "ck"
+        ],
+        "chain": [
+          "ch",
+          "ai",
+          "n"
+        ],
+        "chair": [
+          "ch",
+          "air"
+        ],
+        "charm": [
+          "ch",
+          "ar",
+          "m"
+        ],
+        "chick": [
+          "ch",
+          "i",
+          "ck"
+        ],
+        "much": [
+          "m",
+          "u",
+          "ch"
+        ],
+        "rich": [
+          "r",
+          "i",
+          "ch"
+        ],
+        "such": [
+          "s",
+          "u",
+          "ch"
+        ],
+        "each": [
+          "ea",
+          "ch"
+        ],
+        "teach": [
+          "t",
+          "ea",
+          "ch"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "I had a ___ for lunch.",
+          "missingWord": "chip",
+          "missingIndex": 3,
+          "options": [
+            "chip",
+            "chin",
+            "chop"
+          ]
+        },
+        {
+          "text": "She had a ___ with her friend.",
+          "missingWord": "chat",
+          "missingIndex": 4,
+          "options": [
+            "chat",
+            "chip",
+            "chin"
+          ]
+        },
+        {
+          "text": "He has a dimple on his ___.",
+          "missingWord": "chin",
+          "missingIndex": 6,
+          "options": [
+            "chin",
+            "chip",
+            "chat"
+          ]
+        },
+        {
+          "text": "Open the treasure ___.",
+          "missingWord": "chest",
+          "missingIndex": 3,
+          "options": [
+            "chest",
+            "check",
+            "chip"
+          ]
+        },
+        {
+          "text": "I sat on the ___.",
+          "missingWord": "chair",
+          "missingIndex": 4,
+          "options": [
+            "chair",
+            "chain",
+            "charm"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "chip",
+            "chin",
+            "shed",
+            "chat"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'shed' has the /sh/ sound — the others all have /ch/!"
+        },
+        {
+          "words": [
+            "chop",
+            "chest",
+            "chin",
+            "shop"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'shop' has the /sh/ sound — the others all have /ch/!"
+        },
+        {
+          "words": [
+            "much",
+            "rich",
+            "such",
+            "thank"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'thank' has the /th/ sound — the others all end with /ch/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "A chip in a dish.",
+          "targetSounds": [
+            "ch"
+          ],
+          "trickyWords": [
+            "a",
+            "in"
+          ]
+        },
+        {
+          "text": "I sat on the chair.",
+          "targetSounds": [
+            "ch"
+          ],
+          "trickyWords": [
+            "I",
+            "on",
+            "the"
+          ]
+        },
+        {
+          "text": "Check the chest.",
+          "targetSounds": [
+            "ch"
+          ],
+          "trickyWords": [
+            "the"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "sh",
+      "keyword": "shop",
+      "phase": 3,
+      "sortPair": "ch",
+      "relatedGraphemes": [
+        "ch",
+        "th"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "shop",
+        "ship",
+        "shed",
+        "shin",
+        "shelf",
+        "shell",
+        "shift",
+        "sharp",
+        "shock",
+        "shout",
+        "dash",
+        "fish",
+        "wish",
+        "dish",
+        "rush"
+      ],
+      "alienWords": [
+        "shom",
+        "shib",
+        "shelt",
+        "shup",
+        "shasp",
+        "shimp",
+        "shoct",
+        "shern"
+      ],
+      "segments": {
+        "shop": [
+          "sh",
+          "o",
+          "p"
+        ],
+        "ship": [
+          "sh",
+          "i",
+          "p"
+        ],
+        "shed": [
+          "sh",
+          "e",
+          "d"
+        ],
+        "shin": [
+          "sh",
+          "i",
+          "n"
+        ],
+        "shelf": [
+          "sh",
+          "e",
+          "l",
+          "f"
+        ],
+        "shell": [
+          "sh",
+          "e",
+          "ll"
+        ],
+        "shift": [
+          "sh",
+          "i",
+          "f",
+          "t"
+        ],
+        "sharp": [
+          "sh",
+          "ar",
+          "p"
+        ],
+        "shock": [
+          "sh",
+          "o",
+          "ck"
+        ],
+        "shout": [
+          "sh",
+          "ou",
+          "t"
+        ],
+        "dash": [
+          "d",
+          "a",
+          "sh"
+        ],
+        "fish": [
+          "f",
+          "i",
+          "sh"
+        ],
+        "wish": [
+          "w",
+          "i",
+          "sh"
+        ],
+        "dish": [
+          "d",
+          "i",
+          "sh"
+        ],
+        "rush": [
+          "r",
+          "u",
+          "sh"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "We went to the ___ to buy food.",
+          "missingWord": "shop",
+          "missingIndex": 4,
+          "options": [
+            "shop",
+            "ship",
+            "shed"
+          ]
+        },
+        {
+          "text": "The ___ sailed on the sea.",
+          "missingWord": "ship",
+          "missingIndex": 1,
+          "options": [
+            "ship",
+            "shop",
+            "shed"
+          ]
+        },
+        {
+          "text": "The tools are in the ___.",
+          "missingWord": "shed",
+          "missingIndex": 4,
+          "options": [
+            "shed",
+            "shin",
+            "shelf"
+          ]
+        },
+        {
+          "text": "Put the books on the ___.",
+          "missingWord": "shelf",
+          "missingIndex": 4,
+          "options": [
+            "shelf",
+            "shell",
+            "shift"
+          ]
+        },
+        {
+          "text": "I made a ___ to get a dog.",
+          "missingWord": "wish",
+          "missingIndex": 3,
+          "options": [
+            "wish",
+            "fish",
+            "dish"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "shop",
+            "ship",
+            "chin",
+            "shed"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'chin' has the /ch/ sound — the others all have /sh/!"
+        },
+        {
+          "words": [
+            "fish",
+            "dish",
+            "wish",
+            "chip"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'chip' has the /ch/ sound — the others all end with /sh/!"
+        },
+        {
+          "words": [
+            "shell",
+            "shelf",
+            "shift",
+            "that"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'that' has the /th/ sound — the others all have /sh/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The ship is big.",
+          "targetSounds": [
+            "sh"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        },
+        {
+          "text": "She went to the shop.",
+          "targetSounds": [
+            "sh"
+          ],
+          "trickyWords": [
+            "she",
+            "to",
+            "the"
+          ]
+        },
+        {
+          "text": "I wish for a fish.",
+          "targetSounds": [
+            "sh"
+          ],
+          "trickyWords": [
+            "I",
+            "for",
+            "a"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "th",
+      "keyword": "thing",
+      "phase": 3,
+      "sortPair": "ch",
+      "relatedGraphemes": [
+        "ch",
+        "sh"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "thank",
+        "this",
+        "that",
+        "them",
+        "then",
+        "with",
+        "bath",
+        "math",
+        "path",
+        "moth",
+        "teeth",
+        "three",
+        "throw",
+        "thick",
+        "thing"
+      ],
+      "alienWords": [
+        "thom",
+        "thib",
+        "thelt",
+        "thup",
+        "thasp",
+        "thimp",
+        "thoct",
+        "thern"
+      ],
+      "segments": {
+        "thank": [
+          "th",
+          "a",
+          "nk"
+        ],
+        "this": [
+          "th",
+          "i",
+          "s"
+        ],
+        "that": [
+          "th",
+          "a",
+          "t"
+        ],
+        "them": [
+          "th",
+          "e",
+          "m"
+        ],
+        "then": [
+          "th",
+          "e",
+          "n"
+        ],
+        "with": [
+          "w",
+          "i",
+          "th"
+        ],
+        "bath": [
+          "b",
+          "a",
+          "th"
+        ],
+        "path": [
+          "p",
+          "a",
+          "th"
+        ],
+        "moth": [
+          "m",
+          "o",
+          "th"
+        ],
+        "teeth": [
+          "t",
+          "ee",
+          "th"
+        ],
+        "three": [
+          "th",
+          "r",
+          "ee"
+        ],
+        "thick": [
+          "th",
+          "i",
+          "ck"
+        ],
+        "thing": [
+          "th",
+          "i",
+          "ng"
+        ],
+        "math": [
+          "m",
+          "a",
+          "th"
+        ],
+        "throw": [
+          "th",
+          "r",
+          "ow"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "Please say ___ to the teacher.",
+          "missingWord": "thank",
+          "missingIndex": 2,
+          "options": [
+            "thank",
+            "this",
+            "then"
+          ]
+        },
+        {
+          "text": "I like ___ book.",
+          "missingWord": "this",
+          "missingIndex": 2,
+          "options": [
+            "this",
+            "that",
+            "them"
+          ]
+        },
+        {
+          "text": "Can I come ___?",
+          "missingWord": "then",
+          "missingIndex": 3,
+          "options": [
+            "then",
+            "them",
+            "thank"
+          ]
+        },
+        {
+          "text": "She walked along the ___.",
+          "missingWord": "path",
+          "missingIndex": 4,
+          "options": [
+            "path",
+            "bath",
+            "math"
+          ]
+        },
+        {
+          "text": "I brush my ___ every night.",
+          "missingWord": "teeth",
+          "missingIndex": 3,
+          "options": [
+            "teeth",
+            "three",
+            "thick"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "thank",
+            "this",
+            "that",
+            "shop"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'shop' has the /sh/ sound — the others all have /th/!"
+        },
+        {
+          "words": [
+            "bath",
+            "path",
+            "moth",
+            "chip"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'chip' has the /ch/ sound — the others all end with /th/!"
+        },
+        {
+          "words": [
+            "thick",
+            "thing",
+            "thank",
+            "shed"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'shed' has the /sh/ sound — the others all have /th/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "Thank you for the snack.",
+          "targetSounds": [
+            "th"
+          ],
+          "trickyWords": [
+            "you",
+            "for",
+            "the"
+          ]
+        },
+        {
+          "text": "I can see that.",
+          "targetSounds": [
+            "th"
+          ],
+          "trickyWords": [
+            "I",
+            "can"
+          ]
+        },
+        {
+          "text": "She had a bath.",
+          "targetSounds": [
+            "th"
+          ],
+          "trickyWords": [
+            "she",
+            "had",
+            "a"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "ng",
+      "keyword": "ring",
+      "phase": 3,
+      "sortPair": "th",
+      "relatedGraphemes": [
+        "nk"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "ring",
+        "sing",
+        "king",
+        "wing",
+        "song",
+        "long",
+        "bang",
+        "hang",
+        "rang",
+        "sang",
+        "bring",
+        "sting",
+        "spring",
+        "strong",
+        "string"
+      ],
+      "alienWords": [
+        "reng",
+        "dolg",
+        "fing",
+        "weng",
+        "dasp",
+        "nolg",
+        "doct",
+        "seng"
+      ],
+      "segments": {
+        "ring": [
+          "r",
+          "i",
+          "ng"
+        ],
+        "sing": [
+          "s",
+          "i",
+          "ng"
+        ],
+        "king": [
+          "k",
+          "i",
+          "ng"
+        ],
+        "wing": [
+          "w",
+          "i",
+          "ng"
+        ],
+        "song": [
+          "s",
+          "o",
+          "ng"
+        ],
+        "long": [
+          "l",
+          "o",
+          "ng"
+        ],
+        "bang": [
+          "b",
+          "a",
+          "ng"
+        ],
+        "hang": [
+          "h",
+          "a",
+          "ng"
+        ],
+        "rang": [
+          "r",
+          "a",
+          "ng"
+        ],
+        "sang": [
+          "s",
+          "a",
+          "ng"
+        ],
+        "bring": [
+          "b",
+          "r",
+          "i",
+          "ng"
+        ],
+        "sting": [
+          "s",
+          "t",
+          "i",
+          "ng"
+        ],
+        "spring": [
+          "s",
+          "p",
+          "r",
+          "i",
+          "ng"
+        ],
+        "strong": [
+          "s",
+          "t",
+          "r",
+          "o",
+          "ng"
+        ],
+        "string": [
+          "s",
+          "t",
+          "r",
+          "i",
+          "ng"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "She wore a gold ___ on her finger.",
+          "missingWord": "ring",
+          "missingIndex": 4,
+          "options": [
+            "ring",
+            "sing",
+            "wing"
+          ]
+        },
+        {
+          "text": "The children like to ___ songs.",
+          "missingWord": "sing",
+          "missingIndex": 4,
+          "options": [
+            "sing",
+            "ring",
+            "king"
+          ]
+        },
+        {
+          "text": "The ___ sat on his golden throne.",
+          "missingWord": "king",
+          "missingIndex": 1,
+          "options": [
+            "king",
+            "ring",
+            "sing"
+          ]
+        },
+        {
+          "text": "The bee has a ___.",
+          "missingWord": "sting",
+          "missingIndex": 4,
+          "options": [
+            "sting",
+            "string",
+            "spring"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "ring",
+            "sing",
+            "king",
+            "thank"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'thank' has the /th/ sound — the others all end with /ng/!"
+        },
+        {
+          "words": [
+            "song",
+            "long",
+            "bang",
+            "shop"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'shop' has the /sh/ sound — the others all end with /ng/!"
+        },
+        {
+          "words": [
+            "bring",
+            "sting",
+            "spring",
+            "chat"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'chat' has the /ch/ sound — the others all end with /ng/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The king has a ring.",
+          "targetSounds": [
+            "ng"
+          ],
+          "trickyWords": [
+            "the",
+            "has",
+            "a"
+          ]
+        },
+        {
+          "text": "Sing a long song.",
+          "targetSounds": [
+            "ng"
+          ],
+          "trickyWords": [
+            "a"
+          ]
+        },
+        {
+          "text": "The bee can sting.",
+          "targetSounds": [
+            "ng"
+          ],
+          "trickyWords": [
+            "the",
+            "can"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "ai",
+      "keyword": "rain",
+      "phase": 3,
+      "sortPair": "oa",
+      "relatedGraphemes": [
+        "ay",
+        "a-e",
+        "eigh"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "no",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here."
+        },
+        {
+          "word": "go",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' says its name here too."
+        }
+      ],
+      "words": [
+        "rain",
+        "wait",
+        "sail",
+        "tail",
+        "paid",
+        "main",
+        "pain",
+        "gain",
+        "mail",
+        "nail",
+        "rail",
+        "snail",
+        "trail",
+        "train",
+        "plain"
+      ],
+      "alienWords": [
+        "daik",
+        "naip",
+        "waig",
+        "paib",
+        "raim",
+        "taig",
+        "saip",
+        "gaik"
+      ],
+      "segments": {
+        "rain": [
+          "r",
+          "ai",
+          "n"
+        ],
+        "wait": [
+          "w",
+          "ai",
+          "t"
+        ],
+        "sail": [
+          "s",
+          "ai",
+          "l"
+        ],
+        "tail": [
+          "t",
+          "ai",
+          "l"
+        ],
+        "paid": [
+          "p",
+          "ai",
+          "d"
+        ],
+        "main": [
+          "m",
+          "ai",
+          "n"
+        ],
+        "pain": [
+          "p",
+          "ai",
+          "n"
+        ],
+        "gain": [
+          "g",
+          "ai",
+          "n"
+        ],
+        "mail": [
+          "m",
+          "ai",
+          "l"
+        ],
+        "nail": [
+          "n",
+          "ai",
+          "l"
+        ],
+        "rail": [
+          "r",
+          "ai",
+          "l"
+        ],
+        "snail": [
+          "s",
+          "n",
+          "ai",
+          "l"
+        ],
+        "trail": [
+          "t",
+          "r",
+          "ai",
+          "l"
+        ],
+        "train": [
+          "t",
+          "r",
+          "ai",
+          "n"
+        ],
+        "plain": [
+          "p",
+          "l",
+          "ai",
+          "n"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "I can see the ___ falling.",
+          "missingWord": "rain",
+          "missingIndex": 4,
+          "options": [
+            "rain",
+            "sail",
+            "tail"
+          ]
+        },
+        {
+          "text": "The dog wags its ___.",
+          "missingWord": "tail",
+          "missingIndex": 4,
+          "options": [
+            "tail",
+            "sail",
+            "rain"
+          ]
+        },
+        {
+          "text": "The boat has a big ___.",
+          "missingWord": "sail",
+          "missingIndex": 5,
+          "options": [
+            "sail",
+            "tail",
+            "rain"
+          ]
+        },
+        {
+          "text": "I got a letter in the ___.",
+          "missingWord": "mail",
+          "missingIndex": 6,
+          "options": [
+            "mail",
+            "nail",
+            "rail"
+          ]
+        },
+        {
+          "text": "The ___ came into the station.",
+          "missingWord": "train",
+          "missingIndex": 1,
+          "options": [
+            "train",
+            "trail",
+            "plain"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "rain",
+            "sail",
+            "feet",
+            "tail"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'feet' has the /ee/ sound — the others all have /ai/!"
+        },
+        {
+          "words": [
+            "mail",
+            "nail",
+            "rail",
+            "boat"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'boat' has the /oa/ sound — the others all have /ai/!"
+        },
+        {
+          "words": [
+            "train",
+            "trail",
+            "plain",
+            "night"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'night' has the /igh/ sound — the others all have /ai/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The rain is wet.",
+          "targetSounds": [
+            "ai"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        },
+        {
+          "text": "I can see a sail.",
+          "targetSounds": [
+            "ai"
+          ],
+          "trickyWords": [
+            "I",
+            "can",
+            "a"
+          ]
+        },
+        {
+          "text": "The snail is on the trail.",
+          "targetSounds": [
+            "ai"
+          ],
+          "trickyWords": [
+            "the",
+            "is",
+            "on"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "ee",
+      "keyword": "feet",
+      "phase": 3,
+      "sortPair": "ai",
+      "relatedGraphemes": [
+        "ea",
+        "e-e",
+        "ey",
+        "ie"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "he",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        },
+        {
+          "word": "she",
+          "trickyLetters": [
+            2
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        }
+      ],
+      "words": [
+        "feet",
+        "seen",
+        "keep",
+        "deep",
+        "feel",
+        "reel",
+        "heel",
+        "peel",
+        "seed",
+        "feed",
+        "weed",
+        "tree",
+        "free",
+        "three",
+        "sleep"
+      ],
+      "alienWords": [
+        "deek",
+        "neeb",
+        "feeg",
+        "seel",
+        "reep",
+        "beel",
+        "teed",
+        "weef"
+      ],
+      "segments": {
+        "feet": [
+          "f",
+          "ee",
+          "t"
+        ],
+        "seen": [
+          "s",
+          "ee",
+          "n"
+        ],
+        "keep": [
+          "k",
+          "ee",
+          "p"
+        ],
+        "deep": [
+          "d",
+          "ee",
+          "p"
+        ],
+        "feel": [
+          "f",
+          "ee",
+          "l"
+        ],
+        "reel": [
+          "r",
+          "ee",
+          "l"
+        ],
+        "heel": [
+          "h",
+          "ee",
+          "l"
+        ],
+        "peel": [
+          "p",
+          "ee",
+          "l"
+        ],
+        "seed": [
+          "s",
+          "ee",
+          "d"
+        ],
+        "feed": [
+          "f",
+          "ee",
+          "d"
+        ],
+        "weed": [
+          "w",
+          "ee",
+          "d"
+        ],
+        "tree": [
+          "t",
+          "r",
+          "ee"
+        ],
+        "free": [
+          "f",
+          "r",
+          "ee"
+        ],
+        "three": [
+          "th",
+          "r",
+          "ee"
+        ],
+        "sleep": [
+          "s",
+          "l",
+          "ee",
+          "p"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "My ___ are cold.",
+          "missingWord": "feet",
+          "missingIndex": 1,
+          "options": [
+            "feet",
+            "seen",
+            "deep"
+          ]
+        },
+        {
+          "text": "I ___ happy today.",
+          "missingWord": "feel",
+          "missingIndex": 1,
+          "options": [
+            "feel",
+            "reel",
+            "heel"
+          ]
+        },
+        {
+          "text": "The water is very ___.",
+          "missingWord": "deep",
+          "missingIndex": 4,
+          "options": [
+            "deep",
+            "keep",
+            "seen"
+          ]
+        },
+        {
+          "text": "I planted a ___ in the garden.",
+          "missingWord": "seed",
+          "missingIndex": 3,
+          "options": [
+            "seed",
+            "weed",
+            "feed"
+          ]
+        },
+        {
+          "text": "She sat under the big ___.",
+          "missingWord": "tree",
+          "missingIndex": 5,
+          "options": [
+            "tree",
+            "free",
+            "three"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "feet",
+            "seen",
+            "rain",
+            "keep"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'rain' has the /ai/ sound — the others all have /ee/!"
+        },
+        {
+          "words": [
+            "tree",
+            "free",
+            "three",
+            "boat"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'boat' has the /oa/ sound — the others all have /ee/!"
+        },
+        {
+          "words": [
+            "seed",
+            "weed",
+            "feed",
+            "night"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'night' has the /igh/ sound — the others all have /ee/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "I can feel the rain.",
+          "targetSounds": [
+            "ee",
+            "ai"
+          ],
+          "trickyWords": [
+            "I",
+            "can",
+            "the"
+          ]
+        },
+        {
+          "text": "My feet are wet.",
+          "targetSounds": [
+            "ee"
+          ],
+          "trickyWords": [
+            "my",
+            "are"
+          ]
+        },
+        {
+          "text": "She can see the tree.",
+          "targetSounds": [
+            "ee"
+          ],
+          "trickyWords": [
+            "she",
+            "can",
+            "the"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "igh",
+      "keyword": "night",
+      "phase": 3,
+      "sortPair": "ee",
+      "relatedGraphemes": [
+        "i-e",
+        "ie",
+        "y"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "he",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        },
+        {
+          "word": "she",
+          "trickyLetters": [
+            2
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        }
+      ],
+      "words": [
+        "night",
+        "light",
+        "right",
+        "might",
+        "tight",
+        "sight",
+        "fight",
+        "bright",
+        "flight",
+        "fright",
+        "sigh",
+        "high",
+        "thigh",
+        "knight",
+        "slight"
+      ],
+      "alienWords": [
+        "dight",
+        "migh",
+        "bigh",
+        "figh",
+        "tigh",
+        "wigh",
+        "pight",
+        "kigh"
+      ],
+      "segments": {
+        "night": [
+          "n",
+          "igh",
+          "t"
+        ],
+        "light": [
+          "l",
+          "igh",
+          "t"
+        ],
+        "right": [
+          "r",
+          "igh",
+          "t"
+        ],
+        "might": [
+          "m",
+          "igh",
+          "t"
+        ],
+        "tight": [
+          "t",
+          "igh",
+          "t"
+        ],
+        "sight": [
+          "s",
+          "igh",
+          "t"
+        ],
+        "fight": [
+          "f",
+          "igh",
+          "t"
+        ],
+        "bright": [
+          "b",
+          "r",
+          "igh",
+          "t"
+        ],
+        "flight": [
+          "f",
+          "l",
+          "igh",
+          "t"
+        ],
+        "fright": [
+          "f",
+          "r",
+          "igh",
+          "t"
+        ],
+        "sigh": [
+          "s",
+          "igh"
+        ],
+        "high": [
+          "h",
+          "igh"
+        ],
+        "thigh": [
+          "th",
+          "igh"
+        ],
+        "knight": [
+          "kn",
+          "igh",
+          "t"
+        ],
+        "slight": [
+          "s",
+          "l",
+          "igh",
+          "t"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The stars shine at ___.",
+          "missingWord": "night",
+          "missingIndex": 4,
+          "options": [
+            "night",
+            "light",
+            "right"
+          ]
+        },
+        {
+          "text": "Turn on the ___.",
+          "missingWord": "light",
+          "missingIndex": 3,
+          "options": [
+            "light",
+            "night",
+            "sight"
+          ]
+        },
+        {
+          "text": "That answer is ___.",
+          "missingWord": "right",
+          "missingIndex": 3,
+          "options": [
+            "right",
+            "night",
+            "tight"
+          ]
+        },
+        {
+          "text": "The sky is very ___.",
+          "missingWord": "bright",
+          "missingIndex": 4,
+          "options": [
+            "bright",
+            "flight",
+            "fright"
+          ]
+        },
+        {
+          "text": "She gave a ___ when she saw the spider.",
+          "missingWord": "fright",
+          "missingIndex": 3,
+          "options": [
+            "fright",
+            "flight",
+            "bright"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "night",
+            "light",
+            "rain",
+            "right"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'rain' has the /ai/ sound — the others all have /igh/!"
+        },
+        {
+          "words": [
+            "bright",
+            "flight",
+            "fright",
+            "feet"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'feet' has the /ee/ sound — the others all have /igh/!"
+        },
+        {
+          "words": [
+            "sigh",
+            "high",
+            "thigh",
+            "boat"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'boat' has the /oa/ sound — the others all have /igh/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The light is bright.",
+          "targetSounds": [
+            "igh"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        },
+        {
+          "text": "I sleep at night.",
+          "targetSounds": [
+            "igh"
+          ],
+          "trickyWords": [
+            "I",
+            "at"
+          ]
+        },
+        {
+          "text": "She had a big fright.",
+          "targetSounds": [
+            "igh"
+          ],
+          "trickyWords": [
+            "she",
+            "had",
+            "a"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "oa",
+      "keyword": "boat",
+      "phase": 3,
+      "sortPair": "ai",
+      "relatedGraphemes": [
+        "ow",
+        "oe",
+        "o-e"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "he",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        },
+        {
+          "word": "she",
+          "trickyLetters": [
+            2
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        }
+      ],
+      "words": [
+        "boat",
+        "coat",
+        "road",
+        "load",
+        "goat",
+        "toad",
+        "foam",
+        "roam",
+        "moan",
+        "groan",
+        "toast",
+        "roast",
+        "boast",
+        "coast",
+        "float"
+      ],
+      "alienWords": [
+        "doap",
+        "noat",
+        "boag",
+        "loab",
+        "toam",
+        "roab",
+        "foap",
+        "goam"
+      ],
+      "segments": {
+        "boat": [
+          "b",
+          "oa",
+          "t"
+        ],
+        "coat": [
+          "c",
+          "oa",
+          "t"
+        ],
+        "road": [
+          "r",
+          "oa",
+          "d"
+        ],
+        "load": [
+          "l",
+          "oa",
+          "d"
+        ],
+        "goat": [
+          "g",
+          "oa",
+          "t"
+        ],
+        "toad": [
+          "t",
+          "oa",
+          "d"
+        ],
+        "foam": [
+          "f",
+          "oa",
+          "m"
+        ],
+        "roam": [
+          "r",
+          "oa",
+          "m"
+        ],
+        "moan": [
+          "m",
+          "oa",
+          "n"
+        ],
+        "groan": [
+          "g",
+          "r",
+          "oa",
+          "n"
+        ],
+        "toast": [
+          "t",
+          "oa",
+          "s",
+          "t"
+        ],
+        "roast": [
+          "r",
+          "oa",
+          "s",
+          "t"
+        ],
+        "boast": [
+          "b",
+          "oa",
+          "s",
+          "t"
+        ],
+        "coast": [
+          "c",
+          "oa",
+          "s",
+          "t"
+        ],
+        "float": [
+          "f",
+          "l",
+          "oa",
+          "t"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The ___ sails on the sea.",
+          "missingWord": "boat",
+          "missingIndex": 1,
+          "options": [
+            "boat",
+            "coat",
+            "goat"
+          ]
+        },
+        {
+          "text": "I put on my warm ___.",
+          "missingWord": "coat",
+          "missingIndex": 5,
+          "options": [
+            "coat",
+            "boat",
+            "toad"
+          ]
+        },
+        {
+          "text": "The ___ sat on a lily pad.",
+          "missingWord": "toad",
+          "missingIndex": 1,
+          "options": [
+            "toad",
+            "road",
+            "load"
+          ]
+        },
+        {
+          "text": "We drove down the long ___.",
+          "missingWord": "road",
+          "missingIndex": 5,
+          "options": [
+            "road",
+            "load",
+            "toad"
+          ]
+        },
+        {
+          "text": "I like ___ on my bread.",
+          "missingWord": "toast",
+          "missingIndex": 2,
+          "options": [
+            "toast",
+            "roast",
+            "coast"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "boat",
+            "coat",
+            "night",
+            "road"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'night' has the /igh/ sound — the others all have /oa/!"
+        },
+        {
+          "words": [
+            "goat",
+            "toad",
+            "foam",
+            "feet"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'feet' has the /ee/ sound — the others all have /oa/!"
+        },
+        {
+          "words": [
+            "toast",
+            "roast",
+            "boast",
+            "rain"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'rain' has the /ai/ sound — the others all have /oa/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The goat is on the road.",
+          "targetSounds": [
+            "oa"
+          ],
+          "trickyWords": [
+            "the",
+            "is",
+            "on"
+          ]
+        },
+        {
+          "text": "I can see the boat.",
+          "targetSounds": [
+            "oa"
+          ],
+          "trickyWords": [
+            "I",
+            "can",
+            "the"
+          ]
+        },
+        {
+          "text": "The toad sat on a log.",
+          "targetSounds": [
+            "oa"
+          ],
+          "trickyWords": [
+            "the",
+            "on",
+            "a"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "oo-short",
+      "keyword": "book",
+      "phase": 3,
+      "sortPair": "oo-long",
+      "relatedGraphemes": [
+        "u",
+        "oul"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "he",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        },
+        {
+          "word": "she",
+          "trickyLetters": [
+            2
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        }
+      ],
+      "words": [
+        "book",
+        "look",
+        "cook",
+        "foot",
+        "wood",
+        "good",
+        "hood",
+        "wool",
+        "stood",
+        "shook",
+        "brook",
+        "crook",
+        "nook",
+        "took",
+        "hook"
+      ],
+      "alienWords": [
+        "dook",
+        "noog",
+        "boof",
+        "moop",
+        "loob",
+        "goop",
+        "woog",
+        "fook"
+      ],
+      "segments": {
+        "book": [
+          "b",
+          "oo",
+          "k"
+        ],
+        "look": [
+          "l",
+          "oo",
+          "k"
+        ],
+        "cook": [
+          "c",
+          "oo",
+          "k"
+        ],
+        "foot": [
+          "f",
+          "oo",
+          "t"
+        ],
+        "wood": [
+          "w",
+          "oo",
+          "d"
+        ],
+        "good": [
+          "g",
+          "oo",
+          "d"
+        ],
+        "hood": [
+          "h",
+          "oo",
+          "d"
+        ],
+        "wool": [
+          "w",
+          "oo",
+          "l"
+        ],
+        "stood": [
+          "s",
+          "t",
+          "oo",
+          "d"
+        ],
+        "shook": [
+          "sh",
+          "oo",
+          "k"
+        ],
+        "brook": [
+          "b",
+          "r",
+          "oo",
+          "k"
+        ],
+        "crook": [
+          "c",
+          "r",
+          "oo",
+          "k"
+        ],
+        "took": [
+          "t",
+          "oo",
+          "k"
+        ],
+        "hook": [
+          "h",
+          "oo",
+          "k"
+        ],
+        "nook": [
+          "n",
+          "oo",
+          "k"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "I love to read a good ___.",
+          "missingWord": "book",
+          "missingIndex": 6,
+          "options": [
+            "book",
+            "cook",
+            "look"
+          ]
+        },
+        {
+          "text": "She can ___ a tasty dinner.",
+          "missingWord": "cook",
+          "missingIndex": 2,
+          "options": [
+            "cook",
+            "look",
+            "book"
+          ]
+        },
+        {
+          "text": "My ___ hurts after walking.",
+          "missingWord": "foot",
+          "missingIndex": 1,
+          "options": [
+            "foot",
+            "good",
+            "wood"
+          ]
+        },
+        {
+          "text": "The trees are made of ___.",
+          "missingWord": "wood",
+          "missingIndex": 5,
+          "options": [
+            "wood",
+            "good",
+            "hood"
+          ]
+        },
+        {
+          "text": "The fish is on the ___.",
+          "missingWord": "hook",
+          "missingIndex": 5,
+          "options": [
+            "hook",
+            "took",
+            "book"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "book",
+            "look",
+            "moon",
+            "cook"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'moon' has the long /oo/ sound — the others have the short /oo/!"
+        },
+        {
+          "words": [
+            "foot",
+            "good",
+            "wood",
+            "boot"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'boot' has the long /oo/ sound — the others have the short /oo/!"
+        },
+        {
+          "words": [
+            "hook",
+            "took",
+            "brook",
+            "zoom"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'zoom' has the long /oo/ sound — the others have the short /oo/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "I can cook the food.",
+          "targetSounds": [
+            "oo"
+          ],
+          "trickyWords": [
+            "I",
+            "can",
+            "the"
+          ]
+        },
+        {
+          "text": "Look at the book.",
+          "targetSounds": [
+            "oo"
+          ],
+          "trickyWords": [
+            "the",
+            "at"
+          ]
+        },
+        {
+          "text": "The wood is good.",
+          "targetSounds": [
+            "oo"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "oo-long",
+      "keyword": "moon",
+      "phase": 3,
+      "sortPair": "oo-short",
+      "relatedGraphemes": [
+        "ue",
+        "ew",
+        "u-e"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "he",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        },
+        {
+          "word": "she",
+          "trickyLetters": [
+            2
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        }
+      ],
+      "words": [
+        "moon",
+        "boot",
+        "food",
+        "pool",
+        "zoom",
+        "room",
+        "roof",
+        "root",
+        "tool",
+        "fool",
+        "cool",
+        "school",
+        "spoon",
+        "stool",
+        "drool"
+      ],
+      "alienWords": [
+        "doon",
+        "noom",
+        "boof",
+        "moop",
+        "loob",
+        "goop",
+        "woom",
+        "foon"
+      ],
+      "segments": {
+        "moon": [
+          "m",
+          "oo",
+          "n"
+        ],
+        "boot": [
+          "b",
+          "oo",
+          "t"
+        ],
+        "food": [
+          "f",
+          "oo",
+          "d"
+        ],
+        "pool": [
+          "p",
+          "oo",
+          "l"
+        ],
+        "zoom": [
+          "z",
+          "oo",
+          "m"
+        ],
+        "room": [
+          "r",
+          "oo",
+          "m"
+        ],
+        "roof": [
+          "r",
+          "oo",
+          "f"
+        ],
+        "root": [
+          "r",
+          "oo",
+          "t"
+        ],
+        "tool": [
+          "t",
+          "oo",
+          "l"
+        ],
+        "fool": [
+          "f",
+          "oo",
+          "l"
+        ],
+        "cool": [
+          "c",
+          "oo",
+          "l"
+        ],
+        "school": [
+          "sch",
+          "oo",
+          "l"
+        ],
+        "spoon": [
+          "s",
+          "p",
+          "oo",
+          "n"
+        ],
+        "stool": [
+          "s",
+          "t",
+          "oo",
+          "l"
+        ],
+        "drool": [
+          "d",
+          "r",
+          "oo",
+          "l"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The ___ shines at night.",
+          "missingWord": "moon",
+          "missingIndex": 1,
+          "options": [
+            "moon",
+            "boot",
+            "pool"
+          ]
+        },
+        {
+          "text": "I like to swim in the ___.",
+          "missingWord": "pool",
+          "missingIndex": 6,
+          "options": [
+            "pool",
+            "fool",
+            "cool"
+          ]
+        },
+        {
+          "text": "We eat with a knife and ___.",
+          "missingWord": "spoon",
+          "missingIndex": 7,
+          "options": [
+            "spoon",
+            "stool",
+            "school"
+          ]
+        },
+        {
+          "text": "I go to ___ every day.",
+          "missingWord": "school",
+          "missingIndex": 2,
+          "options": [
+            "school",
+            "stool",
+            "spoon"
+          ]
+        },
+        {
+          "text": "The weather is very ___ today.",
+          "missingWord": "cool",
+          "missingIndex": 4,
+          "options": [
+            "cool",
+            "fool",
+            "tool"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "moon",
+            "pool",
+            "book",
+            "zoom"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'book' has the short /oo/ sound — the others have the long /oo/!"
+        },
+        {
+          "words": [
+            "food",
+            "roof",
+            "root",
+            "foot"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'foot' has the short /oo/ sound — the others have the long /oo/!"
+        },
+        {
+          "words": [
+            "school",
+            "spoon",
+            "stool",
+            "wood"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'wood' has the short /oo/ sound — the others have the long /oo/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The moon is big.",
+          "targetSounds": [
+            "oo"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        },
+        {
+          "text": "I zoom to the pool.",
+          "targetSounds": [
+            "oo"
+          ],
+          "trickyWords": [
+            "I",
+            "to",
+            "the"
+          ]
+        },
+        {
+          "text": "She went to school.",
+          "targetSounds": [
+            "oo"
+          ],
+          "trickyWords": [
+            "she",
+            "went",
+            "to"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "ar",
+      "keyword": "farm",
+      "phase": 3,
+      "sortPair": "or",
+      "relatedGraphemes": [
+        "a",
+        "al"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "he",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        },
+        {
+          "word": "was",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'as' makes an /oz/ sound — very tricky!"
+        }
+      ],
+      "words": [
+        "farm",
+        "barn",
+        "park",
+        "dark",
+        "star",
+        "car",
+        "far",
+        "jar",
+        "bar",
+        "card",
+        "hard",
+        "yard",
+        "shark",
+        "scarf",
+        "smart"
+      ],
+      "alienWords": [
+        "darm",
+        "nark",
+        "barf",
+        "tarp",
+        "rarm",
+        "sark",
+        "fard",
+        "garp"
+      ],
+      "segments": {
+        "farm": [
+          "f",
+          "ar",
+          "m"
+        ],
+        "barn": [
+          "b",
+          "ar",
+          "n"
+        ],
+        "park": [
+          "p",
+          "ar",
+          "k"
+        ],
+        "dark": [
+          "d",
+          "ar",
+          "k"
+        ],
+        "star": [
+          "s",
+          "t",
+          "ar"
+        ],
+        "car": [
+          "c",
+          "ar"
+        ],
+        "far": [
+          "f",
+          "ar"
+        ],
+        "jar": [
+          "j",
+          "ar"
+        ],
+        "bar": [
+          "b",
+          "ar"
+        ],
+        "card": [
+          "c",
+          "ar",
+          "d"
+        ],
+        "hard": [
+          "h",
+          "ar",
+          "d"
+        ],
+        "yard": [
+          "y",
+          "ar",
+          "d"
+        ],
+        "shark": [
+          "sh",
+          "ar",
+          "k"
+        ],
+        "scarf": [
+          "s",
+          "c",
+          "ar",
+          "f"
+        ],
+        "smart": [
+          "s",
+          "m",
+          "ar",
+          "t"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The cows live on a ___.",
+          "missingWord": "farm",
+          "missingIndex": 5,
+          "options": [
+            "farm",
+            "barn",
+            "park"
+          ]
+        },
+        {
+          "text": "I play in the ___.",
+          "missingWord": "park",
+          "missingIndex": 4,
+          "options": [
+            "park",
+            "dark",
+            "barn"
+          ]
+        },
+        {
+          "text": "It gets ___ at night.",
+          "missingWord": "dark",
+          "missingIndex": 2,
+          "options": [
+            "dark",
+            "park",
+            "hard"
+          ]
+        },
+        {
+          "text": "I can see a ___ in the sky.",
+          "missingWord": "star",
+          "missingIndex": 4,
+          "options": [
+            "star",
+            "car",
+            "bar"
+          ]
+        },
+        {
+          "text": "She wore a warm ___ around her neck.",
+          "missingWord": "scarf",
+          "missingIndex": 3,
+          "options": [
+            "scarf",
+            "smart",
+            "shark"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "farm",
+            "barn",
+            "fork",
+            "dark"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'fork' has the /or/ sound — the others all have /ar/!"
+        },
+        {
+          "words": [
+            "star",
+            "car",
+            "bar",
+            "burn"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'burn' has the /ur/ sound — the others all have /ar/!"
+        },
+        {
+          "words": [
+            "shark",
+            "scarf",
+            "smart",
+            "coin"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'coin' has the /oi/ sound — the others all have /ar/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The barn is on the farm.",
+          "targetSounds": [
+            "ar"
+          ],
+          "trickyWords": [
+            "the",
+            "is",
+            "on"
+          ]
+        },
+        {
+          "text": "I go to the park.",
+          "targetSounds": [
+            "ar"
+          ],
+          "trickyWords": [
+            "I",
+            "go",
+            "to",
+            "the"
+          ]
+        },
+        {
+          "text": "It is dark at night.",
+          "targetSounds": [
+            "ar",
+            "igh"
+          ],
+          "trickyWords": [
+            "it",
+            "is",
+            "at"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "or",
+      "keyword": "fork",
+      "phase": 3,
+      "sortPair": "ar",
+      "relatedGraphemes": [
+        "aw",
+        "au",
+        "ore",
+        "oar"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "he",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        },
+        {
+          "word": "was",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'as' makes an /oz/ sound — very tricky!"
+        }
+      ],
+      "words": [
+        "fork",
+        "corn",
+        "born",
+        "port",
+        "sort",
+        "cord",
+        "form",
+        "horn",
+        "torn",
+        "worn",
+        "storm",
+        "sport",
+        "short",
+        "north",
+        "torch"
+      ],
+      "alienWords": [
+        "dork",
+        "norp",
+        "borf",
+        "torp",
+        "rork",
+        "sorm",
+        "forn",
+        "gorp"
+      ],
+      "segments": {
+        "fork": [
+          "f",
+          "or",
+          "k"
+        ],
+        "corn": [
+          "c",
+          "or",
+          "n"
+        ],
+        "born": [
+          "b",
+          "or",
+          "n"
+        ],
+        "port": [
+          "p",
+          "or",
+          "t"
+        ],
+        "sort": [
+          "s",
+          "or",
+          "t"
+        ],
+        "cord": [
+          "c",
+          "or",
+          "d"
+        ],
+        "form": [
+          "f",
+          "or",
+          "m"
+        ],
+        "horn": [
+          "h",
+          "or",
+          "n"
+        ],
+        "torn": [
+          "t",
+          "or",
+          "n"
+        ],
+        "worn": [
+          "w",
+          "or",
+          "n"
+        ],
+        "storm": [
+          "s",
+          "t",
+          "or",
+          "m"
+        ],
+        "sport": [
+          "s",
+          "p",
+          "or",
+          "t"
+        ],
+        "short": [
+          "sh",
+          "or",
+          "t"
+        ],
+        "north": [
+          "n",
+          "or",
+          "th"
+        ],
+        "torch": [
+          "t",
+          "or",
+          "ch"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "I eat with a knife and ___.",
+          "missingWord": "fork",
+          "missingIndex": 6,
+          "options": [
+            "fork",
+            "corn",
+            "horn"
+          ]
+        },
+        {
+          "text": "We grow ___ in the garden.",
+          "missingWord": "corn",
+          "missingIndex": 2,
+          "options": [
+            "corn",
+            "born",
+            "horn"
+          ]
+        },
+        {
+          "text": "Can you ___ the books by colour?",
+          "missingWord": "sort",
+          "missingIndex": 2,
+          "options": [
+            "sort",
+            "port",
+            "cord"
+          ]
+        },
+        {
+          "text": "There was a big ___ last night.",
+          "missingWord": "storm",
+          "missingIndex": 5,
+          "options": [
+            "storm",
+            "sport",
+            "short"
+          ]
+        },
+        {
+          "text": "She shone the ___ in the dark.",
+          "missingWord": "torch",
+          "missingIndex": 3,
+          "options": [
+            "torch",
+            "north",
+            "short"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "fork",
+            "corn",
+            "dark",
+            "born"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'dark' has the /ar/ sound — the others all have /or/!"
+        },
+        {
+          "words": [
+            "storm",
+            "sport",
+            "short",
+            "surf"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'surf' has the /ur/ sound — the others all have /or/!"
+        },
+        {
+          "words": [
+            "horn",
+            "torn",
+            "worn",
+            "coin"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'coin' has the /oi/ sound — the others all have /or/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "I eat corn with a fork.",
+          "targetSounds": [
+            "or"
+          ],
+          "trickyWords": [
+            "I",
+            "with",
+            "a"
+          ]
+        },
+        {
+          "text": "Sort the books.",
+          "targetSounds": [
+            "or"
+          ],
+          "trickyWords": [
+            "the"
+          ]
+        },
+        {
+          "text": "There was a big storm.",
+          "targetSounds": [
+            "or"
+          ],
+          "trickyWords": [
+            "there",
+            "was",
+            "a"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "ur",
+      "keyword": "surf",
+      "phase": 3,
+      "sortPair": "or",
+      "relatedGraphemes": [
+        "er",
+        "ir",
+        "ear",
+        "or"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "he",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'e' makes a long /ee/ sound."
+        },
+        {
+          "word": "was",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 'as' makes an /oz/ sound — very tricky!"
+        }
+      ],
+      "words": [
+        "surf",
+        "burn",
+        "turn",
+        "hurt",
+        "curl",
+        "purse",
+        "nurse",
+        "burst",
+        "curve",
+        "church",
+        "purple",
+        "turtle",
+        "further",
+        "turban",
+        "burglar"
+      ],
+      "alienWords": [
+        "durm",
+        "nurp",
+        "burf",
+        "turg",
+        "rurn",
+        "surt",
+        "furl",
+        "gurn"
+      ],
+      "segments": {
+        "surf": [
+          "s",
+          "ur",
+          "f"
+        ],
+        "burn": [
+          "b",
+          "ur",
+          "n"
+        ],
+        "turn": [
+          "t",
+          "ur",
+          "n"
+        ],
+        "hurt": [
+          "h",
+          "ur",
+          "t"
+        ],
+        "curl": [
+          "c",
+          "ur",
+          "l"
+        ],
+        "purse": [
+          "p",
+          "ur",
+          "s",
+          "e"
+        ],
+        "nurse": [
+          "n",
+          "ur",
+          "s",
+          "e"
+        ],
+        "burst": [
+          "b",
+          "ur",
+          "s",
+          "t"
+        ],
+        "curve": [
+          "c",
+          "ur",
+          "ve"
+        ],
+        "church": [
+          "ch",
+          "ur",
+          "ch"
+        ],
+        "purple": [
+          "p",
+          "ur",
+          "p",
+          "l",
+          "e"
+        ],
+        "turtle": [
+          "t",
+          "ur",
+          "t",
+          "l",
+          "e"
+        ],
+        "further": [
+          "f",
+          "ur",
+          "th",
+          "er"
+        ],
+        "turban": [
+          "t",
+          "ur",
+          "b",
+          "a",
+          "n"
+        ],
+        "burglar": [
+          "b",
+          "ur",
+          "g",
+          "l",
+          "ar"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "I love to ___ in the sea.",
+          "missingWord": "surf",
+          "missingIndex": 3,
+          "options": [
+            "surf",
+            "burn",
+            "turn"
+          ]
+        },
+        {
+          "text": "Do not ___ yourself on the fire.",
+          "missingWord": "burn",
+          "missingIndex": 3,
+          "options": [
+            "burn",
+            "turn",
+            "hurt"
+          ]
+        },
+        {
+          "text": "She went to the ___ with a sore throat.",
+          "missingWord": "nurse",
+          "missingIndex": 4,
+          "options": [
+            "nurse",
+            "purse",
+            "burst"
+          ]
+        },
+        {
+          "text": "The sky turned ___ at sunset.",
+          "missingWord": "purple",
+          "missingIndex": 3,
+          "options": [
+            "purple",
+            "turtle",
+            "church"
+          ]
+        },
+        {
+          "text": "The ___ swam slowly in the pond.",
+          "missingWord": "turtle",
+          "missingIndex": 1,
+          "options": [
+            "turtle",
+            "purple",
+            "further"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "surf",
+            "burn",
+            "fork",
+            "turn"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'fork' has the /or/ sound — the others all have /ur/!"
+        },
+        {
+          "words": [
+            "purse",
+            "nurse",
+            "burst",
+            "farm"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'farm' has the /ar/ sound — the others all have /ur/!"
+        },
+        {
+          "words": [
+            "curl",
+            "hurt",
+            "church",
+            "coin"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'coin' has the /oi/ sound — the others all have /ur/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "I surf on the sea.",
+          "targetSounds": [
+            "ur"
+          ],
+          "trickyWords": [
+            "I",
+            "on",
+            "the"
+          ]
+        },
+        {
+          "text": "Do not burn the toast.",
+          "targetSounds": [
+            "ur"
+          ],
+          "trickyWords": [
+            "the"
+          ]
+        },
+        {
+          "text": "The nurse can help.",
+          "targetSounds": [
+            "ur"
+          ],
+          "trickyWords": [
+            "the",
+            "can"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "ow",
+      "keyword": "cow",
+      "phase": 3,
+      "sortPair": "oi",
+      "relatedGraphemes": [
+        "ou"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "my",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'y' makes a long /igh/ sound here."
+        },
+        {
+          "word": "they",
+          "trickyLetters": [
+            2,
+            3
+          ],
+          "explanation": "The 'ey' makes a long /ay/ sound."
+        }
+      ],
+      "words": [
+        "cow",
+        "now",
+        "how",
+        "town",
+        "down",
+        "brown",
+        "crowd",
+        "crown",
+        "drown",
+        "growl",
+        "prowl",
+        "vowel",
+        "tower",
+        "power",
+        "flower"
+      ],
+      "alienWords": [
+        "dow",
+        "nowp",
+        "bown",
+        "gowt",
+        "rowf",
+        "sown",
+        "fowm",
+        "dowk"
+      ],
+      "segments": {
+        "cow": [
+          "c",
+          "ow"
+        ],
+        "now": [
+          "n",
+          "ow"
+        ],
+        "how": [
+          "h",
+          "ow"
+        ],
+        "town": [
+          "t",
+          "ow",
+          "n"
+        ],
+        "down": [
+          "d",
+          "ow",
+          "n"
+        ],
+        "brown": [
+          "b",
+          "r",
+          "ow",
+          "n"
+        ],
+        "crowd": [
+          "c",
+          "r",
+          "ow",
+          "d"
+        ],
+        "crown": [
+          "c",
+          "r",
+          "ow",
+          "n"
+        ],
+        "drown": [
+          "d",
+          "r",
+          "ow",
+          "n"
+        ],
+        "growl": [
+          "g",
+          "r",
+          "ow",
+          "l"
+        ],
+        "prowl": [
+          "p",
+          "r",
+          "ow",
+          "l"
+        ],
+        "tower": [
+          "t",
+          "ow",
+          "er"
+        ],
+        "power": [
+          "p",
+          "ow",
+          "er"
+        ],
+        "flower": [
+          "f",
+          "l",
+          "ow",
+          "er"
+        ],
+        "vowel": [
+          "v",
+          "ow",
+          "e",
+          "l"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The ___ gives us milk.",
+          "missingWord": "cow",
+          "missingIndex": 1,
+          "options": [
+            "cow",
+            "now",
+            "how"
+          ]
+        },
+        {
+          "text": "I live in a small ___.",
+          "missingWord": "town",
+          "missingIndex": 5,
+          "options": [
+            "town",
+            "down",
+            "brown"
+          ]
+        },
+        {
+          "text": "The sun is going ___.",
+          "missingWord": "down",
+          "missingIndex": 4,
+          "options": [
+            "down",
+            "town",
+            "brown"
+          ]
+        },
+        {
+          "text": "She wore a ___ on her head.",
+          "missingWord": "crown",
+          "missingIndex": 3,
+          "options": [
+            "crown",
+            "crowd",
+            "brown"
+          ]
+        },
+        {
+          "text": "I picked a ___ from the garden.",
+          "missingWord": "flower",
+          "missingIndex": 3,
+          "options": [
+            "flower",
+            "tower",
+            "power"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "cow",
+            "town",
+            "surf",
+            "down"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'surf' has the /ur/ sound — the others all have /ow/!"
+        },
+        {
+          "words": [
+            "brown",
+            "crown",
+            "crowd",
+            "coin"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'coin' has the /oi/ sound — the others all have /ow/!"
+        },
+        {
+          "words": [
+            "tower",
+            "power",
+            "flower",
+            "barn"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'barn' has the /ar/ sound — the others all have /ow/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "A brown cow is down.",
+          "targetSounds": [
+            "ow"
+          ],
+          "trickyWords": [
+            "a",
+            "is"
+          ]
+        },
+        {
+          "text": "The town is by the farm.",
+          "targetSounds": [
+            "ow",
+            "ar"
+          ],
+          "trickyWords": [
+            "the",
+            "is",
+            "by"
+          ]
+        },
+        {
+          "text": "She has a crown.",
+          "targetSounds": [
+            "ow"
+          ],
+          "trickyWords": [
+            "she",
+            "has",
+            "a"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "oi",
+      "keyword": "coin",
+      "phase": 3,
+      "sortPair": "ow",
+      "relatedGraphemes": [
+        "oy"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "to",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'o' makes an /oo/ sound here."
+        },
+        {
+          "word": "I",
+          "trickyLetters": [
+            0
+          ],
+          "explanation": "This one is always a capital letter."
+        },
+        {
+          "word": "my",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'y' makes a long /igh/ sound here."
+        },
+        {
+          "word": "they",
+          "trickyLetters": [
+            2,
+            3
+          ],
+          "explanation": "The 'ey' makes a long /ay/ sound."
+        }
+      ],
+      "words": [
+        "coin",
+        "foil",
+        "boil",
+        "toil",
+        "soil",
+        "coil",
+        "joint",
+        "point",
+        "noise",
+        "voice",
+        "choice",
+        "poison",
+        "moist",
+        "hoist",
+        "avoid"
+      ],
+      "alienWords": [
+        "doim",
+        "noip",
+        "boig",
+        "toig",
+        "roil",
+        "soib",
+        "foig",
+        "moil"
+      ],
+      "segments": {
+        "coin": [
+          "c",
+          "oi",
+          "n"
+        ],
+        "foil": [
+          "f",
+          "oi",
+          "l"
+        ],
+        "boil": [
+          "b",
+          "oi",
+          "l"
+        ],
+        "toil": [
+          "t",
+          "oi",
+          "l"
+        ],
+        "soil": [
+          "s",
+          "oi",
+          "l"
+        ],
+        "coil": [
+          "c",
+          "oi",
+          "l"
+        ],
+        "joint": [
+          "j",
+          "oi",
+          "n",
+          "t"
+        ],
+        "point": [
+          "p",
+          "oi",
+          "n",
+          "t"
+        ],
+        "noise": [
+          "n",
+          "oi",
+          "s",
+          "e"
+        ],
+        "voice": [
+          "v",
+          "oi",
+          "ce"
+        ],
+        "choice": [
+          "ch",
+          "oi",
+          "ce"
+        ],
+        "moist": [
+          "m",
+          "oi",
+          "s",
+          "t"
+        ],
+        "hoist": [
+          "h",
+          "oi",
+          "s",
+          "t"
+        ],
+        "poison": [
+          "p",
+          "oi",
+          "s",
+          "o",
+          "n"
+        ],
+        "avoid": [
+          "a",
+          "v",
+          "oi",
+          "d"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "I found a ___ on the floor.",
+          "missingWord": "coin",
+          "missingIndex": 3,
+          "options": [
+            "coin",
+            "foil",
+            "boil"
+          ]
+        },
+        {
+          "text": "Wrap it in ___.",
+          "missingWord": "foil",
+          "missingIndex": 3,
+          "options": [
+            "foil",
+            "toil",
+            "coil"
+          ]
+        },
+        {
+          "text": "The plants grow in the ___.",
+          "missingWord": "soil",
+          "missingIndex": 5,
+          "options": [
+            "soil",
+            "foil",
+            "toil"
+          ]
+        },
+        {
+          "text": "Please keep the ___ down.",
+          "missingWord": "noise",
+          "missingIndex": 3,
+          "options": [
+            "noise",
+            "voice",
+            "choice"
+          ]
+        },
+        {
+          "text": "It is your ___ to decide.",
+          "missingWord": "choice",
+          "missingIndex": 3,
+          "options": [
+            "choice",
+            "voice",
+            "noise"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "coin",
+            "foil",
+            "cow",
+            "boil"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'cow' has the /ow/ sound — the others all have /oi/!"
+        },
+        {
+          "words": [
+            "noise",
+            "voice",
+            "choice",
+            "burn"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'burn' has the /ur/ sound — the others all have /oi/!"
+        },
+        {
+          "words": [
+            "joint",
+            "point",
+            "moist",
+            "town"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'town' has the /ow/ sound — the others all have /oi/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "I found a coin in the soil.",
+          "targetSounds": [
+            "oi"
+          ],
+          "trickyWords": [
+            "I",
+            "a",
+            "in",
+            "the"
+          ]
+        },
+        {
+          "text": "Boil the egg.",
+          "targetSounds": [
+            "oi"
+          ],
+          "trickyWords": [
+            "the"
+          ]
+        },
+        {
+          "text": "She has a lovely voice.",
+          "targetSounds": [
+            "oi"
+          ],
+          "trickyWords": [
+            "she",
+            "has",
+            "a"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "ear",
+      "keyword": "near",
+      "phase": 3,
+      "sortPair": "air",
+      "relatedGraphemes": [
+        "eer",
+        "ere",
+        "ier"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "are",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 're' at the end is almost silent."
+        },
+        {
+          "word": "my",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'y' makes a long /igh/ sound here."
+        },
+        {
+          "word": "they",
+          "trickyLetters": [
+            2,
+            3
+          ],
+          "explanation": "The 'ey' makes a long /ay/ sound."
+        },
+        {
+          "word": "all",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The 'a' makes an /or/ sound before 'll' — very tricky!"
+        }
+      ],
+      "words": [
+        "near",
+        "hear",
+        "fear",
+        "dear",
+        "year",
+        "clear",
+        "shear",
+        "smear",
+        "spear",
+        "beard",
+        "gear",
+        "tear",
+        "rear"
+      ],
+      "alienWords": [
+        "deark",
+        "nearp",
+        "bearb",
+        "yearg",
+        "fearm",
+        "hearg",
+        "reark",
+        "searp"
+      ],
+      "segments": {
+        "near": [
+          "n",
+          "ear"
+        ],
+        "hear": [
+          "h",
+          "ear"
+        ],
+        "fear": [
+          "f",
+          "ear"
+        ],
+        "dear": [
+          "d",
+          "ear"
+        ],
+        "year": [
+          "y",
+          "ear"
+        ],
+        "clear": [
+          "c",
+          "l",
+          "ear"
+        ],
+        "shear": [
+          "sh",
+          "ear"
+        ],
+        "smear": [
+          "s",
+          "m",
+          "ear"
+        ],
+        "spear": [
+          "s",
+          "p",
+          "ear"
+        ],
+        "beard": [
+          "b",
+          "ear",
+          "d"
+        ],
+        "gear": [
+          "g",
+          "ear"
+        ],
+        "tear": [
+          "t",
+          "ear"
+        ],
+        "rear": [
+          "r",
+          "ear"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "The finish line is ___.",
+          "missingWord": "near",
+          "missingIndex": 4,
+          "options": [
+            "near",
+            "hear",
+            "fear"
+          ]
+        },
+        {
+          "text": "I can ___ the music.",
+          "missingWord": "hear",
+          "missingIndex": 2,
+          "options": [
+            "hear",
+            "near",
+            "fear"
+          ]
+        },
+        {
+          "text": "Do not ___ the dark.",
+          "missingWord": "fear",
+          "missingIndex": 3,
+          "options": [
+            "fear",
+            "near",
+            "dear"
+          ]
+        },
+        {
+          "text": "We saw a ___ in the field.",
+          "missingWord": "spear",
+          "missingIndex": 3,
+          "options": [
+            "spear",
+            "clear",
+            "smear"
+          ]
+        },
+        {
+          "text": "The water is ___ and clean.",
+          "missingWord": "clear",
+          "missingIndex": 3,
+          "options": [
+            "clear",
+            "shear",
+            "smear"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "near",
+            "hear",
+            "fair",
+            "fear"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'fair' has the /air/ sound — the others all have /ear/!"
+        },
+        {
+          "words": [
+            "spear",
+            "clear",
+            "smear",
+            "hair"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'hair' has the /air/ sound — the others all have /ear/!"
+        },
+        {
+          "words": [
+            "clear",
+            "shear",
+            "smear",
+            "sure"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'sure' has the /ure/ sound — the others all have /ear/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "I can hear you.",
+          "targetSounds": [
+            "ear"
+          ],
+          "trickyWords": [
+            "I",
+            "can",
+            "you"
+          ]
+        },
+        {
+          "text": "The end is near.",
+          "targetSounds": [
+            "ear"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        },
+        {
+          "text": "Do not fear the dark.",
+          "targetSounds": [
+            "ear"
+          ],
+          "trickyWords": [
+            "the"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "air",
+      "keyword": "fair",
+      "phase": 3,
+      "sortPair": "ear",
+      "relatedGraphemes": [
+        "are",
+        "ere",
+        "ear"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "are",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 're' at the end is almost silent."
+        },
+        {
+          "word": "my",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'y' makes a long /igh/ sound here."
+        },
+        {
+          "word": "they",
+          "trickyLetters": [
+            2,
+            3
+          ],
+          "explanation": "The 'ey' makes a long /ay/ sound."
+        },
+        {
+          "word": "all",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The 'a' makes an /or/ sound before 'll' — very tricky!"
+        }
+      ],
+      "words": [
+        "fair",
+        "hair",
+        "pair",
+        "chair",
+        "stair",
+        "flair",
+        "lair",
+        "repair",
+        "despair",
+        "affair",
+        "dairy",
+        "prairie",
+        "airport"
+      ],
+      "alienWords": [
+        "dairt",
+        "naip",
+        "bairp",
+        "staig",
+        "fairl",
+        "haird",
+        "rairt",
+        "paig"
+      ],
+      "segments": {
+        "fair": [
+          "f",
+          "air"
+        ],
+        "hair": [
+          "h",
+          "air"
+        ],
+        "pair": [
+          "p",
+          "air"
+        ],
+        "chair": [
+          "ch",
+          "air"
+        ],
+        "stair": [
+          "s",
+          "t",
+          "air"
+        ],
+        "flair": [
+          "f",
+          "l",
+          "air"
+        ],
+        "lair": [
+          "l",
+          "air"
+        ],
+        "repair": [
+          "r",
+          "e",
+          "p",
+          "air"
+        ],
+        "dairy": [
+          "d",
+          "air",
+          "y"
+        ],
+        "airport": [
+          "air",
+          "p",
+          "or",
+          "t"
+        ],
+        "despair": [
+          "d",
+          "e",
+          "s",
+          "p",
+          "air"
+        ],
+        "affair": [
+          "a",
+          "ff",
+          "air"
+        ],
+        "prairie": [
+          "p",
+          "r",
+          "air",
+          "ie"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "We went to the summer ___.",
+          "missingWord": "fair",
+          "missingIndex": 5,
+          "options": [
+            "fair",
+            "hair",
+            "pair"
+          ]
+        },
+        {
+          "text": "She has beautiful long ___.",
+          "missingWord": "hair",
+          "missingIndex": 4,
+          "options": [
+            "hair",
+            "fair",
+            "pair"
+          ]
+        },
+        {
+          "text": "I bought a ___ of shoes.",
+          "missingWord": "pair",
+          "missingIndex": 3,
+          "options": [
+            "pair",
+            "fair",
+            "hair"
+          ]
+        },
+        {
+          "text": "Sit down on the ___.",
+          "missingWord": "chair",
+          "missingIndex": 4,
+          "options": [
+            "chair",
+            "stair",
+            "fair"
+          ]
+        },
+        {
+          "text": "The fox slept in its ___.",
+          "missingWord": "lair",
+          "missingIndex": 4,
+          "options": [
+            "lair",
+            "flair",
+            "repair"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "fair",
+            "hair",
+            "near",
+            "pair"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'near' has the /ear/ sound — the others all have /air/!"
+        },
+        {
+          "words": [
+            "chair",
+            "stair",
+            "flair",
+            "year"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'year' has the /ear/ sound — the others all have /air/!"
+        },
+        {
+          "words": [
+            "lair",
+            "dairy",
+            "repair",
+            "sure"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'sure' has the /ure/ sound — the others all have /air/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "I sit on the chair.",
+          "targetSounds": [
+            "air"
+          ],
+          "trickyWords": [
+            "I",
+            "on",
+            "the"
+          ]
+        },
+        {
+          "text": "She has fair hair.",
+          "targetSounds": [
+            "air"
+          ],
+          "trickyWords": [
+            "she",
+            "has"
+          ]
+        },
+        {
+          "text": "We went to the fair.",
+          "targetSounds": [
+            "air"
+          ],
+          "trickyWords": [
+            "we",
+            "went",
+            "to",
+            "the"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "ure",
+      "keyword": "sure",
+      "phase": 3,
+      "sortPair": "ear",
+      "relatedGraphemes": [
+        "oor",
+        "our",
+        "ewer"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "are",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 're' at the end is almost silent."
+        },
+        {
+          "word": "my",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'y' makes a long /igh/ sound here."
+        },
+        {
+          "word": "they",
+          "trickyLetters": [
+            2,
+            3
+          ],
+          "explanation": "The 'ey' makes a long /ay/ sound."
+        },
+        {
+          "word": "all",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The 'a' makes an /or/ sound before 'll' — very tricky!"
+        }
+      ],
+      "words": [
+        "sure",
+        "pure",
+        "cure",
+        "lure",
+        "mature",
+        "secure",
+        "nature",
+        "figure",
+        "future",
+        "picture",
+        "treasure",
+        "measure",
+        "pleasure",
+        "mixture",
+        "creature"
+      ],
+      "alienWords": [
+        "dure",
+        "nure",
+        "bure",
+        "fure",
+        "mure",
+        "supe",
+        "turg",
+        "gure"
+      ],
+      "segments": {
+        "sure": [
+          "s",
+          "ure"
+        ],
+        "pure": [
+          "p",
+          "ure"
+        ],
+        "cure": [
+          "c",
+          "ure"
+        ],
+        "lure": [
+          "l",
+          "ure"
+        ],
+        "mature": [
+          "m",
+          "a",
+          "t",
+          "ure"
+        ],
+        "secure": [
+          "s",
+          "e",
+          "c",
+          "ure"
+        ],
+        "nature": [
+          "n",
+          "a",
+          "t",
+          "ure"
+        ],
+        "future": [
+          "f",
+          "u",
+          "t",
+          "ure"
+        ],
+        "picture": [
+          "p",
+          "i",
+          "ct",
+          "ure"
+        ],
+        "treasure": [
+          "t",
+          "re",
+          "a",
+          "s",
+          "ure"
+        ],
+        "measure": [
+          "m",
+          "ea",
+          "s",
+          "ure"
+        ],
+        "pleasure": [
+          "p",
+          "l",
+          "ea",
+          "s",
+          "ure"
+        ],
+        "mixture": [
+          "m",
+          "i",
+          "x",
+          "t",
+          "ure"
+        ],
+        "creature": [
+          "c",
+          "re",
+          "a",
+          "t",
+          "ure"
+        ],
+        "figure": [
+          "f",
+          "i",
+          "g",
+          "ure"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "Are you ___ about that?",
+          "missingWord": "sure",
+          "missingIndex": 2,
+          "options": [
+            "sure",
+            "pure",
+            "cure"
+          ]
+        },
+        {
+          "text": "The water is very ___.",
+          "missingWord": "pure",
+          "missingIndex": 4,
+          "options": [
+            "pure",
+            "sure",
+            "lure"
+          ]
+        },
+        {
+          "text": "The doctor found a ___ for the illness.",
+          "missingWord": "cure",
+          "missingIndex": 3,
+          "options": [
+            "cure",
+            "sure",
+            "lure"
+          ]
+        },
+        {
+          "text": "I love reading about ___.",
+          "missingWord": "nature",
+          "missingIndex": 4,
+          "options": [
+            "nature",
+            "future",
+            "mixture"
+          ]
+        },
+        {
+          "text": "We dug up buried ___.",
+          "missingWord": "treasure",
+          "missingIndex": 3,
+          "options": [
+            "treasure",
+            "measure",
+            "pleasure"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "sure",
+            "pure",
+            "cure",
+            "hair"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'hair' has the /air/ sound — the others all have /ure/!"
+        },
+        {
+          "words": [
+            "nature",
+            "future",
+            "mixture",
+            "near"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'near' has the /ear/ sound — the others all have /ure/!"
+        },
+        {
+          "words": [
+            "treasure",
+            "measure",
+            "pleasure",
+            "fair"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'fair' has the /air/ sound — the others all have /ure/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "Are you sure?",
+          "targetSounds": [
+            "ure"
+          ],
+          "trickyWords": [
+            "are",
+            "you"
+          ]
+        },
+        {
+          "text": "The cure is near.",
+          "targetSounds": [
+            "ure",
+            "ear"
+          ],
+          "trickyWords": [
+            "the",
+            "is"
+          ]
+        },
+        {
+          "text": "I love nature.",
+          "targetSounds": [
+            "ure"
+          ],
+          "trickyWords": [
+            "I"
+          ]
+        }
+      ],
+      "pinned": null
+    },
+    {
+      "grapheme": "er",
+      "keyword": "hammer",
+      "phase": 3,
+      "sortPair": "ur",
+      "relatedGraphemes": [
+        "ur",
+        "ir",
+        "or",
+        "ear"
+      ],
+      "trickyWords": [
+        {
+          "word": "the",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The whole word is tricky at this stage!"
+        },
+        {
+          "word": "are",
+          "trickyLetters": [
+            1,
+            2
+          ],
+          "explanation": "The 're' at the end is almost silent."
+        },
+        {
+          "word": "my",
+          "trickyLetters": [
+            1
+          ],
+          "explanation": "The 'y' makes a long /igh/ sound here."
+        },
+        {
+          "word": "they",
+          "trickyLetters": [
+            2,
+            3
+          ],
+          "explanation": "The 'ey' makes a long /ay/ sound."
+        },
+        {
+          "word": "all",
+          "trickyLetters": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "The 'a' makes an /or/ sound before 'll' — very tricky!"
+        }
+      ],
+      "words": [
+        "hammer",
+        "letter",
+        "butter",
+        "dinner",
+        "corner",
+        "summer",
+        "winter",
+        "ladder",
+        "flower",
+        "tiger",
+        "spider",
+        "river",
+        "silver",
+        "finger",
+        "number"
+      ],
+      "alienWords": [
+        "dammer",
+        "netter",
+        "botter",
+        "tinner",
+        "rammer",
+        "sitter",
+        "fommer",
+        "gutter"
+      ],
+      "segments": {
+        "hammer": [
+          "h",
+          "a",
+          "mm",
+          "er"
+        ],
+        "letter": [
+          "l",
+          "e",
+          "tt",
+          "er"
+        ],
+        "butter": [
+          "b",
+          "u",
+          "tt",
+          "er"
+        ],
+        "dinner": [
+          "d",
+          "i",
+          "nn",
+          "er"
+        ],
+        "corner": [
+          "c",
+          "or",
+          "n",
+          "er"
+        ],
+        "summer": [
+          "s",
+          "u",
+          "mm",
+          "er"
+        ],
+        "winter": [
+          "w",
+          "i",
+          "n",
+          "t",
+          "er"
+        ],
+        "ladder": [
+          "l",
+          "a",
+          "dd",
+          "er"
+        ],
+        "flower": [
+          "f",
+          "l",
+          "ow",
+          "er"
+        ],
+        "tiger": [
+          "t",
+          "i",
+          "ge",
+          "r"
+        ],
+        "spider": [
+          "s",
+          "p",
+          "i",
+          "d",
+          "er"
+        ],
+        "river": [
+          "r",
+          "i",
+          "v",
+          "er"
+        ],
+        "silver": [
+          "s",
+          "i",
+          "l",
+          "v",
+          "er"
+        ],
+        "finger": [
+          "f",
+          "i",
+          "ng",
+          "er"
+        ],
+        "number": [
+          "n",
+          "u",
+          "m",
+          "b",
+          "er"
+        ]
+      },
+      "missingWordSentences": [
+        {
+          "text": "Spread the ___ on the toast.",
+          "missingWord": "butter",
+          "missingIndex": 2,
+          "options": [
+            "butter",
+            "letter",
+            "dinner"
+          ]
+        },
+        {
+          "text": "I got a ___ in the post.",
+          "missingWord": "letter",
+          "missingIndex": 3,
+          "options": [
+            "letter",
+            "butter",
+            "dinner"
+          ]
+        },
+        {
+          "text": "We had pizza for ___.",
+          "missingWord": "dinner",
+          "missingIndex": 4,
+          "options": [
+            "dinner",
+            "letter",
+            "butter"
+          ]
+        },
+        {
+          "text": "In ___ we like to build snowmen.",
+          "missingWord": "winter",
+          "missingIndex": 1,
+          "options": [
+            "winter",
+            "summer",
+            "number"
+          ]
+        },
+        {
+          "text": "I saw a big ___ in my bath.",
+          "missingWord": "spider",
+          "missingIndex": 4,
+          "options": [
+            "spider",
+            "tiger",
+            "river"
+          ]
+        }
+      ],
+      "oddOneOutSets": [
+        {
+          "words": [
+            "hammer",
+            "butter",
+            "surf",
+            "letter"
+          ],
+          "oddOneOut": 2,
+          "explanation": "'surf' has the /ur/ sound — the others all end with /er/!"
+        },
+        {
+          "words": [
+            "corner",
+            "flower",
+            "tiger",
+            "coin"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'coin' has the /oi/ sound — the others all end with /er/!"
+        },
+        {
+          "words": [
+            "winter",
+            "summer",
+            "silver",
+            "farm"
+          ],
+          "oddOneOut": 3,
+          "explanation": "'farm' has the /ar/ sound — the others all end with /er/!"
+        }
+      ],
+      "writeItSentences": [
+        {
+          "text": "The letter is for dinner.",
+          "targetSounds": [
+            "er"
+          ],
+          "trickyWords": [
+            "the",
+            "is",
+            "for"
+          ]
+        },
+        {
+          "text": "I put butter on my bread.",
+          "targetSounds": [
+            "er"
+          ],
+          "trickyWords": [
+            "I",
+            "on",
+            "my"
+          ]
+        },
+        {
+          "text": "A spider is in the corner.",
+          "targetSounds": [
+            "er"
+          ],
+          "trickyWords": [
+            "a",
+            "is",
+            "in",
+            "the"
+          ]
+        }
+      ],
+      "pinned": null
+    }
+  ]
+}
