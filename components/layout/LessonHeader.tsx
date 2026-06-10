@@ -1,10 +1,12 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState } from 'react'
-import { motion } from 'framer-motion'
+import { useCallback, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
+import { motion, useReducedMotion } from 'framer-motion'
 import { ActivityType } from '@/data/types'
-import { motionSpring } from '@/lib/celebrations'
+import { motionSpringOrInstant } from '@/lib/celebrations'
 import { LESSON_SHELL_GRADIENT } from '@/lib/lessonShellGradient'
+import { useModalFocusTrap } from '@/src/hooks/useModalFocusTrap'
 
 const ACTIVITY_LABELS: Record<ActivityType, { title: string; emoji: string }> = {
   speedySounds: { title: 'Speedy Sounds', emoji: '🎵' },
@@ -19,19 +21,6 @@ const ACTIVITY_LABELS: Record<ActivityType, { title: string; emoji: string }> = 
   missingWord: { title: 'Missing Word', emoji: '📝' },
   oddOneOut: { title: 'Odd One Out', emoji: '🔎' },
   wordBuilder: { title: 'Word Builder', emoji: '🧱' },
-  wordChanger: { title: 'Word Changer', emoji: '🔄' },
-  wordSplitter: { title: 'Word Splitter', emoji: '✂️' },
-  meaningMatch: { title: 'Meaning Match', emoji: '🧩' },
-  rootHunt: { title: 'Root Hunt', emoji: '🔍' },
-}
-
-const HOLD_MS = 1500
-const RELEASE_MS = 300
-const RING_R = 18
-const RING_C = 2 * Math.PI * RING_R
-
-function easeOutCubic(t: number): number {
-  return 1 - Math.pow(1 - t, 3)
 }
 
 interface LessonHeaderProps {
@@ -49,112 +38,21 @@ export default function LessonHeader({
   completedCount,
   onExit,
 }: LessonHeaderProps) {
-  const [ringProgress, setRingProgress] = useState(0)
-  const [exitFlash, setExitFlash] = useState(false)
-  const ringProgressRef = useRef(0)
-  const holdRafRef = useRef<number | null>(null)
-  const releaseRafRef = useRef<number | null>(null)
-  const holdStartRef = useRef(0)
-  const releaseFromRef = useRef(0)
-  const releaseStartRef = useRef(0)
-  const exitTriggeredRef = useRef(false)
+  const [exitConfirmOpen, setExitConfirmOpen] = useState(false)
+  const exitPanelRef = useRef<HTMLDivElement>(null)
+  const reduceMotion = useReducedMotion()
 
-  const setProgress = useCallback((p: number) => {
-    ringProgressRef.current = p
-    setRingProgress(p)
-  }, [])
+  const dismissConfirm = useCallback(() => setExitConfirmOpen(false), [])
 
-  const clearHold = useCallback(() => {
-    if (holdRafRef.current !== null) {
-      cancelAnimationFrame(holdRafRef.current)
-      holdRafRef.current = null
-    }
-  }, [])
+  useModalFocusTrap(exitConfirmOpen, exitPanelRef, dismissConfirm)
 
-  const clearRelease = useCallback(() => {
-    if (releaseRafRef.current !== null) {
-      cancelAnimationFrame(releaseRafRef.current)
-      releaseRafRef.current = null
-    }
-  }, [])
-
-  const finishExit = useCallback(() => {
-    if (exitTriggeredRef.current) return
-    exitTriggeredRef.current = true
-    setExitFlash(true)
-    window.setTimeout(() => {
-      setExitFlash(false)
-      setProgress(0)
-      onExit()
-      exitTriggeredRef.current = false
-    }, 200)
-  }, [onExit, setProgress])
-
-  const tickHold = useCallback(() => {
-    const step = (now: number) => {
-      const elapsed = now - holdStartRef.current
-      const p = Math.min(1, elapsed / HOLD_MS)
-      setProgress(p)
-      if (p >= 1) {
-        clearHold()
-        finishExit()
-        return
-      }
-      holdRafRef.current = requestAnimationFrame(step)
-    }
-    holdRafRef.current = requestAnimationFrame(step)
-  }, [clearHold, finishExit, setProgress])
-
-  const runReleaseAnimation = useCallback(
-    (from: number) => {
-      clearRelease()
-      releaseFromRef.current = from
-      releaseStartRef.current = performance.now()
-      const step = (now: number) => {
-        const u = Math.min(1, (now - releaseStartRef.current) / RELEASE_MS)
-        const p = releaseFromRef.current * (1 - easeOutCubic(u))
-        setProgress(p)
-        if (u < 1) {
-          releaseRafRef.current = requestAnimationFrame(step)
-        } else {
-          releaseRafRef.current = null
-          setProgress(0)
-        }
-      }
-      releaseRafRef.current = requestAnimationFrame(step)
-    },
-    [clearRelease, setProgress],
-  )
-
-  const startHold = useCallback(() => {
-    if (exitTriggeredRef.current) return
-    clearRelease()
-    clearHold()
-    holdStartRef.current = performance.now()
-    tickHold()
-  }, [clearHold, clearRelease, tickHold])
-
-  const endHold = useCallback(() => {
-    clearHold()
-    const p = ringProgressRef.current
-    if (p >= 1 || exitTriggeredRef.current) return
-    if (p > 0.001) {
-      runReleaseAnimation(p)
-    } else {
-      setProgress(0)
-    }
-  }, [clearHold, runReleaseAnimation, setProgress])
-
-  useEffect(() => {
-    return () => {
-      clearHold()
-      clearRelease()
-    }
-  }, [clearHold, clearRelease])
+  const confirmExit = useCallback(() => {
+    setExitConfirmOpen(false)
+    onExit()
+  }, [onExit])
 
   const info = ACTIVITY_LABELS[activityType] ?? { title: 'Activity', emoji: '📚' }
   const progressPct = totalCount > 0 ? (completedCount / totalCount) * 100 : 0
-  const dashOffset = RING_C * (1 - ringProgress)
 
   return (
     <div className="flex-shrink-0 font-sans">
@@ -164,30 +62,12 @@ export default function LessonHeader({
       >
         <button
           type="button"
-          onPointerDown={startHold}
-          onPointerUp={endHold}
-          onPointerLeave={endHold}
-          onPointerCancel={endHold}
-          className={`relative flex h-14 w-14 flex-shrink-0 touch-target items-center justify-center rounded-full text-white transition-colors duration-200 ${
-            exitFlash ? 'bg-success/50' : 'bg-white/20'
-          }`}
-          title="Hold to exit"
-          style={{ transition: 'background-color 200ms ease-out' }}
+          onClick={() => setExitConfirmOpen(true)}
+          className="relative flex h-14 w-14 flex-shrink-0 touch-target items-center justify-center rounded-full bg-white/20 text-white transition-colors duration-200 hover:bg-white/30"
+          aria-haspopup="dialog"
+          aria-expanded={exitConfirmOpen}
+          title="End lesson"
         >
-          <svg className="absolute inset-0 h-14 w-14 -rotate-90" viewBox="0 0 40 40" aria-hidden>
-            <circle cx="20" cy="20" r={RING_R} fill="none" stroke="rgba(255,255,255,0.22)" strokeWidth="3" />
-            <circle
-              cx="20"
-              cy="20"
-              r={RING_R}
-              fill="none"
-              stroke="#FF69B4"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeDasharray={RING_C}
-              strokeDashoffset={dashOffset}
-            />
-          </svg>
           <span className="relative z-10 text-label text-white">✕</span>
         </button>
 
@@ -221,9 +101,49 @@ export default function LessonHeader({
             background: 'linear-gradient(90deg, #8B00FF 0%, #FF69B4 100%)',
           }}
           animate={{ width: `${progressPct}%` }}
-          transition={{ ...motionSpring }}
+          transition={motionSpringOrInstant(reduceMotion)}
         />
       </div>
+
+      {exitConfirmOpen
+        ? createPortal(
+            <div
+              className="fixed inset-0 z-[100] flex items-center justify-center bg-black/45 px-4"
+              role="presentation"
+              onClick={dismissConfirm}
+            >
+              <div
+                ref={exitPanelRef}
+                role="alertdialog"
+                aria-modal="true"
+                aria-labelledby="lesson-exit-title"
+                className="w-full max-w-sm rounded-2xl bg-white p-5 shadow-xl"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <h2 id="lesson-exit-title" className="text-lg font-bold text-[#1A0033]">
+                  End lesson?
+                </h2>
+                <div className="mt-4 flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
+                  <button
+                    type="button"
+                    onClick={dismissConfirm}
+                    className="touch-target rounded-full bg-[#F4F0FD] px-4 py-2.5 text-sm font-semibold text-[#8B00FF] transition hover:bg-[#EDE8FA]"
+                  >
+                    Keep going
+                  </button>
+                  <button
+                    type="button"
+                    onClick={confirmExit}
+                    className="touch-target rounded-full bg-[#8B00FF] px-4 py-2.5 text-sm font-semibold text-white shadow-evid-btn transition hover:-translate-y-0.5 hover:shadow-evid-btn-hover"
+                  >
+                    End lesson
+                  </button>
+                </div>
+              </div>
+            </div>,
+            document.body,
+          )
+        : null}
     </div>
   )
 }

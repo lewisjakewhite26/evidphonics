@@ -2,6 +2,12 @@ import { buildLessonFromGraphemes } from '@/components/engine/LessonEngine'
 import { allGraphemes, allWeeks, graphemeMap } from './graphemes'
 import type { GraphemeData, LessonData } from './types'
 
+/**
+ * Resolves lesson payloads:
+ * - Grapheme routes use curriculum ids as `graphemeMap` keys (`id ?? grapheme`).
+ * - Numeric `getLesson(weekNumber)` walks global spine order in `allWeeks`; adding/removing phases shifts indices (`PHASE5_FIRST_GLOBAL_WEEK` in `./graphemes.ts`).
+ */
+
 export function getLessonForGrapheme(grapheme: string): LessonData | null {
   const data = graphemeMap.get(grapheme)
   if (!data) return null

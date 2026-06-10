@@ -1,6 +1,14 @@
+import type { Transition } from 'framer-motion'
 import { ActivityType } from '@/data/types'
 
-export const motionSpring = { type: 'spring' as const, stiffness: 300, damping: 20 }
+export const motionSpring: Transition = { type: 'spring', stiffness: 300, damping: 20 }
+
+export const motionInstant: Transition = { duration: 0 }
+
+/** Use with Framer Motion `useReducedMotion()` — respects system reduced-motion preference. */
+export function motionSpringOrInstant(reduceMotion: boolean | null): Transition {
+  return reduceMotion ? motionInstant : motionSpring
+}
 
 const tier1: ActivityType[] = ['speedySounds', 'alienOrReal', 'missingSound']
 const tier2: ActivityType[] = [
@@ -12,10 +20,6 @@ const tier2: ActivityType[] = [
   'missingWord',
   'oddOneOut',
   'wordBuilder',
-  'wordChanger',
-  'wordSplitter',
-  'meaningMatch',
-  'rootHunt',
 ]
 const tier3: ActivityType[] = ['writeIt']
 

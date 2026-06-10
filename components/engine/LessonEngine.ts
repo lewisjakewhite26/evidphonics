@@ -2,17 +2,15 @@ import type {
   Activity,
   ActivityType,
   GraphemeData,
+  GraphemePinnedContent,
   LessonData,
-  MeaningMatchData,
   MissingSoundWord,
   RhymeTimeData,
-  RootHuntData,
-  WordChangerData,
-  WordChangerStep,
-  WordSplitterData,
+  TrickyWordEntry,
   WriteItData,
   WordBuilderData,
 } from '@/data/types'
+import { intersectActivityAllowlistForSelection } from '@/data/graphemes'
 import { shuffle } from '@/lib/utils'
 
 const CHECKLIST = ['Capital letter', 'Finger spaces', 'Full stop'] as [string, string, string]
@@ -541,6 +539,120 @@ function dedupeLooseStrings(items: string[]): string[] {
   return out
 }
 
+/** Merge `pinned` overrides from every grapheme in a multi-select lesson (dedupe where sensible). */
+function mergePinnedContent(selection: GraphemeData[]): GraphemePinnedContent | null {
+  const parts = selection.map((g) => g.pinned).filter((p): p is GraphemePinnedContent => p != null)
+  if (parts.length === 0) return null
+
+  const out: GraphemePinnedContent = {}
+
+  const mergeDedupedStrings = <K extends 'blendWords' | 'quickReviewWords' | 'wordBuilderWords' | 'speedyRevisionGraphemes'>(
+    key: K,
+  ): void => {
+    const merged: string[] = []
+    const seen = new Set<string>()
+    for (const p of parts) {
+      const arr = p[key]
+      if (!arr?.length) continue
+      for (const s of arr) {
+        const t = String(s).trim()
+        if (!t) continue
+        const k = wordDedupeKey(t)
+        if (seen.has(k)) continue
+        seen.add(k)
+        merged.push(t)
+      }
+    }
+    if (merged.length > 0) Object.assign(out, { [key]: merged })
+  }
+  mergeDedupedStrings('blendWords')
+  mergeDedupedStrings('quickReviewWords')
+  mergeDedupedStrings('wordBuilderWords')
+  mergeDedupedStrings('speedyRevisionGraphemes')
+
+  const seenMissingWord = new Set<string>()
+  const missingWordSentences: GraphemePinnedContent['missingWordSentences'] = []
+  for (const p of parts) {
+    for (const s of p.missingWordSentences ?? []) {
+      const k = `${s.text}|${s.missingWord}`
+      if (seenMissingWord.has(k)) continue
+      seenMissingWord.add(k)
+      missingWordSentences.push(s)
+    }
+  }
+  if (missingWordSentences.length > 0) out.missingWordSentences = missingWordSentences
+
+  const seenOdd = new Set<string>()
+  const oddOneOutSets: GraphemePinnedContent['oddOneOutSets'] = []
+  for (const p of parts) {
+    for (const set of p.oddOneOutSets ?? []) {
+      const k = [...set.words].map((w) => wordDedupeKey(w)).sort().join('|')
+      if (seenOdd.has(k)) continue
+      seenOdd.add(k)
+      oddOneOutSets.push(set)
+    }
+  }
+  if (oddOneOutSets.length > 0) out.oddOneOutSets = oddOneOutSets
+
+  const seenWrite = new Set<string>()
+  const writeItSentences: GraphemePinnedContent['writeItSentences'] = []
+  for (const p of parts) {
+    for (const s of p.writeItSentences ?? []) {
+      if (seenWrite.has(s.text)) continue
+      seenWrite.add(s.text)
+      writeItSentences.push(s)
+    }
+  }
+  if (writeItSentences.length > 0) out.writeItSentences = writeItSentences
+
+  const trickyByWord = new Map<string, TrickyWordEntry>()
+  for (const p of parts) {
+    for (const t of p.trickyWords ?? []) {
+      const k = wordDedupeKey(t.word)
+      if (!trickyByWord.has(k)) trickyByWord.set(k, t)
+    }
+  }
+  if (trickyByWord.size > 0) out.trickyWords = [...trickyByWord.values()]
+
+  const seenAlien = new Set<string>()
+  const alienOrRealWords: NonNullable<GraphemePinnedContent['alienOrRealWords']> = []
+  for (const p of parts) {
+    for (const e of p.alienOrRealWords ?? []) {
+      const k = wordDedupeKey(e.word)
+      if (seenAlien.has(k)) continue
+      seenAlien.add(k)
+      alienOrRealWords.push(e)
+    }
+  }
+  if (alienOrRealWords.length > 0) out.alienOrRealWords = alienOrRealWords
+
+  const seenMs = new Set<string>()
+  const missingSoundWords: NonNullable<GraphemePinnedContent['missingSoundWords']> = []
+  for (const p of parts) {
+    for (const m of p.missingSoundWords ?? []) {
+      const k = wordDedupeKey(m.word)
+      if (seenMs.has(k)) continue
+      seenMs.add(k)
+      missingSoundWords.push(m)
+    }
+  }
+  if (missingSoundWords.length > 0) out.missingSoundWords = missingSoundWords
+
+  const seenRhyme = new Set<string>()
+  const rhymeTimePairs: NonNullable<GraphemePinnedContent['rhymeTimePairs']> = []
+  for (const p of parts) {
+    for (const pair of p.rhymeTimePairs ?? []) {
+      const k = `${pair.word1}|${pair.word2}|${pair.rhymes}`
+      if (seenRhyme.has(k)) continue
+      seenRhyme.add(k)
+      rhymeTimePairs.push(pair)
+    }
+  }
+  if (rhymeTimePairs.length > 0) out.rhymeTimePairs = rhymeTimePairs
+
+  return Object.keys(out).length > 0 ? out : null
+}
+
 function mergeGraphemeSources(selection: GraphemeData[]): GraphemeData {
   if (selection.length === 0) {
     throw new Error('mergeGraphemeSources requires at least one grapheme')
@@ -614,369 +726,8 @@ function mergeGraphemeSources(selection: GraphemeData[]): GraphemeData {
     oddOneOutSets,
     writeItSentences,
     trickyWords: [...trickyByWord.values()],
-    pinned: null,
+    pinned: mergePinnedContent(selection),
   }
-}
-
-const AFFIX_MEANINGS: Record<string, string> = {
-  'un-': 'not',
-  're-': 'again',
-  'dis-': 'not / opposite',
-  'mis-': 'wrongly',
-  '-ful': 'full of',
-  '-less': 'without',
-  '-ness': 'state of',
-  '-ly': 'in that way',
-  '-ment': 'the result of',
-  tion: 'the act of',
-  sion: 'the act of',
-  ssion: 'the act of',
-  cian: 'a person who',
-  '-tion suffix': 'the act of',
-}
-
-function affixMeaningLabel(graphemeId: string): string {
-  return AFFIX_MEANINGS[graphemeId] ?? 'related to this affix'
-}
-
-function shoutMeaning(meaning: string): string {
-  return meaning.split('/')[0]!.trim().toUpperCase()
-}
-
-function meaningHintSentence(graphemeId: string, root: string, result: string): string {
-  const gloss = affixMeaningLabel(graphemeId)
-  const shout = shoutMeaning(gloss)
-  return `${graphemeId} means ${shout} → ${result} means ${shout} ${root}`
-}
-
-function getPrefixLetters(graphemeId: string): string | null {
-  if (graphemeId.endsWith('-') && !graphemeId.startsWith('-')) {
-    return graphemeId.slice(0, -1).toLowerCase()
-  }
-  return null
-}
-
-function getSuffixLetters(graphemeId: string): string | null {
-  if (graphemeId.startsWith('-')) {
-    const inner = graphemeId.slice(1).toLowerCase()
-    return inner === 'tion suffix' ? 'tion' : inner
-  }
-  const bare = ['tion', 'sion', 'ssion', 'cian'] as const
-  if ((bare as readonly string[]).includes(graphemeId)) return graphemeId.toLowerCase()
-  return null
-}
-
-function splitMorph(
-  word: string,
-  graphemeId: string,
-): { root: string; result: string; prefix?: string; suffix?: string } | null {
-  const w = word.trim()
-  if (!w) return null
-  const low = w.toLowerCase()
-  const pre = getPrefixLetters(graphemeId)
-  if (pre && low.startsWith(pre)) {
-    const root = w.slice(pre.length)
-    if (root.length < 2) return null
-    return { root, result: w, prefix: pre }
-  }
-  const suf = getSuffixLetters(graphemeId)
-  if (suf && low.endsWith(suf)) {
-    const root = w.slice(0, w.length - suf.length)
-    if (root.length < 2) return null
-    return { root, result: w, suffix: suf }
-  }
-  return null
-}
-
-/** Curriculum morpheme chunks (when they reassemble the word) beat naive affix stripping for Word Changer. */
-function wordChangerStepFromMorphemes(
-  word: string,
-  graphemeId: string,
-  morphemes: string[],
-): import('@/data/types').WordChangerStep | null {
-  const w = word.trim()
-  if (morphemes.length < 2) return null
-  if (morphemes.join('').toLowerCase() !== w.toLowerCase()) return null
-  const tail = morphemes.slice(1).join('')
-  const wlow = w.toLowerCase()
-  if (tail && wlow.endsWith(tail.toLowerCase())) {
-    const root = morphemes[0]!
-    return {
-      root,
-      result: w,
-      suffix: tail,
-      meaningHint: meaningHintSentence(graphemeId, root, w),
-    }
-  }
-  const head = morphemes.slice(0, -1).join('')
-  if (head && wlow.startsWith(head.toLowerCase())) {
-    const root = morphemes[morphemes.length - 1]!
-    return {
-      root,
-      result: w,
-      prefix: head,
-      meaningHint: meaningHintSentence(graphemeId, root, w),
-    }
-  }
-  return null
-}
-
-function rootSpanInWord(word: string, root: string): { rootStart: number; rootEnd: number } | null {
-  const i = word.toLowerCase().indexOf(root.toLowerCase())
-  if (i < 0) return null
-  return { rootStart: i, rootEnd: i + root.length }
-}
-
-function segmentsJoinMatchesWord(word: string, segments: string[]): boolean {
-  return segments.join('').toLowerCase() === word.trim().toLowerCase()
-}
-
-function rolesForSegments(
-  word: string,
-  graphemeId: string,
-  segments: string[],
-): ('prefix' | 'root' | 'suffix')[] | null {
-  if (!segmentsJoinMatchesWord(word, segments)) return null
-  const m = splitMorph(word, graphemeId)
-  const wl = word.length
-  const preLen = m?.prefix?.length ?? 0
-  const sufLen = m?.suffix?.length ?? 0
-  const sufStart = sufLen > 0 ? wl - sufLen : wl
-  let pos = 0
-  return segments.map((seg) => {
-    const start = pos
-    pos += seg.length
-    const mid = (start + pos) / 2
-    if (preLen > 0 && mid < preLen) return 'prefix'
-    if (sufLen > 0 && mid >= sufStart) return 'suffix'
-    return 'root'
-  })
-}
-
-/** Role each morpheme chunk using an explicit curriculum root substring (e.g. `roots[word]`). */
-function rolesForWordBoundaryChunks(
-  word: string,
-  chunks: string[],
-  explicitRoot: string,
-): ('prefix' | 'root' | 'suffix')[] | null {
-  if (!segmentsJoinMatchesWord(word, chunks)) return null
-  const w = word.trim()
-  const span = rootSpanInWord(w, explicitRoot)
-  if (!span) return null
-  const { rootStart, rootEnd } = span
-  let pos = 0
-  return chunks.map((seg) => {
-    const start = pos
-    const end = pos + seg.length
-    pos = end
-    if (end <= rootStart) return 'prefix'
-    if (start >= rootEnd) return 'suffix'
-    if (start >= rootStart && end <= rootEnd) return 'root'
-    const overlap = Math.min(end, rootEnd) - Math.max(start, rootStart)
-    if (overlap >= seg.length / 2) return 'root'
-    if (start < rootStart) return 'prefix'
-    return 'suffix'
-  })
-}
-
-function buildWordSplitterItemFromSegments(
-  word: string,
-  graphemeId: string,
-  segments: string[],
-  explicitRoot?: string,
-): import('@/data/types').WordSplitterItem | null {
-  let roles: ('prefix' | 'root' | 'suffix')[] | null = null
-  if (explicitRoot) {
-    roles = rolesForWordBoundaryChunks(word, segments, explicitRoot)
-  }
-  if (!roles) roles = rolesForSegments(word, graphemeId, segments)
-  if (!roles) return null
-  const morphemes: string[] = []
-  const mergedRoles: ('prefix' | 'root' | 'suffix')[] = []
-  for (let i = 0; i < segments.length; i++) {
-    const r = roles[i] ?? 'root'
-    const seg = segments[i]!
-    if (mergedRoles.length > 0 && mergedRoles[mergedRoles.length - 1] === r) {
-      morphemes[morphemes.length - 1] = `${morphemes[morphemes.length - 1]!}${seg}`
-    } else {
-      morphemes.push(seg)
-      mergedRoles.push(r)
-    }
-  }
-  return { word, morphemes, morphemeRoles: mergedRoles }
-}
-
-function buildMorphologyActivities(
-  idSlug: string,
-  selection: GraphemeData[],
-  usedWords: Set<string>,
-  allGraphemes: GraphemeData[],
-): Activity[] {
-  const out: Activity[] = []
-
-  const changerSteps: WordChangerStep[] = []
-  for (const g of shuffle([...selection])) {
-    const n = 3 + Math.floor(Math.random() * 3)
-    const pool = shuffle(
-      g.words.filter((w) => {
-        if (splitMorph(w, g.grapheme)) return true
-        const mor = g.morphemes?.[w]
-        return Boolean(mor && wordChangerStepFromMorphemes(w, g.grapheme, mor))
-      }),
-    )
-    const picked = pool.slice(0, Math.min(n, pool.length))
-    for (const w of picked) {
-      const mor = g.morphemes?.[w]
-      const fromMor = mor ? wordChangerStepFromMorphemes(w, g.grapheme, mor) : null
-      if (fromMor) {
-        changerSteps.push(fromMor)
-      } else {
-        const m = splitMorph(w, g.grapheme)
-        if (!m) continue
-        changerSteps.push({
-          root: m.root,
-          result: m.result,
-          prefix: m.prefix,
-          suffix: m.suffix,
-          meaningHint: meaningHintSentence(g.grapheme, m.root, m.result),
-        })
-      }
-      markWordsUsed(usedWords, [w])
-    }
-  }
-  shuffle(changerSteps)
-  if (changerSteps.length) {
-    out.push({
-      id: `${idSlug}-wordChanger`,
-      type: 'wordChanger',
-      title: 'Word Changer',
-      emoji: '🔄',
-      instruction: 'Compare the root and the new word. Tap what changed, then move on.',
-      steps: changerSteps,
-    } satisfies WordChangerData)
-  }
-
-  const splitterCandidates: { word: string; graphemeId: string; segments: string[]; explicitRoot?: string }[] = []
-  for (const g of selection) {
-    for (const w of g.words) {
-      const segs = g.morphemes?.[w] ?? g.segments[w]
-      const explicitRoot = g.roots?.[w]
-      if (Array.isArray(segs) && segs.length > 0 && segmentsJoinMatchesWord(w, segs)) {
-        splitterCandidates.push({ word: w, graphemeId: g.grapheme, segments: segs, explicitRoot })
-      }
-    }
-  }
-  const splitTarget = Math.min(6, Math.max(4, splitterCandidates.length))
-  const splitPicked = shuffle(splitterCandidates).slice(0, splitTarget)
-  const splitterItems = splitPicked
-    .map(({ word, graphemeId, segments, explicitRoot }) =>
-      buildWordSplitterItemFromSegments(word, graphemeId, segments, explicitRoot),
-    )
-    .filter((x): x is NonNullable<typeof x> => Boolean(x))
-  if (splitterItems.length) {
-    markWordsUsed(
-      usedWords,
-      splitterItems.map((i) => i.word),
-    )
-    out.push({
-      id: `${idSlug}-wordSplitter`,
-      type: 'wordSplitter',
-      title: 'Word Splitter',
-      emoji: '✂️',
-      instruction: 'Say the word, then read it in chunks.',
-      items: splitterItems,
-    } satisfies WordSplitterData)
-  }
-
-  const selectedAffixes = dedupeLooseStrings(selection.map((g) => g.grapheme))
-  const pairCount = Math.min(6, Math.max(4, selectedAffixes.length))
-  const extraAffixes = shuffle(Object.keys(AFFIX_MEANINGS)).filter((k) => !selectedAffixes.includes(k))
-  const orderedAffixes = dedupeLooseStrings([...shuffle(selectedAffixes), ...extraAffixes])
-  const pairs = orderedAffixes.slice(0, pairCount).map((affix) => {
-    const source = allGraphemes.find((x) => x.grapheme === affix)
-    const ex = sample((source?.words ?? []).filter(Boolean), 3)
-    return {
-      affix,
-      meaning: affixMeaningLabel(affix),
-      examples: ex,
-    }
-  })
-  if (pairs.length >= 2) {
-    out.push({
-      id: `${idSlug}-meaningMatch`,
-      type: 'meaningMatch',
-      title: 'Meaning Match',
-      emoji: '🧩',
-      instruction: 'Pick the meaning that fits this affix — two choices.',
-      pairs,
-    } satisfies MeaningMatchData)
-  }
-
-  type HuntCand = { word: string; root: string; rootStart: number; rootEnd: number }
-  const huntCands: HuntCand[] = []
-  for (const g of selection) {
-    for (const w of g.words) {
-      const mor = g.morphemes?.[w]
-      let root: string | null = null
-      const ro = g.roots?.[w]
-      if (ro && rootSpanInWord(w, ro)) root = ro
-      else if (
-        mor &&
-        mor.length >= 2 &&
-        mor.join('').toLowerCase() === w.trim().toLowerCase() &&
-        mor[0] &&
-        mor[0].length >= 2 &&
-        rootSpanInWord(w, mor[0])
-      ) {
-        root = mor[0]
-      }
-      if (!root) {
-        const m = splitMorph(w, g.grapheme)
-        if (!m) continue
-        root = m.root
-      }
-      if (root.length < 2) continue
-      const span = rootSpanInWord(w, root)
-      if (!span) continue
-      huntCands.push({ word: w, root, ...span })
-    }
-  }
-  const allRoots = dedupeLooseStrings(huntCands.map((c) => c.root))
-  const builtHunts: import('@/data/types').RootHuntItem[] = []
-  for (const c of shuffle(huntCands)) {
-    const len = c.root.length
-    const others = shuffle(
-      allRoots.filter((r) => wordDedupeKey(r) !== wordDedupeKey(c.root)),
-    )
-    const close = others.filter((r) => Math.abs(r.length - len) <= 2)
-    const pool = close.length >= 2 ? close : others
-    const distractors = pool.slice(0, 2)
-    if (distractors.length < 2) continue
-    builtHunts.push({
-      ...c,
-      distractorRoots: [distractors[0]!, distractors[1]!],
-    })
-    if (builtHunts.length >= 6) break
-  }
-  const huntCount =
-    builtHunts.length >= 4 ? Math.min(6, builtHunts.length) : Math.min(builtHunts.length, 6)
-  const huntSlice = builtHunts.slice(0, huntCount)
-  if (huntSlice.length >= 2) {
-    markWordsUsed(
-      usedWords,
-      huntSlice.map((h) => h.word),
-    )
-    out.push({
-      id: `${idSlug}-rootHunt`,
-      type: 'rootHunt',
-      title: 'Root Hunt',
-      emoji: '🔍',
-      instruction: 'Find the root inside the word.',
-      items: huntSlice,
-    } satisfies RootHuntData)
-  }
-
-  return out
 }
 
 export function buildLessonFromGrapheme(
@@ -997,7 +748,7 @@ export function buildLessonFromGraphemes(
   const merged = mergeGraphemeSources(selection)
   const pinned = merged.pinned
   const primary = selection[0]!
-  const idSlug = selection.map((s) => s.grapheme).join('-')
+  const idSlug = selection.map((s) => s.id ?? s.grapheme).join('-')
   const comparison = allGraphemes.find((g) => g.grapheme === merged.sortPair)
 
   const speedyCore = selection.map((g) => ({
@@ -1119,7 +870,8 @@ export function buildLessonFromGraphemes(
     pairs: rhymePairs,
   } satisfies RhymeTimeData
 
-  const soundSort =
+  /** Omit Sound Sort when the paired grapheme (`sortPair`) is missing from curriculum — never show raw ids as anchor “words”. */
+  const soundSort: Extract<Activity, { type: 'soundSort' }> | null =
     selection.length >= 2
       ? (() => {
           const g0 = selection[0]!
@@ -1158,39 +910,41 @@ export function buildLessonFromGraphemes(
             ],
           }
         })()
-      : {
-          id: `${idSlug}-soundSort`,
-          type: 'soundSort' as const,
-          title: 'Sound Sort',
-          emoji: '🎯',
-          instruction: 'Sort the words into the correct sound zone!',
-          anchorWords: [
-            {
-              id: 'target',
-              word: merged.keyword,
-              sound: merged.grapheme,
-              audioUrl: wordAudioUrl(merged.keyword),
-            },
-            {
-              id: 'pair',
-              word: comparison?.keyword ?? merged.sortPair,
-              sound: merged.sortPair,
-              audioUrl: wordAudioUrl(comparison?.keyword ?? merged.sortPair),
-            },
-          ],
-          sortWords: [
-            ...sampleWordsPreferUnused(merged.words, 4, usedWords).map((word) => ({
-              word,
-              correctAnchorId: 'target' as const,
-              audioUrl: wordAudioUrl(word),
-            })),
-            ...sampleWordsPreferUnused(comparison?.words ?? [], 4, usedWords).map((word) => ({
-              word,
-              correctAnchorId: 'pair' as const,
-              audioUrl: wordAudioUrl(word),
-            })),
-          ],
-        }
+      : comparison && comparison.keyword.trim().length > 0
+        ? {
+            id: `${idSlug}-soundSort`,
+            type: 'soundSort' as const,
+            title: 'Sound Sort',
+            emoji: '🎯',
+            instruction: 'Sort the words into the correct sound zone!',
+            anchorWords: [
+              {
+                id: 'target',
+                word: merged.keyword,
+                sound: merged.grapheme,
+                audioUrl: wordAudioUrl(merged.keyword),
+              },
+              {
+                id: 'pair',
+                word: comparison.keyword,
+                sound: comparison.grapheme,
+                audioUrl: wordAudioUrl(comparison.keyword),
+              },
+            ],
+            sortWords: [
+              ...sampleWordsPreferUnused(merged.words, 4, usedWords).map((word) => ({
+                word,
+                correctAnchorId: 'target' as const,
+                audioUrl: wordAudioUrl(word),
+              })),
+              ...sampleWordsPreferUnused(comparison.words ?? [], 4, usedWords).map((word) => ({
+                word,
+                correctAnchorId: 'pair' as const,
+                audioUrl: wordAudioUrl(word),
+              })),
+            ],
+          }
+        : null
 
   const alienOrRealWords = (() => {
     if (pinned?.alienOrRealWords) {
@@ -1289,39 +1043,29 @@ export function buildLessonFromGraphemes(
     }),
   }
 
-  const morphOnly = selection.length > 0 && selection.every((s) => s.type === 'morpheme')
-  const morphologyActivities = morphOnly ? buildMorphologyActivities(idSlug, selection, usedWords, allGraphemes) : []
+  const activities: Activity[] = [
+    speedy,
+    soundBlender,
+    ...(trickyTrap ? [trickyTrap] : []),
+    missingSound,
+    rhymeTime,
+    ...(soundSort ? [soundSort] : []),
+    alienOrReal,
+    writeIt,
+    quickReview,
+    missingWord,
+    oddOneOut,
+    wordBuilder,
+  ]
 
-  const hasMorphemeFocus = selection.some((s) => s.type === 'morpheme')
+  /** Drops activity payloads not listed under optional `enabledActivities` for any selected grapheme phase. */
+  const sessionActivityAllow = intersectActivityAllowlistForSelection(selection)
+  const activitiesFiltered =
+    sessionActivityAllow === null
+      ? activities
+      : activities.filter((a) => sessionActivityAllow.has(a.type))
 
-  const activities: Activity[] = hasMorphemeFocus
-    ? [
-        ...(trickyTrap ? [trickyTrap] : []),
-        soundSort,
-        alienOrReal,
-        quickReview,
-        missingWord,
-        oddOneOut,
-        rhymeTime,
-        writeIt,
-        ...morphologyActivities,
-      ]
-    : [
-        speedy,
-        soundBlender,
-        ...(trickyTrap ? [trickyTrap] : []),
-        missingSound,
-        rhymeTime,
-        soundSort,
-        alienOrReal,
-        writeIt,
-        quickReview,
-        missingWord,
-        oddOneOut,
-        wordBuilder,
-      ]
-
-  const availableActivities: ActivityType[] = activities.map((a) => a.type)
+  const availableActivities: ActivityType[] = activitiesFiltered.map((a) => a.type)
 
   const sessionTitle =
     selection.length === 1 ? primary.keyword : selection.map((s) => s.grapheme).join(' · ')
@@ -1336,6 +1080,6 @@ export function buildLessonFromGraphemes(
     dayFocus: sessionTitle,
     termName: `Phase ${merged.phase}`,
     availableActivities,
-    activities,
+    activities: activitiesFiltered,
   }
 }

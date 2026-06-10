@@ -7,6 +7,7 @@ import { speakPhoneme } from '@/lib/audio'
 import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
+import { GraphemeMark } from '@/components/ui/GraphemeMark'
 
 interface SpeedySoundsProps {
   data: SpeedySoundsData
@@ -81,7 +82,7 @@ export function SpeedySounds({ data, onComplete }: SpeedySoundsProps) {
               >
                 <span className="relative flex flex-col items-center gap-4">
                   <span className="text-center font-andika text-4xl font-bold text-gray-900 md:text-5xl">
-                    {g.grapheme}
+                    <GraphemeMark graphemeId={g.grapheme} />
                   </span>
                 </span>
               </TactileButton>

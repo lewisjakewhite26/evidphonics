@@ -1,0 +1,750 @@
+{
+  "phase": 4,
+  "name": "Phase 4 — Consonant Clusters",
+  "description": "Blending and segmenting words with adjacent consonants. No new graphemes — applies Phase 2 and 3 knowledge to CCVC, CVCC, and CCVCC words.",
+  "graphemes": [
+    {
+      "id": "s-p4",
+      "grapheme": "s",
+      "phoneme": "/s/",
+      "keyword": "step",
+      "exampleWords": ["step", "slip", "snap", "stop", "skip", "spin", "sled", "spot", "crisp", "grasp", "wasp", "wisp"],
+      "blendWords": ["step", "slip", "snap", "stop", "skip", "spin", "sled", "spot"],
+      "quickReviewWords": ["step", "snap", "stop", "skip"],
+      "wordBuilderWords": ["step", "slip", "snap", "stop"],
+      "speedyRevisionGraphemes": ["t", "p", "n", "m"],
+      "missingWordSentences": [
+        { "sentence": "She took one ___ at a time.", "answer": "step", "distractors": ["snap", "stop", "slip"] },
+        { "sentence": "I will ___ over the puddle.", "answer": "step", "distractors": ["skip", "snap", "slip"] },
+        { "sentence": "Do not ___ on the ice.", "answer": "slip", "distractors": ["step", "stop", "snap"] },
+        { "sentence": "We will ___ at the shops.", "answer": "stop", "distractors": ["step", "slip", "skip"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["step", "slip", "snap", "sun"], "oddOne": "sun", "reason": "sun has no consonant cluster" },
+        { "words": ["stop", "spin", "sled", "sit"], "oddOne": "sit", "reason": "sit has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "I can skip and hop.", "targetWord": "skip" },
+        { "sentence": "She will stop the clock.", "targetWord": "stop" },
+        { "sentence": "He took a big step.", "targetWord": "step" }
+      ],
+      "segments": {
+        "step": ["st", "e", "p"],
+        "slip": ["sl", "i", "p"],
+        "snap": ["sn", "a", "p"],
+        "stop": ["st", "o", "p"],
+        "skip": ["sk", "i", "p"],
+        "spin": ["sp", "i", "n"],
+        "sled": ["sl", "e", "d"],
+        "spot": ["sp", "o", "t"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "t-p4",
+      "grapheme": "t",
+      "phoneme": "/t/",
+      "keyword": "trip",
+      "exampleWords": ["trip", "trap", "trot", "trim", "trust", "trend", "twin", "twig", "tent", "tilt", "tuft", "text"],
+      "blendWords": ["trip", "trap", "trot", "trim", "twin", "twig", "tent", "tilt"],
+      "quickReviewWords": ["trip", "trap", "trot", "trim"],
+      "wordBuilderWords": ["trip", "trap", "trot", "trim"],
+      "speedyRevisionGraphemes": ["s", "p", "n", "m"],
+      "missingWordSentences": [
+        { "sentence": "We went on a long ___.", "answer": "trip", "distractors": ["trap", "trot", "trim"] },
+        { "sentence": "The fox fell into a ___.", "answer": "trap", "distractors": ["trip", "trot", "trim"] },
+        { "sentence": "The horse began to ___ along.", "answer": "trot", "distractors": ["trip", "trap", "trim"] },
+        { "sentence": "She will ___ the hedge.", "answer": "trim", "distractors": ["trip", "trap", "trot"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["trip", "trap", "trot", "top"], "oddOne": "top", "reason": "top has no consonant cluster" },
+        { "words": ["twin", "twig", "trim", "tin"], "oddOne": "tin", "reason": "tin has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "The dog fell into a trap.", "targetWord": "trap" },
+        { "sentence": "We went on a school trip.", "targetWord": "trip" },
+        { "sentence": "She will trim the grass.", "targetWord": "trim" }
+      ],
+      "segments": {
+        "trip": ["tr", "i", "p"],
+        "trap": ["tr", "a", "p"],
+        "trot": ["tr", "o", "t"],
+        "trim": ["tr", "i", "m"],
+        "twin": ["tw", "i", "n"],
+        "twig": ["tw", "i", "g"],
+        "tent": ["t", "e", "nt"],
+        "tilt": ["t", "i", "lt"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "p-p4",
+      "grapheme": "p",
+      "phoneme": "/p/",
+      "keyword": "plug",
+      "exampleWords": ["plug", "plan", "plod", "plop", "prop", "pram", "prey", "print", "crimp", "camp", "damp", "lamp"],
+      "blendWords": ["plug", "plan", "plod", "plop", "prop", "pram", "print", "crimp"],
+      "quickReviewWords": ["plug", "plan", "prop", "pram"],
+      "wordBuilderWords": ["plug", "plan", "plod", "plop"],
+      "speedyRevisionGraphemes": ["s", "t", "n", "l"],
+      "missingWordSentences": [
+        { "sentence": "She has a ___ for the bath.", "answer": "plug", "distractors": ["plan", "plod", "prop"] },
+        { "sentence": "We need a ___ for the trip.", "answer": "plan", "distractors": ["plug", "plod", "prop"] },
+        { "sentence": "The baby is in a ___.", "answer": "pram", "distractors": ["plug", "plan", "prop"] },
+        { "sentence": "Use the ___ to hold it up.", "answer": "prop", "distractors": ["plug", "plan", "pram"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["plug", "plan", "plod", "pot"], "oddOne": "pot", "reason": "pot has no consonant cluster" },
+        { "words": ["prop", "pram", "print", "pin"], "oddOne": "pin", "reason": "pin has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "Pull out the plug.", "targetWord": "plug" },
+        { "sentence": "We have a good plan.", "targetWord": "plan" },
+        { "sentence": "The baby is in the pram.", "targetWord": "pram" }
+      ],
+      "segments": {
+        "plug": ["pl", "u", "g"],
+        "plan": ["pl", "a", "n"],
+        "plod": ["pl", "o", "d"],
+        "plop": ["pl", "o", "p"],
+        "prop": ["pr", "o", "p"],
+        "pram": ["pr", "a", "m"],
+        "print": ["pr", "i", "nt"],
+        "crimp": ["cr", "i", "mp"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "n-p4",
+      "grapheme": "n",
+      "phoneme": "/n/",
+      "keyword": "snap",
+      "exampleWords": ["snap", "snip", "snob", "snug", "knit", "knot", "next", "nest", "went", "bent", "dent", "rent"],
+      "blendWords": ["snap", "snip", "snug", "next", "nest", "went", "bent", "dent"],
+      "quickReviewWords": ["snap", "snip", "snug", "next"],
+      "wordBuilderWords": ["snap", "snip", "snug", "nest"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "d"],
+      "missingWordSentences": [
+        { "sentence": "Try not to ___ the twig.", "answer": "snap", "distractors": ["snip", "snug", "next"] },
+        { "sentence": "The bird sat in its ___.", "answer": "nest", "distractors": ["snap", "snip", "next"] },
+        { "sentence": "What comes ___?", "answer": "next", "distractors": ["snap", "nest", "went"] },
+        { "sentence": "She ___ to the shops.", "answer": "went", "distractors": ["bent", "dent", "next"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["snap", "snip", "snug", "nap"], "oddOne": "nap", "reason": "nap has no consonant cluster" },
+        { "words": ["next", "nest", "went", "net"], "oddOne": "net", "reason": "net has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "The twig will snap.", "targetWord": "snap" },
+        { "sentence": "The bird has a nest.", "targetWord": "nest" },
+        { "sentence": "We went to the park.", "targetWord": "went" }
+      ],
+      "segments": {
+        "snap": ["sn", "a", "p"],
+        "snip": ["sn", "i", "p"],
+        "snug": ["sn", "u", "g"],
+        "next": ["n", "e", "xt"],
+        "nest": ["n", "e", "st"],
+        "went": ["w", "e", "nt"],
+        "bent": ["b", "e", "nt"],
+        "dent": ["d", "e", "nt"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "m-p4",
+      "grapheme": "m",
+      "phoneme": "/m/",
+      "keyword": "drip",
+      "exampleWords": ["mist", "must", "melt", "mint", "clamp", "crimp", "stomp", "stamp", "damp", "lamp", "camp", "ramp"],
+      "blendWords": ["mist", "must", "melt", "mint", "stamp", "damp", "lamp", "camp"],
+      "quickReviewWords": ["mist", "must", "melt", "stamp"],
+      "wordBuilderWords": ["mist", "must", "melt", "mint"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "The ___ covered the hill.", "answer": "mist", "distractors": ["must", "melt", "mint"] },
+        { "sentence": "You ___ try your best.", "answer": "must", "distractors": ["mist", "melt", "mint"] },
+        { "sentence": "The ice will ___ in the sun.", "answer": "melt", "distractors": ["mist", "must", "mint"] },
+        { "sentence": "She set up ___ at the beach.", "answer": "camp", "distractors": ["damp", "lamp", "ramp"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["mist", "must", "melt", "mat"], "oddOne": "mat", "reason": "mat has no consonant cluster" },
+        { "words": ["stamp", "damp", "lamp", "map"], "oddOne": "map", "reason": "map has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "The mist was thick.", "targetWord": "mist" },
+        { "sentence": "You must be kind.", "targetWord": "must" },
+        { "sentence": "Set up camp here.", "targetWord": "camp" }
+      ],
+      "segments": {
+        "mist": ["m", "i", "st"],
+        "must": ["m", "u", "st"],
+        "melt": ["m", "e", "lt"],
+        "mint": ["m", "i", "nt"],
+        "stamp": ["st", "a", "mp"],
+        "damp": ["d", "a", "mp"],
+        "lamp": ["l", "a", "mp"],
+        "camp": ["c", "a", "mp"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "d-p4",
+      "grapheme": "d",
+      "phoneme": "/d/",
+      "keyword": "drip",
+      "exampleWords": ["drip", "drag", "drop", "drum", "drift", "drive", "blend", "grind", "fond", "band", "land", "sand"],
+      "blendWords": ["drip", "drag", "drop", "drum", "drift", "blend", "band", "land"],
+      "quickReviewWords": ["drip", "drag", "drop", "drum"],
+      "wordBuilderWords": ["drip", "drag", "drop", "drum"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "The tap began to ___.", "answer": "drip", "distractors": ["drag", "drop", "drum"] },
+        { "sentence": "Do not ___ your bag.", "answer": "drag", "distractors": ["drip", "drop", "drum"] },
+        { "sentence": "She can play the ___.", "answer": "drum", "distractors": ["drip", "drag", "drop"] },
+        { "sentence": "Build a sandcastle in the ___.", "answer": "sand", "distractors": ["band", "land", "hand"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["drip", "drag", "drop", "dip"], "oddOne": "dip", "reason": "dip has no consonant cluster" },
+        { "words": ["band", "land", "sand", "dad"], "oddOne": "dad", "reason": "dad has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "The drip made a puddle.", "targetWord": "drip" },
+        { "sentence": "He can beat the drum.", "targetWord": "drum" },
+        { "sentence": "We played on the sand.", "targetWord": "sand" }
+      ],
+      "segments": {
+        "drip": ["dr", "i", "p"],
+        "drag": ["dr", "a", "g"],
+        "drop": ["dr", "o", "p"],
+        "drum": ["dr", "u", "m"],
+        "drift": ["dr", "i", "ft"],
+        "blend": ["bl", "e", "nd"],
+        "band": ["b", "a", "nd"],
+        "land": ["l", "a", "nd"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "g-p4",
+      "grapheme": "g",
+      "phoneme": "/g/",
+      "keyword": "grip",
+      "exampleWords": ["grip", "grin", "grit", "grab", "grub", "groan", "flag", "slug", "twig", "plug", "drug", "shrug"],
+      "blendWords": ["grip", "grin", "grit", "grab", "grub", "flag", "slug", "twig"],
+      "quickReviewWords": ["grip", "grin", "grab", "grub"],
+      "wordBuilderWords": ["grip", "grin", "grit", "grab"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "Hold on with a tight ___.", "answer": "grip", "distractors": ["grin", "grit", "grab"] },
+        { "sentence": "She had a big ___ on her face.", "answer": "grin", "distractors": ["grip", "grit", "grab"] },
+        { "sentence": "He will ___ the rope.", "answer": "grab", "distractors": ["grip", "grin", "grit"] },
+        { "sentence": "The snail left a ___.", "answer": "slug", "distractors": ["plug", "flag", "twig"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["grip", "grin", "grab", "gap"], "oddOne": "gap", "reason": "gap has no consonant cluster" },
+        { "words": ["flag", "slug", "twig", "dog"], "oddOne": "dog", "reason": "dog has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "She had a big grin.", "targetWord": "grin" },
+        { "sentence": "Grab the rope tightly.", "targetWord": "grab" },
+        { "sentence": "The flag blew in the wind.", "targetWord": "flag" }
+      ],
+      "segments": {
+        "grip": ["gr", "i", "p"],
+        "grin": ["gr", "i", "n"],
+        "grit": ["gr", "i", "t"],
+        "grab": ["gr", "a", "b"],
+        "grub": ["gr", "u", "b"],
+        "flag": ["fl", "a", "g"],
+        "slug": ["sl", "u", "g"],
+        "twig": ["tw", "i", "g"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "l-p4",
+      "grapheme": "l",
+      "phoneme": "/l/",
+      "keyword": "clap",
+      "exampleWords": ["clap", "clip", "clod", "clot", "clug", "flip", "flat", "flog", "blob", "blot", "fled", "sled"],
+      "blendWords": ["clap", "clip", "flat", "flip", "blob", "blot", "fled", "sled"],
+      "quickReviewWords": ["clap", "clip", "flat", "flip"],
+      "wordBuilderWords": ["clap", "clip", "flat", "flip"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "We ___ when the show ended.", "answer": "clap", "distractors": ["clip", "flat", "flip"] },
+        { "sentence": "Use a ___ to hold the paper.", "answer": "clip", "distractors": ["clap", "flat", "flip"] },
+        { "sentence": "The tyre went ___.", "answer": "flat", "distractors": ["clap", "clip", "flip"] },
+        { "sentence": "She did a ___ on the trampoline.", "answer": "flip", "distractors": ["clap", "clip", "flat"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["clap", "clip", "flat", "lip"], "oddOne": "lip", "reason": "lip has no consonant cluster" },
+        { "words": ["blob", "blot", "fled", "led"], "oddOne": "led", "reason": "led has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "Clap your hands together.", "targetWord": "clap" },
+        { "sentence": "The road was flat.", "targetWord": "flat" },
+        { "sentence": "She did a flip.", "targetWord": "flip" }
+      ],
+      "segments": {
+        "clap": ["cl", "a", "p"],
+        "clip": ["cl", "i", "p"],
+        "flat": ["fl", "a", "t"],
+        "flip": ["fl", "i", "p"],
+        "blob": ["bl", "o", "b"],
+        "blot": ["bl", "o", "t"],
+        "fled": ["fl", "e", "d"],
+        "sled": ["sl", "e", "d"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "f-p4",
+      "grapheme": "f",
+      "phoneme": "/f/",
+      "keyword": "frog",
+      "exampleWords": ["frog", "from", "fret", "frill", "craft", "drift", "left", "lift", "loft", "soft", "tuft", "gift"],
+      "blendWords": ["frog", "from", "fret", "craft", "left", "lift", "soft", "gift"],
+      "quickReviewWords": ["frog", "from", "left", "gift"],
+      "wordBuilderWords": ["frog", "from", "fret", "left"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "The ___ sat on the log.", "answer": "frog", "distractors": ["from", "fret", "left"] },
+        { "sentence": "She came ___ the park.", "answer": "from", "distractors": ["frog", "fret", "left"] },
+        { "sentence": "He got a ___ for his birthday.", "answer": "gift", "distractors": ["left", "lift", "soft"] },
+        { "sentence": "The pillow felt ___.", "answer": "soft", "distractors": ["left", "lift", "gift"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["frog", "from", "fret", "fog"], "oddOne": "fog", "reason": "fog has no consonant cluster" },
+        { "words": ["left", "lift", "soft", "fit"], "oddOne": "fit", "reason": "fit has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "The frog jumped in the pond.", "targetWord": "frog" },
+        { "sentence": "She came from London.", "targetWord": "from" },
+        { "sentence": "He got a lovely gift.", "targetWord": "gift" }
+      ],
+      "segments": {
+        "frog": ["fr", "o", "g"],
+        "from": ["fr", "o", "m"],
+        "fret": ["fr", "e", "t"],
+        "craft": ["cr", "a", "ft"],
+        "left": ["l", "e", "ft"],
+        "lift": ["l", "i", "ft"],
+        "soft": ["s", "o", "ft"],
+        "gift": ["g", "i", "ft"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "r-p4",
+      "grapheme": "r",
+      "phoneme": "/r/",
+      "keyword": "grip",
+      "exampleWords": ["crab", "cram", "crop", "crest", "crisp", "cross", "brim", "brag", "from", "frog", "grip", "grin"],
+      "blendWords": ["crab", "cram", "crop", "crisp", "brim", "brag", "from", "grip"],
+      "quickReviewWords": ["crab", "crop", "brim", "crisp"],
+      "wordBuilderWords": ["crab", "cram", "crop", "brim"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "The ___ had ten legs.", "answer": "crab", "distractors": ["cram", "crop", "brim"] },
+        { "sentence": "We will ___ for the test.", "answer": "cram", "distractors": ["crab", "crop", "brim"] },
+        { "sentence": "The hat had a wide ___.", "answer": "brim", "distractors": ["crab", "cram", "crop"] },
+        { "sentence": "The ___ was fresh and crunchy.", "answer": "crisp", "distractors": ["crab", "crop", "brim"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["crab", "cram", "crop", "cap"], "oddOne": "cap", "reason": "cap has no consonant cluster" },
+        { "words": ["brim", "brag", "from", "rob"], "oddOne": "rob", "reason": "rob has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "The crab ran sideways.", "targetWord": "crab" },
+        { "sentence": "Do not brag about it.", "targetWord": "brag" },
+        { "sentence": "The crisp snapped loudly.", "targetWord": "crisp" }
+      ],
+      "segments": {
+        "crab": ["cr", "a", "b"],
+        "cram": ["cr", "a", "m"],
+        "crop": ["cr", "o", "p"],
+        "crisp": ["cr", "i", "sp"],
+        "brim": ["br", "i", "m"],
+        "brag": ["br", "a", "g"],
+        "from": ["fr", "o", "m"],
+        "grip": ["gr", "i", "p"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "sh-p4",
+      "grapheme": "sh",
+      "phoneme": "/sh/",
+      "keyword": "shelf",
+      "exampleWords": ["shelf", "shift", "shell", "shrub", "shred", "shrimp", "flash", "crash", "clash", "brush", "crush", "flush"],
+      "blendWords": ["shelf", "shift", "shrub", "shred", "flash", "crash", "brush", "crush"],
+      "quickReviewWords": ["shelf", "shift", "flash", "crash"],
+      "wordBuilderWords": ["shelf", "shift", "flash", "brush"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "The books are on the ___.", "answer": "shelf", "distractors": ["shift", "flash", "crash"] },
+        { "sentence": "There was a big ___ on the road.", "answer": "crash", "distractors": ["shelf", "flash", "brush"] },
+        { "sentence": "Use a ___ to clean it.", "answer": "brush", "distractors": ["shelf", "flash", "crash"] },
+        { "sentence": "She found a ___ in the sea.", "answer": "shell", "distractors": ["shelf", "shift", "flash"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["shelf", "shift", "shrub", "shop"], "oddOne": "shop", "reason": "shop has no consonant cluster" },
+        { "words": ["flash", "crash", "brush", "rush"], "oddOne": "rush", "reason": "rush has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "Put it back on the shelf.", "targetWord": "shelf" },
+        { "sentence": "The cars had a crash.", "targetWord": "crash" },
+        { "sentence": "Brush your teeth well.", "targetWord": "brush" }
+      ],
+      "segments": {
+        "shelf": ["sh", "e", "lf"],
+        "shift": ["sh", "i", "ft"],
+        "shrub": ["shr", "u", "b"],
+        "shred": ["shr", "e", "d"],
+        "flash": ["fl", "a", "sh"],
+        "crash": ["cr", "a", "sh"],
+        "brush": ["br", "u", "sh"],
+        "crush": ["cr", "u", "sh"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "th-p4",
+      "grapheme": "th",
+      "phoneme": "/th/",
+      "keyword": "thick",
+      "exampleWords": ["thick", "thrill", "throb", "thrush", "filth", "wealth", "health", "stealth", "cloth", "froth", "broth", "sloth"],
+      "blendWords": ["thick", "thrill", "throb", "filth", "health", "cloth", "froth", "broth"],
+      "quickReviewWords": ["thick", "thrill", "health", "cloth"],
+      "wordBuilderWords": ["thick", "thrill", "throb", "cloth"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "The rope was very ___.", "answer": "thick", "distractors": ["thrill", "cloth", "froth"] },
+        { "sentence": "It was a ___ to ride the rollercoaster.", "answer": "thrill", "distractors": ["thick", "cloth", "froth"] },
+        { "sentence": "Eat well to keep your ___.", "answer": "health", "distractors": ["thick", "cloth", "filth"] },
+        { "sentence": "Wipe with a damp ___.", "answer": "cloth", "distractors": ["thick", "broth", "froth"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["thick", "thrill", "throb", "thin"], "oddOne": "thin", "reason": "thin has no consonant cluster" },
+        { "words": ["cloth", "froth", "broth", "moth"], "oddOne": "moth", "reason": "moth has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "The wall was thick.", "targetWord": "thick" },
+        { "sentence": "Good health is important.", "targetWord": "health" },
+        { "sentence": "Clean with a damp cloth.", "targetWord": "cloth" }
+      ],
+      "segments": {
+        "thick": ["th", "i", "ck"],
+        "thrill": ["thr", "i", "ll"],
+        "throb": ["thr", "o", "b"],
+        "filth": ["f", "i", "lth"],
+        "health": ["h", "ea", "lth"],
+        "cloth": ["cl", "o", "th"],
+        "froth": ["fr", "o", "th"],
+        "broth": ["br", "o", "th"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "ch-p4",
+      "grapheme": "ch",
+      "phoneme": "/ch/",
+      "keyword": "chest",
+      "exampleWords": ["chest", "chimp", "champ", "chomp", "ench", "crunch", "branch", "clench", "scrunch", "lurch", "perch", "march"],
+      "blendWords": ["chest", "chimp", "champ", "crunch", "branch", "clench", "perch", "march"],
+      "quickReviewWords": ["chest", "champ", "crunch", "branch"],
+      "wordBuilderWords": ["chest", "chimp", "champ", "crunch"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "He has a strong ___.", "answer": "chest", "distractors": ["chimp", "champ", "crunch"] },
+        { "sentence": "The ___ swung from the tree.", "answer": "chimp", "distractors": ["chest", "champ", "crunch"] },
+        { "sentence": "She was the ___ at the race.", "answer": "champ", "distractors": ["chest", "chimp", "crunch"] },
+        { "sentence": "She ate the apple with a big ___.", "answer": "crunch", "distractors": ["chest", "champ", "branch"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["chest", "chimp", "champ", "chip"], "oddOne": "chip", "reason": "chip has no consonant cluster" },
+        { "words": ["crunch", "branch", "clench", "much"], "oddOne": "much", "reason": "much has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "She held it to her chest.", "targetWord": "chest" },
+        { "sentence": "He is the champ.", "targetWord": "champ" },
+        { "sentence": "The branch broke off.", "targetWord": "branch" }
+      ],
+      "segments": {
+        "chest": ["ch", "e", "st"],
+        "chimp": ["ch", "i", "mp"],
+        "champ": ["ch", "a", "mp"],
+        "crunch": ["cr", "u", "nch"],
+        "branch": ["br", "a", "nch"],
+        "clench": ["cl", "e", "nch"],
+        "perch": ["p", "er", "ch"],
+        "march": ["m", "ar", "ch"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "ng-p4",
+      "grapheme": "ng",
+      "phoneme": "/ng/",
+      "keyword": "string",
+      "exampleWords": ["string", "spring", "strong", "sting", "bring", "cling", "fling", "sling", "clang", "clang", "clunk", "clonk"],
+      "blendWords": ["string", "spring", "strong", "bring", "cling", "fling", "sling", "clang"],
+      "quickReviewWords": ["string", "spring", "strong", "bring"],
+      "wordBuilderWords": ["string", "spring", "strong", "bring"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "Tie it with a piece of ___.", "answer": "string", "distractors": ["spring", "strong", "bring"] },
+        { "sentence": "The flowers bloom in ___.", "answer": "spring", "distractors": ["string", "strong", "bring"] },
+        { "sentence": "He is very ___ for his age.", "answer": "strong", "distractors": ["string", "spring", "bring"] },
+        { "sentence": "Please ___ your coat.", "answer": "bring", "distractors": ["string", "spring", "strong"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["string", "spring", "strong", "sing"], "oddOne": "sing", "reason": "sing has no consonant cluster" },
+        { "words": ["bring", "cling", "fling", "ring"], "oddOne": "ring", "reason": "ring has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "Tie it with string.", "targetWord": "string" },
+        { "sentence": "Flowers bloom in spring.", "targetWord": "spring" },
+        { "sentence": "She is very strong.", "targetWord": "strong" }
+      ],
+      "segments": {
+        "string": ["str", "i", "ng"],
+        "spring": ["spr", "i", "ng"],
+        "strong": ["str", "o", "ng"],
+        "bring": ["br", "i", "ng"],
+        "cling": ["cl", "i", "ng"],
+        "fling": ["fl", "i", "ng"],
+        "sling": ["sl", "i", "ng"],
+        "clang": ["cl", "a", "ng"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "ee-p4",
+      "grapheme": "ee",
+      "phoneme": "/ee/",
+      "keyword": "street",
+      "exampleWords": ["street", "steep", "steel", "steed", "creep", "greed", "freed", "breed", "speed", "treed", "sleeve", "freeze"],
+      "blendWords": ["street", "steep", "steel", "creep", "greed", "freed", "breed", "speed"],
+      "quickReviewWords": ["street", "steep", "creep", "speed"],
+      "wordBuilderWords": ["street", "steep", "creep", "speed"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "We walked down the ___.", "answer": "street", "distractors": ["steep", "creep", "speed"] },
+        { "sentence": "The hill was very ___.", "answer": "steep", "distractors": ["street", "creep", "speed"] },
+        { "sentence": "The mouse began to ___ past.", "answer": "creep", "distractors": ["street", "steep", "speed"] },
+        { "sentence": "The car picked up ___.", "answer": "speed", "distractors": ["street", "steep", "creep"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["street", "steep", "steel", "see"], "oddOne": "see", "reason": "see has no consonant cluster" },
+        { "words": ["creep", "greed", "freed", "feed"], "oddOne": "feed", "reason": "feed has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "She ran down the street.", "targetWord": "street" },
+        { "sentence": "The hill was steep.", "targetWord": "steep" },
+        { "sentence": "The car drove at speed.", "targetWord": "speed" }
+      ],
+      "segments": {
+        "street": ["str", "ee", "t"],
+        "steep": ["st", "ee", "p"],
+        "steel": ["st", "ee", "l"],
+        "creep": ["cr", "ee", "p"],
+        "greed": ["gr", "ee", "d"],
+        "freed": ["fr", "ee", "d"],
+        "breed": ["br", "ee", "d"],
+        "speed": ["sp", "ee", "d"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "ai-p4",
+      "grapheme": "ai",
+      "phoneme": "/ai/",
+      "keyword": "train",
+      "exampleWords": ["train", "trail", "brain", "drain", "grain", "plain", "strain", "sprain", "claim", "snail", "frail", "quail"],
+      "blendWords": ["train", "trail", "brain", "drain", "grain", "plain", "strain", "claim"],
+      "quickReviewWords": ["train", "brain", "drain", "grain"],
+      "wordBuilderWords": ["train", "trail", "brain", "drain"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "We caught the ___ to London.", "answer": "train", "distractors": ["trail", "brain", "drain"] },
+        { "sentence": "Use your ___ to think.", "answer": "brain", "distractors": ["train", "trail", "drain"] },
+        { "sentence": "The water went down the ___.", "answer": "drain", "distractors": ["train", "brain", "grain"] },
+        { "sentence": "She walked along the ___.", "answer": "trail", "distractors": ["train", "brain", "drain"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["train", "trail", "brain", "rain"], "oddOne": "rain", "reason": "rain has no consonant cluster" },
+        { "words": ["drain", "grain", "plain", "pain"], "oddOne": "pain", "reason": "pain has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "The train was fast.", "targetWord": "train" },
+        { "sentence": "She used her brain.", "targetWord": "brain" },
+        { "sentence": "Water goes down the drain.", "targetWord": "drain" }
+      ],
+      "segments": {
+        "train": ["tr", "ai", "n"],
+        "trail": ["tr", "ai", "l"],
+        "brain": ["br", "ai", "n"],
+        "drain": ["dr", "ai", "n"],
+        "grain": ["gr", "ai", "n"],
+        "plain": ["pl", "ai", "n"],
+        "strain": ["str", "ai", "n"],
+        "claim": ["cl", "ai", "m"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "oa-p4",
+      "grapheme": "oa",
+      "phoneme": "/oa/",
+      "keyword": "float",
+      "exampleWords": ["float", "cloak", "groan", "croak", "bloat", "boast", "coast", "roast", "toast", "froast", "throat", "gloat"],
+      "blendWords": ["float", "cloak", "groan", "croak", "bloat", "boast", "coast", "toast"],
+      "quickReviewWords": ["float", "groan", "coast", "toast"],
+      "wordBuilderWords": ["float", "cloak", "groan", "coast"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "The boat began to ___.", "answer": "float", "distractors": ["groan", "coast", "toast"] },
+        { "sentence": "She let out a loud ___.", "answer": "groan", "distractors": ["float", "coast", "toast"] },
+        { "sentence": "We walked along the ___.", "answer": "coast", "distractors": ["float", "groan", "toast"] },
+        { "sentence": "She had ___ for breakfast.", "answer": "toast", "distractors": ["float", "groan", "coast"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["float", "cloak", "groan", "goat"], "oddOne": "goat", "reason": "goat has no consonant cluster" },
+        { "words": ["boast", "coast", "toast", "boat"], "oddOne": "boat", "reason": "boat has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "The balloon can float.", "targetWord": "float" },
+        { "sentence": "We went to the coast.", "targetWord": "coast" },
+        { "sentence": "She had toast for breakfast.", "targetWord": "toast" }
+      ],
+      "segments": {
+        "float": ["fl", "oa", "t"],
+        "cloak": ["cl", "oa", "k"],
+        "groan": ["gr", "oa", "n"],
+        "croak": ["cr", "oa", "k"],
+        "bloat": ["bl", "oa", "t"],
+        "boast": ["b", "oa", "st"],
+        "coast": ["c", "oa", "st"],
+        "toast": ["t", "oa", "st"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "oo-long-p4",
+      "grapheme": "oo",
+      "phoneme": "/oo/",
+      "keyword": "drool",
+      "exampleWords": ["drool", "stool", "spool", "troop", "snoop", "droop", "swoop", "proof", "brood", "stood", "flood", "blood"],
+      "blendWords": ["drool", "stool", "spool", "troop", "snoop", "droop", "proof", "brood"],
+      "quickReviewWords": ["drool", "stool", "troop", "proof"],
+      "wordBuilderWords": ["drool", "stool", "spool", "troop"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "She sat on the ___.", "answer": "stool", "distractors": ["drool", "troop", "proof"] },
+        { "sentence": "A ___ of soldiers marched past.", "answer": "troop", "distractors": ["drool", "stool", "proof"] },
+        { "sentence": "You need ___ before you can believe it.", "answer": "proof", "distractors": ["drool", "stool", "troop"] },
+        { "sentence": "The hawk began to ___.", "answer": "swoop", "distractors": ["drool", "stool", "troop"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["drool", "stool", "spool", "cool"], "oddOne": "cool", "reason": "cool has no consonant cluster" },
+        { "words": ["troop", "snoop", "droop", "too"], "oddOne": "too", "reason": "too has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "She sat on the stool.", "targetWord": "stool" },
+        { "sentence": "A troop marched past.", "targetWord": "troop" },
+        { "sentence": "Show me the proof.", "targetWord": "proof" }
+      ],
+      "segments": {
+        "drool": ["dr", "oo", "l"],
+        "stool": ["st", "oo", "l"],
+        "spool": ["sp", "oo", "l"],
+        "troop": ["tr", "oo", "p"],
+        "snoop": ["sn", "oo", "p"],
+        "droop": ["dr", "oo", "p"],
+        "proof": ["pr", "oo", "f"],
+        "brood": ["br", "oo", "d"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "ar-p4",
+      "grapheme": "ar",
+      "phoneme": "/ar/",
+      "keyword": "scarf",
+      "exampleWords": ["scarf", "scar", "snarl", "spark", "sharp", "charm", "chart", "start", "smart", "stark", "starch", "march"],
+      "blendWords": ["scarf", "spark", "sharp", "charm", "chart", "start", "smart", "starch"],
+      "quickReviewWords": ["scarf", "spark", "sharp", "start"],
+      "wordBuilderWords": ["scarf", "spark", "sharp", "chart"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "She wore a warm ___.", "answer": "scarf", "distractors": ["spark", "sharp", "start"] },
+        { "sentence": "The knife is very ___.", "answer": "sharp", "distractors": ["scarf", "spark", "start"] },
+        { "sentence": "The fire made a ___ fly up.", "answer": "spark", "distractors": ["scarf", "sharp", "start"] },
+        { "sentence": "The race was about to ___.", "answer": "start", "distractors": ["scarf", "spark", "sharp"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["scarf", "spark", "sharp", "car"], "oddOne": "car", "reason": "car has no consonant cluster" },
+        { "words": ["chart", "start", "smart", "art"], "oddOne": "art", "reason": "art has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "She wore a red scarf.", "targetWord": "scarf" },
+        { "sentence": "The knife is sharp.", "targetWord": "sharp" },
+        { "sentence": "On your marks, get set, start!", "targetWord": "start" }
+      ],
+      "segments": {
+        "scarf": ["sc", "ar", "f"],
+        "spark": ["sp", "ar", "k"],
+        "sharp": ["sh", "ar", "p"],
+        "charm": ["ch", "ar", "m"],
+        "chart": ["ch", "ar", "t"],
+        "start": ["st", "ar", "t"],
+        "smart": ["sm", "ar", "t"],
+        "starch": ["st", "ar", "ch"]
+      },
+      "pinned": null
+    },
+    {
+      "id": "or-p4",
+      "grapheme": "or",
+      "phoneme": "/or/",
+      "keyword": "storm",
+      "exampleWords": ["storm", "sport", "snort", "short", "stork", "scorn", "sworn", "shorn", "thorn", "worn", "cord", "scorch"],
+      "blendWords": ["storm", "sport", "snort", "short", "stork", "scorn", "sworn", "thorn"],
+      "quickReviewWords": ["storm", "sport", "short", "thorn"],
+      "wordBuilderWords": ["storm", "sport", "snort", "short"],
+      "speedyRevisionGraphemes": ["s", "t", "p", "n"],
+      "missingWordSentences": [
+        { "sentence": "There was a big ___ last night.", "answer": "storm", "distractors": ["sport", "short", "thorn"] },
+        { "sentence": "Football is her favourite ___.", "answer": "sport", "distractors": ["storm", "short", "thorn"] },
+        { "sentence": "She is quite ___ for her age.", "answer": "short", "distractors": ["storm", "sport", "thorn"] },
+        { "sentence": "The rose has a sharp ___.", "answer": "thorn", "distractors": ["storm", "sport", "short"] }
+      ],
+      "oddOneOutSets": [
+        { "words": ["storm", "sport", "snort", "for"], "oddOne": "for", "reason": "for has no consonant cluster" },
+        { "words": ["short", "stork", "scorn", "horn"], "oddOne": "horn", "reason": "horn has no consonant cluster" }
+      ],
+      "writeItSentences": [
+        { "sentence": "The storm was very loud.", "targetWord": "storm" },
+        { "sentence": "She loves sport.", "targetWord": "sport" },
+        { "sentence": "Watch out for the thorn.", "targetWord": "thorn" }
+      ],
+      "segments": {
+        "storm": ["st", "or", "m"],
+        "sport": ["sp", "or", "t"],
+        "snort": ["sn", "or", "t"],
+        "short": ["sh", "or", "t"],
+        "stork": ["st", "or", "k"],
+        "scorn": ["sc", "or", "n"],
+        "sworn": ["sw", "or", "n"],
+        "thorn": ["th", "or", "n"]
+      },
+      "pinned": null
+    }
+  ],
+  "enabledActivities": ["speedySounds", "soundBlender", "missingSound", "missingWord", "oddOneOut", "wordBuilder", "writeIt"],
+  "disabledActivities": ["trickytrap", "quickReview", "soundSort", "alienOrReal", "rhymeTime"],
+  "phaseNote": "Phase 4 uses no new graphemes. All activities use CCVC, CVCC, and CCVCC cluster words built from Phase 2 and 3 graphemes. Sound Sort and Alien or Real are disabled as they rely on single grapheme contrast logic that does not apply to cluster work."
+}

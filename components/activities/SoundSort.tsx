@@ -9,18 +9,15 @@ import { AudioButton } from '@/components/ui/AudioButton'
 import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
+import { graphemeHighlightLetters } from '@/lib/graphemeDisplay'
 
 interface SoundSortProps {
   data: SoundSortData
   onComplete: () => void
 }
 
-function lettersFromSound(sound: string): string {
-  return sound.replace(/[^a-zA-Z]/g, '').toLowerCase()
-}
-
 function underlineSpan(word: string, sound: string): { start: number; end: number } {
-  const g = lettersFromSound(sound)
+  const g = graphemeHighlightLetters(sound)
   if (!g) return { start: 0, end: Math.min(1, word.length) }
   const w = word.toLowerCase()
   if (w.startsWith(g)) return { start: 0, end: g.length }

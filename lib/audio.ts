@@ -9,7 +9,11 @@ export function speak(text: string, rate = 0.85): void {
 }
 
 export function speakPhoneme(phoneme: string): void {
-  speak(phoneme, 0.7)
+  const utter =
+    phoneme === 'oo-short' || phoneme === 'oo-long'
+      ? 'oo'
+      : phoneme
+  speak(utter, 0.7)
 }
 
 export function speakWord(word: string): void {

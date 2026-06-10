@@ -1,15 +1,14 @@
 'use client'
 
 import type { ReactNode } from 'react'
+import { useNavigate } from 'react-router-dom'
 import type { Activity } from '@/data/types'
 import {
   ActivityType,
   type AlienOrRealData,
-  type MeaningMatchData,
   type MissingSoundData,
   type QuickReviewData,
   type RhymeTimeData,
-  type RootHuntData,
   type SoundBlenderData,
   type MissingWordData,
   type OddOneOutData,
@@ -17,13 +16,10 @@ import {
   type SpeedySoundsData,
   type TrickyTrapData,
   type WordBuilderData,
-  type WordChangerData,
-  type WordSplitterData,
   type WriteItData,
 } from '@/data/types'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { AlienOrReal } from './AlienOrReal'
-import { MeaningMatch } from './MeaningMatch'
 import { MissingSound } from './MissingSound'
 import { MissingWord } from './MissingWord'
 import { OddOneOut } from './OddOneOut'
@@ -34,10 +30,7 @@ import { SpeedySounds } from './SpeedySounds'
 import { TrickyTrap } from './TrickyTrap'
 import { WordBuilder } from './WordBuilder'
 import { RhymeTime } from './RhymeTime'
-import { RootHunt } from './RootHunt'
 import { WriteIt } from './WriteIt'
-import { WordChanger } from './WordChanger'
-import { WordSplitter } from './WordSplitter'
 
 interface ActivityShellProps {
   activityType: ActivityType
@@ -54,14 +47,26 @@ function ActivityStage({ children }: { children: ReactNode }) {
 }
 
 export function ActivityShell({ activityType, activityData, onComplete }: ActivityShellProps) {
+  const navigate = useNavigate()
+
   if (!activityData || activityData.type !== activityType) {
+    console.error('[EvidPhonics ActivityShell] Activity payload mismatch — lesson step will not advance.', {
+      expectedActivityType: activityType,
+      receivedType: activityData?.type ?? '(no payload)',
+      receivedId: activityData && 'id' in activityData ? activityData.id : undefined,
+    })
     return (
       <ActivityStage>
         <div className="flex max-w-3xl flex-col items-center justify-center gap-lg rounded-[20px] bg-white p-8 text-center shadow-[0_10px_30px_rgba(139,0,255,0.1)]">
-          <p className="max-w-md text-base text-gray-600">
-            No activity content for this step and day yet.
+          <p className="max-w-md text-base font-semibold text-gray-800">
+            Something went wrong loading this activity.
           </p>
-          <TactileButton onClick={onComplete}>Continue →</TactileButton>
+          <p className="max-w-md text-sm text-gray-600">
+            This step doesn&apos;t match the lesson data. Go back to the home screen and start again.
+          </p>
+          <TactileButton type="button" onClick={() => navigate('/')}>
+            Back to home
+          </TactileButton>
         </div>
       </ActivityStage>
     )
@@ -104,18 +109,6 @@ export function ActivityShell({ activityType, activityData, onComplete }: Activi
       break
     case 'rhymeTime':
       body = <RhymeTime data={activityData as RhymeTimeData} onComplete={onComplete} />
-      break
-    case 'wordChanger':
-      body = <WordChanger data={activityData as WordChangerData} onComplete={onComplete} />
-      break
-    case 'wordSplitter':
-      body = <WordSplitter data={activityData as WordSplitterData} onComplete={onComplete} />
-      break
-    case 'meaningMatch':
-      body = <MeaningMatch data={activityData as MeaningMatchData} onComplete={onComplete} />
-      break
-    case 'rootHunt':
-      body = <RootHunt data={activityData as RootHuntData} onComplete={onComplete} />
       break
     default:
       body = (

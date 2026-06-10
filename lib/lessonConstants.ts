@@ -14,10 +14,6 @@ export const ACTIVITY_ORDER: ActivityType[] = [
   'oddOneOut',
   'wordBuilder',
   'writeIt',
-  'wordChanger',
-  'wordSplitter',
-  'meaningMatch',
-  'rootHunt',
 ]
 
 export function sortActivitiesByPedagogy(activities: ActivityType[]): ActivityType[] {
@@ -41,10 +37,6 @@ export const ALL_ACTIVITY_TYPES: ActivityType[] = [
   'missingWord',
   'oddOneOut',
   'wordBuilder',
-  'wordChanger',
-  'wordSplitter',
-  'meaningMatch',
-  'rootHunt',
 ]
 
 export const ACTIVITY_LABELS: Record<ActivityType, string> = {
@@ -60,10 +52,6 @@ export const ACTIVITY_LABELS: Record<ActivityType, string> = {
   missingWord: 'Missing Word',
   oddOneOut: 'Odd One Out',
   wordBuilder: 'Word Builder',
-  wordChanger: 'Word Changer',
-  wordSplitter: 'Word Splitter',
-  meaningMatch: 'Meaning Match',
-  rootHunt: 'Root Hunt',
 }
 
 export function parseActivitiesParam(raw: string): ActivityType[] {

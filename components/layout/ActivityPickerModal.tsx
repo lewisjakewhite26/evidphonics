@@ -1,31 +1,34 @@
 'use client'
 
-import { useCallback, useEffect, useMemo, useState, type CSSProperties } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
+import { createPortal } from 'react-dom'
 import {
   type Icon,
   Alien,
   ArrowsClockwise,
   ArrowsLeftRight,
-  ArrowsMerge,
   Lightning,
   MagnifyingGlass,
   MusicNotes,
   PencilSimple,
-  PuzzlePiece,
-  Scissors,
   SquaresFour,
   Target,
   TextT,
-  Tree,
+  WarningCircle,
   WarningOctagon,
   Waveform,
 } from '@phosphor-icons/react'
-import { graphemeMap } from '@/data/graphemes'
+import { graphemeMap, intersectActivityAllowlistForSelection } from '@/data/graphemes'
 import type { ActivityType, GraphemeData } from '@/data/types'
+import { GraphemeMark } from '@/components/ui/GraphemeMark'
 import { generateTileGradient } from '@/lib/tileGradient'
 import { ACTIVITY_LABELS, ACTIVITY_ORDER, sortActivitiesByPedagogy } from '@/lib/lessonConstants'
+import { useModalFocusTrap } from '@/src/hooks/useModalFocusTrap'
 
 const ACTIVITY_ORDER_KEY = ACTIVITY_ORDER.join(',')
+
+const ACTIVITY_UNAVAILABLE_HINT = 'Not available for this grapheme combination.'
+const PHASE_ACTIVITY_UNAVAILABLE_HINT = 'Not available for this phase.'
 
 const ACTIVITY_ICONS: Record<ActivityType, Icon> = {
   speedySounds: Lightning,
@@ -40,24 +43,20 @@ const ACTIVITY_ICONS: Record<ActivityType, Icon> = {
   oddOneOut: Target,
   wordBuilder: SquaresFour,
   writeIt: PencilSimple,
-  wordChanger: ArrowsMerge,
-  wordSplitter: Scissors,
-  meaningMatch: PuzzlePiece,
-  rootHunt: Tree,
 }
 
 /** Mirrors `buildLessonFromGraphemes` activity inclusion rules (type-level only). */
-function isActivityAvailable(type: ActivityType, selection: GraphemeData[]): boolean {
+function isActivityAvailable(
+  type: ActivityType,
+  selection: GraphemeData[],
+  phaseAllow: Set<ActivityType> | null,
+): boolean {
+  if (phaseAllow !== null && !phaseAllow.has(type)) return false
+
   if (selection.length === 0) return true
   const hasMorphemeFocus = selection.some((s) => s.type === 'morpheme')
-  const morphOnly = selection.every((s) => s.type === 'morpheme')
-
-  if (hasMorphemeFocus) {
-    if (['speedySounds', 'soundBlender', 'missingSound', 'wordBuilder'].includes(type)) return false
-    if (!morphOnly && ['wordChanger', 'wordSplitter', 'meaningMatch', 'rootHunt'].includes(type)) return false
-    return true
-  }
-  if (['wordChanger', 'wordSplitter', 'meaningMatch', 'rootHunt'].includes(type)) return false
+  if (!hasMorphemeFocus) return true
+  if (['speedySounds', 'soundBlender', 'missingSound', 'wordBuilder'].includes(type)) return false
   return true
 }
 
@@ -70,6 +69,7 @@ export type ActivityPickerModalProps = {
 
 export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson }: ActivityPickerModalProps) {
   const [selectedActivities, setSelectedActivities] = useState<ActivityType[]>([])
+  const dialogRef = useRef<HTMLDivElement>(null)
 
   const tileGradients = useMemo(() => {
     const m = new Map<ActivityType, string>()
@@ -84,28 +84,33 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
     setSelectedActivities([])
   }, [open])
 
-  useEffect(() => {
-    if (!open) return
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [open, onClose])
+  useModalFocusTrap(open, dialogRef, onClose)
 
   const selectionData = useMemo(
     () => graphemeIds.map((id) => graphemeMap.get(id)).filter((g): g is GraphemeData => Boolean(g)),
     [graphemeIds],
   )
 
+  const phaseActivityAllow = useMemo(
+    () => intersectActivityAllowlistForSelection(selectionData),
+    [selectionData],
+  )
+
+  const noActivitiesAvailable = useMemo(
+    () =>
+      selectionData.length > 0 &&
+      !ACTIVITY_ORDER.some((t) => isActivityAvailable(t, selectionData, phaseActivityAllow)),
+    [selectionData, phaseActivityAllow],
+  )
+
   const toggleActivity = useCallback(
     (t: ActivityType) => {
-      if (!isActivityAvailable(t, selectionData)) return
+      if (!isActivityAvailable(t, selectionData, phaseActivityAllow)) return
       setSelectedActivities((prev) =>
         prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t],
       )
     },
-    [selectionData],
+    [selectionData, phaseActivityAllow],
   )
 
   const startLesson = useCallback(() => {
@@ -116,7 +121,9 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
   const activityCount = selectedActivities.length
 
   const renderActivityTile = (type: ActivityType) => {
-    const available = isActivityAvailable(type, selectionData)
+    const available = isActivityAvailable(type, selectionData, phaseActivityAllow)
+    const blockedByPhaseAllowlist =
+      phaseActivityAllow !== null && !phaseActivityAllow.has(type)
     const on = selectedActivities.includes(type)
     const label = ACTIVITY_LABELS[type]
     const Icon = ACTIVITY_ICONS[type]
@@ -150,7 +157,9 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
         disabled={!available}
         onClick={() => toggleActivity(type)}
         style={selectedStyle}
-        title={label}
+        title={
+          available ? label : blockedByPhaseAllowlist ? PHASE_ACTIVITY_UNAVAILABLE_HINT : ACTIVITY_UNAVAILABLE_HINT
+        }
         className={`relative flex aspect-square w-full min-h-0 flex-col items-center justify-center rounded-[14px] px-1 py-2 text-center ${stateCls}`}
       >
         <Icon className={iconCls} weight="duotone" size={32} aria-hidden />
@@ -161,70 +170,103 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
 
   if (!open) return null
 
-  return (
+  const modal = (
     <div
       className="fixed inset-0 z-[60] flex items-end justify-center sm:items-center sm:p-6"
       role="presentation"
     >
-      <button
-        type="button"
-        className="absolute inset-0 bg-black/50 backdrop-blur-sm"
-        aria-label="Close activity picker"
-        onClick={onClose}
-      />
       <div
+        ref={dialogRef}
         role="dialog"
         aria-modal="true"
-        aria-labelledby="activity-modal-title"
-        className="relative flex w-full max-w-3xl flex-col overflow-hidden rounded-t-[20px] bg-white shadow-evid-modal sm:rounded-[20px]"
+        aria-labelledby={noActivitiesAvailable ? 'activity-picker-empty-title' : 'activity-modal-title'}
+        className="relative z-10 flex w-full max-w-3xl flex-col overflow-hidden rounded-t-[20px] bg-white shadow-evid-modal sm:rounded-[20px]"
         onClick={(e) => e.stopPropagation()}
       >
         <div
           className="flex shrink-0 flex-col gap-2 px-4 py-3 text-white sm:px-6 sm:py-4"
           style={{ background: 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)' }}
         >
-          <h2 id="activity-modal-title" className="text-lg font-bold leading-snug sm:text-xl">
-            Choose activities
-          </h2>
-          <div className="flex max-h-24 flex-wrap gap-1.5 overflow-hidden">
-            {graphemeIds.map((id) => {
-              const g = graphemeMap.get(id)?.grapheme ?? id
-              return (
-                <span
-                  key={id}
-                  className="font-andika shrink-0 rounded-full border border-white/35 bg-white/15 px-2.5 py-0.5 text-xs font-semibold text-white"
-                >
-                  {g}
-                </span>
-              )
-            })}
+          {!noActivitiesAvailable ? (
+            <>
+              <h2 id="activity-modal-title" className="text-lg font-bold leading-snug sm:text-xl">
+                Choose activities
+              </h2>
+              <div className="flex max-h-24 flex-wrap gap-1.5 overflow-hidden">
+                {graphemeIds.map((id) => {
+                  const g = graphemeMap.get(id)?.grapheme ?? id
+                  return (
+                    <span
+                      key={id}
+                      className="font-andika shrink-0 rounded-full border border-white/35 bg-white/15 px-2.5 py-0.5 text-xs font-semibold text-white"
+                    >
+                      <GraphemeMark graphemeId={g} />
+                    </span>
+                  )
+                })}
+              </div>
+            </>
+          ) : (
+            <p className="text-xs font-bold uppercase tracking-widest text-white/85">Build lesson</p>
+          )}
+        </div>
+
+        {noActivitiesAvailable ? (
+          <div className="flex shrink-0 flex-col items-center gap-4 bg-white px-6 py-10 text-center sm:px-8">
+            <WarningCircle className="text-[#8B00FF]" weight="duotone" size={56} aria-hidden />
+            <h2 id="activity-picker-empty-title" className="text-lg font-bold text-[#1A0033] sm:text-xl">
+              No activities available
+            </h2>
+            <p className="max-w-md text-sm leading-relaxed text-[#718096]">
+              This combination of graphemes doesn&apos;t have any shared activities. Try selecting fewer
+              graphemes or graphemes from the same phase.
+            </p>
+            <button
+              type="button"
+              onClick={onClose}
+              className="touch-target rounded-full border-2 border-[#8B00FF] bg-white px-6 py-2.5 text-sm font-bold text-[#8B00FF] hover:bg-[rgba(139,0,255,0.06)]"
+            >
+              Go back
+            </button>
           </div>
-        </div>
+        ) : (
+          <>
+            <div className="shrink-0 bg-white p-6">
+              <div className="grid grid-cols-4 gap-2 sm:grid-cols-6">
+                {ACTIVITY_ORDER.map((type) => renderActivityTile(type))}
+              </div>
+            </div>
 
-        <div className="shrink-0 bg-white p-6">
-          <div className="grid grid-cols-6 gap-2">{ACTIVITY_ORDER.map((type) => renderActivityTile(type))}</div>
-        </div>
-
-        <div className="shrink-0 border-t border-[rgba(139,0,255,0.08)] bg-white px-4 pb-4 pt-3 sm:px-6 sm:pb-5 sm:pt-4">
-          <button
-            type="button"
-            disabled={activityCount === 0}
-            onClick={startLesson}
-            className={`w-full rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-evid-btn transition hover:-translate-y-0.5 hover:shadow-evid-btn-hover sm:py-3 sm:text-base ${
-              activityCount > 0
-                ? ''
-                : 'cursor-not-allowed bg-gray-300 text-gray-500 shadow-none hover:translate-y-0'
-            } `}
-            style={
-              activityCount > 0
-                ? { background: 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)' }
-                : undefined
-            }
-          >
-            Start Lesson → ({activityCount} {activityCount === 1 ? 'activity' : 'activities'})
-          </button>
-        </div>
+            <div className="shrink-0 border-t border-[rgba(139,0,255,0.08)] bg-white px-4 pb-4 pt-3 sm:px-6 sm:pb-5 sm:pt-4">
+              <button
+                type="button"
+                disabled={activityCount === 0}
+                onClick={startLesson}
+                className={`w-full rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-evid-btn transition hover:-translate-y-0.5 hover:shadow-evid-btn-hover sm:py-3 sm:text-base ${
+                  activityCount > 0
+                    ? ''
+                    : 'cursor-not-allowed bg-gray-300 text-gray-500 shadow-none hover:translate-y-0'
+                } `}
+                style={
+                  activityCount > 0
+                    ? { background: 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)' }
+                    : undefined
+                }
+              >
+                Start Lesson → ({activityCount} {activityCount === 1 ? 'activity' : 'activities'})
+              </button>
+            </div>
+          </>
+        )}
       </div>
+      <button
+        type="button"
+        className="absolute inset-0 z-0 bg-black/50 backdrop-blur-sm"
+        aria-label="Close activity picker"
+        onClick={onClose}
+      />
     </div>
   )
+
+  return createPortal(modal, document.body)
 }

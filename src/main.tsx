@@ -13,9 +13,11 @@ if (!rootEl) {
   createRoot(rootEl).render(
     <StrictMode>
       <ErrorBoundary>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
+        <div id="app-content" className="min-h-[100dvh]">
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </div>
       </ErrorBoundary>
     </StrictMode>,
   )

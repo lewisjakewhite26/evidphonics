@@ -13,10 +13,6 @@ export type ActivityType =
   | 'missingWord'
   | 'oddOneOut'
   | 'wordBuilder'
-  | 'wordChanger'
-  | 'wordSplitter'
-  | 'meaningMatch'
-  | 'rootHunt'
 
 export interface Grapheme {
   grapheme: string
@@ -280,10 +276,9 @@ export type Activity =
   | MissingWordData
   | OddOneOutData
   | WordBuilderData
-  | WordChangerData
-  | WordSplitterData
-  | MeaningMatchData
-  | RootHuntData
+
+/** Canonical phonics curriculum phase ids (matches bundled phase JSON). */
+export type CurriculumPhaseNumber = 2 | 3 | 4 | 5
 
 export interface LessonData {
   id: string
@@ -340,17 +335,19 @@ export interface GraphemePinnedContent {
 }
 
 export interface GraphemeData {
+  /** Curriculum row id when distinct from display grapheme (e.g. Phase 4 cluster rows sharing a letter). */
+  id?: string
   grapheme: string
   keyword: string
   phase: number
-  /** Morpheme entries use a reduced activity set in the lesson engine. */
+  /** Discriminator for curriculum rows (phonics vs morphology). EvidLex will use morphology; EvidPhonics runs the phonics lesson set regardless. */
   type?: 'grapheme' | 'morpheme'
   words: string[]
   alienWords: string[]
   segments: Record<string, string[]>
-  /** Morpheme chunks per word (orthographic join equals spelling). Optional; wordSplitter falls back to `segments`. */
+  /** Morpheme chunks per word on the spine (join equals spelling); reserved for EvidLex. */
   morphemes?: Record<string, string[]>
-  /** Base/root string per word for morphology activities. Optional; rootHunt falls back to affix stripping. */
+  /** Explicit base/root strings; reserved for EvidLex. */
   roots?: Record<string, string>
   sortPair: string
   relatedGraphemes: string[]
@@ -363,7 +360,7 @@ export interface GraphemeData {
 
 /** One segment in the curriculum path (shown as “Phase · Step” in the UI). */
 export interface WeekMeta {
-  /** Global curriculum slot 1–80 (stable id; used by getLesson). */
+  /** Global curriculum slot 1…N (matches `allWeeks`; shifts when phases/graphemes are added). */
   week: number
   /** 1-based position within this phase, in global week order. */
   stepInPhase: number

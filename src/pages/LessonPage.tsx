@@ -1,11 +1,11 @@
 import { useState, useCallback, useMemo, useEffect } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 import { getLesson, getLessonForGraphemes } from '@/data/lessonQueries'
 import ActivityShell from '@/components/activities/ActivityShell'
 import LessonComplete from '@/components/layout/LessonComplete'
 import LessonHeader from '@/components/layout/LessonHeader'
-import { motionSpring } from '@/lib/celebrations'
+import { motionSpringOrInstant } from '@/lib/celebrations'
 import { ALL_ACTIVITY_TYPES, parseActivitiesParam, sortActivitiesByPedagogy } from '@/lib/lessonConstants'
 import { LESSON_SHELL_GRADIENT } from '@/lib/lessonShellGradient'
 
@@ -49,6 +49,7 @@ function LessonContent() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [completedCount, setCompletedCount] = useState(0)
   const [lessonFinished, setLessonFinished] = useState(false)
+  const reduceMotion = useReducedMotion()
 
   useEffect(() => {
     setCurrentIndex(0)
@@ -138,7 +139,7 @@ function LessonContent() {
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.02 }}
-            transition={motionSpring}
+            transition={motionSpringOrInstant(reduceMotion)}
             className="flex h-full min-h-0 flex-col"
           >
             <ActivityShell
