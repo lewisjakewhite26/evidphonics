@@ -122,16 +122,16 @@ export function WordChanger({ data, onComplete }: WordChangerProps) {
         transition={motionSpring}
         className="flex w-full flex-col items-center gap-6"
       >
-        <p className="text-center font-andika text-4xl font-bold leading-relaxed text-gray-900 sm:text-5xl">
+        <p className="text-center font-andika text-4xl font-bold leading-relaxed text-ink sm:text-5xl">
           {current.root}
         </p>
 
-        <p className="text-center font-andika text-3xl font-bold leading-relaxed text-gray-800 sm:text-4xl">
+        <p className="text-center font-andika text-3xl font-bold leading-relaxed text-ink sm:text-4xl">
           {renderResultWord(current)}
         </p>
 
         <div className="w-full max-w-xl">
-          <p className="mb-3 text-center text-base font-bold text-gray-800">What happened?</p>
+          <p className="mb-3 text-center text-base font-bold text-ink">What happened?</p>
           <div className="flex flex-col gap-3">
             {choices.map((label) => {
               const isWrong = wrongChoice === label
@@ -147,7 +147,7 @@ export function WordChanger({ data, onComplete }: WordChangerProps) {
                     type="button"
                     disabled={quizSolved}
                     onClick={() => handleChoice(label)}
-                    className={`!h-auto !min-h-14 !w-full !max-w-none !whitespace-normal !px-4 !py-3 text-left font-andika text-lg font-bold leading-snug text-gray-900 sm:!py-4 sm:text-xl ${
+                    className={`!h-auto !min-h-14 !w-full !max-w-none !whitespace-normal !px-4 !py-3 text-left font-andika text-lg font-bold leading-snug text-ink sm:!py-4 sm:text-xl ${
                       isWrong ? '!border-error !bg-error-light' : ''
                     } ${quizSolved && label === correctLabel ? '!border-success !bg-success-light' : ''} ${
                       quizSolved && label !== correctLabel ? 'opacity-45' : ''
@@ -168,8 +168,8 @@ export function WordChanger({ data, onComplete }: WordChangerProps) {
             transition={motionSpring}
             className="w-full max-w-xl rounded-2xl border border-border bg-surface-raised px-4 py-3 sm:px-6 sm:py-4"
           >
-            <p className="text-center text-sm font-semibold text-gray-600">Why it matters</p>
-            <p className="mt-1 text-center text-base font-medium leading-snug text-gray-800">{current.meaningHint}</p>
+            <p className="text-center text-sm font-semibold text-text-sub">Why it matters</p>
+            <p className="mt-1 text-center text-base font-medium leading-snug text-ink">{current.meaningHint}</p>
           </motion.div>
         ) : null}
 

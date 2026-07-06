@@ -85,10 +85,10 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
       animate={sideShake ? { x: [0, -10, 10, -8, 8, 0] } : {}}
       transition={{ duration: sideShake ? 0.45 : 0.35 }}
       className={`flex min-h-32 min-w-[140px] flex-1 items-center justify-center rounded-xl border-2 px-4 py-6 text-center transition-colors duration-300 md:min-w-0 ${
-        sideFlash ? 'border-primary bg-primary-light' : 'border-gray-200 bg-white'
+        sideFlash ? 'border-primary bg-primary-light' : 'border-border bg-white'
       }`}
     >
-      <span className="text-center font-andika text-4xl font-bold text-gray-900">{word}</span>
+      <span className="text-center font-andika text-4xl font-bold text-ink">{word}</span>
     </motion.div>
   )
 
@@ -128,7 +128,7 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
         </div>
 
         {wrongHint && (
-          <p className="text-center text-sm font-medium text-gray-500">
+          <p className="text-center text-sm font-medium text-text-sub">
             Nice try — listen again, then choose!
           </p>
         )}

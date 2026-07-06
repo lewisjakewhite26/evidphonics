@@ -1,9 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import type { OddOneOutData } from '@/data/types'
 import { motionSpring } from '@/lib/celebrations'
+import { shuffle } from '@/lib/utils'
 import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
@@ -28,6 +29,19 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
   const current = sets[setIdx]
   const total = sets.length
 
+  const display = useMemo(() => {
+    if (!current) return { words: [] as string[], oddIndex: 0 }
+    const items = current.words.map((word, i) => ({
+      word,
+      isOdd: i === current.oddOneOut,
+    }))
+    const shuffled = shuffle(items)
+    return {
+      words: shuffled.map((item) => item.word),
+      oddIndex: shuffled.findIndex((item) => item.isOdd),
+    }
+  }, [current, setIdx])
+
   useEffect(() => {
     setPhase('pick')
     setWrongPick(null)
@@ -37,7 +51,7 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
 
   const handlePick = (i: number) => {
     if (!current || phase === 'reveal') return
-    const odd = current.oddOneOut
+    const odd = display.oddIndex
     if (i === odd) {
       const cx = typeof window !== 'undefined' ? window.innerWidth / 2 : 0
       const cy = typeof window !== 'undefined' ? window.innerHeight / 2 : 0
@@ -61,7 +75,7 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
   if (total === 0) return null
   if (!current) return null
 
-  const odd = current.oddOneOut
+  const odd = display.oddIndex
 
   return (
     <ActivityCardFrame
@@ -78,7 +92,7 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
         className="flex w-full flex-col gap-6"
       >
         <div className="grid w-full grid-cols-2 gap-4">
-          {current.words.map((word, i) => {
+          {display.words.map((word, i) => {
             const isOdd = i === odd
             const isWrong = wrongPick === i
             const showCorrectOdd = phase === 'reveal' && isOdd
@@ -97,7 +111,7 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
                   variant="ghost"
                   disabled={phase === 'reveal'}
                   onClick={() => handlePick(i)}
-                  className={`relative !h-auto !min-h-24 !w-full !max-w-none !whitespace-normal !px-4 !py-6 font-andika text-4xl font-bold text-gray-900 ${
+                  className={`relative !h-auto !min-h-24 !w-full !max-w-none !whitespace-normal !px-4 !py-6 font-andika text-4xl font-bold text-ink ${
                     isWrong ? '!border-warning !bg-warning-light' : ''
                   } ${glowMatch ? '!border-success !ring-2 !ring-success/40' : ''} ${
                     showCorrectOdd ? '!border-primary !bg-primary-light !ring-2 !ring-primary/35' : ''
@@ -115,12 +129,12 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
             <p className="font-andika text-2xl font-bold text-primary md:text-3xl">
               Found it! That&apos;s the odd one out.
             </p>
-            <p className="font-andika text-xl font-bold text-gray-900 md:text-2xl">{current.explanation}</p>
+            <p className="font-andika text-xl font-bold text-ink md:text-2xl">{current.explanation}</p>
           </div>
         )}
 
         {feedback && phase === 'pick' && (
-          <p className="text-center text-sm text-gray-500">{feedback}</p>
+          <p className="text-center text-sm text-text-sub">{feedback}</p>
         )}
       </motion.div>
       {burst && (

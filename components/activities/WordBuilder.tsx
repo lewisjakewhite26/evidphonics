@@ -122,7 +122,7 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
   if (!current || words.length === 0) {
     return (
       <ActivityCardFrame emoji={data.emoji} title={data.title} instruction={data.instruction}>
-        <p className="text-center text-sm text-gray-500">No words for this activity.</p>
+        <p className="text-center text-sm text-text-sub">No words for this activity.</p>
       </ActivityCardFrame>
     )
   }
@@ -153,7 +153,7 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
         animate={shakeSlots ? { x: [0, -8, 8, -8, 8, 0] } : { scale: 1, x: 0 }}
         transition={shakeSlots ? { duration: 0.45 } : motionSpring}
         className={`flex w-full flex-col gap-6 rounded-xl border-2 p-6 ${
-          shakeSlots ? 'border-error bg-error-light/40' : 'border-gray-200 bg-white'
+          shakeSlots ? 'border-error bg-error-light/40' : 'border-border bg-white'
         }`}
       >
         <div className="mb-2 flex flex-wrap items-end justify-center gap-2">
@@ -171,7 +171,7 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
                   className={`flex h-16 items-center justify-center rounded-md border-2 px-2 font-andika text-4xl font-bold ${minW} ${
                     label
                       ? 'border-primary bg-primary text-white'
-                      : 'border-gray-300 bg-white text-gray-400'
+                      : 'border-border-strong bg-white text-text-hint'
                   }`}
                 >
                   {label ?? ' '}
@@ -203,10 +203,10 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
                 animate={sel ? { scale: 1.08 } : { scale: 1 }}
                 className={`min-h-14 min-w-14 touch-target rounded-lg border-2 px-3 py-2 font-andika text-4xl font-bold ${
                   placed
-                    ? 'cursor-not-allowed border-gray-200 bg-gray-100 text-gray-400 opacity-50'
+                    ? 'cursor-not-allowed border-border bg-gray-100 text-text-hint opacity-50'
                     : sel
-                      ? 'border-primary bg-primary-light text-gray-900 ring-2 ring-primary/30'
-                      : 'border-gray-300 bg-white text-gray-900 shadow-sm'
+                      ? 'border-primary bg-primary-light text-ink ring-2 ring-primary/30'
+                      : 'border-border-strong bg-white text-ink shadow-sm'
                 }`}
               >
                 {t.label}

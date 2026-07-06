@@ -5,7 +5,7 @@ import { createPortal } from 'react-dom'
 import { motion, useReducedMotion } from 'framer-motion'
 import { ActivityType } from '@/data/types'
 import { motionSpringOrInstant } from '@/lib/celebrations'
-import { LESSON_SHELL_GRADIENT } from '@/lib/lessonShellGradient'
+import { LESSON_SHELL_ACCENT } from '@/lib/lessonShellGradient'
 import { useModalFocusTrap } from '@/src/hooks/useModalFocusTrap'
 
 const ACTIVITY_LABELS: Record<ActivityType, { title: string; emoji: string }> = {
@@ -55,27 +55,30 @@ export default function LessonHeader({
   const progressPct = totalCount > 0 ? (completedCount / totalCount) * 100 : 0
 
   return (
-    <div className="flex-shrink-0 font-sans">
-      <div
-        className="flex h-14 items-center gap-md border-b border-white/20 px-md"
-        style={{ background: LESSON_SHELL_GRADIENT }}
-      >
+    <div className="flex-shrink-0 font-andika">
+      <div className="relative flex h-14 items-center gap-md border-b border-border bg-white px-md">
+        <div
+          className="absolute inset-x-0 top-0 h-1"
+          style={{ backgroundColor: LESSON_SHELL_ACCENT }}
+          aria-hidden
+        />
+
         <button
           type="button"
           onClick={() => setExitConfirmOpen(true)}
-          className="relative flex h-14 w-14 flex-shrink-0 touch-target items-center justify-center rounded-full bg-white/20 text-white transition-colors duration-200 hover:bg-white/30"
+          className="relative flex h-14 w-14 flex-shrink-0 touch-target items-center justify-center rounded-full border-2 border-border text-primary transition-colors duration-200 hover:bg-primary/5"
           aria-haspopup="dialog"
           aria-expanded={exitConfirmOpen}
           title="End lesson"
         >
-          <span className="relative z-10 text-label text-white">✕</span>
+          <span className="relative z-10 text-label text-primary">✕</span>
         </button>
 
         <div className="flex min-w-0 flex-1 items-center justify-center gap-sm">
           <span className="text-[18px]" aria-hidden>
             {info.emoji}
           </span>
-          <span className="truncate text-subheading font-bold text-white">{info.title}</span>
+          <span className="truncate text-subheading font-bold text-ink">{info.title}</span>
         </div>
 
         <div className="flex flex-shrink-0 items-center gap-sm">
@@ -84,22 +87,19 @@ export default function LessonHeader({
               key={i}
               className={`rounded-full transition-all ${
                 i < currentIndex
-                  ? 'h-3 w-3 bg-white/85'
+                  ? 'h-3 w-3 bg-primary'
                   : i === currentIndex
-                    ? 'h-3 w-3 bg-white ring-2 ring-white/55'
-                    : 'h-2.5 w-2.5 bg-white/35'
+                    ? 'h-3 w-3 bg-primary ring-2 ring-primary/25'
+                    : 'h-2.5 w-2.5 bg-primary/20'
               }`}
             />
           ))}
         </div>
       </div>
 
-      <div className="h-1 bg-white/20">
+      <div className="h-1 bg-gray-200">
         <motion.div
-          className="h-full rounded-full"
-          style={{
-            background: 'linear-gradient(90deg, #8B00FF 0%, #FF69B4 100%)',
-          }}
+          className="h-full rounded-full bg-gradient-to-r from-primary to-warmth"
           animate={{ width: `${progressPct}%` }}
           transition={motionSpringOrInstant(reduceMotion)}
         />
@@ -120,21 +120,21 @@ export default function LessonHeader({
                 className="w-full max-w-sm rounded-2xl bg-white p-5 shadow-xl"
                 onClick={(e) => e.stopPropagation()}
               >
-                <h2 id="lesson-exit-title" className="text-lg font-bold text-[#1A0033]">
+                <h2 id="lesson-exit-title" className="text-lg font-bold text-ink">
                   End lesson?
                 </h2>
                 <div className="mt-4 flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
                   <button
                     type="button"
                     onClick={dismissConfirm}
-                    className="touch-target rounded-full bg-[#F4F0FD] px-4 py-2.5 text-sm font-semibold text-[#8B00FF] transition hover:bg-[#EDE8FA]"
+                    className="touch-target rounded-full bg-primary-light px-4 py-2.5 text-label font-semibold text-primary transition hover:bg-primary/20"
                   >
                     Keep going
                   </button>
                   <button
                     type="button"
                     onClick={confirmExit}
-                    className="touch-target rounded-full bg-[#8B00FF] px-4 py-2.5 text-sm font-semibold text-white shadow-evid-btn transition hover:-translate-y-0.5 hover:shadow-evid-btn-hover"
+                    className="touch-target rounded-full bg-primary px-4 py-2.5 text-label font-semibold text-white shadow-evid-btn transition hover:-translate-y-0.5 hover:shadow-evid-btn-hover"
                   >
                     End lesson
                   </button>

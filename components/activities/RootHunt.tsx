@@ -83,7 +83,7 @@ export function RootHunt({ data, onComplete }: RootHuntProps) {
         className="flex w-full flex-col items-center gap-6"
       >
         <p
-          className={`text-center font-andika text-4xl font-bold leading-relaxed text-gray-900 sm:text-5xl ${
+          className={`text-center font-andika text-4xl font-bold leading-relaxed text-ink sm:text-5xl ${
             solved ? 'rounded-lg bg-success-light/90 px-2 py-1 ring-2 ring-success/40' : ''
           }`}
         >
@@ -112,7 +112,7 @@ export function RootHunt({ data, onComplete }: RootHuntProps) {
                   variant="ghost"
                   disabled={solved}
                   onClick={() => handlePick(opt)}
-                  className={`!w-full !max-w-none !px-4 font-andika text-3xl font-bold text-gray-900 ${
+                  className={`!w-full !max-w-none !px-4 font-andika text-3xl font-bold text-ink ${
                     isWrong ? '!border-error !bg-error-light' : ''
                   } ${solved && opt === current.root ? '!border-success !bg-success-light' : ''} ${
                     solved && opt !== current.root ? 'opacity-50' : ''

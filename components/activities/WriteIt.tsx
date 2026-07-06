@@ -361,7 +361,7 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
 
   if (!data.sentences.length) {
     return (
-      <div className="flex flex-col items-center justify-center py-xl text-sm text-gray-500">
+      <div className="flex flex-col items-center justify-center py-xl text-sm text-text-sub">
         No sentences for this activity.
       </div>
     )
@@ -383,7 +383,7 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
       <div className="flex w-full flex-col gap-6">
         <div className="flex w-full items-center gap-4">
           <div className={`min-w-0 flex-1 transition-all duration-300 ${isHidden ? 'blur-md grayscale' : ''}`}>
-            <p className="text-center font-andika text-4xl font-bold leading-relaxed text-gray-900 md:text-5xl">
+            <p className="text-center font-andika text-4xl font-bold leading-relaxed text-ink md:text-5xl">
               {sentence}
             </p>
           </div>
@@ -400,7 +400,7 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="w-full rounded-xl border border-gray-200 bg-white p-6 shadow-inner"
+          className="w-full rounded-xl border border-border bg-white p-6 shadow-inner"
         >
           <div className="mb-6 flex flex-wrap justify-center gap-3">
             {checklist.map((item) => (
@@ -410,13 +410,13 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
                 type="button"
                 onClick={() => handleChecklistToggle(item.id)}
                 className={`!min-h-14 !px-4 !py-2 !text-sm ${
-                  item.checked ? '!border-primary !bg-primary-light !text-gray-900' : ''
+                  item.checked ? '!border-primary !bg-primary-light !text-ink' : ''
                 }`}
               >
                 <span className="inline-flex items-center gap-2">
                   <span
                     className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 ${
-                      item.checked ? 'border-primary bg-primary text-white' : 'border-gray-300 bg-white'
+                      item.checked ? 'border-primary bg-primary text-white' : 'border-border-strong bg-white'
                     }`}
                   >
                     {item.checked && <Check className="h-3 w-3" strokeWidth={3} />}
@@ -430,7 +430,7 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
           <div className="flex justify-center">
             <div
               ref={containerRef}
-              className={`relative overflow-hidden rounded-xl border border-gray-200 shadow-inner transition-all duration-300 ${isHidden ? 'blur-md grayscale' : ''}`}
+              className={`relative overflow-hidden rounded-xl border border-border shadow-inner transition-all duration-300 ${isHidden ? 'blur-md grayscale' : ''}`}
               style={{
                 width: '100%',
                 maxWidth: '1000px',
@@ -530,7 +530,7 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
 
           <div className="mt-6 space-y-4">
             <div className="flex items-center justify-center gap-4 px-4">
-              <span className="w-16 text-sm text-gray-500">Slow</span>
+              <span className="w-16 text-sm text-text-sub">Slow</span>
               <input
                 type="range"
                 min="1"
@@ -542,7 +542,7 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
                 }}
                 className="h-2 w-48 cursor-pointer appearance-none rounded-lg bg-gray-200 accent-primary"
               />
-              <span className="w-16 text-sm text-gray-500">Fast</span>
+              <span className="w-16 text-sm text-text-sub">Fast</span>
             </div>
 
             <div className="flex flex-wrap justify-center gap-4">

@@ -61,9 +61,9 @@ export function CelebrationBurst({ x, y, onComplete }: CelebrationBurstProps) {
           const ty = Math.sin(rad) * p.distance
           const tint =
             p.variant === 0
-              ? 'bg-primary shadow-[0_0_10px_rgba(139,0,255,0.38)]'
+              ? 'bg-primary shadow-[0_0_10px_rgba(89,171,134,0.38)]'
               : p.variant === 1
-                ? 'bg-primary-accent shadow-[0_0_10px_rgba(255,105,180,0.42)]'
+                ? 'bg-warmth shadow-[0_0_10px_rgba(207,140,170,0.38)]'
                 : 'bg-success shadow-[0_0_8px_rgba(22,163,74,0.32)]'
           return (
             <motion.span

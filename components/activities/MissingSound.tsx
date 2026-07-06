@@ -90,7 +90,7 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
       instruction={data.instruction}
       progress={total > 1 ? { current: idx + 1, total } : undefined}
     >
-      <p className="text-center font-andika text-4xl font-bold text-gray-900 md:text-5xl">{item.display}</p>
+      <p className="text-center font-andika text-4xl font-bold text-ink md:text-5xl">{item.display}</p>
       <div className="grid w-full grid-cols-2 gap-4">
         {item.options.map((opt, i) => {
           const isWrongShake = wrongIdx === i
@@ -106,7 +106,7 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
                 variant="ghost"
                 disabled={advancing}
                 onClick={() => onPick(i)}
-                className={`!w-full !max-w-none !px-4 font-andika text-4xl font-bold text-gray-900 transition-colors duration-[600ms] ease-out ${
+                className={`!w-full !max-w-none !px-4 font-andika text-4xl font-bold text-ink transition-colors duration-[600ms] ease-out ${
                   showTint ? '!bg-red-500/35' : ''
                 }`}
               >

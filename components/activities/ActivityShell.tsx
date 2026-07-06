@@ -57,11 +57,11 @@ export function ActivityShell({ activityType, activityData, onComplete }: Activi
     })
     return (
       <ActivityStage>
-        <div className="flex max-w-3xl flex-col items-center justify-center gap-lg rounded-[20px] bg-white p-8 text-center shadow-[0_10px_30px_rgba(139,0,255,0.1)]">
-          <p className="max-w-md text-base font-semibold text-gray-800">
+        <div className="flex max-w-3xl flex-col items-center justify-center gap-lg rounded-[20px] bg-white p-8 text-center shadow-evid-soft">
+          <p className="max-w-md text-base font-semibold text-ink">
             Something went wrong loading this activity.
           </p>
-          <p className="max-w-md text-sm text-gray-600">
+          <p className="max-w-md text-sm text-text-sub">
             This step doesn&apos;t match the lesson data. Go back to the home screen and start again.
           </p>
           <TactileButton type="button" onClick={() => navigate('/')}>

@@ -1,19 +1,10 @@
 import { lazy, Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
+import { LessonLoadingSkeleton } from '@/components/ui/LessonLoadingSkeleton'
 import GraphemePickerPage from './pages/GraphemePickerPage'
 
 /** Lesson stack pulls all activities + Framer Motion — keep it off the home screen's first load. */
 const LessonPage = lazy(() => import('./pages/LessonPage'))
-
-function LessonFallback() {
-  return (
-    <div
-      className="flex h-screen items-center justify-center bg-[linear-gradient(180deg,#FAF7FF_0%,#FFF5EE_100%)] font-sans text-sm text-[#718096]"
-    >
-      Loading lesson…
-    </div>
-  )
-}
 
 export default function App() {
   return (
@@ -22,7 +13,7 @@ export default function App() {
       <Route
         path="/lesson"
         element={
-          <Suspense fallback={<LessonFallback />}>
+          <Suspense fallback={<LessonLoadingSkeleton />}>
             <LessonPage />
           </Suspense>
         }

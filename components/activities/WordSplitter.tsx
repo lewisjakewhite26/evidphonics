@@ -16,7 +16,7 @@ interface WordSplitterProps {
 function pillClass(role: 'prefix' | 'root' | 'suffix' | undefined): string {
   if (role === 'prefix') return 'border-primary bg-primary-light text-primary'
   if (role === 'suffix') return 'border-cyan-500 bg-cyan-50 text-cyan-900'
-  return 'border-border-strong bg-white text-gray-900'
+  return 'border-border-strong bg-white text-ink'
 }
 
 export function WordSplitter({ data, onComplete }: WordSplitterProps) {
@@ -56,14 +56,14 @@ export function WordSplitter({ data, onComplete }: WordSplitterProps) {
         transition={motionSpring}
         className="flex w-full flex-col items-center gap-6"
       >
-        <p className="text-center font-andika text-4xl font-bold leading-relaxed text-gray-900 sm:text-5xl">
+        <p className="text-center font-andika text-4xl font-bold leading-relaxed text-ink sm:text-5xl">
           {current.word}
         </p>
 
         <div className="flex w-full flex-wrap items-center justify-center gap-2 font-andika text-2xl font-bold sm:text-3xl">
           {current.morphemes.map((chunk, i) => (
             <span key={`${chunk}-${i}`} className="flex items-center gap-2">
-              {i > 0 && <span className="text-gray-400">|</span>}
+              {i > 0 && <span className="text-text-hint">|</span>}
               <span
                 className={`inline-flex rounded-full border-2 px-3 py-1.5 sm:px-4 sm:py-2 ${pillClass(
                   roles?.[i],

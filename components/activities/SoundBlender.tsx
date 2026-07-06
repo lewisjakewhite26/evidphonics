@@ -345,12 +345,12 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
                           ? 'border-primary bg-primary'
                           : active
                             ? 'border-primary bg-primary-light'
-                            : 'border-gray-200 bg-white'
+                            : 'border-border bg-white'
                       }`}
                     >
                       <span
                         className={`flex font-andika font-bold tracking-tight ${
-                          current ? 'text-white' : active ? 'text-gray-900' : 'text-gray-500'
+                          current ? 'text-white' : active ? 'text-ink' : 'text-text-sub'
                         } text-4xl sm:text-5xl md:text-6xl`}
                       >
                         {text.split('').map((letter, k) => {
@@ -393,12 +393,12 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
                           ? 'border-primary bg-primary'
                           : active
                             ? 'border-primary bg-primary-light'
-                            : 'border-gray-200 bg-white'
+                            : 'border-border bg-white'
                       }`}
                     >
                       <span
                         className={`font-andika text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl ${
-                          current ? 'text-white' : active ? 'text-gray-900' : 'text-gray-500'
+                          current ? 'text-white' : active ? 'text-ink' : 'text-text-sub'
                         }`}
                       >
                         {slot.char}
@@ -570,12 +570,12 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
                       ? 'border-primary bg-primary'
                       : isActive
                         ? 'border-primary bg-primary-light'
-                        : 'border-gray-200 bg-white'
+                        : 'border-border bg-white'
                   }`}
                 >
                   <span
                     className={`font-andika text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl ${
-                      isCurrent ? 'text-white' : isActive ? 'text-gray-900' : 'text-gray-500'
+                      isCurrent ? 'text-white' : isActive ? 'text-ink' : 'text-text-sub'
                     }`}
                   >
                     {segment.grapheme === '-' ? '' : segment.grapheme}
@@ -661,13 +661,13 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
         {useSpellingLayout ? renderSpellingWord() : renderLegacySegments()}
 
         <div className="mt-8 w-full">
-          <p className="mb-6 text-center text-sm text-gray-500">
+          <p className="mb-6 text-center text-sm text-text-sub">
             Drag the rocket to blend the sounds →
           </p>
           <div
             ref={trackRef}
             id="slider-track"
-            className="relative h-24 overflow-hidden rounded-full border-2 border-gray-200 bg-gray-200 shadow-inner"
+            className="relative h-24 overflow-hidden rounded-full border-2 border-border bg-gray-200 shadow-inner"
             onPointerDown={onTrackPointerDown}
             onPointerMove={(e) => {
               if (isDragging) {
@@ -680,7 +680,7 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
             }}
           >
             <motion.div
-              className="absolute bottom-0 left-0 top-0 bg-primary"
+              className="absolute bottom-0 left-0 top-0 bg-gradient-to-r from-primary to-warmth"
               style={{ width: `${sliderPosition}%` }}
             />
 
@@ -712,15 +712,15 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
 
           <div className="mt-6 text-center">
             {currentPhonemeIndex < 0 ? (
-              <p className="text-sm text-gray-500">Start dragging to blend the sounds!</p>
+              <p className="text-sm text-text-sub">Start dragging to blend the sounds!</p>
             ) : currentPhonemeIndex >= n ? (
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-text-sub">
                 <span className="font-semibold text-primary">Complete! You blended all the sounds! 🎉</span>
               </p>
             ) : (
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-text-sub">
                 Sound {currentPhonemeIndex + 1} of {n}:{' '}
-                <span className="font-andika text-4xl font-bold text-gray-900">
+                <span className="font-andika text-4xl font-bold text-ink">
                   /{statusPhonemeLabel}/
                 </span>
               </p>

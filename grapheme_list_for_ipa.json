@@ -1,0 +1,1210 @@
+[
+  {
+    "key": "grapheme_-",
+    "grapheme": "-",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ə/"
+  },
+  {
+    "key": "grapheme_-ful",
+    "grapheme": "-ful",
+    "keyword": "helpful",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "/fʊl/"
+  },
+  {
+    "key": "grapheme_-less",
+    "grapheme": "-less",
+    "keyword": "helpless",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "/ləs/"
+  },
+  {
+    "key": "grapheme_-ly",
+    "grapheme": "-ly",
+    "keyword": "quickly",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "/li/"
+  },
+  {
+    "key": "grapheme_-ment",
+    "grapheme": "-ment",
+    "keyword": "enjoyment",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "/mənt/"
+  },
+  {
+    "key": "grapheme_-ness",
+    "grapheme": "-ness",
+    "keyword": "kindness",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "/nəs/"
+  },
+  {
+    "key": "grapheme_-tion-suffix",
+    "grapheme": "-tion-suffix",
+    "keyword": "information",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "shun"
+  },
+  {
+    "key": "grapheme_a",
+    "grapheme": "a",
+    "keyword": "apple",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/æ/"
+  },
+  {
+    "key": "grapheme_a-e",
+    "grapheme": "a-e",
+    "keyword": "cake",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/eɪ/"
+  },
+  {
+    "key": "grapheme_ai",
+    "grapheme": "ai",
+    "keyword": "train",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/eɪ/"
+  },
+  {
+    "key": "grapheme_aigh",
+    "grapheme": "aigh",
+    "keyword": "straight",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/eɪ/"
+  },
+  {
+    "key": "grapheme_air",
+    "grapheme": "air",
+    "keyword": "fair",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/eə/"
+  },
+  {
+    "key": "grapheme_ar",
+    "grapheme": "ar",
+    "keyword": "scarf",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ɑː/"
+  },
+  {
+    "key": "grapheme_are",
+    "grapheme": "are",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/eə/"
+  },
+  {
+    "key": "grapheme_au",
+    "grapheme": "au",
+    "keyword": "sauce",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/ɔː/"
+  },
+  {
+    "key": "grapheme_aw",
+    "grapheme": "aw",
+    "keyword": "claw",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/ɔː/"
+  },
+  {
+    "key": "grapheme_ay",
+    "grapheme": "ay",
+    "keyword": "play",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/eɪ/"
+  },
+  {
+    "key": "grapheme_b",
+    "grapheme": "b",
+    "keyword": "bag",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/b/"
+  },
+  {
+    "key": "grapheme_bl",
+    "grapheme": "bl",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/bl/"
+  },
+  {
+    "key": "grapheme_br",
+    "grapheme": "br",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/br/"
+  },
+  {
+    "key": "grapheme_c",
+    "grapheme": "c",
+    "keyword": "cat",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/k/"
+  },
+  {
+    "key": "grapheme_cc",
+    "grapheme": "cc",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/k/"
+  },
+  {
+    "key": "grapheme_ce",
+    "grapheme": "ce",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/s/"
+  },
+  {
+    "key": "grapheme_ch",
+    "grapheme": "ch",
+    "keyword": "chest",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/tʃ/"
+  },
+  {
+    "key": "grapheme_cian",
+    "grapheme": "cian",
+    "keyword": "magician",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "shun"
+  },
+  {
+    "key": "grapheme_ck",
+    "grapheme": "ck",
+    "keyword": "duck",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/k/"
+  },
+  {
+    "key": "grapheme_cl",
+    "grapheme": "cl",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/kl/"
+  },
+  {
+    "key": "grapheme_cr",
+    "grapheme": "cr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/kr/"
+  },
+  {
+    "key": "grapheme_ct",
+    "grapheme": "ct",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/kt/"
+  },
+  {
+    "key": "grapheme_d",
+    "grapheme": "d",
+    "keyword": "drip",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/d/"
+  },
+  {
+    "key": "grapheme_dd",
+    "grapheme": "dd",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/d/"
+  },
+  {
+    "key": "grapheme_dge",
+    "grapheme": "dge",
+    "keyword": "bridge",
+    "phase": 6,
+    "type": "grapheme",
+    "current_tts": "/dʒ/"
+  },
+  {
+    "key": "grapheme_dis",
+    "grapheme": "dis",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/dɪs/"
+  },
+  {
+    "key": "grapheme_dis-",
+    "grapheme": "dis-",
+    "keyword": "disagree",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "/dɪs/"
+  },
+  {
+    "key": "grapheme_dr",
+    "grapheme": "dr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/dr/"
+  },
+  {
+    "key": "grapheme_e",
+    "grapheme": "e",
+    "keyword": "egg",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/ɛ/"
+  },
+  {
+    "key": "grapheme_e-e",
+    "grapheme": "e-e",
+    "keyword": "these",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/iː/"
+  },
+  {
+    "key": "grapheme_ea",
+    "grapheme": "ea",
+    "keyword": "beach",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/iː/"
+  },
+  {
+    "key": "grapheme_ear",
+    "grapheme": "ear",
+    "keyword": "near",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/ɪə/"
+  },
+  {
+    "key": "grapheme_ee",
+    "grapheme": "ee",
+    "keyword": "street",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/iː/"
+  },
+  {
+    "key": "grapheme_eer",
+    "grapheme": "eer",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ɪə/"
+  },
+  {
+    "key": "grapheme_eigh",
+    "grapheme": "eigh",
+    "keyword": "eight",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/eɪ/"
+  },
+  {
+    "key": "grapheme_er",
+    "grapheme": "er",
+    "keyword": "hammer",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/ɜː/"
+  },
+  {
+    "key": "grapheme_ere",
+    "grapheme": "ere",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ɪə/"
+  },
+  {
+    "key": "grapheme_ew",
+    "grapheme": "ew",
+    "keyword": "grew",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/juː/"
+  },
+  {
+    "key": "grapheme_ey",
+    "grapheme": "ey",
+    "keyword": "monkey",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/eɪ/"
+  },
+  {
+    "key": "grapheme_f",
+    "grapheme": "f",
+    "keyword": "frog",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/f/"
+  },
+  {
+    "key": "grapheme_ff",
+    "grapheme": "ff",
+    "keyword": "puff",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/f/"
+  },
+  {
+    "key": "grapheme_fl",
+    "grapheme": "fl",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/fl/"
+  },
+  {
+    "key": "grapheme_fr",
+    "grapheme": "fr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/fr/"
+  },
+  {
+    "key": "grapheme_ft",
+    "grapheme": "ft",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ft/"
+  },
+  {
+    "key": "grapheme_g",
+    "grapheme": "g",
+    "keyword": "grip",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ɡ/"
+  },
+  {
+    "key": "grapheme_ge",
+    "grapheme": "ge",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/dʒ/"
+  },
+  {
+    "key": "grapheme_gg",
+    "grapheme": "gg",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ɡ/"
+  },
+  {
+    "key": "grapheme_gh",
+    "grapheme": "gh",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/f/"
+  },
+  {
+    "key": "grapheme_gn",
+    "grapheme": "gn",
+    "keyword": "gnome",
+    "phase": 6,
+    "type": "grapheme",
+    "current_tts": "/n/"
+  },
+  {
+    "key": "grapheme_gr",
+    "grapheme": "gr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ɡr/"
+  },
+  {
+    "key": "grapheme_h",
+    "grapheme": "h",
+    "keyword": "hat",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/h/"
+  },
+  {
+    "key": "grapheme_i",
+    "grapheme": "i",
+    "keyword": "ink",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/ɪ/"
+  },
+  {
+    "key": "grapheme_i-e",
+    "grapheme": "i-e",
+    "keyword": "kite",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/aɪ/"
+  },
+  {
+    "key": "grapheme_ie",
+    "grapheme": "ie",
+    "keyword": "tie",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/aɪ/"
+  },
+  {
+    "key": "grapheme_igh",
+    "grapheme": "igh",
+    "keyword": "night",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/aɪ/"
+  },
+  {
+    "key": "grapheme_ir",
+    "grapheme": "ir",
+    "keyword": "bird",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/ɜː/"
+  },
+  {
+    "key": "grapheme_j",
+    "grapheme": "j",
+    "keyword": "jam",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/dʒ/"
+  },
+  {
+    "key": "grapheme_k",
+    "grapheme": "k",
+    "keyword": "kite",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/k/"
+  },
+  {
+    "key": "grapheme_kn",
+    "grapheme": "kn",
+    "keyword": "knee",
+    "phase": 6,
+    "type": "grapheme",
+    "current_tts": "/n/"
+  },
+  {
+    "key": "grapheme_l",
+    "grapheme": "l",
+    "keyword": "clap",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/l/"
+  },
+  {
+    "key": "grapheme_lf",
+    "grapheme": "lf",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/lf/"
+  },
+  {
+    "key": "grapheme_ll",
+    "grapheme": "ll",
+    "keyword": "bell",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/l/"
+  },
+  {
+    "key": "grapheme_lt",
+    "grapheme": "lt",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/lt/"
+  },
+  {
+    "key": "grapheme_lth",
+    "grapheme": "lth",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/lθ/"
+  },
+  {
+    "key": "grapheme_m",
+    "grapheme": "m",
+    "keyword": "drip",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/m/"
+  },
+  {
+    "key": "grapheme_mb",
+    "grapheme": "mb",
+    "keyword": "lamb",
+    "phase": 6,
+    "type": "grapheme",
+    "current_tts": "/m/"
+  },
+  {
+    "key": "grapheme_mis",
+    "grapheme": "mis",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/mɪs/"
+  },
+  {
+    "key": "grapheme_mis-",
+    "grapheme": "mis-",
+    "keyword": "mistake",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "/mɪs/"
+  },
+  {
+    "key": "grapheme_mm",
+    "grapheme": "mm",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/m/"
+  },
+  {
+    "key": "grapheme_mp",
+    "grapheme": "mp",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/mp/"
+  },
+  {
+    "key": "grapheme_n",
+    "grapheme": "n",
+    "keyword": "snap",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/n/"
+  },
+  {
+    "key": "grapheme_nch",
+    "grapheme": "nch",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ntʃ/"
+  },
+  {
+    "key": "grapheme_nd",
+    "grapheme": "nd",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/nd/"
+  },
+  {
+    "key": "grapheme_ng",
+    "grapheme": "ng",
+    "keyword": "string",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ŋ/"
+  },
+  {
+    "key": "grapheme_nk",
+    "grapheme": "nk",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ŋk/"
+  },
+  {
+    "key": "grapheme_nn",
+    "grapheme": "nn",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/n/"
+  },
+  {
+    "key": "grapheme_nt",
+    "grapheme": "nt",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/nt/"
+  },
+  {
+    "key": "grapheme_o",
+    "grapheme": "o",
+    "keyword": "orange",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/ɒ/"
+  },
+  {
+    "key": "grapheme_o-e",
+    "grapheme": "o-e",
+    "keyword": "home",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/əʊ/"
+  },
+  {
+    "key": "grapheme_oa",
+    "grapheme": "oa",
+    "keyword": "float",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/əʊ/"
+  },
+  {
+    "key": "grapheme_oe",
+    "grapheme": "oe",
+    "keyword": "toe",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/əʊ/"
+  },
+  {
+    "key": "grapheme_oi",
+    "grapheme": "oi",
+    "keyword": "coin",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/ɔɪ/"
+  },
+  {
+    "key": "grapheme_oo",
+    "grapheme": "oo",
+    "keyword": "drool",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ʊ/"
+  },
+  {
+    "key": "grapheme_oo-long",
+    "grapheme": "oo-long",
+    "keyword": "moon",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/uː/"
+  },
+  {
+    "key": "grapheme_oo-short",
+    "grapheme": "oo-short",
+    "keyword": "book",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/ʊ/"
+  },
+  {
+    "key": "grapheme_or",
+    "grapheme": "or",
+    "keyword": "storm",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ɔː/"
+  },
+  {
+    "key": "grapheme_ore",
+    "grapheme": "ore",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ɔː/"
+  },
+  {
+    "key": "grapheme_ou",
+    "grapheme": "ou",
+    "keyword": "cloud",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/aʊ/"
+  },
+  {
+    "key": "grapheme_ough",
+    "grapheme": "ough",
+    "keyword": "through",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/ʌf/"
+  },
+  {
+    "key": "grapheme_our",
+    "grapheme": "our",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ɔː/"
+  },
+  {
+    "key": "grapheme_ow",
+    "grapheme": "ow",
+    "keyword": "cow",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/aʊ/"
+  },
+  {
+    "key": "grapheme_oy",
+    "grapheme": "oy",
+    "keyword": "boy",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/ɔɪ/"
+  },
+  {
+    "key": "grapheme_p",
+    "grapheme": "p",
+    "keyword": "plug",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/p/"
+  },
+  {
+    "key": "grapheme_ph",
+    "grapheme": "ph",
+    "keyword": "phone",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/f/"
+  },
+  {
+    "key": "grapheme_pl",
+    "grapheme": "pl",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/pl/"
+  },
+  {
+    "key": "grapheme_pp",
+    "grapheme": "pp",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/p/"
+  },
+  {
+    "key": "grapheme_pr",
+    "grapheme": "pr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/pr/"
+  },
+  {
+    "key": "grapheme_qu",
+    "grapheme": "qu",
+    "keyword": "queen",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/kw/"
+  },
+  {
+    "key": "grapheme_r",
+    "grapheme": "r",
+    "keyword": "grip",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/r/"
+  },
+  {
+    "key": "grapheme_re",
+    "grapheme": "re",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/riː/"
+  },
+  {
+    "key": "grapheme_re-",
+    "grapheme": "re-",
+    "keyword": "rewrite",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "/riː/"
+  },
+  {
+    "key": "grapheme_s",
+    "grapheme": "s",
+    "keyword": "step",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/s/"
+  },
+  {
+    "key": "grapheme_sc",
+    "grapheme": "sc",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/s/"
+  },
+  {
+    "key": "grapheme_sch",
+    "grapheme": "sch",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/sk/"
+  },
+  {
+    "key": "grapheme_sh",
+    "grapheme": "sh",
+    "keyword": "shelf",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ʃ/"
+  },
+  {
+    "key": "grapheme_shr",
+    "grapheme": "shr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ʃr/"
+  },
+  {
+    "key": "grapheme_sion",
+    "grapheme": "sion",
+    "keyword": "vision",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "vizhun"
+  },
+  {
+    "key": "grapheme_sk",
+    "grapheme": "sk",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/sk/"
+  },
+  {
+    "key": "grapheme_sl",
+    "grapheme": "sl",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/sl/"
+  },
+  {
+    "key": "grapheme_sm",
+    "grapheme": "sm",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/sm/"
+  },
+  {
+    "key": "grapheme_sn",
+    "grapheme": "sn",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/sn/"
+  },
+  {
+    "key": "grapheme_sp",
+    "grapheme": "sp",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/sp/"
+  },
+  {
+    "key": "grapheme_spr",
+    "grapheme": "spr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/spr/"
+  },
+  {
+    "key": "grapheme_ss",
+    "grapheme": "ss",
+    "keyword": "hiss",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/s/"
+  },
+  {
+    "key": "grapheme_ssion",
+    "grapheme": "ssion",
+    "keyword": "mission",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "shun"
+  },
+  {
+    "key": "grapheme_st",
+    "grapheme": "st",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/st/"
+  },
+  {
+    "key": "grapheme_str",
+    "grapheme": "str",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/str/"
+  },
+  {
+    "key": "grapheme_sw",
+    "grapheme": "sw",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/sw/"
+  },
+  {
+    "key": "grapheme_t",
+    "grapheme": "t",
+    "keyword": "trip",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/t/"
+  },
+  {
+    "key": "grapheme_tch",
+    "grapheme": "tch",
+    "keyword": "catch",
+    "phase": 6,
+    "type": "grapheme",
+    "current_tts": "/tʃ/"
+  },
+  {
+    "key": "grapheme_th",
+    "grapheme": "th",
+    "keyword": "thick",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/θ/"
+  },
+  {
+    "key": "grapheme_thr",
+    "grapheme": "thr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/θr/"
+  },
+  {
+    "key": "grapheme_tion",
+    "grapheme": "tion",
+    "keyword": "station",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "shun"
+  },
+  {
+    "key": "grapheme_tr",
+    "grapheme": "tr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/tr/"
+  },
+  {
+    "key": "grapheme_tt",
+    "grapheme": "tt",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/t/"
+  },
+  {
+    "key": "grapheme_tw",
+    "grapheme": "tw",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/tw/"
+  },
+  {
+    "key": "grapheme_u",
+    "grapheme": "u",
+    "keyword": "umbrella",
+    "phase": 2,
+    "type": "grapheme",
+    "current_tts": "/ʌ/"
+  },
+  {
+    "key": "grapheme_u-e",
+    "grapheme": "u-e",
+    "keyword": "cube",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/juː/"
+  },
+  {
+    "key": "grapheme_ue",
+    "grapheme": "ue",
+    "keyword": "blue",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/juː/"
+  },
+  {
+    "key": "grapheme_ui",
+    "grapheme": "ui",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/uː/"
+  },
+  {
+    "key": "grapheme_un",
+    "grapheme": "un",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/ʌn/"
+  },
+  {
+    "key": "grapheme_un-",
+    "grapheme": "un-",
+    "keyword": "unhappy",
+    "phase": 6,
+    "type": "morpheme",
+    "current_tts": "/ʌn/"
+  },
+  {
+    "key": "grapheme_ur",
+    "grapheme": "ur",
+    "keyword": "surf",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/ɜː/"
+  },
+  {
+    "key": "grapheme_ure",
+    "grapheme": "ure",
+    "keyword": "sure",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/jʊə/"
+  },
+  {
+    "key": "grapheme_v",
+    "grapheme": "v",
+    "keyword": "van",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/v/"
+  },
+  {
+    "key": "grapheme_ve",
+    "grapheme": "ve",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/v/"
+  },
+  {
+    "key": "grapheme_w",
+    "grapheme": "w",
+    "keyword": "web",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/w/"
+  },
+  {
+    "key": "grapheme_wh",
+    "grapheme": "wh",
+    "keyword": "wheel",
+    "phase": 5,
+    "type": "grapheme",
+    "current_tts": "/w/"
+  },
+  {
+    "key": "grapheme_wr",
+    "grapheme": "wr",
+    "keyword": "write",
+    "phase": 6,
+    "type": "grapheme",
+    "current_tts": "/r/"
+  },
+  {
+    "key": "grapheme_x",
+    "grapheme": "x",
+    "keyword": "fox",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/ks/"
+  },
+  {
+    "key": "grapheme_xt",
+    "grapheme": "xt",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme",
+    "current_tts": "/kst/"
+  },
+  {
+    "key": "grapheme_y",
+    "grapheme": "y",
+    "keyword": "yes",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/j/"
+  },
+  {
+    "key": "grapheme_z",
+    "grapheme": "z",
+    "keyword": "zip",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/z/"
+  },
+  {
+    "key": "grapheme_zz",
+    "grapheme": "zz",
+    "keyword": "buzz",
+    "phase": 3,
+    "type": "grapheme",
+    "current_tts": "/z/"
+  }
+]

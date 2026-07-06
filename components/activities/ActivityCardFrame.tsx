@@ -32,17 +32,17 @@ export function ActivityCardFrame({ emoji, title, instruction, progress, childre
 
   return (
     <div className="flex w-full max-w-3xl flex-col items-center">
-      <div className="flex w-full flex-col items-center gap-6 rounded-[20px] bg-white p-6 shadow-[0_10px_30px_rgba(139,0,255,0.1)] sm:p-8">
+      <div className="flex w-full flex-col items-center gap-6 rounded-[20px] border border-border bg-white p-6 shadow-card sm:p-8">
         {showProgress && progress && (
           <div className="w-full shrink-0 space-y-1">
             <div className="flex w-full justify-end">
-              <span className="text-sm text-gray-500">
+              <span className="text-label text-text-sub">
                 {progress.current} / {progress.total}
               </span>
             </div>
             <div className="h-2 w-full overflow-hidden rounded-full bg-gray-200">
               <div
-                className="h-full rounded-full bg-[#8B00FF] transition-[width] duration-300 ease-out"
+                className="h-full rounded-full bg-gradient-to-r from-primary to-warmth transition-[width] duration-300 ease-out"
                 style={{ width: `${fill * 100}%` }}
               />
             </div>
@@ -57,11 +57,11 @@ export function ActivityCardFrame({ emoji, title, instruction, progress, childre
             >
               {emoji}
             </div>
-            <h2 className="text-lg font-semibold text-gray-800">{title}</h2>
+            <h2 className="text-xl font-semibold text-ink">{title}</h2>
           </div>
           <div className="flex w-full items-start gap-2 sm:pl-1">
             <AudioButton text={instruction} rate={0.85} />
-            <p className="flex-1 text-sm leading-snug text-gray-500">{instruction}</p>
+            <p className="flex-1 text-body leading-snug text-text-sub">{instruction}</p>
           </div>
         </header>
 

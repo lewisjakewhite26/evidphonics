@@ -98,7 +98,7 @@ export function MissingWord({ data, onComplete }: MissingWordProps) {
         transition={motionSpring}
         className="flex w-full flex-col gap-6"
       >
-        <p className="text-center font-andika text-4xl font-bold leading-relaxed text-gray-900">
+        <p className="text-center font-andika text-4xl font-bold leading-relaxed text-ink">
           <span>{before}</span>
           {solved && chosen ? (
             <span className="mx-1 inline-block font-bold text-primary">{chosen}</span>
@@ -125,7 +125,7 @@ export function MissingWord({ data, onComplete }: MissingWordProps) {
                   variant="ghost"
                   disabled={solved}
                   onClick={() => handlePick(opt)}
-                  className={`!w-full !max-w-none !px-4 font-andika text-4xl font-bold text-gray-900 ${
+                  className={`!w-full !max-w-none !px-4 font-andika text-4xl font-bold text-ink ${
                     isWrong ? '!border-error !bg-error-light' : ''
                   } ${solved ? 'opacity-60' : ''}`}
                 >
@@ -140,7 +140,7 @@ export function MissingWord({ data, onComplete }: MissingWordProps) {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className={`text-center text-sm font-medium ${solved ? 'text-success' : 'text-gray-500'}`}
+            className={`text-center text-sm font-medium ${solved ? 'text-success' : 'text-text-sub'}`}
           >
             {feedback}
           </motion.p>

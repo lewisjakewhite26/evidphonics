@@ -38,7 +38,7 @@ function AnchorHeading({
     accent === 'primary' ? 'border-b-2 border-primary' : 'border-b-2 border-success'
 
   return (
-    <div className="font-andika text-4xl font-bold text-gray-900 md:text-5xl">
+    <div className="font-andika text-4xl font-bold text-ink md:text-5xl">
       {anchor.word.split('').map((ch, i) => (
         <span key={i} className={`inline-block min-w-[0.15em] ${i >= start && i < end ? underlineCls : ''}`}>
           {ch}
@@ -108,8 +108,8 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
           transition={motionSpring}
           className="flex w-full flex-col items-center gap-6 py-2"
         >
-          <p className="text-center text-lg font-semibold text-gray-800">Sorting complete!</p>
-          <p className="text-center text-sm text-gray-500">
+          <p className="text-center text-lg font-semibold text-ink">Sorting complete!</p>
+          <p className="text-center text-sm text-text-sub">
             You sorted <span className="font-semibold text-primary">{total}</span> words.
           </p>
           <div className="grid w-full max-w-2xl grid-cols-2 gap-4">
@@ -119,7 +119,7 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
                 {leftChips.map((w, i) => (
                   <span
                     key={`lc-${i}-${w}`}
-                    className="rounded-full border border-primary/30 bg-white px-3 py-1 text-sm font-bold text-gray-900"
+                    className="rounded-full border border-primary/30 bg-white px-3 py-1 text-sm font-bold text-ink"
                   >
                     {w}
                   </span>
@@ -132,7 +132,7 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
                 {rightChips.map((w, i) => (
                   <span
                     key={`rc-${i}-${w}`}
-                    className="rounded-full border border-success/40 bg-white px-3 py-1 text-sm font-bold text-gray-900"
+                    className="rounded-full border border-success/40 bg-white px-3 py-1 text-sm font-bold text-ink"
                   >
                     {w}
                   </span>
@@ -149,7 +149,7 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
   if (!a0 || !a1 || sortWords.length === 0) {
     return (
       <ActivityCardFrame emoji={data.emoji} title={data.title} instruction={data.instruction}>
-        <p className="text-center text-sm text-gray-500">Sound Sort needs two anchor words and sort words.</p>
+        <p className="text-center text-sm text-text-sub">Sound Sort needs two anchor words and sort words.</p>
       </ActivityCardFrame>
     )
   }
@@ -173,7 +173,7 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
           : undefined
       }
     >
-      <div className="relative flex min-h-[min(70vh,520px)] w-full flex-1 flex-row overflow-hidden rounded-xl border border-gray-200">
+      <div className="relative flex min-h-[min(70vh,520px)] w-full flex-1 flex-row overflow-hidden rounded-xl border border-border">
         <button
           type="button"
           className="flex min-h-0 min-w-0 flex-1 flex-col border border-primary/40 bg-primary/15 pb-4 pt-8 text-left transition-colors hover:bg-primary/25 active:opacity-95"
@@ -189,7 +189,7 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
                 initial={{ scale: 0.6, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={motionSpring}
-                className="rounded-full border border-primary/40 bg-primary-light/50 px-3 py-1 text-sm font-bold text-gray-900"
+                className="rounded-full border border-primary/40 bg-primary-light/50 px-3 py-1 text-sm font-bold text-ink"
               >
                 {w}
               </motion.span>
@@ -212,7 +212,7 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
                 initial={{ scale: 0.6, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={motionSpring}
-                className="rounded-full border border-success/50 bg-success-light/40 px-3 py-1 text-sm font-bold text-gray-900"
+                className="rounded-full border border-success/50 bg-success-light/40 px-3 py-1 text-sm font-bold text-ink"
               >
                 {w}
               </motion.span>
@@ -225,12 +225,12 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
             <motion.div
               animate={shakeCard ? { x: [0, -10, 10, -10, 10, 0] } : { scale: 1 }}
               transition={shakeCard ? { duration: 0.45 } : motionSpring}
-              className="pointer-events-auto flex max-w-sm flex-col items-center gap-4 rounded-xl border-2 border-gray-200 bg-white p-8 shadow-lg"
+              className="pointer-events-auto flex max-w-sm flex-col items-center gap-4 rounded-xl border-2 border-border bg-white p-8 shadow-lg"
             >
               <div className="flex items-center gap-2">
                 <AudioButton text={current.word} rate={0.8} />
               </div>
-              <p className="text-center font-andika text-4xl font-bold text-gray-900">{current.word}</p>
+              <p className="text-center font-andika text-4xl font-bold text-ink">{current.word}</p>
             </motion.div>
           )}
         </div>

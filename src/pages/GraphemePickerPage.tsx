@@ -2,12 +2,13 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { createPortal } from 'react-dom'
-import { motion, useReducedMotion } from 'framer-motion'
+import { useReducedMotion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import type { ActivityType, GraphemeData } from '@/data/types'
 import { graphemesByPhase, CURRICULUM_PHASES_ORDERED } from '@/data/graphemes'
 import { ActivityPickerModal } from '@/components/layout/ActivityPickerModal'
 import { GraphemeSearchBar } from '@/components/layout/GraphemeSearchBar'
+import { PhaseSubjectCard } from '@/components/layout/PhaseSubjectCard'
 import { SuitePageAmbient } from '@/components/layout/SuitePageAmbient'
 import { GraphemeMark } from '@/components/ui/GraphemeMark'
 import { TactileButton } from '@/components/ui/TactileButton'
@@ -20,8 +21,6 @@ import {
 import { useModalFocusTrap } from '@/src/hooks/useModalFocusTrap'
 import { curriculumKey } from '@/lib/graphemeSearch'
 import { sortActivitiesByPedagogy } from '@/lib/lessonConstants'
-
-const BRAND_HEADER_GRADIENT = 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)'
 
 const LOGO_MARK_MASK_STYLE: CSSProperties = {
   WebkitMaskImage: 'url(/company-mark.png)',
@@ -41,22 +40,11 @@ const PHASE_SECTION_TITLE: Record<number, string> = {
   5: 'Phase 5 — Alternative Spellings',
 }
 
-/** Hand-picked on-brand gradients — distinct angles/stops, not procedural. */
-const PHASE_CARD_LINEAR: Record<number, string> = {
-  2: 'linear-gradient(135deg, #6B00F5 0%, #C850C0 100%)',
-  3: 'linear-gradient(160deg, #C850C0 0%, #FF6B9D 100%)',
-  4: 'linear-gradient(150deg, #9B30FF 0%, #E040D0 100%)',
-  5: 'linear-gradient(120deg, #8B00FF 0%, #FF69B4 100%)',
-}
-
-const PHASE_CARD_SURFACE_HIGHLIGHT =
-  'radial-gradient(ellipse 125% 95% at 0% 0%, rgba(255,255,255,0.15) 0%, transparent 58%)'
-
-function phaseCardBackgroundStyle(phase: number): CSSProperties {
-  const linear = PHASE_CARD_LINEAR[phase] ?? PHASE_CARD_LINEAR[2]
-  return {
-    backgroundImage: `${PHASE_CARD_SURFACE_HIGHLIGHT}, ${linear}`,
-  }
+const PHASE_SHORT_TITLE: Record<number, string> = {
+  2: 'Basic Code',
+  3: 'Digraphs',
+  4: 'Consonant Clusters',
+  5: 'Alternative Spellings',
 }
 
 export default function GraphemePickerPage() {
@@ -176,77 +164,58 @@ export default function GraphemePickerPage() {
   }, [phaseEntries, selectedSet])
 
   return (
-    <div className="relative min-h-screen font-sans">
+    <div className="relative min-h-screen font-andika">
       <SuitePageAmbient />
 
       <div className="relative z-10 flex min-h-screen flex-col">
-        <header className="flex shrink-0 flex-row items-center gap-3 px-6 py-3 sm:px-8 sm:py-3.5 lg:pl-10">
+        <header className="sticky top-0 z-20 flex shrink-0 flex-row items-center gap-3 border-b border-black/5 bg-white px-6 py-3 shadow-md sm:px-8 sm:py-4 lg:px-10">
           <div
-            className="relative h-10 w-10 shrink-0 overflow-hidden rounded-2xl shadow-evid-btn"
-            style={{ background: BRAND_HEADER_GRADIENT }}
+            className="relative h-10 w-10 shrink-0 overflow-hidden rounded-2xl bg-primary shadow-card"
             aria-hidden
           >
             <div className="absolute inset-0 bg-white" style={LOGO_MARK_MASK_STYLE} />
           </div>
           <div className="flex min-w-0 flex-col justify-center">
             <h1 className="text-[1.6875rem] leading-tight tracking-tight sm:text-[1.8125rem]">
-              <span className="font-normal text-[#8B00FF]">Evid</span>
-              <span className="font-bold text-[#1A1A2E]">Phonics</span>
+              <span className="font-normal text-primary">Evid</span>
+              <span className="font-bold text-ink">Phonics</span>
             </h1>
           </div>
         </header>
 
-        <main className="flex flex-1 flex-col px-4 pt-2 pb-36 sm:px-8 sm:pt-4 lg:px-12">
-          <GraphemeSearchBar selected={selected} onToggle={toggleGrapheme} />
+        <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 pb-36 pt-6 sm:px-8 sm:pt-8 lg:px-10">
+          <section className="mb-8 text-center sm:mb-10">
+            <h2 className="text-heading font-bold text-ink sm:text-4xl">Build your phonics lesson</h2>
+            <p className="mx-auto mt-2 max-w-2xl text-body text-text-sub">
+              Choose a phase, pick graphemes, then select activities to teach on the whiteboard.
+            </p>
+          </section>
 
-          <p className="mx-auto mt-6 mb-3 w-full max-w-6xl text-center text-xs font-semibold uppercase tracking-widest text-[#718096] sm:mt-8">
-            Or browse by phase
-          </p>
-
-          <div className="mx-auto grid w-full max-w-6xl grid-cols-2 gap-3 sm:gap-4 md:gap-5">
-            {phaseEntries.map(([phaseKey, graphemes]) => {
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
+            {phaseEntries.map(([phaseKey, graphemes], index) => {
               const phase = Number(phaseKey)
-              const title = PHASE_SECTION_TITLE[phase] ?? `Phase ${phase}`
-              const phaseLabel = `Phase ${phase}`
+              const title = PHASE_SHORT_TITLE[phase] ?? `Phase ${phase}`
               const nFromPhase = selectedCountByPhase.get(phase) ?? 0
-              const isPhaseSelected = nFromPhase > 0
-              const graphemeSummary =
-                graphemes.length === 0
-                  ? 'Coming soon'
-                  : `${graphemes.length} grapheme${graphemes.length === 1 ? '' : 's'}`
+              const sampleIds = graphemes.slice(0, 3).map((g) => g.grapheme)
               return (
-                <motion.button
+                <PhaseSubjectCard
                   key={phase}
-                  type="button"
+                  phase={phase}
+                  title={title}
+                  totalGraphemes={graphemes.length}
+                  selectedCount={nFromPhase}
+                  sampleGraphemeIds={sampleIds}
                   onClick={() => setOpenPhase(phase)}
-                  whileHover={reduceMotion ? undefined : { scale: 1.03 }}
-                  transition={
-                    reduceMotion ? { duration: 0 } : { type: 'spring', stiffness: 420, damping: 28 }
-                  }
-                  style={phaseCardBackgroundStyle(phase)}
-                  className={`group relative flex min-h-[min(34vh,240px)] w-full flex-col rounded-3xl p-5 text-left shadow-[0_16px_44px_-12px_rgba(0,0,0,0.28)] ring-1 ring-white/25 transition-shadow duration-200 hover:shadow-[0_28px_64px_-10px_rgba(0,0,0,0.45)] sm:min-h-[min(38vh,300px)] sm:p-7 md:p-8 ${
-                    isPhaseSelected ? 'ring-2 ring-white/80' : ''
-                  }`}
-                >
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-[11px] font-bold uppercase tracking-widest text-white opacity-70 sm:text-xs">
-                      {phaseLabel}
-                    </span>
-                    {nFromPhase > 0 ? (
-                      <span className="rounded-full bg-white/20 px-2.5 py-0.5 text-[11px] font-semibold text-white ring-1 ring-white/35 backdrop-blur-sm sm:text-xs">
-                        {nFromPhase} selected
-                      </span>
-                    ) : null}
-                  </div>
-                  <span className="mt-4 text-2xl font-bold leading-tight text-white sm:text-3xl">{title}</span>
-                  <span className="mt-2 text-sm text-white opacity-80 sm:text-base">{graphemeSummary}</span>
-                  <span className="mt-auto inline-flex w-fit shrink-0 self-start rounded-full bg-white/20 px-4 py-2.5 text-sm font-semibold text-white ring-1 ring-white/30 backdrop-blur-[2px] sm:px-5 sm:py-3 sm:text-base">
-                    Choose graphemes →
-                  </span>
-                </motion.button>
+                  reduceMotion={reduceMotion}
+                  index={index}
+                />
               )
             })}
           </div>
+
+          <section className="mt-10 rounded-3xl border border-white/80 bg-white/90 p-5 shadow-lg backdrop-blur-sm sm:mt-12 sm:p-6">
+            <GraphemeSearchBar selected={selected} onToggle={toggleGrapheme} />
+          </section>
         </main>
       </div>
 
@@ -279,23 +248,22 @@ export default function GraphemePickerPage() {
             onClick={(e) => e.stopPropagation()}
           >
             <div
-              className="flex shrink-0 flex-col gap-0.5 px-4 py-3 text-white sm:px-6 sm:py-4"
-              style={{ background: 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)' }}
+              className="flex shrink-0 flex-col gap-0.5 border-b border-border bg-white px-4 py-3 sm:px-6 sm:py-4"
             >
-              <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-white/90">
+              <p className="text-label font-bold uppercase tracking-[0.12em] text-primary">
                 Phase {openPhase}
               </p>
-              <h2 id="phase-modal-title" className="text-lg font-bold leading-snug sm:text-xl">
+              <h2 id="phase-modal-title" className="text-xl font-bold leading-snug text-ink sm:text-2xl">
                 {modalTitle}
               </h2>
             </div>
 
-            <div className="flex shrink-0 justify-end border-b border-[rgba(139,0,255,0.1)] bg-[#FAF7FF]/80 px-3 py-2 sm:px-5">
+            <div className="flex shrink-0 justify-end border-b border-border bg-bg px-3 py-2 sm:px-5">
               <button
                 type="button"
                 disabled={modalGraphemes.length === 0}
                 onClick={toggleSelectAllInOpenPhase}
-                className="touch-target rounded-[10px] border-2 border-[#8B00FF] bg-white px-3 py-1.5 text-xs font-bold text-[#8B00FF] hover:bg-[rgba(139,0,255,0.06)] disabled:cursor-not-allowed disabled:border-[#D4C4EB] disabled:bg-[#F4F0FD] disabled:text-[#A0A0A0] sm:text-sm"
+                className="touch-target rounded-[10px] border-2 border-primary bg-white px-3 py-1.5 text-label font-bold text-primary hover:bg-primary-light disabled:cursor-not-allowed disabled:border-border disabled:bg-bg disabled:text-text-hint"
               >
                 {modalAllSelected ? 'Deselect all in this phase' : 'Select all in this phase'}
               </button>
@@ -303,7 +271,7 @@ export default function GraphemePickerPage() {
 
             <div className="shrink-0 px-3 pb-2 pt-3 sm:px-5 sm:pt-4">
               {modalGraphemes.length === 0 ? (
-                <p className="rounded-xl border border-dashed border-[rgba(139,0,255,0.2)] bg-[#FAF7FF]/90 px-4 py-10 text-center text-sm leading-relaxed text-[#718096]">
+                <p className="rounded-xl border border-dashed border-border-strong bg-bg px-4 py-10 text-center text-body leading-relaxed text-text-sub">
                   Phase {openPhase} graphemes are not available yet. Check back after the curriculum is added.
                 </p>
               ) : (
@@ -319,18 +287,13 @@ export default function GraphemePickerPage() {
                       title={`${entry.keyword} · ${graphemeAccessibilityShort(entry.grapheme)}`}
                       className={`font-andika touch-target relative flex flex-col items-center justify-center rounded-[12px] px-0.5 py-1.5 text-center transition sm:py-2 ${
                         isSelected
-                          ? 'border-0 text-white shadow-evid-btn'
-                          : 'border border-[rgba(139,0,255,0.15)] bg-[#FAF7FF] text-[#1A0033] hover:border-[rgba(139,0,255,0.28)]'
+                          ? 'border-0 bg-primary text-white shadow-evid-btn'
+                          : 'border border-border bg-white text-ink hover:border-border-strong'
                       }`}
-                      style={
-                        isSelected
-                          ? { background: 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)' }
-                          : undefined
-                      }
                     >
                       {isSelected ? (
                         <span
-                          className="absolute right-0.5 top-0.5 text-[10px] font-bold text-white drop-shadow-sm sm:right-1 sm:top-1 sm:text-xs"
+                          className="absolute right-0.5 top-0.5 text-label font-bold text-white sm:right-1 sm:top-1"
                           aria-hidden
                         >
                           ✓
@@ -340,8 +303,8 @@ export default function GraphemePickerPage() {
                         <GraphemeMark graphemeId={entry.grapheme} />
                       </span>
                       <span
-                        className={`mt-0.5 line-clamp-2 text-[9px] leading-tight sm:text-[10px] ${
-                          isSelected ? 'text-white/80' : 'text-[#718096]'
+                        className={`mt-0.5 line-clamp-2 text-keyword leading-tight ${
+                          isSelected ? 'text-white/85' : 'text-text-sub'
                         }`}
                       >
                         {entry.keyword}
@@ -352,28 +315,23 @@ export default function GraphemePickerPage() {
               </div>
               )}
               {modalGraphemes.length > 0 && showOoLegend ? (
-                <p className="mt-2 text-xs font-normal text-[#718096]/90">
+                <p className="mt-2 text-label font-normal text-text-sub">
                   oo = short (book) · {OO_LONG_DISPLAY} = long (moon)
                 </p>
               ) : null}
             </div>
 
-            <div className="shrink-0 border-t border-[rgba(139,0,255,0.08)] bg-white px-4 pb-4 pt-3 sm:px-6 sm:pb-5 sm:pt-4">
+            <div className="shrink-0 border-t border-border bg-white px-4 pb-4 pt-3 sm:px-6 sm:pb-5 sm:pt-4">
               <button
                 ref={doneButtonRef}
                 type="button"
                 disabled={modalPhaseSelectedCount === 0}
                 onClick={openActivityPicker}
-                className={`w-full rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-evid-btn transition hover:-translate-y-0.5 hover:shadow-evid-btn-hover sm:py-3 sm:text-base ${
+                className={`w-full rounded-full px-5 py-2.5 text-label font-semibold shadow-evid-btn transition hover:-translate-y-0.5 hover:shadow-evid-btn-hover sm:py-3 ${
                   modalPhaseSelectedCount > 0
-                    ? ''
-                    : 'cursor-not-allowed bg-gray-300 text-gray-500 shadow-none hover:translate-y-0'
+                    ? 'bg-primary text-white'
+                    : 'cursor-not-allowed bg-gray-300 text-text-sub shadow-none hover:translate-y-0'
                 } `}
-                style={
-                  modalPhaseSelectedCount > 0
-                    ? { background: 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)' }
-                    : undefined
-                }
               >
                 {modalPhaseSelectedCount > 0
                   ? `✓ Done — ${modalPhaseSelectedCount} grapheme${modalPhaseSelectedCount === 1 ? '' : 's'} added`
@@ -385,7 +343,7 @@ export default function GraphemePickerPage() {
                 ref={addAnotherPhaseRef}
                 type="button"
                 onClick={closeModal}
-                className="mt-2 w-full text-center text-sm text-[#718096] hover:text-[#2D3748]"
+                className="mt-2 w-full text-center text-label text-text-sub hover:text-text-main"
               >
                 ＋ Add graphemes from another phase
               </button>

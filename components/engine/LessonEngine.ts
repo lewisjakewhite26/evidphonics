@@ -11,6 +11,7 @@ import type {
   WordBuilderData,
 } from '@/data/types'
 import { intersectActivityAllowlistForSelection } from '@/data/graphemes'
+import { graphemeAudioUrl, normalizeAudioFilename, wordAudioUrl } from '@/lib/audioPaths'
 import { shuffle } from '@/lib/utils'
 
 const CHECKLIST = ['Capital letter', 'Finger spaces', 'Full stop'] as [string, string, string]
@@ -141,22 +142,6 @@ function pickOddOneOutSets(
     markWordsUsed(used, set.words)
   }
   return picked.slice(0, count)
-}
-
-function normalizeAudioFilename(value: string): string {
-  return value
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9-]/g, '')
-}
-
-function graphemeAudioUrl(grapheme: string): string {
-  return `/audio/graphemes/${normalizeAudioFilename(grapheme)}.mp3`
-}
-
-function wordAudioUrl(word: string): string {
-  return `/audio/words/${normalizeAudioFilename(word)}.mp3`
 }
 
 function selectRevisionGraphemes(current: GraphemeData, allGraphemes: GraphemeData[]): string[] {

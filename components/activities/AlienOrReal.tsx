@@ -68,7 +68,7 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
     answered && realChosen
       ? correctIsReal
         ? '!ring-4 !ring-success'
-        : '!border-error !bg-error-light !text-gray-900'
+        : '!border-error !bg-error-light !text-ink'
       : answered && correctIsReal && alienChosen
         ? '!ring-4 !ring-success'
         : ''
@@ -77,7 +77,7 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
     answered && alienChosen
       ? !correctIsReal
         ? '!ring-4 !ring-success'
-        : '!border-error !bg-error-light !text-gray-900'
+        : '!border-error !bg-error-light !text-ink'
       : answered && !correctIsReal && realChosen
         ? '!ring-4 !ring-success'
         : ''
@@ -96,7 +96,7 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
         transition={{ type: 'spring', stiffness: 220, damping: 24 }}
         className="flex w-full flex-col items-center gap-8"
       >
-        <div className="text-center font-andika text-4xl font-bold tracking-wide text-gray-900 md:text-6xl">
+        <div className="text-center font-andika text-4xl font-bold tracking-wide text-ink md:text-6xl">
           {currentWord.word}
         </div>
 
@@ -134,8 +134,8 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
             <p
               className={`inline-block rounded-2xl border-2 px-6 py-3 text-sm font-semibold ${
                 selectedAnswer === currentWord.isReal
-                  ? 'border-success bg-success-light text-gray-800'
-                  : 'border-warning bg-warning-light text-gray-800'
+                  ? 'border-success bg-success-light text-ink'
+                  : 'border-warning bg-warning-light text-ink'
               }`}
             >
               {selectedAnswer === currentWord.isReal ? (

@@ -1,0 +1,909 @@
+{
+  "_readme": "ElevenLabs sentence → trim → grapheme MP3. tts_text: full phrase to synthesise. trim_mode: start (default) keeps audio from trim_start_ms for trim_duration_ms; end keeps the last trim_duration_ms of the file. Tune values after listening to _work/{slug}-full.mp3.",
+  "grapheme_-": {
+    "tts_text": "A table.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_-ful": {
+    "tts_text": "helpful",
+    "trim_mode": "end",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 420
+  },
+  "grapheme_-less": {
+    "tts_text": "helpless",
+    "trim_mode": "end",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 520
+  },
+  "grapheme_-ly": {
+    "tts_text": "quickly",
+    "trim_mode": "end",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 420
+  },
+  "grapheme_-ment": {
+    "tts_text": "enjoyment",
+    "trim_mode": "end",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 520
+  },
+  "grapheme_-ness": {
+    "tts_text": "kindness",
+    "trim_mode": "end",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 520
+  },
+  "grapheme_-tion-suffix": {
+    "tts_text": "information",
+    "trim_mode": "end",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 520
+  },
+  "grapheme_a": {
+    "tts_text": "apple",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_a-e": {
+    "tts_text": "cake",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ai": {
+    "tts_text": "train",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_aigh": {
+    "tts_text": "straight",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 480
+  },
+  "grapheme_air": {
+    "tts_text": "fair",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 480
+  },
+  "grapheme_ar": {
+    "tts_text": "scarf",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_are": {
+    "tts_text": "are.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_au": {
+    "tts_text": "sauce",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_aw": {
+    "tts_text": "claw",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ay": {
+    "tts_text": "play",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_b": {
+    "tts_text": "bag",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_bl": {
+    "tts_text": "bl.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_br": {
+    "tts_text": "br.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_c": {
+    "tts_text": "cat",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_cc": {
+    "tts_text": "cc.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ce": {
+    "tts_text": "ce.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ch": {
+    "tts_text": "chest",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_cian": {
+    "tts_text": "magician",
+    "trim_mode": "end",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 520
+  },
+  "grapheme_ck": {
+    "tts_text": "duck",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_cl": {
+    "tts_text": "cl.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_cr": {
+    "tts_text": "cr.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ct": {
+    "tts_text": "ct.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_d": {
+    "tts_text": "drip",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_dd": {
+    "tts_text": "dd.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_dge": {
+    "tts_text": "bridge",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 480
+  },
+  "grapheme_dis": {
+    "tts_text": "dishappy.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_dis-": {
+    "tts_text": "disagree",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 480
+  },
+  "grapheme_dr": {
+    "tts_text": "dr.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_e": {
+    "tts_text": "egg",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_e-e": {
+    "tts_text": "these",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ea": {
+    "tts_text": "beach",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ear": {
+    "tts_text": "near",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 480
+  },
+  "grapheme_ee": {
+    "tts_text": "street",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_eer": {
+    "tts_text": "eer.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_eigh": {
+    "tts_text": "eight",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_er": {
+    "tts_text": "hammer",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ere": {
+    "tts_text": "ere.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_ew": {
+    "tts_text": "grew",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ey": {
+    "tts_text": "monkey",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_f": {
+    "tts_text": "frog",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_ff": {
+    "tts_text": "puff",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_fl": {
+    "tts_text": "fl.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_fr": {
+    "tts_text": "fr.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ft": {
+    "tts_text": "ft.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_g": {
+    "tts_text": "grip",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_ge": {
+    "tts_text": "ge.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_gg": {
+    "tts_text": "gg.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_gh": {
+    "tts_text": "gh.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_gn": {
+    "tts_text": "gnome",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_gr": {
+    "tts_text": "gr.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_h": {
+    "tts_text": "hat",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_i": {
+    "tts_text": "ink",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_i-e": {
+    "tts_text": "kite",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ie": {
+    "tts_text": "tie",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_igh": {
+    "tts_text": "night",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 480
+  },
+  "grapheme_ir": {
+    "tts_text": "bird",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_j": {
+    "tts_text": "jam",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_k": {
+    "tts_text": "kite",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_kn": {
+    "tts_text": "knee",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_l": {
+    "tts_text": "clap",
+    "trim_mode": "start",
+    "trim_start_ms": 180,
+    "trim_duration_ms": 320
+  },
+  "grapheme_lf": {
+    "tts_text": "lf.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ll": {
+    "tts_text": "bell",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_lt": {
+    "tts_text": "lt.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_lth": {
+    "tts_text": "lth.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_m": {
+    "tts_text": "drip",
+    "trim_mode": "start",
+    "trim_start_ms": 180,
+    "trim_duration_ms": 320
+  },
+  "grapheme_mb": {
+    "tts_text": "lamb",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_mis": {
+    "tts_text": "mishappy.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_mis-": {
+    "tts_text": "mistake",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 480
+  },
+  "grapheme_mm": {
+    "tts_text": "mm.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_mp": {
+    "tts_text": "mp.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_n": {
+    "tts_text": "snap",
+    "trim_mode": "start",
+    "trim_start_ms": 180,
+    "trim_duration_ms": 320
+  },
+  "grapheme_nch": {
+    "tts_text": "nch.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_nd": {
+    "tts_text": "nd.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ng": {
+    "tts_text": "string",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_nk": {
+    "tts_text": "nk.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_nn": {
+    "tts_text": "nn.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_nt": {
+    "tts_text": "nt.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_o": {
+    "tts_text": "orange",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_o-e": {
+    "tts_text": "home",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_oa": {
+    "tts_text": "float",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_oe": {
+    "tts_text": "toe",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_oi": {
+    "tts_text": "coin",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_oo": {
+    "tts_text": "drool",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_oo-long": {
+    "tts_text": "moon",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 560
+  },
+  "grapheme_oo-short": {
+    "tts_text": "book",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 560
+  },
+  "grapheme_or": {
+    "tts_text": "storm",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ore": {
+    "tts_text": "ore.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_ou": {
+    "tts_text": "cloud",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ough": {
+    "tts_text": "through",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 480
+  },
+  "grapheme_our": {
+    "tts_text": "our.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_ow": {
+    "tts_text": "cow",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_oy": {
+    "tts_text": "boy",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_p": {
+    "tts_text": "plug",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_ph": {
+    "tts_text": "phone",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_pl": {
+    "tts_text": "pl.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_pp": {
+    "tts_text": "pp.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_pr": {
+    "tts_text": "pr.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_qu": {
+    "tts_text": "queen",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_r": {
+    "tts_text": "grip",
+    "trim_mode": "start",
+    "trim_start_ms": 180,
+    "trim_duration_ms": 320
+  },
+  "grapheme_re": {
+    "tts_text": "rehappy.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_re-": {
+    "tts_text": "rewrite",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_s": {
+    "tts_text": "step",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_sc": {
+    "tts_text": "sc.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_sch": {
+    "tts_text": "sch.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_sh": {
+    "tts_text": "shelf",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_shr": {
+    "tts_text": "shr.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_sion": {
+    "tts_text": "vision",
+    "trim_mode": "end",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 520
+  },
+  "grapheme_sk": {
+    "tts_text": "sk.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_sl": {
+    "tts_text": "sl.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_sm": {
+    "tts_text": "sm.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_sn": {
+    "tts_text": "sn.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_sp": {
+    "tts_text": "sp.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_spr": {
+    "tts_text": "spr.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_ss": {
+    "tts_text": "hiss",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ssion": {
+    "tts_text": "mission",
+    "trim_mode": "end",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 520
+  },
+  "grapheme_st": {
+    "tts_text": "st.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_str": {
+    "tts_text": "str.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_sw": {
+    "tts_text": "sw.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_t": {
+    "tts_text": "trip",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_tch": {
+    "tts_text": "catch",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 480
+  },
+  "grapheme_th": {
+    "tts_text": "thick",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_thr": {
+    "tts_text": "thr.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 480
+  },
+  "grapheme_tion": {
+    "tts_text": "station",
+    "trim_mode": "end",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 520
+  },
+  "grapheme_tr": {
+    "tts_text": "tr.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_tt": {
+    "tts_text": "tt.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_tw": {
+    "tts_text": "tw.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_u": {
+    "tts_text": "umbrella",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_u-e": {
+    "tts_text": "cube",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ue": {
+    "tts_text": "blue",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ui": {
+    "tts_text": "ui.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_un": {
+    "tts_text": "unhappy.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_un-": {
+    "tts_text": "unhappy",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ur": {
+    "tts_text": "surf",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  },
+  "grapheme_ure": {
+    "tts_text": "sure",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 480
+  },
+  "grapheme_v": {
+    "tts_text": "van",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_ve": {
+    "tts_text": "ve.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_w": {
+    "tts_text": "web",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_wh": {
+    "tts_text": "wheel",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_wr": {
+    "tts_text": "write",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_x": {
+    "tts_text": "fox",
+    "trim_mode": "start",
+    "trim_start_ms": 180,
+    "trim_duration_ms": 320
+  },
+  "grapheme_xt": {
+    "tts_text": "xt.",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 400
+  },
+  "grapheme_y": {
+    "tts_text": "yes",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_z": {
+    "tts_text": "zip",
+    "trim_mode": "start",
+    "trim_start_ms": 0,
+    "trim_duration_ms": 320
+  },
+  "grapheme_zz": {
+    "tts_text": "buzz",
+    "trim_mode": "start",
+    "trim_start_ms": 220,
+    "trim_duration_ms": 400
+  }
+}

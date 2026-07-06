@@ -77,11 +77,11 @@ export function SpeedySounds({ data, onComplete }: SpeedySoundsProps) {
                 className={`!h-auto !min-h-[140px] !w-full !max-w-none !rounded-3xl !px-8 !py-8 ${
                   isSelected
                     ? '!border-primary !bg-primary-light !ring-2 !ring-primary/30'
-                    : '!border-gray-200'
+                    : '!border-border'
                 }`}
               >
                 <span className="relative flex flex-col items-center gap-4">
-                  <span className="text-center font-andika text-4xl font-bold text-gray-900 md:text-5xl">
+                  <span className="text-center font-andika text-4xl font-bold text-ink md:text-5xl">
                     <GraphemeMark graphemeId={g.grapheme} />
                   </span>
                 </span>

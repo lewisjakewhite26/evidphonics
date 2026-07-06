@@ -1,0 +1,908 @@
+[
+  {
+    "slug": "-",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "-ful",
+    "keyword": "helpful",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "-less",
+    "keyword": "helpless",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "-ly",
+    "keyword": "quickly",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "-ment",
+    "keyword": "enjoyment",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "-ness",
+    "keyword": "kindness",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "-tion-suffix",
+    "keyword": "information",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "a",
+    "keyword": "apple",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "a-e",
+    "keyword": "cake",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ai",
+    "keyword": "train",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "aigh",
+    "keyword": "straight",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "air",
+    "keyword": "fair",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ar",
+    "keyword": "scarf",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "are",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "au",
+    "keyword": "sauce",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "aw",
+    "keyword": "claw",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ay",
+    "keyword": "play",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "b",
+    "keyword": "bag",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "bl",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "br",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "c",
+    "keyword": "cat",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "cc",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ce",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ch",
+    "keyword": "chest",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "cian",
+    "keyword": "magician",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "ck",
+    "keyword": "duck",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "cl",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "cr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ct",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "d",
+    "keyword": "drip",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "dd",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "dge",
+    "keyword": "bridge",
+    "phase": 6,
+    "type": "grapheme"
+  },
+  {
+    "slug": "dis",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "dis-",
+    "keyword": "disagree",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "dr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "e",
+    "keyword": "egg",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "e-e",
+    "keyword": "these",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ea",
+    "keyword": "beach",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ear",
+    "keyword": "near",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ee",
+    "keyword": "street",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "eer",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "eigh",
+    "keyword": "eight",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "er",
+    "keyword": "hammer",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ere",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ew",
+    "keyword": "grew",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ey",
+    "keyword": "monkey",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "f",
+    "keyword": "frog",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ff",
+    "keyword": "puff",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "fl",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "fr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ft",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "g",
+    "keyword": "grip",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ge",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "gg",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "gh",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "gn",
+    "keyword": "gnome",
+    "phase": 6,
+    "type": "grapheme"
+  },
+  {
+    "slug": "gr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "h",
+    "keyword": "hat",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "i",
+    "keyword": "ink",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "i-e",
+    "keyword": "kite",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ie",
+    "keyword": "tie",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "igh",
+    "keyword": "night",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ir",
+    "keyword": "bird",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "j",
+    "keyword": "jam",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "k",
+    "keyword": "kite",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "kn",
+    "keyword": "knee",
+    "phase": 6,
+    "type": "grapheme"
+  },
+  {
+    "slug": "l",
+    "keyword": "clap",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "lf",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ll",
+    "keyword": "bell",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "lt",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "lth",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "m",
+    "keyword": "drip",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "mb",
+    "keyword": "lamb",
+    "phase": 6,
+    "type": "grapheme"
+  },
+  {
+    "slug": "mis",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "mis-",
+    "keyword": "mistake",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "mm",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "mp",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "n",
+    "keyword": "snap",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "nch",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "nd",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ng",
+    "keyword": "string",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "nk",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "nn",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "nt",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "o",
+    "keyword": "orange",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "o-e",
+    "keyword": "home",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "oa",
+    "keyword": "float",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "oe",
+    "keyword": "toe",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "oi",
+    "keyword": "coin",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "oo",
+    "keyword": "drool",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "oo-long",
+    "keyword": "moon",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "oo-short",
+    "keyword": "book",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "or",
+    "keyword": "storm",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ore",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ou",
+    "keyword": "cloud",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ough",
+    "keyword": "through",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "our",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ow",
+    "keyword": "cow",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "oy",
+    "keyword": "boy",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "p",
+    "keyword": "plug",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ph",
+    "keyword": "phone",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "pl",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "pp",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "pr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "qu",
+    "keyword": "queen",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "r",
+    "keyword": "grip",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "re",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "re-",
+    "keyword": "rewrite",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "s",
+    "keyword": "step",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "sc",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "sch",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "sh",
+    "keyword": "shelf",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "shr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "sion",
+    "keyword": "vision",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "sk",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "sl",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "sm",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "sn",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "sp",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "spr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "ss",
+    "keyword": "hiss",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ssion",
+    "keyword": "mission",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "st",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "str",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "sw",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "t",
+    "keyword": "trip",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "tch",
+    "keyword": "catch",
+    "phase": 6,
+    "type": "grapheme"
+  },
+  {
+    "slug": "th",
+    "keyword": "thick",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "thr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "tion",
+    "keyword": "station",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "tr",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "tt",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "tw",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "u",
+    "keyword": "umbrella",
+    "phase": 2,
+    "type": "grapheme"
+  },
+  {
+    "slug": "u-e",
+    "keyword": "cube",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ue",
+    "keyword": "blue",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ui",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "un",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "un-",
+    "keyword": "unhappy",
+    "phase": 6,
+    "type": "morpheme"
+  },
+  {
+    "slug": "ur",
+    "keyword": "surf",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ure",
+    "keyword": "sure",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "v",
+    "keyword": "van",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "ve",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "w",
+    "keyword": "web",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "wh",
+    "keyword": "wheel",
+    "phase": 5,
+    "type": "grapheme"
+  },
+  {
+    "slug": "wr",
+    "keyword": "write",
+    "phase": 6,
+    "type": "grapheme"
+  },
+  {
+    "slug": "x",
+    "keyword": "fox",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "xt",
+    "keyword": "",
+    "phase": "",
+    "type": "grapheme"
+  },
+  {
+    "slug": "y",
+    "keyword": "yes",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "z",
+    "keyword": "zip",
+    "phase": 3,
+    "type": "grapheme"
+  },
+  {
+    "slug": "zz",
+    "keyword": "buzz",
+    "phase": 3,
+    "type": "grapheme"
+  }
+]

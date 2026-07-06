@@ -7,7 +7,7 @@ import LessonComplete from '@/components/layout/LessonComplete'
 import LessonHeader from '@/components/layout/LessonHeader'
 import { motionSpringOrInstant } from '@/lib/celebrations'
 import { ALL_ACTIVITY_TYPES, parseActivitiesParam, sortActivitiesByPedagogy } from '@/lib/lessonConstants'
-import { LESSON_SHELL_GRADIENT } from '@/lib/lessonShellGradient'
+import { LESSON_SHELL_BG } from '@/lib/lessonShellGradient'
 
 function LessonContent() {
   const navigate = useNavigate()
@@ -81,11 +81,11 @@ function LessonContent() {
   if (!lessonData) {
     return (
       <div
-        className="font-sans flex h-screen flex-col items-center justify-center gap-lg px-lg text-center"
-        style={{ background: LESSON_SHELL_GRADIENT }}
+        className="font-andika flex h-screen flex-col items-center justify-center gap-lg px-lg text-center"
+        style={{ background: LESSON_SHELL_BG }}
       >
-        <p className="text-heading font-bold text-white">Lesson not found</p>
-        <p className="max-w-md text-body text-white/80">
+        <p className="text-heading font-bold text-ink">Lesson not found</p>
+        <p className="max-w-md text-body text-text-sub">
           Check your link — grapheme codes must match the curriculum (e.g. ch, sh, th).
         </p>
         <button
@@ -102,10 +102,10 @@ function LessonContent() {
   if (!activities.length) {
     return (
       <div
-        className="font-sans flex h-screen flex-col items-center justify-center gap-lg px-lg text-center"
-        style={{ background: LESSON_SHELL_GRADIENT }}
+        className="font-andika flex h-screen flex-col items-center justify-center gap-lg px-lg text-center"
+        style={{ background: LESSON_SHELL_BG }}
       >
-        <p className="text-heading font-bold text-white">No activities selected</p>
+        <p className="text-heading font-bold text-ink">No activities selected</p>
         <button
           type="button"
           onClick={handleExit}
@@ -122,8 +122,8 @@ function LessonContent() {
 
   return (
     <div
-      className="font-sans flex h-screen flex-col overflow-hidden"
-      style={{ background: LESSON_SHELL_GRADIENT }}
+      className="font-andika flex h-screen flex-col overflow-hidden"
+      style={{ background: LESSON_SHELL_BG }}
     >
       <LessonHeader
         activityType={currentActivityType}

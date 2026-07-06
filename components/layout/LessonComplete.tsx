@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { motionSpring } from '@/lib/celebrations'
-import { LESSON_SHELL_GRADIENT } from '@/lib/lessonShellGradient'
+import { LESSON_SHELL_BG } from '@/lib/lessonShellGradient'
 
 interface LessonCompleteProps {
   count: number
@@ -12,14 +12,14 @@ interface LessonCompleteProps {
 export default function LessonComplete({ count, onHome }: LessonCompleteProps) {
   return (
     <div
-      className="flex h-screen flex-col items-center justify-center font-sans"
-      style={{ background: LESSON_SHELL_GRADIENT }}
+      className="flex h-screen flex-col items-center justify-center font-andika px-4"
+      style={{ background: LESSON_SHELL_BG }}
     >
       <motion.div
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ ...motionSpring, delay: 0.1 }}
-        className="mb-lg text-grapheme text-white"
+        className="mb-lg flex h-24 w-24 items-center justify-center rounded-full bg-white text-grapheme shadow-card"
         aria-hidden
       >
         🏆
@@ -30,16 +30,16 @@ export default function LessonComplete({ count, onHome }: LessonCompleteProps) {
         transition={{ ...motionSpring, delay: 0.2 }}
         className="text-center"
       >
-        <div className="mb-sm text-display font-bold text-white">Lesson Complete! 🎉</div>
-        <div className="mb-xl text-body text-white/70">
+        <div className="mb-sm text-display font-bold text-ink">Lesson complete</div>
+        <div className="mb-xl text-body text-text-sub">
           {count} {count === 1 ? 'activity' : 'activities'} completed
         </div>
         <button
           type="button"
           onClick={onHome}
-          className="touch-target inline-flex min-h-[56px] items-center justify-center rounded-full bg-white px-10 text-subheading font-bold text-[#8B00FF] shadow-evid-soft transition hover:-translate-y-0.5 hover:shadow-evid-hover"
+          className="touch-target inline-flex min-h-[56px] items-center justify-center rounded-full bg-primary px-10 text-subheading font-bold text-white shadow-evid-btn transition hover:-translate-y-0.5 hover:shadow-evid-btn-hover"
         >
-          Back to Home
+          Back to home
         </button>
       </motion.div>
     </div>

@@ -58,8 +58,8 @@ export function QuickReview({ data, onComplete }: QuickReviewProps) {
                 variant="ghost"
                 type="button"
                 onClick={(e) => handleWordClick(wordIndex, e)}
-                className={`!h-auto !min-h-[120px] !w-full !max-w-none !rounded-2xl !px-6 !py-6 font-andika text-4xl font-bold text-gray-900 md:!text-5xl ${
-                  isClicked ? '!border-primary !bg-primary-light !ring-2 !ring-primary/25' : '!border-gray-200'
+                className={`!h-auto !min-h-[120px] !w-full !max-w-none !rounded-2xl !px-6 !py-6 font-andika text-4xl font-bold text-ink md:!text-5xl ${
+                  isClicked ? '!border-primary !bg-primary-light !ring-2 !ring-primary/25' : '!border-border'
                 }`}
               >
                 {item.word}

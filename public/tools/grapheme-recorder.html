@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EvidPhonics — Grapheme Recorder</title>
+  <style>
+    :root { font-family: system-ui, sans-serif; color: #1a0033; background: #faf7ff; }
+    body { margin: 0; padding: 1.5rem; max-width: 52rem; }
+    h1 { font-size: 1.35rem; margin: 0 0 0.5rem; }
+    .hint { color: #718096; font-size: 0.9rem; line-height: 1.5; margin-bottom: 1.25rem; }
+    .card { background: #fff; border-radius: 1rem; padding: 1.25rem; box-shadow: 0 8px 24px rgba(21, 41, 32, 0.06); margin-bottom: 1rem; }
+    .grapheme { font-size: 2.5rem; font-weight: 700; }
+    .meta { color: #718096; font-size: 0.85rem; margin-top: 0.25rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; align-items: center; }
+    button { cursor: pointer; border: none; border-radius: 999px; padding: 0.65rem 1.1rem; font-weight: 600; font-size: 0.9rem; }
+    .primary { background: linear-gradient(135deg, #8b00ff, #ff69b4); color: #fff; }
+    .secondary { background: #f4f0fd; color: #8b00ff; }
+    .danger { background: #fee; color: #b00; }
+    .progress { margin: 1rem 0; font-size: 0.85rem; color: #718096; }
+    .status { min-height: 1.25rem; font-size: 0.85rem; color: #8b00ff; margin-top: 0.75rem; }
+    textarea { width: 100%; min-height: 5rem; font-family: monospace; font-size: 0.75rem; margin-top: 0.5rem; }
+    code { background: #f4f0fd; padding: 0.1rem 0.35rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Grapheme Recorder</h1>
+  <p class="hint">
+    <strong>Why:</strong> ElevenLabs cannot reliably say isolated phonics sounds. Record them once here (or in Audacity), then the app uses your files.<br />
+    Say the <strong>sound only</strong> — not the full keyword word. Downloads are <code>.webm</code>; convert to <code>.mp3</code> with ffmpeg (see below).
+  </p>
+
+  <div class="card">
+    <div class="progress" id="progress">Loading…</div>
+    <div class="grapheme" id="grapheme">—</div>
+    <div class="meta" id="meta"></div>
+    <p class="hint" id="coach"></p>
+    <div class="row">
+      <button type="button" class="primary" id="btnRecord">● Record</button>
+      <button type="button" class="secondary" id="btnPlay" disabled>▶ Play back</button>
+      <button type="button" class="secondary" id="btnSave" disabled>↓ Download .webm</button>
+      <button type="button" class="secondary" id="btnApprove" disabled>✓ Approve &amp; next</button>
+    </div>
+    <div class="row">
+      <button type="button" class="secondary" id="btnPrev">← Previous</button>
+      <button type="button" class="secondary" id="btnSkip">Skip →</button>
+    </div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <div class="card">
+    <strong>Approved slugs</strong> — paste into <code>public/audio/grapheme-approved.json</code> after MP3s are in place:
+    <textarea id="approvedExport" readonly>[]</textarea>
+    <button type="button" class="secondary" id="btnCopyApproved">Copy JSON</button>
+  </div>
+
+  <div class="card hint">
+    <strong>Convert webm → mp3</strong> (in <code>public/audio/graphemes/</code>):<br />
+    <code>ffmpeg -i au.webm -codec:a libmp3lame -qscale:a 2 au.mp3</code>
+  </div>
+
+  <script>
+    let manifest = []
+    let index = 0
+    let approved = new Set(JSON.parse(localStorage.getItem('evidphonics-approved') || '[]'))
+    let mediaRecorder = null
+    let chunks = []
+    let lastBlob = null
+    let recording = false
+    let stream = null
+
+    const $ = (id) => document.getElementById(id)
+
+    function updateApprovedExport() {
+      const arr = [...approved].sort()
+      $('approvedExport').value = JSON.stringify(arr, null, 2)
+      localStorage.setItem('evidphonics-approved', JSON.stringify(arr))
+    }
+
+    function render() {
+      const item = manifest[index]
+      if (!item) return
+      $('progress').textContent = `${index + 1} of ${manifest.length}`
+      $('grapheme').textContent = item.slug
+      $('meta').textContent = [
+        item.keyword ? `Keyword: ${item.keyword}` : null,
+        item.phase ? `Phase ${item.phase}` : null,
+        item.type || 'grapheme',
+        `→ public/audio/graphemes/${item.slug}.mp3`,
+      ].filter(Boolean).join(' · ')
+      $('coach').textContent = item.keyword
+        ? `Say the sound for “${item.slug}” (as in “${item.keyword}”), not the whole word.`
+        : `Say the isolated sound for “${item.slug}”.`
+      $('btnPlay').disabled = !lastBlob
+      $('btnSave').disabled = !lastBlob
+      $('btnApprove').disabled = !lastBlob
+      $('status').textContent = approved.has(item.slug) ? 'Approved earlier this session.' : ''
+      updateApprovedExport()
+    }
+
+    $('btnRecord').onclick = async () => {
+      if (!recording) {
+        try {
+          stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+          chunks = []
+          mediaRecorder = new MediaRecorder(stream)
+          mediaRecorder.ondataavailable = (e) => { if (e.data.size) chunks.push(e.data) }
+          mediaRecorder.onstop = () => {
+            lastBlob = new Blob(chunks, { type: 'audio/webm' })
+            stream.getTracks().forEach((t) => t.stop())
+            $('status').textContent = 'Recorded — play back, download, then approve.'
+            $('btnPlay').disabled = false
+            $('btnSave').disabled = false
+            $('btnApprove').disabled = false
+          }
+          mediaRecorder.start()
+          recording = true
+          $('btnRecord').textContent = '■ Stop'
+          $('btnRecord').className = 'danger'
+          $('status').textContent = 'Recording…'
+        } catch (err) {
+          $('status').textContent = 'Mic denied: ' + err.message
+        }
+      } else {
+        mediaRecorder.stop()
+        recording = false
+        $('btnRecord').textContent = '● Record'
+        $('btnRecord').className = 'primary'
+      }
+    }
+
+    $('btnPlay').onclick = () => {
+      if (lastBlob) new Audio(URL.createObjectURL(lastBlob)).play()
+    }
+
+    $('btnSave').onclick = () => {
+      if (!lastBlob || !manifest[index]) return
+      const slug = manifest[index].slug
+      const a = document.createElement('a')
+      a.href = URL.createObjectURL(lastBlob)
+      a.download = slug + '.webm'
+      a.click()
+      $('status').textContent = `Downloaded ${slug}.webm — convert to ${slug}.mp3 and copy to public/audio/graphemes/`
+    }
+
+    $('btnApprove').onclick = () => {
+      if (!manifest[index]) return
+      approved.add(manifest[index].slug)
+      updateApprovedExport()
+      if (index < manifest.length - 1) {
+        index++
+        lastBlob = null
+        render()
+      } else {
+        $('status').textContent = 'Finished all graphemes. Copy approved JSON into grapheme-approved.json'
+      }
+    }
+
+    $('btnPrev').onclick = () => {
+      if (index > 0) { index--; lastBlob = null; render() }
+    }
+
+    $('btnSkip').onclick = () => {
+      if (index < manifest.length - 1) { index++; lastBlob = null; render() }
+    }
+
+    $('btnCopyApproved').onclick = async () => {
+      await navigator.clipboard.writeText($('approvedExport').value)
+      $('status').textContent = 'Copied approved slugs JSON.'
+    }
+
+    fetch('/grapheme-recorder-manifest.json')
+      .then((r) => r.json())
+      .then((data) => { manifest = data; render() })
+      .catch((e) => { $('progress').textContent = 'Failed to load manifest: ' + e.message })
+  </script>
+</body>
+</html>

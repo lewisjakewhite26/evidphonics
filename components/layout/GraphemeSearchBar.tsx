@@ -52,12 +52,12 @@ export function GraphemeSearchBar({ selected, onToggle }: GraphemeSearchBarProps
       </h2>
 
       <div ref={rootRef} className="relative">
-        <label htmlFor="grapheme-quick-search" className="mb-2 block text-sm font-semibold text-[#2D3748]">
+        <label htmlFor="grapheme-quick-search" className="mb-2 block text-label font-semibold text-text-main">
           Quick find graphemes
         </label>
         <div className="relative">
           <MagnifyingGlass
-            className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[#8B00FF]"
+            className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-primary"
             size={20}
             weight="duotone"
             aria-hidden
@@ -84,7 +84,7 @@ export function GraphemeSearchBar({ selected, onToggle }: GraphemeSearchBarProps
             aria-expanded={showList}
             aria-controls={listId}
             aria-autocomplete="list"
-            className="font-andika w-full rounded-2xl border border-[rgba(139,0,255,0.2)] bg-white/90 py-3 pl-11 pr-10 text-base text-[#1A0033] shadow-sm outline-none ring-[#8B00FF]/30 placeholder:text-[#A0AEC0] focus:border-[#8B00FF] focus:ring-2"
+            className="font-andika w-full rounded-2xl border border-border-strong bg-white/90 py-3 pl-11 pr-10 text-base text-ink shadow-sm outline-none ring-primary/30 placeholder:text-text-hint focus:border-primary focus:ring-2"
           />
           {query ? (
             <button
@@ -94,7 +94,7 @@ export function GraphemeSearchBar({ selected, onToggle }: GraphemeSearchBarProps
                 setListOpen(false)
                 inputRef.current?.focus()
               }}
-              className="touch-target absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-[#718096] hover:bg-[#F4F0FD] hover:text-[#8B00FF]"
+              className="touch-target absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-text-sub hover:bg-primary-light hover:text-primary"
               aria-label="Clear search"
             >
               <X size={16} weight="bold" aria-hidden />
@@ -107,10 +107,10 @@ export function GraphemeSearchBar({ selected, onToggle }: GraphemeSearchBarProps
             id={listId}
             role="listbox"
             aria-label="Grapheme search results"
-            className="absolute z-20 mt-1.5 max-h-[min(50vh,320px)] w-full overflow-y-auto rounded-2xl border border-[rgba(139,0,255,0.15)] bg-white py-1 shadow-evid-modal"
+            className="absolute z-20 mt-1.5 max-h-[min(50vh,320px)] w-full overflow-y-auto rounded-2xl border border-border bg-white py-1 shadow-evid-modal"
           >
             {results.length === 0 ? (
-              <li className="px-4 py-3 text-sm text-[#718096]" role="presentation">
+              <li className="px-4 py-3 text-sm text-text-sub" role="presentation">
                 No graphemes match &ldquo;{query.trim()}&rdquo;
               </li>
             ) : (
@@ -124,30 +124,30 @@ export function GraphemeSearchBar({ selected, onToggle }: GraphemeSearchBarProps
                       role="option"
                       aria-selected={isOn}
                       onClick={() => handleToggle(entry)}
-                      className={`flex w-full items-center gap-3 px-4 py-2.5 text-left transition hover:bg-[#FAF7FF] ${
-                        isOn ? 'bg-[rgba(139,0,255,0.06)]' : ''
+                      className={`flex w-full items-center gap-3 px-4 py-2.5 text-left transition hover:bg-bg ${
+                        isOn ? 'bg-primary-light' : ''
                       }`}
                     >
                       <span
                         className={`font-andika flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-lg font-bold ${
                           isOn
-                            ? 'bg-gradient-to-br from-[#8B00FF] to-[#FF69B4] text-white'
-                            : 'border border-[rgba(139,0,255,0.15)] bg-[#FAF7FF] text-[#1A0033]'
+                            ? 'bg-primary text-white'
+                            : 'border border-border bg-bg text-ink'
                         }`}
                       >
                         <GraphemeMark graphemeId={entry.grapheme} />
                       </span>
                       <span className="min-w-0 flex-1">
-                        <span className="block truncate text-sm font-semibold text-[#1A0033]">
+                        <span className="block truncate text-sm font-semibold text-ink">
                           {entry.keyword}
                         </span>
-                        <span className="text-xs text-[#718096]">Phase {entry.phase}</span>
+                        <span className="text-xs text-text-sub">Phase {entry.phase}</span>
                       </span>
                       <span
                         className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md border-2 text-xs font-bold ${
                           isOn
-                            ? 'border-[#8B00FF] bg-[#8B00FF] text-white'
-                            : 'border-[rgba(139,0,255,0.25)] bg-white text-transparent'
+                            ? 'border-primary bg-primary text-white'
+                            : 'border-border-strong bg-white text-transparent'
                         }`}
                         aria-hidden
                       >
@@ -172,12 +172,12 @@ export function GraphemeSearchBar({ selected, onToggle }: GraphemeSearchBarProps
                 key={key}
                 type="button"
                 onClick={() => onToggle(key)}
-                className="font-andika inline-flex items-center gap-1.5 rounded-full border border-[rgba(139,0,255,0.2)] bg-white/90 px-2.5 py-1 text-sm font-semibold text-[#1A0033] shadow-sm transition hover:border-[#8B00FF] hover:bg-[#FAF7FF]"
+                className="font-andika inline-flex items-center gap-1.5 rounded-full border border-border-strong bg-white/90 px-2.5 py-1 text-sm font-semibold text-ink shadow-sm transition hover:border-primary hover:bg-bg"
                 title={`Remove ${label}`}
               >
                 <GraphemeMark graphemeId={entry?.grapheme ?? key} />
-                <span className="max-w-[8rem] truncate text-xs font-normal text-[#718096]">{label}</span>
-                <X size={12} weight="bold" className="text-[#8B00FF]" aria-hidden />
+                <span className="max-w-[8rem] truncate text-xs font-normal text-text-sub">{label}</span>
+                <X size={12} weight="bold" className="text-primary" aria-hidden />
                 <span className="sr-only">Remove {label}</span>
               </button>
             )

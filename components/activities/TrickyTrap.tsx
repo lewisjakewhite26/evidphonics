@@ -69,7 +69,7 @@ export function TrickyTrap({ data, onComplete }: TrickyTrapProps) {
               onClick={(e) => handleWordClick(item.word, e)}
               onMouseEnter={() => setHoveredWord(item.word)}
               onMouseLeave={() => setHoveredWord(null)}
-              className={`relative w-full cursor-pointer rounded-3xl border-2 border-gray-200 bg-white p-10 text-center shadow-md transition-all duration-300 ${
+              className={`relative w-full cursor-pointer rounded-3xl border-2 border-border bg-white p-10 text-center shadow-md transition-all duration-300 ${
                 isCompleted
                   ? 'border-primary ring-2 ring-primary/25'
                   : isHovered
@@ -111,7 +111,7 @@ export function TrickyTrap({ data, onComplete }: TrickyTrapProps) {
 
               <div className="flex flex-col items-center gap-4">
                 <div className="relative">
-                  <div className="font-andika text-4xl font-bold text-gray-900 md:text-5xl">
+                  <div className="font-andika text-4xl font-bold text-ink md:text-5xl">
                     {item.word.split('').map((letter, i) => {
                       const isTricky = trickyIndices.includes(i)
                       return (
@@ -119,7 +119,7 @@ export function TrickyTrap({ data, onComplete }: TrickyTrapProps) {
                           key={i}
                           className={
                             isCompleted && isTricky
-                              ? 'rounded-sm bg-warning-light px-0.5 text-gray-900'
+                              ? 'rounded-sm bg-warning-light px-0.5 text-ink'
                               : ''
                           }
                           animate={isCompleted && isTricky ? { scale: [1, 1.05, 1] } : {}}
@@ -137,9 +137,9 @@ export function TrickyTrap({ data, onComplete }: TrickyTrapProps) {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.2 }}
-                    className="rounded-xl border border-gray-200 bg-primary-light/60 px-4 py-2"
+                    className="rounded-xl border border-border bg-primary-light/60 px-4 py-2"
                   >
-                    <p className="text-sm font-medium text-gray-700">{item.explanation}</p>
+                    <p className="text-sm font-medium text-text-main">{item.explanation}</p>
                   </motion.div>
                 )}
               </div>

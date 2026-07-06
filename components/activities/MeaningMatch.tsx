@@ -97,7 +97,7 @@ export function MeaningMatch({ data, onComplete }: MeaningMatchProps) {
         >
           <p className="text-center font-andika text-5xl font-bold text-primary sm:text-6xl">{current.affix}</p>
           {current.examples.length > 0 && (
-            <p className="mt-3 text-center text-sm text-gray-500">
+            <p className="mt-3 text-center text-sm text-text-sub">
               e.g. {current.examples.slice(0, 2).join(', ')}
             </p>
           )}
@@ -117,7 +117,7 @@ export function MeaningMatch({ data, onComplete }: MeaningMatchProps) {
                   variant="ghost"
                   disabled={solved}
                   onClick={() => handlePick(opt)}
-                  className={`!w-full !max-w-none !px-4 font-andika text-2xl font-bold text-gray-900 sm:text-3xl ${
+                  className={`!w-full !max-w-none !px-4 font-andika text-2xl font-bold text-ink sm:text-3xl ${
                     isWrong ? '!border-error !bg-error-light' : ''
                   } ${solved && opt === current.meaning ? '!border-success !bg-success-light' : ''} ${
                     solved && opt !== current.meaning ? 'opacity-50' : ''

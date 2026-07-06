@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import {
   type Icon,
@@ -21,11 +21,8 @@ import {
 import { graphemeMap, intersectActivityAllowlistForSelection } from '@/data/graphemes'
 import type { ActivityType, GraphemeData } from '@/data/types'
 import { GraphemeMark } from '@/components/ui/GraphemeMark'
-import { generateTileGradient } from '@/lib/tileGradient'
 import { ACTIVITY_LABELS, ACTIVITY_ORDER, sortActivitiesByPedagogy } from '@/lib/lessonConstants'
 import { useModalFocusTrap } from '@/src/hooks/useModalFocusTrap'
-
-const ACTIVITY_ORDER_KEY = ACTIVITY_ORDER.join(',')
 
 const ACTIVITY_UNAVAILABLE_HINT = 'Not available for this grapheme combination.'
 const PHASE_ACTIVITY_UNAVAILABLE_HINT = 'Not available for this phase.'
@@ -70,14 +67,6 @@ export type ActivityPickerModalProps = {
 export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson }: ActivityPickerModalProps) {
   const [selectedActivities, setSelectedActivities] = useState<ActivityType[]>([])
   const dialogRef = useRef<HTMLDivElement>(null)
-
-  const tileGradients = useMemo(() => {
-    const m = new Map<ActivityType, string>()
-    ACTIVITY_ORDER.forEach((type, index) => {
-      m.set(type, generateTileGradient(index))
-    })
-    return m
-  }, [ACTIVITY_ORDER_KEY])
 
   useEffect(() => {
     if (!open) return
@@ -129,26 +118,23 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
     const Icon = ACTIVITY_ICONS[type]
 
     let stateCls: string
-    let selectedStyle: CSSProperties | undefined
 
     if (!available) {
       stateCls =
-        'cursor-not-allowed border border-[rgba(139,0,255,0.12)] bg-white opacity-25 shadow-sm'
+        'cursor-not-allowed border border-border bg-white opacity-25 shadow-sm'
     } else if (on) {
       stateCls =
-        'cursor-pointer border-0 text-white shadow-evid-btn transition hover:opacity-95'
-      const bg = tileGradients.get(type)
-      selectedStyle = bg ? { background: bg } : undefined
+        'cursor-pointer border-0 bg-primary text-white shadow-evid-btn transition hover:bg-primary-dark'
     } else {
       stateCls =
-        'cursor-pointer border border-[rgba(139,0,255,0.12)] bg-white shadow-sm transition hover:border-[rgba(139,0,255,0.28)]'
+        'cursor-pointer border border-border bg-white shadow-sm transition hover:border-border-strong'
     }
 
-    const iconCls = on && available ? 'text-white' : available ? 'text-[#8B00FF]' : 'text-[#8B00FF]'
+    const iconCls = on && available ? 'text-white' : 'text-primary'
     const nameCls =
       on && available
         ? 'mt-1.5 text-center text-[12px] font-semibold leading-tight text-white'
-        : 'mt-1.5 text-center text-[12px] font-semibold leading-tight text-[#2D3748]'
+        : 'mt-1.5 text-center text-label font-semibold leading-tight text-text-main'
 
     return (
       <button
@@ -156,7 +142,6 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
         type="button"
         disabled={!available}
         onClick={() => toggleActivity(type)}
-        style={selectedStyle}
         title={
           available ? label : blockedByPhaseAllowlist ? PHASE_ACTIVITY_UNAVAILABLE_HINT : ACTIVITY_UNAVAILABLE_HINT
         }
@@ -183,13 +168,10 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
         className="relative z-10 flex w-full max-w-3xl flex-col overflow-hidden rounded-t-[20px] bg-white shadow-evid-modal sm:rounded-[20px]"
         onClick={(e) => e.stopPropagation()}
       >
-        <div
-          className="flex shrink-0 flex-col gap-2 px-4 py-3 text-white sm:px-6 sm:py-4"
-          style={{ background: 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)' }}
-        >
+        <div className="flex shrink-0 flex-col gap-2 border-b border-border bg-white px-4 py-3 sm:px-6 sm:py-4">
           {!noActivitiesAvailable ? (
             <>
-              <h2 id="activity-modal-title" className="text-lg font-bold leading-snug sm:text-xl">
+              <h2 id="activity-modal-title" className="text-lg font-bold leading-snug text-ink sm:text-xl">
                 Choose activities
               </h2>
               <div className="flex max-h-24 flex-wrap gap-1.5 overflow-hidden">
@@ -198,7 +180,7 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
                   return (
                     <span
                       key={id}
-                      className="font-andika shrink-0 rounded-full border border-white/35 bg-white/15 px-2.5 py-0.5 text-xs font-semibold text-white"
+                      className="font-andika shrink-0 rounded-full border border-border bg-primary-light px-2.5 py-0.5 text-xs font-semibold text-primary"
                     >
                       <GraphemeMark graphemeId={g} />
                     </span>
@@ -207,24 +189,24 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
               </div>
             </>
           ) : (
-            <p className="text-xs font-bold uppercase tracking-widest text-white/85">Build lesson</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-primary">Build lesson</p>
           )}
         </div>
 
         {noActivitiesAvailable ? (
           <div className="flex shrink-0 flex-col items-center gap-4 bg-white px-6 py-10 text-center sm:px-8">
-            <WarningCircle className="text-[#8B00FF]" weight="duotone" size={56} aria-hidden />
-            <h2 id="activity-picker-empty-title" className="text-lg font-bold text-[#1A0033] sm:text-xl">
+            <WarningCircle className="text-primary" weight="duotone" size={56} aria-hidden />
+            <h2 id="activity-picker-empty-title" className="text-lg font-bold text-ink sm:text-xl">
               No activities available
             </h2>
-            <p className="max-w-md text-sm leading-relaxed text-[#718096]">
+            <p className="max-w-md text-sm leading-relaxed text-text-sub">
               This combination of graphemes doesn&apos;t have any shared activities. Try selecting fewer
               graphemes or graphemes from the same phase.
             </p>
             <button
               type="button"
               onClick={onClose}
-              className="touch-target rounded-full border-2 border-[#8B00FF] bg-white px-6 py-2.5 text-sm font-bold text-[#8B00FF] hover:bg-[rgba(139,0,255,0.06)]"
+              className="touch-target rounded-full border-2 border-primary bg-white px-6 py-2.5 text-sm font-bold text-primary hover:bg-primary-light"
             >
               Go back
             </button>
@@ -237,21 +219,16 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
               </div>
             </div>
 
-            <div className="shrink-0 border-t border-[rgba(139,0,255,0.08)] bg-white px-4 pb-4 pt-3 sm:px-6 sm:pb-5 sm:pt-4">
+            <div className="shrink-0 border-t border-border bg-white px-4 pb-4 pt-3 sm:px-6 sm:pb-5 sm:pt-4">
               <button
                 type="button"
                 disabled={activityCount === 0}
                 onClick={startLesson}
                 className={`w-full rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-evid-btn transition hover:-translate-y-0.5 hover:shadow-evid-btn-hover sm:py-3 sm:text-base ${
                   activityCount > 0
-                    ? ''
-                    : 'cursor-not-allowed bg-gray-300 text-gray-500 shadow-none hover:translate-y-0'
+                    ? 'bg-primary hover:bg-primary-dark'
+                    : 'cursor-not-allowed bg-gray-300 text-text-sub shadow-none hover:translate-y-0'
                 } `}
-                style={
-                  activityCount > 0
-                    ? { background: 'linear-gradient(135deg, #8B00FF 0%, #FF69B4 100%)' }
-                    : undefined
-                }
               >
                 Start Lesson → ({activityCount} {activityCount === 1 ? 'activity' : 'activities'})
               </button>
