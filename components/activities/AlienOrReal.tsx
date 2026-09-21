@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type MouseEvent } from 'react'
 import { motion } from 'framer-motion'
 import { Alien, CaretLeft, CheckCircle } from '@phosphor-icons/react'
 import type { AlienOrRealData } from '@/data/types'
@@ -33,7 +33,7 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
     if (w) speakWord(w)
   }, [currentWordIndex, data.words])
 
-  const handleAnswer = (isReal: boolean) => {
+  const handleAnswer = (isReal: boolean, e: MouseEvent<HTMLButtonElement>) => {
     if (answered || !currentWord) return
 
     setSelectedAnswer(isReal)
@@ -41,7 +41,8 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
 
     const isCorrect = isReal === currentWord.isReal
     if (isCorrect) {
-      setBurst({ x: window.innerWidth / 2, y: window.innerHeight / 2 })
+      const rect = e.currentTarget.getBoundingClientRect()
+      setBurst({ x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 })
     }
 
     window.setTimeout(() => {
@@ -68,19 +69,19 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
   const realBtnClass =
     answered && realChosen
       ? correctIsReal
-        ? '!ring-4 !ring-success'
-        : '!border-error !bg-error-light !text-ink'
-      : answered && correctIsReal && alienChosen
-        ? '!ring-4 !ring-success'
+        ? '!border-success !bg-success/20'
+        : '!border-warning !bg-warning-light !text-ink'
+      : answered
+        ? '!opacity-40'
         : ''
 
   const alienBtnClass =
     answered && alienChosen
       ? !correctIsReal
-        ? '!ring-4 !ring-success'
-        : '!border-error !bg-error-light !text-ink'
-      : answered && !correctIsReal && realChosen
-        ? '!ring-4 !ring-success'
+        ? '!border-success !bg-success/20'
+        : '!border-warning !bg-warning-light !text-ink'
+      : answered
+        ? '!opacity-40'
         : ''
 
   return (
@@ -122,30 +123,34 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
         </div>
 
         <div className="grid w-full max-w-xl grid-cols-2 gap-4">
-          <TactileButton
-            variant="success"
-            onClick={() => handleAnswer(true)}
-            disabled={answered}
-            hotkey={1}
-            className={`!px-4 ${realBtnClass}`}
-          >
-            <span className="flex flex-col items-center gap-1">
-              <CheckCircle className="h-8 w-8" weight="duotone" aria-hidden />
-              <span>Real Word</span>
-            </span>
-          </TactileButton>
+          <motion.div animate={answered && realChosen && correctIsReal ? { scale: [1, 1.08, 1] } : {}} transition={{ duration: 0.4 }}>
+            <TactileButton
+              variant="success"
+              onClick={(e) => handleAnswer(true, e)}
+              disabled={answered}
+              hotkey={1}
+              className={`!w-full !px-4 ${realBtnClass}`}
+            >
+              <span className="flex flex-col items-center gap-1">
+                <CheckCircle className="h-8 w-8" weight="duotone" aria-hidden />
+                <span>Real Word</span>
+              </span>
+            </TactileButton>
+          </motion.div>
 
-          <TactileButton
-            onClick={() => handleAnswer(false)}
-            disabled={answered}
-            hotkey={2}
-            className={`!px-4 ${alienBtnClass}`}
-          >
-            <span className="flex flex-col items-center gap-1">
-              <Alien className="h-8 w-8" weight="duotone" aria-hidden />
-              <span>Alien Word</span>
-            </span>
-          </TactileButton>
+          <motion.div animate={answered && alienChosen && !correctIsReal ? { scale: [1, 1.08, 1] } : {}} transition={{ duration: 0.4 }}>
+            <TactileButton
+              onClick={(e) => handleAnswer(false, e)}
+              disabled={answered}
+              hotkey={2}
+              className={`!w-full !px-4 ${alienBtnClass}`}
+            >
+              <span className="flex flex-col items-center gap-1">
+                <Alien className="h-8 w-8" weight="duotone" aria-hidden />
+                <span>Alien Word</span>
+              </span>
+            </TactileButton>
+          </motion.div>
         </div>
 
         {answered && (

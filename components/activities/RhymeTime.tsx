@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import { CaretLeft, CheckCircle, SpeakerHigh, XCircle } from '@phosphor-icons/react'
 import type { RhymeTimeData } from '@/data/types'
 import { speakWithHooks } from '@/lib/audio'
-import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
 
@@ -17,11 +16,10 @@ interface RhymeTimeProps {
 export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
   const [index, setIndex] = useState(0)
   const [correctFlash, setCorrectFlash] = useState(false)
-  const [shake, setShake] = useState(false)
+  const [tilt, setTilt] = useState(false)
   const [wrongHint, setWrongHint] = useState(false)
   const [audioActive, setAudioActive] = useState(false)
   const [advanceLock, setAdvanceLock] = useState(false)
-  const [burst, setBurst] = useState<{ x: number; y: number } | null>(null)
   const wordsRowRef = useRef<HTMLDivElement>(null)
 
   const pairs = data.pairs
@@ -32,10 +30,6 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
   useEffect(() => {
     if (pairs.length === 0) onComplete()
   }, [pairs.length, onComplete])
-
-  useEffect(() => {
-    setBurst(null)
-  }, [index])
 
   const playWords = useCallback(() => {
     if (!pair || audioActive || advanceLock) return
@@ -55,11 +49,6 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
       if (ok) {
         setAdvanceLock(true)
         setCorrectFlash(true)
-        const row = wordsRowRef.current
-        if (row) {
-          const r = row.getBoundingClientRect()
-          setBurst({ x: r.left + r.width / 2, y: r.top + r.height / 2 })
-        }
         window.setTimeout(() => {
           setCorrectFlash(false)
           if (last) {
@@ -70,9 +59,9 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
           setAdvanceLock(false)
         }, 1000)
       } else {
-        setShake(true)
+        setTilt(true)
         setWrongHint(true)
-        window.setTimeout(() => setShake(false), 550)
+        window.setTimeout(() => setTilt(false), 500)
       }
     },
     [pair, last, onComplete, advanceLock],
@@ -80,12 +69,18 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
 
   if (total === 0 || !pair) return null
 
-  const wordTile = (word: string, sideShake: boolean, sideFlash: boolean) => (
+  const wordTile = (word: string, tiltDir: -1 | 1, isTilted: boolean, sideFlash: boolean) => (
     <motion.div
-      animate={sideShake ? { x: [0, -10, 10, -8, 8, 0] } : {}}
-      transition={{ duration: sideShake ? 0.45 : 0.35 }}
+      animate={
+        isTilted
+          ? { rotate: [0, 6 * tiltDir, -3 * tiltDir, 0] }
+          : sideFlash
+            ? { y: [0, -10, 0] }
+            : {}
+      }
+      transition={{ duration: isTilted ? 0.5 : 0.4, ease: 'easeOut' }}
       className={`flex min-h-32 min-w-[140px] flex-1 items-center justify-center rounded-xl border-2 px-4 py-6 text-center transition-colors duration-300 md:min-w-0 ${
-        sideFlash ? 'border-primary bg-primary-light' : 'border-border bg-white'
+        sideFlash ? 'border-primary bg-primary-light' : isTilted ? 'border-warning bg-warning-light' : 'border-border bg-white'
       }`}
     >
       <span className="text-center font-andika text-4xl font-bold text-ink">{word}</span>
@@ -106,7 +101,7 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
             disabled={advanceLock}
             onClick={() => {
               setWrongHint(false)
-              setShake(false)
+              setTilt(false)
               setAudioActive(false)
               setIndex((i) => Math.max(0, i - 1))
             }}
@@ -121,8 +116,8 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
       )}
       <div className="flex w-full flex-col gap-8">
         <div ref={wordsRowRef} className="flex flex-wrap items-stretch justify-center gap-4 md:flex-nowrap">
-          {wordTile(pair.word1, shake, correctFlash)}
-          {wordTile(pair.word2, shake, correctFlash)}
+          {wordTile(pair.word1, -1, tilt, correctFlash)}
+          {wordTile(pair.word2, 1, tilt, correctFlash)}
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -179,9 +174,6 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
           </TactileButton>
         </div>
       </div>
-      {burst && (
-        <CelebrationBurst x={burst.x} y={burst.y} onComplete={() => setBurst(null)} />
-      )}
     </ActivityCardFrame>
   )
 }

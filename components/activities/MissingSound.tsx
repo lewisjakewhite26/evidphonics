@@ -6,6 +6,7 @@ import { CaretLeft } from '@phosphor-icons/react'
 import { MissingSoundData } from '@/data/types'
 import { speakPhoneme, speakWord } from '@/lib/audio'
 import { motionSpring } from '@/lib/celebrations'
+import { NUDGE_ANIMATE, NUDGE_TRANSITION } from '@/lib/animations'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
 
@@ -19,6 +20,7 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
   const [idx, setIdx] = useState(0)
   const [wrongIdx, setWrongIdx] = useState<number | null>(null)
   const [wrongTint, setWrongTint] = useState<number | null>(null)
+  const [correctIdx, setCorrectIdx] = useState<number | null>(null)
   const [encourage, setEncourage] = useState(false)
   const [advancing, setAdvancing] = useState(false)
   const encourageTimer = useRef<number | null>(null)
@@ -56,6 +58,7 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
     if (advancing) return
     if (i === item.correctIndex) {
       setAdvancing(true)
+      setCorrectIdx(i)
       speakWord(item.word)
       window.setTimeout(() => {
         if (last) {
@@ -63,8 +66,9 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
         } else {
           setIdx((v) => v + 1)
           setAdvancing(false)
+          setCorrectIdx(null)
         }
-      }, 500)
+      }, 700)
       return
     }
 
@@ -99,6 +103,7 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
             onClick={() => {
               setWrongIdx(null)
               setWrongTint(null)
+              setCorrectIdx(null)
               setEncourage(false)
               setIdx((i) => Math.max(0, i - 1))
             }}
@@ -116,11 +121,12 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
         {item.options.map((opt, i) => {
           const isWrongShake = wrongIdx === i
           const showTint = wrongTint === i
+          const isCorrect = correctIdx === i
           return (
             <motion.div
               key={opt}
-              animate={isWrongShake ? { x: [0, -8, 8, -8, 8, -6, 6, 0] } : { x: 0 }}
-              transition={isWrongShake ? { duration: 0.45, ease: 'easeInOut' } : motionSpring}
+              animate={isWrongShake ? NUDGE_ANIMATE : isCorrect ? { scale: [1, 1.08, 1] } : { x: 0 }}
+              transition={isWrongShake ? NUDGE_TRANSITION : isCorrect ? { duration: 0.4 } : motionSpring}
               className="w-full"
             >
               <TactileButton
@@ -129,8 +135,8 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
                 onClick={() => onPick(i)}
                 hotkey={i + 1}
                 className={`!w-full !max-w-none !px-4 font-andika text-4xl font-bold text-ink transition-colors duration-[600ms] ease-out ${
-                  showTint ? '!bg-red-500/35' : ''
-                }`}
+                  showTint ? '!bg-warning-light' : ''
+                } ${isCorrect ? '!border-success !bg-success/20' : ''}`}
               >
                 {opt}
               </TactileButton>

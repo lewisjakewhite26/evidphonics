@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useMemo, useState } from 'react'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { CaretLeft } from '@phosphor-icons/react'
 import type { AnchorWord, SoundSortData } from '@/data/types'
 import { motionSpring } from '@/lib/celebrations'
@@ -54,7 +54,8 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
   const [idx, setIdx] = useState(0)
   const [leftChips, setLeftChips] = useState<string[]>([])
   const [rightChips, setRightChips] = useState<string[]>([])
-  const [shakeCard, setShakeCard] = useState(false)
+  const [nudgeSide, setNudgeSide] = useState<0 | 1 | null>(null)
+  const [flySide, setFlySide] = useState<0 | 1 | null>(null)
   const [burst, setBurst] = useState<{ x: number; y: number } | null>(null)
   const [finished, setFinished] = useState(false)
 
@@ -77,9 +78,10 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
     if (finished || !current) return
     const correct = correctSideForWord(current)
     if (side === correct) {
-      const cx = typeof window !== 'undefined' ? window.innerWidth / 2 : 0
+      setFlySide(side)
+      const cx = typeof window !== 'undefined' ? window.innerWidth * (side === 0 ? 0.25 : 0.75) : 0
       const cy = typeof window !== 'undefined' ? window.innerHeight / 2 : 0
-      setBurst({ x: cx, y: cy })
+      window.setTimeout(() => setBurst({ x: cx, y: cy }), 220)
       if (side === 0) {
         setLeftChips((c) => [...c, current.word])
       } else {
@@ -91,10 +93,11 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
         } else {
           setIdx((i) => i + 1)
         }
+        setFlySide(null)
       }, 800)
     } else {
-      setShakeCard(true)
-      window.setTimeout(() => setShakeCard(false), 500)
+      setNudgeSide(side)
+      window.setTimeout(() => setNudgeSide(null), 450)
     }
   }
 
@@ -109,7 +112,8 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
     } else {
       setRightChips((c) => c.slice(0, -1))
     }
-    setShakeCard(false)
+    setNudgeSide(null)
+    setFlySide(null)
     setIdx((i) => Math.max(0, i - 1))
   }
 
@@ -252,18 +256,35 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
         </button>
 
         <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center p-4">
-          {current && (
-            <motion.div
-              animate={shakeCard ? { x: [0, -10, 10, -10, 10, 0] } : { scale: 1 }}
-              transition={shakeCard ? { duration: 0.45 } : motionSpring}
-              className="pointer-events-auto flex max-w-sm flex-col items-center gap-4 rounded-xl border-2 border-border bg-white p-8 shadow-lg"
-            >
-              <div className="flex items-center gap-2">
-                <AudioButton text={current.word} rate={0.8} />
-              </div>
-              <p className="text-center font-andika text-4xl font-bold text-ink">{current.word}</p>
-            </motion.div>
-          )}
+          <AnimatePresence mode="wait">
+            {current && (
+              <motion.div
+                key={idx}
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={
+                  flySide !== null
+                    ? {
+                        x: flySide === 0 ? -140 : 140,
+                        scale: 0.6,
+                        opacity: 0,
+                      }
+                    : nudgeSide !== null
+                      ? { x: [0, nudgeSide === 0 ? -24 : 24, 0], scale: 1, opacity: 1 }
+                      : { scale: 1, opacity: 1, x: 0 }
+                }
+                exit={{ opacity: 0 }}
+                transition={flySide !== null ? { duration: 0.35, ease: 'easeIn' } : { duration: 0.4 }}
+                className={`pointer-events-auto flex max-w-sm flex-col items-center gap-4 rounded-xl border-2 bg-white p-8 shadow-lg ${
+                  nudgeSide !== null ? 'border-warning' : 'border-border'
+                }`}
+              >
+                <div className="flex items-center gap-2">
+                  <AudioButton text={current.word} rate={0.8} />
+                </div>
+                <p className="text-center font-andika text-4xl font-bold text-ink">{current.word}</p>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
       {burst && (

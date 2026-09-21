@@ -6,6 +6,7 @@ import { CaretLeft, SpeakerHigh } from '@phosphor-icons/react'
 import type { WordBuilderData } from '@/data/types'
 import { speakWord } from '@/lib/audio'
 import { motionSpring } from '@/lib/celebrations'
+import { NUDGE_ANIMATE, NUDGE_TRANSITION } from '@/lib/animations'
 import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
@@ -36,7 +37,7 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
   const [tiles, setTiles] = useState<Tile[]>([])
   const [slots, setSlots] = useState<(string | null)[]>([])
   const [selectedId, setSelectedId] = useState<string | null>(null)
-  const [shakeSlots, setShakeSlots] = useState(false)
+  const [wrongSlots, setWrongSlots] = useState<Set<number>>(new Set())
   const [celebrate, setCelebrate] = useState(false)
   const [burst, setBurst] = useState<{ x: number; y: number } | null>(null)
 
@@ -47,7 +48,7 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
     setTiles(makeTiles(current.graphemes, current.distractors, wordIdx))
     setSlots(Array.from({ length: current.graphemes.length }, () => null))
     setSelectedId(null)
-    setShakeSlots(false)
+    setWrongSlots(new Set())
     setCelebrate(false)
     setBurst(null)
   }, [current, wordIdx])
@@ -109,12 +110,17 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
           }
         }, 1500)
       } else {
-        setShakeSlots(true)
+        const wrong = new Set<number>()
+        nextSlots.forEach((id, i) => {
+          const label = id ? idToLabel.get(id) : null
+          if (label !== current.graphemes[i]) wrong.add(i)
+        })
+        setWrongSlots(wrong)
         window.setTimeout(() => {
-          setShakeSlots(false)
-          setSlots(Array.from({ length: current.graphemes.length }, () => null))
+          setWrongSlots(new Set())
+          setSlots((prev) => prev.map((id, i) => (wrong.has(i) ? null : id)))
           setSelectedId(null)
-        }, 1000)
+        }, 500)
       }
     }
   }
@@ -168,28 +174,35 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
 
       <motion.div
         key={wordIdx}
-        animate={shakeSlots ? { x: [0, -8, 8, -8, 8, 0] } : { scale: 1, x: 0 }}
-        transition={shakeSlots ? { duration: 0.45 } : motionSpring}
-        className={`flex w-full flex-col gap-6 rounded-xl border-2 p-6 ${
-          shakeSlots ? 'border-error bg-error-light/40' : 'border-border bg-white'
-        }`}
+        transition={motionSpring}
+        className="flex w-full flex-col gap-6 rounded-xl border-2 border-border bg-white p-6"
       >
         <div className="mb-2 flex flex-wrap items-end justify-center gap-2">
           {current.graphemes.map((g, i) => {
             const tid = slots[i]
             const label = tid ? idToLabel.get(tid) : null
             const minW = g.length > 1 ? 'min-w-[3.2rem]' : 'min-w-[2.25rem]'
+            const isWrong = wrongSlots.has(i)
             return (
               <div key={i} className="flex flex-col items-center gap-1">
                 <motion.button
                   type="button"
                   onClick={() => handleSlotTap(i)}
                   whileTap={{ scale: 0.97 }}
-                  transition={motionSpring}
+                  animate={
+                    isWrong
+                      ? NUDGE_ANIMATE
+                      : celebrate
+                        ? { scale: [1, 1.15, 1] }
+                        : { scale: 1 }
+                  }
+                  transition={isWrong ? NUDGE_TRANSITION : celebrate ? { duration: 0.35, delay: i * 0.08 } : motionSpring}
                   className={`flex h-16 items-center justify-center rounded-md border-2 px-2 font-andika text-4xl font-bold ${minW} ${
-                    label
-                      ? 'border-primary bg-primary text-white'
-                      : 'border-border-strong bg-white text-text-hint'
+                    isWrong
+                      ? 'border-warning bg-warning-light text-ink'
+                      : label
+                        ? 'border-primary bg-primary text-white'
+                        : 'border-border-strong bg-white text-text-hint'
                   }`}
                 >
                   {label ?? ' '}

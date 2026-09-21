@@ -1,11 +1,12 @@
 'use client'
 
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState, type MouseEvent } from 'react'
 import { motion } from 'framer-motion'
 import { CaretLeft } from '@phosphor-icons/react'
 import type { MissingWordData } from '@/data/types'
 import { speakSentence } from '@/lib/audio'
 import { motionSpring } from '@/lib/celebrations'
+import { NUDGE_ANIMATE, NUDGE_TRANSITION } from '@/lib/animations'
 import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
@@ -59,12 +60,11 @@ export function MissingWord({ data, onComplete }: MissingWordProps) {
     speakCurrent()
   }, [current, speakCurrent])
 
-  const handlePick = (word: string) => {
+  const handlePick = (word: string, e: MouseEvent<HTMLButtonElement>) => {
     if (!current || solved) return
     if (word === current.missingWord) {
-      const cx = typeof window !== 'undefined' ? window.innerWidth / 2 : 0
-      const cy = typeof window !== 'undefined' ? window.innerHeight / 2 : 0
-      setBurst({ x: cx, y: cy })
+      const rect = e.currentTarget.getBoundingClientRect()
+      setBurst({ x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 })
       setChosen(word)
       setSolved(true)
       setFeedback('Well done!')
@@ -132,17 +132,17 @@ export function MissingWord({ data, onComplete }: MissingWordProps) {
             return (
               <motion.div
                 key={opt}
-                animate={isWrong ? { x: [0, -6, 6, -6, 6, 0] } : { x: 0 }}
-                transition={isWrong ? { duration: 0.45 } : motionSpring}
+                animate={isWrong ? NUDGE_ANIMATE : { x: 0 }}
+                transition={isWrong ? NUDGE_TRANSITION : motionSpring}
                 className="w-full"
               >
                 <TactileButton
                   variant="ghost"
                   disabled={solved}
-                  onClick={() => handlePick(opt)}
+                  onClick={(e) => handlePick(opt, e)}
                   hotkey={i + 1}
                   className={`!w-full !max-w-none !px-4 font-andika text-4xl font-bold text-ink ${
-                    isWrong ? '!border-error !bg-error-light' : ''
+                    isWrong ? '!border-warning !bg-warning-light' : ''
                   } ${solved ? 'opacity-60' : ''}`}
                 >
                   {opt}

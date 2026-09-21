@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import type { TrickyTrapData } from '@/data/types'
-import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
 
@@ -16,13 +15,12 @@ export function TrickyTrap({ data, onComplete }: TrickyTrapProps) {
   const words = data.words
   const [completedWords, setCompletedWords] = useState<Set<string>>(new Set())
   const [hoveredWord, setHoveredWord] = useState<string | null>(null)
-  const [burst, setBurst] = useState<{ x: number; y: number } | null>(null)
 
   useEffect(() => {
     if (words.length === 0) onComplete()
   }, [words.length, onComplete])
 
-  const handleWordClick = (word: string, event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleWordClick = (word: string) => {
     if (completedWords.has(word)) {
       setCompletedWords((prev) => {
         const next = new Set(prev)
@@ -30,8 +28,6 @@ export function TrickyTrap({ data, onComplete }: TrickyTrapProps) {
         return next
       })
     } else {
-      const rect = event.currentTarget.getBoundingClientRect()
-      setBurst({ x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 })
       setCompletedWords((prev) => new Set([...prev, word]))
     }
   }
@@ -66,7 +62,7 @@ export function TrickyTrap({ data, onComplete }: TrickyTrapProps) {
                 stiffness: 260,
                 damping: 20,
               }}
-              onClick={(e) => handleWordClick(item.word, e)}
+              onClick={() => handleWordClick(item.word)}
               onMouseEnter={() => setHoveredWord(item.word)}
               onMouseLeave={() => setHoveredWord(null)}
               className={`relative w-full cursor-pointer rounded-3xl border-2 border-border bg-white p-10 text-center shadow-md transition-all duration-300 ${
@@ -158,9 +154,6 @@ export function TrickyTrap({ data, onComplete }: TrickyTrapProps) {
         >
           <TactileButton onClick={onComplete}>Next →</TactileButton>
         </motion.div>
-      )}
-      {burst && (
-        <CelebrationBurst x={burst.x} y={burst.y} onComplete={() => setBurst(null)} />
       )}
     </ActivityCardFrame>
   )

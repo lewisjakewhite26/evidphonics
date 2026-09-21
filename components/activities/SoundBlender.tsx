@@ -133,6 +133,7 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
   const letterRefs = useRef<(HTMLElement | null)[]>([])
   const wordBlockRef = useRef<HTMLDivElement>(null)
   const phonemeBandRef = useRef<HTMLDivElement>(null)
+  const rocketRef = useRef<HTMLDivElement>(null)
   const [arcRedraw, setArcRedraw] = useState(0)
 
   const currentWordData: BlendWord | undefined = wordList[currentWordIndex]
@@ -168,9 +169,9 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
       setCompletedWords((prev) => {
         if (prev.has(currentWordIndex)) return prev
         queueMicrotask(() => {
-          const rect = trackRef.current?.getBoundingClientRect()
+          const rect = rocketRef.current?.getBoundingClientRect()
           if (rect) {
-            setBurst({ x: rect.right, y: rect.top + rect.height / 2 })
+            setBurst({ x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 })
           }
           speakWord(word)
         })
@@ -740,6 +741,7 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
             </div>
 
             <div
+              ref={rocketRef}
               data-rocket
               role="slider"
               tabIndex={0}

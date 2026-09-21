@@ -1,10 +1,11 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, type MouseEvent } from 'react'
 import { motion } from 'framer-motion'
-import { CaretLeft } from '@phosphor-icons/react'
+import { CaretLeft, Sparkle } from '@phosphor-icons/react'
 import type { OddOneOutData } from '@/data/types'
 import { motionSpring } from '@/lib/celebrations'
+import { NUDGE_ANIMATE, NUDGE_TRANSITION } from '@/lib/animations'
 import { shuffle } from '@/lib/utils'
 import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
 import { TactileButton } from '@/components/ui/TactileButton'
@@ -50,13 +51,12 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
     setBurst(null)
   }, [setIdx])
 
-  const handlePick = (i: number) => {
+  const handlePick = (i: number, e: MouseEvent<HTMLButtonElement>) => {
     if (!current || phase === 'reveal') return
     const odd = display.oddIndex
     if (i === odd) {
-      const cx = typeof window !== 'undefined' ? window.innerWidth / 2 : 0
-      const cy = typeof window !== 'undefined' ? window.innerHeight / 2 : 0
-      setBurst({ x: cx, y: cy })
+      const rect = e.currentTarget.getBoundingClientRect()
+      setBurst({ x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 })
       setPhase('reveal')
       setFeedback(null)
       window.setTimeout(() => {
@@ -114,27 +114,38 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
             const showCorrectOdd = phase === 'reveal' && isOdd
             const glowMatch = phase === 'reveal' && !isOdd
 
-            const cardTransition = isWrong ? { duration: 0.45 } : motionSpring
+            const cardTransition = isWrong ? NUDGE_TRANSITION : motionSpring
 
             return (
               <motion.div
                 key={`${setIdx}-${i}-${word}`}
-                animate={isWrong ? { x: [0, -4, 4, -4, 4, 0] } : {}}
+                animate={isWrong ? NUDGE_ANIMATE : {}}
                 transition={cardTransition}
                 className="w-full"
               >
                 <TactileButton
                   variant="ghost"
                   disabled={phase === 'reveal'}
-                  onClick={() => handlePick(i)}
+                  onClick={(e) => handlePick(i, e)}
                   hotkey={i + 1}
                   className={`relative !h-auto !min-h-24 !w-full !max-w-none !whitespace-normal !px-4 !py-6 font-andika text-4xl font-bold text-ink ${
                     isWrong ? '!border-warning !bg-warning-light' : ''
-                  } ${glowMatch ? '!border-success !ring-2 !ring-success/40' : ''} ${
-                    showCorrectOdd ? '!border-primary !bg-primary-light !ring-2 !ring-primary/35' : ''
+                  } ${glowMatch ? '!text-warmth underline decoration-warmth decoration-4 underline-offset-4' : ''} ${
+                    showCorrectOdd ? '!border-primary !bg-primary-light' : ''
                   }`}
                 >
                   {word}
+                  {showCorrectOdd && (
+                    <motion.span
+                      initial={{ scale: 0, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ type: 'spring', stiffness: 400, damping: 22 }}
+                      className="absolute -right-2 -top-2 flex items-center gap-1 rounded-full bg-warmth px-2 py-1 text-xs font-bold text-white shadow-sm"
+                    >
+                      <Sparkle className="h-3 w-3" weight="fill" aria-hidden />
+                      Found!
+                    </motion.span>
+                  )}
                 </TactileButton>
               </motion.div>
             )

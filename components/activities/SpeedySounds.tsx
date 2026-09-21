@@ -1,13 +1,13 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import type { SpeedySoundsData } from '@/data/types'
 import { speakPhoneme } from '@/lib/audio'
-import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
 import { GraphemeMark } from '@/components/ui/GraphemeMark'
+import { DoneCheckBadge } from '@/components/ui/DoneCheckBadge'
 
 interface SpeedySoundsProps {
   data: SpeedySoundsData
@@ -16,18 +16,10 @@ interface SpeedySoundsProps {
 
 export function SpeedySounds({ data, onComplete }: SpeedySoundsProps) {
   const [selectedIndices, setSelectedIndices] = useState<Set<number>>(new Set())
-  const [burst, setBurst] = useState<{ x: number; y: number } | null>(null)
-  const tileRefs = useRef<(HTMLDivElement | null)[]>([])
 
   const handleLetterClick = (index: number) => {
     const g = data.graphemes[index]
     if (!g) return
-
-    const el = tileRefs.current[index]
-    if (el) {
-      const rect = el.getBoundingClientRect()
-      setBurst({ x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 })
-    }
 
     speakPhoneme(g.grapheme)
 
@@ -62,30 +54,30 @@ export function SpeedySounds({ data, onComplete }: SpeedySoundsProps) {
           return (
             <motion.div
               key={`${g.grapheme}-${index}`}
-              ref={(el) => {
-                tileRefs.current[index] = el
-              }}
               initial={{ scale: 0, rotate: -10 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ delay: index * 0.1, type: 'spring', stiffness: 200 }}
               className="w-full"
             >
-              <TactileButton
-                variant="ghost"
-                type="button"
-                onClick={() => handleLetterClick(index)}
-                className={`!h-auto !min-h-[140px] !w-full !max-w-none !rounded-3xl !px-8 !py-8 ${
-                  isSelected
-                    ? '!border-primary !bg-primary-light !ring-2 !ring-primary/30'
-                    : '!border-border'
-                }`}
-              >
-                <span className="relative flex flex-col items-center gap-4">
-                  <span className="text-center font-andika text-4xl font-bold text-ink md:text-5xl">
-                    <GraphemeMark graphemeId={g.grapheme} />
+              <motion.div whileTap={{ scale: 0.97 }}>
+                <TactileButton
+                  variant="ghost"
+                  type="button"
+                  onClick={() => handleLetterClick(index)}
+                  className={`!h-auto !min-h-[140px] !w-full !max-w-none !rounded-3xl !px-8 !py-8 ${
+                    isSelected
+                      ? '!border-primary !bg-primary-light !ring-2 !ring-primary/30'
+                      : '!border-border'
+                  }`}
+                >
+                  <span className="relative flex flex-col items-center gap-4">
+                    <span className="text-center font-andika text-4xl font-bold text-ink md:text-5xl">
+                      <GraphemeMark graphemeId={g.grapheme} />
+                    </span>
+                    {isSelected && <DoneCheckBadge />}
                   </span>
-                </span>
-              </TactileButton>
+                </TactileButton>
+              </motion.div>
             </motion.div>
           )
         })}
@@ -99,9 +91,6 @@ export function SpeedySounds({ data, onComplete }: SpeedySoundsProps) {
         >
           <TactileButton onClick={onComplete}>Next →</TactileButton>
         </motion.div>
-      )}
-      {burst && (
-        <CelebrationBurst x={burst.x} y={burst.y} onComplete={() => setBurst(null)} />
       )}
     </ActivityCardFrame>
   )
