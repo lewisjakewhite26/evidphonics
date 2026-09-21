@@ -20,7 +20,7 @@ export function sentenceAudioUrl(sentence: string): string {
   return `/audio/sentences/${normalizeAudioFilename(sentence)}.mp3`
 }
 
-/** Stable slug for prompt_* / feedback_* keys — must match scripts/extract_speech_segments.py */
+/** Stable slug for prompt_* / feedback_* keys. Must match scripts/extract_speech_segments.py */
 export function speechSegmentSlug(text: string, maxLen = 40): string {
   const s = text
     .toLowerCase()

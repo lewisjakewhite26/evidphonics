@@ -86,7 +86,7 @@ function LessonContent() {
       >
         <p className="text-heading font-bold text-ink">Lesson not found</p>
         <p className="max-w-md text-body text-text-sub">
-          Check your link — grapheme codes must match the curriculum (e.g. ch, sh, th).
+          Check your link. Grapheme codes must match the curriculum (e.g. ch, sh, th).
         </p>
         <button
           type="button"

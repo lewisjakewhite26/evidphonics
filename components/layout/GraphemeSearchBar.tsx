@@ -78,7 +78,7 @@ export function GraphemeSearchBar({ selected, onToggle }: GraphemeSearchBarProps
                 inputRef.current?.blur()
               }
             }}
-            placeholder="e.g. au, ch, oo — then tick to add"
+            placeholder="e.g. au, ch, oo, then tick to add"
             autoComplete="off"
             role="combobox"
             aria-expanded={showList}

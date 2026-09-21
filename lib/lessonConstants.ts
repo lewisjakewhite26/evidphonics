@@ -1,6 +1,6 @@
 import type { ActivityType } from '@/data/types'
 
-/** Pedagogical run order — lesson flow is sorted to this sequence regardless of URL or UI selection order. */
+/** Pedagogical run order. Lesson flow is sorted to this sequence regardless of URL or UI selection order. */
 export const ACTIVITY_ORDER: ActivityType[] = [
   'speedySounds',
   'trickyTrap',

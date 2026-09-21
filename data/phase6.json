@@ -36,7 +36,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -44,7 +44,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -52,7 +52,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -239,7 +239,7 @@
             "singer"
           ],
           "oddOneOut": 3,
-          "explanation": "'singer' does not end with /tion/ — the others all do!"
+          "explanation": "'singer' does not end with /tion/, but the others all do."
         },
         {
           "words": [
@@ -249,7 +249,7 @@
             "decision"
           ],
           "oddOneOut": 3,
-          "explanation": "'decision' ends with /sion/ — the others all end with /tion/!"
+          "explanation": "'decision' ends with /sion/, but the others all end with /tion/."
         },
         {
           "words": [
@@ -259,7 +259,7 @@
             "mention"
           ],
           "oddOneOut": 0,
-          "explanation": "'fraction' is shorter — but all end with /tion/! Trick question — they all match!"
+          "explanation": "Trick question, they all end with /tion/."
         }
       ],
       "writeItSentences": [
@@ -404,7 +404,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -412,7 +412,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -420,7 +420,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -611,7 +611,7 @@
             "division"
           ],
           "oddOneOut": 2,
-          "explanation": "'station' ends with /tion/ — the others all end with /sion/!"
+          "explanation": "'station' ends with /tion/, but the others all end with /sion/."
         },
         {
           "words": [
@@ -621,7 +621,7 @@
             "fraction"
           ],
           "oddOneOut": 3,
-          "explanation": "'fraction' ends with /tion/ — the others all end with /sion/!"
+          "explanation": "'fraction' ends with /tion/, but the others all end with /sion/."
         },
         {
           "words": [
@@ -631,7 +631,7 @@
             "mention"
           ],
           "oddOneOut": 3,
-          "explanation": "'mention' ends with /tion/ — the others all end with /sion/!"
+          "explanation": "'mention' ends with /tion/, but the others all end with /sion/."
         }
       ],
       "writeItSentences": [
@@ -784,7 +784,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -792,7 +792,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -800,7 +800,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -985,7 +985,7 @@
             "session"
           ],
           "oddOneOut": 2,
-          "explanation": "'station' ends with /tion/ — the others all end with /ssion/!"
+          "explanation": "'station' ends with /tion/, but the others all end with /ssion/."
         },
         {
           "words": [
@@ -995,7 +995,7 @@
             "vision"
           ],
           "oddOneOut": 3,
-          "explanation": "'vision' ends with /sion/ — the others all end with /ssion/!"
+          "explanation": "'vision' ends with /sion/, but the others all end with /ssion/."
         },
         {
           "words": [
@@ -1005,7 +1005,7 @@
             "action"
           ],
           "oddOneOut": 3,
-          "explanation": "'action' ends with /tion/ — the others all end with /ssion/!"
+          "explanation": "'action' ends with /tion/, but the others all end with /ssion/."
         }
       ],
       "writeItSentences": [
@@ -1158,7 +1158,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -1166,7 +1166,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -1174,7 +1174,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -1330,7 +1330,7 @@
             "optician"
           ],
           "oddOneOut": 2,
-          "explanation": "'station' ends with /tion/ — the others all end with /cian/!"
+          "explanation": "'station' ends with /tion/, but the others all end with /cian/."
         },
         {
           "words": [
@@ -1340,7 +1340,7 @@
             "vision"
           ],
           "oddOneOut": 3,
-          "explanation": "'vision' ends with /sion/ — the others all end with /cian/!"
+          "explanation": "'vision' ends with /sion/, but the others all end with /cian/."
         },
         {
           "words": [
@@ -1350,7 +1350,7 @@
             "mission"
           ],
           "oddOneOut": 3,
-          "explanation": "'mission' ends with /ssion/ — the others all end with /cian/!"
+          "explanation": "'mission' ends with /ssion/, but the others all end with /cian/."
         }
       ],
       "writeItSentences": [
@@ -1469,7 +1469,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -1477,7 +1477,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -1485,7 +1485,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -1645,7 +1645,7 @@
             "knot"
           ],
           "oddOneOut": 2,
-          "explanation": "'write' has the /wr/ silent letter — the others all have the silent /kn/!"
+          "explanation": "'write' has the /wr/ silent letter, but the others all have the silent /kn/."
         },
         {
           "words": [
@@ -1655,7 +1655,7 @@
             "lamb"
           ],
           "oddOneOut": 3,
-          "explanation": "'lamb' has the silent /mb/ — the others all have the silent /kn/!"
+          "explanation": "'lamb' has the silent /mb/, but the others all have the silent /kn/."
         },
         {
           "words": [
@@ -1665,7 +1665,7 @@
             "gnome"
           ],
           "oddOneOut": 3,
-          "explanation": "'gnome' has the silent /gn/ — the others all have the silent /kn/!"
+          "explanation": "'gnome' has the silent /gn/, but the others all have the silent /kn/."
         }
       ],
       "writeItSentences": [
@@ -1808,7 +1808,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -1816,7 +1816,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -1824,7 +1824,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -1998,7 +1998,7 @@
             "wrong"
           ],
           "oddOneOut": 2,
-          "explanation": "'knee' has the silent /kn/ — the others all have the silent /wr/!"
+          "explanation": "'knee' has the silent /kn/, but the others all have the silent /wr/."
         },
         {
           "words": [
@@ -2008,7 +2008,7 @@
             "gnome"
           ],
           "oddOneOut": 3,
-          "explanation": "'gnome' has the silent /gn/ — the others all have the silent /wr/!"
+          "explanation": "'gnome' has the silent /gn/, but the others all have the silent /wr/."
         },
         {
           "words": [
@@ -2018,7 +2018,7 @@
             "lamb"
           ],
           "oddOneOut": 3,
-          "explanation": "'lamb' has the silent /mb/ — the others all have the silent /wr/!"
+          "explanation": "'lamb' has the silent /mb/, but the others all have the silent /wr/."
         }
       ],
       "writeItSentences": [
@@ -2149,7 +2149,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -2157,7 +2157,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -2165,7 +2165,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -2337,7 +2337,7 @@
             "gnaw"
           ],
           "oddOneOut": 2,
-          "explanation": "'write' has the silent /wr/ — the others all have the silent /gn/!"
+          "explanation": "'write' has the silent /wr/, but the others all have the silent /gn/."
         },
         {
           "words": [
@@ -2347,7 +2347,7 @@
             "knife"
           ],
           "oddOneOut": 3,
-          "explanation": "'knife' has the silent /kn/ — the others all have the silent /gn/!"
+          "explanation": "'knife' has the silent /kn/, but the others all have the silent /gn/."
         },
         {
           "words": [
@@ -2357,7 +2357,7 @@
             "lamb"
           ],
           "oddOneOut": 3,
-          "explanation": "'lamb' has the silent /mb/ — the others all have the silent /gn/!"
+          "explanation": "'lamb' has the silent /mb/, but the others all have the silent /gn/."
         }
       ],
       "writeItSentences": [
@@ -2487,7 +2487,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -2495,7 +2495,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -2503,7 +2503,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -2672,7 +2672,7 @@
             "bomb"
           ],
           "oddOneOut": 2,
-          "explanation": "'knife' has the silent /kn/ — the others all have the silent /mb/!"
+          "explanation": "'knife' has the silent /kn/, but the others all have the silent /mb/."
         },
         {
           "words": [
@@ -2682,7 +2682,7 @@
             "write"
           ],
           "oddOneOut": 3,
-          "explanation": "'write' has the silent /wr/ — the others all have the silent /mb/!"
+          "explanation": "'write' has the silent /wr/, but the others all have the silent /mb/."
         },
         {
           "words": [
@@ -2692,7 +2692,7 @@
             "gnome"
           ],
           "oddOneOut": 3,
-          "explanation": "'gnome' has the silent /gn/ — the others all have the silent /mb/!"
+          "explanation": "'gnome' has the silent /gn/, but the others all have the silent /mb/."
         }
       ],
       "writeItSentences": [
@@ -2821,7 +2821,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -2829,7 +2829,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -2837,7 +2837,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -3007,7 +3007,7 @@
             "hatch"
           ],
           "oddOneOut": 2,
-          "explanation": "'chip' uses /ch/ — the others all use /tch/ after a short vowel!"
+          "explanation": "'chip' uses /ch/, but the others all use /tch/ after a short vowel."
         },
         {
           "words": [
@@ -3017,7 +3017,7 @@
             "church"
           ],
           "oddOneOut": 3,
-          "explanation": "'church' uses /ch/ — the others all use /tch/!"
+          "explanation": "'church' uses /ch/, but the others all use /tch/."
         },
         {
           "words": [
@@ -3027,7 +3027,7 @@
             "reach"
           ],
           "oddOneOut": 3,
-          "explanation": "'reach' uses /ch/ — the others all use /tch/!"
+          "explanation": "'reach' uses /ch/, but the others all use /tch/."
         }
       ],
       "writeItSentences": [
@@ -3166,7 +3166,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -3174,7 +3174,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -3182,7 +3182,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -3344,7 +3344,7 @@
             "ledge"
           ],
           "oddOneOut": 2,
-          "explanation": "'jet' uses /j/ — the others all use /dge/ after a short vowel!"
+          "explanation": "'jet' uses /j/, but the others all use /dge/ after a short vowel."
         },
         {
           "words": [
@@ -3354,7 +3354,7 @@
             "gem"
           ],
           "oddOneOut": 3,
-          "explanation": "'gem' uses /g/ — the others all use /dge/!"
+          "explanation": "'gem' uses /g/, but the others all use /dge/."
         },
         {
           "words": [
@@ -3364,7 +3364,7 @@
             "cage"
           ],
           "oddOneOut": 3,
-          "explanation": "'cage' uses /g/ with a long vowel — the others all use /dge/ after a short vowel!"
+          "explanation": "'cage' uses /g/ with a long vowel, but the others all use /dge/ after a short vowel."
         }
       ],
       "writeItSentences": [
@@ -3508,7 +3508,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -3516,7 +3516,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -3524,7 +3524,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -3712,7 +3712,7 @@
             "untidy"
           ],
           "oddOneOut": 2,
-          "explanation": "'disagree' uses the prefix /dis-/ — the others all use the prefix /un-/!"
+          "explanation": "'disagree' uses the prefix /dis-/, but the others all use the prefix /un-/."
         },
         {
           "words": [
@@ -3722,7 +3722,7 @@
             "misbehave"
           ],
           "oddOneOut": 3,
-          "explanation": "'misbehave' uses the prefix /mis-/ — the others all use the prefix /un-/!"
+          "explanation": "'misbehave' uses the prefix /mis-/, but the others all use the prefix /un-/."
         },
         {
           "words": [
@@ -3732,7 +3732,7 @@
             "rewrite"
           ],
           "oddOneOut": 3,
-          "explanation": "'rewrite' uses the prefix /re-/ — the others all use the prefix /un-/!"
+          "explanation": "'rewrite' uses the prefix /re-/, but the others all use the prefix /un-/."
         }
       ],
       "writeItSentences": [
@@ -3875,7 +3875,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -3883,7 +3883,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -3891,7 +3891,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -3959,7 +3959,8 @@
           "o",
           "nn",
           "e",
-          "ct"
+          "c",
+          "t"
         ],
         "disorder": [
           "d",
@@ -4094,7 +4095,7 @@
             "dislike"
           ],
           "oddOneOut": 2,
-          "explanation": "'unhappy' uses the prefix /un-/ — the others all use the prefix /dis-/!"
+          "explanation": "'unhappy' uses the prefix /un-/, but the others all use the prefix /dis-/."
         },
         {
           "words": [
@@ -4104,7 +4105,7 @@
             "misplace"
           ],
           "oddOneOut": 3,
-          "explanation": "'misplace' uses the prefix /mis-/ — the others all use the prefix /dis-/!"
+          "explanation": "'misplace' uses the prefix /mis-/, but the others all use the prefix /dis-/."
         },
         {
           "words": [
@@ -4114,7 +4115,7 @@
             "rewrite"
           ],
           "oddOneOut": 3,
-          "explanation": "'rewrite' uses the prefix /re-/ — the others all use the prefix /dis-/!"
+          "explanation": "'rewrite' uses the prefix /re-/, but the others all use the prefix /dis-/."
         }
       ],
       "writeItSentences": [
@@ -4258,7 +4259,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -4266,7 +4267,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -4274,7 +4275,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -4476,7 +4477,7 @@
             "mishap"
           ],
           "oddOneOut": 2,
-          "explanation": "'unhappy' uses the prefix /un-/ — the others all use the prefix /mis-/!"
+          "explanation": "'unhappy' uses the prefix /un-/, but the others all use the prefix /mis-/."
         },
         {
           "words": [
@@ -4486,7 +4487,7 @@
             "disagree"
           ],
           "oddOneOut": 3,
-          "explanation": "'disagree' uses the prefix /dis-/ — the others all use the prefix /mis-/!"
+          "explanation": "'disagree' uses the prefix /dis-/, but the others all use the prefix /mis-/."
         },
         {
           "words": [
@@ -4496,7 +4497,7 @@
             "rewrite"
           ],
           "oddOneOut": 3,
-          "explanation": "'rewrite' uses the prefix /re-/ — the others all use the prefix /mis-/!"
+          "explanation": "'rewrite' uses the prefix /re-/, but the others all use the prefix /mis-/."
         }
       ],
       "writeItSentences": [
@@ -4638,7 +4639,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -4646,7 +4647,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -4654,7 +4655,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -4843,7 +4844,7 @@
             "replay"
           ],
           "oddOneOut": 2,
-          "explanation": "'unhappy' uses the prefix /un-/ — the others all use the prefix /re-/!"
+          "explanation": "'unhappy' uses the prefix /un-/, but the others all use the prefix /re-/."
         },
         {
           "words": [
@@ -4853,7 +4854,7 @@
             "disagree"
           ],
           "oddOneOut": 3,
-          "explanation": "'disagree' uses the prefix /dis-/ — the others all use the prefix /re-/!"
+          "explanation": "'disagree' uses the prefix /dis-/, but the others all use the prefix /re-/."
         },
         {
           "words": [
@@ -4863,7 +4864,7 @@
             "mistake"
           ],
           "oddOneOut": 3,
-          "explanation": "'mistake' uses the prefix /mis-/ — the others all use the prefix /re-/!"
+          "explanation": "'mistake' uses the prefix /mis-/, but the others all use the prefix /re-/."
         }
       ],
       "writeItSentences": [
@@ -5004,7 +5005,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -5012,7 +5013,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -5020,7 +5021,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -5220,7 +5221,7 @@
             "imagination"
           ],
           "oddOneOut": 2,
-          "explanation": "'decision' ends with /sion/ — the others all end with /tion/!"
+          "explanation": "'decision' ends with /sion/, but the others all end with /tion/."
         },
         {
           "words": [
@@ -5230,7 +5231,7 @@
             "confusion"
           ],
           "oddOneOut": 3,
-          "explanation": "'confusion' ends with /sion/ — the others all end with /tion/!"
+          "explanation": "'confusion' ends with /sion/, but the others all end with /tion/."
         },
         {
           "words": [
@@ -5240,7 +5241,7 @@
             "explosion"
           ],
           "oddOneOut": 3,
-          "explanation": "'explosion' ends with /sion/ — the others all end with /tion/!"
+          "explanation": "'explosion' ends with /sion/, but the others all end with /tion/."
         }
       ],
       "writeItSentences": [
@@ -5380,7 +5381,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -5388,7 +5389,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -5396,7 +5397,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -5590,7 +5591,7 @@
             "loudly"
           ],
           "oddOneOut": 2,
-          "explanation": "'kindness' uses the suffix /-ness/ — the others all use the suffix /-ly/!"
+          "explanation": "'kindness' uses the suffix /-ness/, but the others all use the suffix /-ly/."
         },
         {
           "words": [
@@ -5600,7 +5601,7 @@
             "joyful"
           ],
           "oddOneOut": 3,
-          "explanation": "'joyful' uses the suffix /-ful/ — the others all use the suffix /-ly/!"
+          "explanation": "'joyful' uses the suffix /-ful/, but the others all use the suffix /-ly/."
         },
         {
           "words": [
@@ -5610,7 +5611,7 @@
             "helpless"
           ],
           "oddOneOut": 3,
-          "explanation": "'helpless' uses the suffix /-less/ — the others all use the suffix /-ly/!"
+          "explanation": "'helpless' uses the suffix /-less/, but the others all use the suffix /-ly/."
         }
       ],
       "writeItSentences": [
@@ -5748,7 +5749,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -5756,7 +5757,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -5764,7 +5765,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -5975,7 +5976,7 @@
             "cheerful"
           ],
           "oddOneOut": 2,
-          "explanation": "'helpless' uses the suffix /-less/ — the others all use the suffix /-ful/!"
+          "explanation": "'helpless' uses the suffix /-less/, but the others all use the suffix /-ful/."
         },
         {
           "words": [
@@ -5985,7 +5986,7 @@
             "quickly"
           ],
           "oddOneOut": 3,
-          "explanation": "'quickly' uses the suffix /-ly/ — the others all use the suffix /-ful/!"
+          "explanation": "'quickly' uses the suffix /-ly/, but the others all use the suffix /-ful/."
         },
         {
           "words": [
@@ -5995,7 +5996,7 @@
             "kindness"
           ],
           "oddOneOut": 3,
-          "explanation": "'kindness' uses the suffix /-ness/ — the others all use the suffix /-ful/!"
+          "explanation": "'kindness' uses the suffix /-ness/, but the others all use the suffix /-ful/."
         }
       ],
       "writeItSentences": [
@@ -6139,7 +6140,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -6147,7 +6148,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -6155,7 +6156,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -6363,7 +6364,7 @@
             "homeless"
           ],
           "oddOneOut": 2,
-          "explanation": "'helpful' uses the suffix /-ful/ — the others all use the suffix /-less/!"
+          "explanation": "'helpful' uses the suffix /-ful/, but the others all use the suffix /-less/."
         },
         {
           "words": [
@@ -6373,7 +6374,7 @@
             "quickly"
           ],
           "oddOneOut": 3,
-          "explanation": "'quickly' uses the suffix /-ly/ — the others all use the suffix /-less/!"
+          "explanation": "'quickly' uses the suffix /-ly/, but the others all use the suffix /-less/."
         },
         {
           "words": [
@@ -6383,7 +6384,7 @@
             "kindness"
           ],
           "oddOneOut": 3,
-          "explanation": "'kindness' uses the suffix /-ness/ — the others all use the suffix /-less/!"
+          "explanation": "'kindness' uses the suffix /-ness/, but the others all use the suffix /-less/."
         }
       ],
       "writeItSentences": [
@@ -6527,7 +6528,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -6535,7 +6536,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -6543,7 +6544,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -6752,7 +6753,7 @@
             "sadness"
           ],
           "oddOneOut": 2,
-          "explanation": "'helpful' uses the suffix /-ful/ — the others all use the suffix /-ness/!"
+          "explanation": "'helpful' uses the suffix /-ful/, but the others all use the suffix /-ness/."
         },
         {
           "words": [
@@ -6762,7 +6763,7 @@
             "quickly"
           ],
           "oddOneOut": 3,
-          "explanation": "'quickly' uses the suffix /-ly/ — the others all use the suffix /-ness/!"
+          "explanation": "'quickly' uses the suffix /-ly/, but the others all use the suffix /-ness/."
         },
         {
           "words": [
@@ -6772,7 +6773,7 @@
             "hopeless"
           ],
           "oddOneOut": 3,
-          "explanation": "'hopeless' uses the suffix /-less/ — the others all use the suffix /-ness/!"
+          "explanation": "'hopeless' uses the suffix /-less/, but the others all use the suffix /-ness/."
         }
       ],
       "writeItSentences": [
@@ -6907,7 +6908,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "would",
@@ -6915,7 +6916,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         },
         {
           "word": "should",
@@ -6923,7 +6924,7 @@
             1,
             2
           ],
-          "explanation": "The 'ou' is silent here — just /oo/."
+          "explanation": "The 'ou' is silent here, just /oo/."
         }
       ],
       "words": [
@@ -7157,7 +7158,7 @@
             "movement"
           ],
           "oddOneOut": 2,
-          "explanation": "'hopeful' uses the suffix /-ful/ — the others all use the suffix /-ment/!"
+          "explanation": "'hopeful' uses the suffix /-ful/, but the others all use the suffix /-ment/."
         },
         {
           "words": [
@@ -7167,7 +7168,7 @@
             "kindness"
           ],
           "oddOneOut": 3,
-          "explanation": "'kindness' uses the suffix /-ness/ — the others all use the suffix /-ment/!"
+          "explanation": "'kindness' uses the suffix /-ness/, but the others all use the suffix /-ment/."
         },
         {
           "words": [
@@ -7177,7 +7178,7 @@
             "helpless"
           ],
           "oddOneOut": 3,
-          "explanation": "'helpless' uses the suffix /-less/ — the others all use the suffix /-ment/!"
+          "explanation": "'helpless' uses the suffix /-less/, but the others all use the suffix /-ment/."
         }
       ],
       "writeItSentences": [

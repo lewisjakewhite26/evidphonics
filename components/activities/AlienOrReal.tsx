@@ -145,8 +145,8 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
               ) : (
                 <>
                   {currentWord.isReal
-                    ? "That's actually a real word!"
-                    : "That's actually an alien word!"}
+                    ? "That's actually a real word."
+                    : "That's actually an alien word."}
                 </>
               )}
             </p>

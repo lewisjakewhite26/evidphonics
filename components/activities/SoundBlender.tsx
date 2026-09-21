@@ -278,7 +278,7 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
     setSliderFromClientX(e.clientX)
   }
 
-  /** Resolve slot steps by re-walking layout groups — slots hold step indices from buildBlendWordLayout internal logic; we reconstruct from groups */
+  /** Resolve slot steps by re-walking layout groups. Slots hold step indices from buildBlendWordLayout internal logic; we reconstruct from groups */
   const filledSlots = useMemo(() => {
     if (!blendLayout || !word) return null
     const w = word.toLowerCase()
@@ -712,10 +712,10 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
 
           <div className="mt-6 text-center">
             {currentPhonemeIndex < 0 ? (
-              <p className="text-sm text-text-sub">Start dragging to blend the sounds!</p>
+              <p className="text-sm text-text-sub">Start dragging to blend the sounds.</p>
             ) : currentPhonemeIndex >= n ? (
               <p className="text-sm text-text-sub">
-                <span className="font-semibold text-primary">Complete! You blended all the sounds! 🎉</span>
+                <span className="font-semibold text-primary">Complete. You blended all the sounds! 🎉</span>
               </p>
             ) : (
               <p className="text-sm text-text-sub">

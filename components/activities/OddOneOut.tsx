@@ -67,7 +67,7 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
       }, 2000)
     } else {
       setWrongPick(i)
-      setFeedback('Good try — look for the sound that is different.')
+      setFeedback('Good try. Look for the sound that is different.')
       window.setTimeout(() => setWrongPick(null), 600)
     }
   }

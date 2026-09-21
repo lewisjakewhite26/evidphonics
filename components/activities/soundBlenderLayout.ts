@@ -98,7 +98,7 @@ export function mergeSegmentsForBlend(segments: WordSegment[]): MergedUnit[] {
 function speakLabelForUnit(unit: MergedUnit, segments: WordSegment[]): string {
   if (unit.kind === 'magicE') {
     const raw = unit.segmentIndices.map((j) => segments[j]?.grapheme ?? '').join('')
-    // Pedagogical label: "o-e", "a-e" — never strip the hyphen for display/speech naming.
+    // Pedagogical label: "o-e", "a-e". Never strip the hyphen for display/speech naming.
     if (raw) return raw
     return `${unit.vowel}-e`
   }

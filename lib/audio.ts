@@ -47,7 +47,7 @@ export function speak(text: string, rate = 0.85): void {
   playAudioUrl(sentenceAudioUrl(trimmed), rate)
 }
 
-/** Grapheme tiles are visual-only — no audio playback. */
+/** Grapheme tiles are visual-only. No audio playback. */
 export function speakPhoneme(_phoneme: string): void {}
 
 export function speakWord(word: string): void {

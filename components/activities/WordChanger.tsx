@@ -51,7 +51,7 @@ const WRONG_CHOICE_POOL = [
   'We only swap two letters inside the root.',
   'We take letters off the end of the root.',
   'The root splits into two separate words.',
-  'Nothing new is added — the word stays the same.',
+  'Nothing new is added. The word stays the same.',
 ]
 
 function buildShuffledChoices(step: WordChangerStep): string[] {

@@ -8,7 +8,7 @@ import './globals.css'
 const rootEl = document.getElementById('root')
 if (!rootEl) {
   document.body.innerHTML =
-    '<p style="font-family:sans-serif;padding:1rem">Missing #root — check index.html</p>'
+    '<p style="font-family:sans-serif;padding:1rem">Missing #root. Check index.html</p>'
 } else {
   createRoot(rootEl).render(
     <StrictMode>

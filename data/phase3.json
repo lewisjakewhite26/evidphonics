@@ -17,7 +17,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -173,7 +173,7 @@
             "van"
           ],
           "oddOneOut": 3,
-          "explanation": "'van' starts with /v/ — the others all start with /j/!"
+          "explanation": "'van' starts with /v/, but the others all start with /j/."
         },
         {
           "words": [
@@ -183,7 +183,7 @@
             "fox"
           ],
           "oddOneOut": 3,
-          "explanation": "'fox' ends with /x/ — the others all start with /j/!"
+          "explanation": "'fox' ends with /x/, but the others all start with /j/."
         },
         {
           "words": [
@@ -193,7 +193,7 @@
             "web"
           ],
           "oddOneOut": 3,
-          "explanation": "'web' starts with /w/ — the others all start with /j/!"
+          "explanation": "'web' starts with /w/, but the others all start with /j/."
         }
       ],
       "writeItSentences": [
@@ -247,7 +247,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -406,7 +406,7 @@
             "jam"
           ],
           "oddOneOut": 3,
-          "explanation": "'jam' starts with /j/ — the others all start with /v/!"
+          "explanation": "'jam' starts with /j/, but the others all start with /v/."
         },
         {
           "words": [
@@ -416,7 +416,7 @@
             "web"
           ],
           "oddOneOut": 3,
-          "explanation": "'web' starts with /w/ — the others all start with /v/!"
+          "explanation": "'web' starts with /w/, but the others all start with /v/."
         },
         {
           "words": [
@@ -426,7 +426,7 @@
             "fox"
           ],
           "oddOneOut": 3,
-          "explanation": "'fox' ends with /x/ — the others all start with /v/!"
+          "explanation": "'fox' ends with /x/, but the others all start with /v/."
         }
       ],
       "writeItSentences": [
@@ -481,7 +481,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -638,7 +638,7 @@
             "van"
           ],
           "oddOneOut": 3,
-          "explanation": "'van' starts with /v/ — the others all start with /w/!"
+          "explanation": "'van' starts with /v/, but the others all start with /w/."
         },
         {
           "words": [
@@ -648,7 +648,7 @@
             "jet"
           ],
           "oddOneOut": 3,
-          "explanation": "'jet' starts with /j/ — the others all start with /w/!"
+          "explanation": "'jet' starts with /j/, but the others all start with /w/."
         },
         {
           "words": [
@@ -658,7 +658,7 @@
             "six"
           ],
           "oddOneOut": 3,
-          "explanation": "'six' ends with /x/ — the others all start with /w/!"
+          "explanation": "'six' ends with /x/, but the others all start with /w/."
         }
       ],
       "writeItSentences": [
@@ -711,7 +711,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -866,7 +866,7 @@
             "wig"
           ],
           "oddOneOut": 3,
-          "explanation": "'wig' starts with /w/ — the others all end with /x/!"
+          "explanation": "'wig' starts with /w/, but the others all end with /x/."
         },
         {
           "words": [
@@ -876,7 +876,7 @@
             "jam"
           ],
           "oddOneOut": 3,
-          "explanation": "'jam' starts with /j/ — the others all end with /x/!"
+          "explanation": "'jam' starts with /j/, but the others all end with /x/."
         },
         {
           "words": [
@@ -886,7 +886,7 @@
             "van"
           ],
           "oddOneOut": 3,
-          "explanation": "'van' starts with /v/ — the others all end with /x/!"
+          "explanation": "'van' starts with /v/, but the others all end with /x/."
         }
       ],
       "writeItSentences": [
@@ -938,7 +938,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -1045,7 +1045,7 @@
       },
       "missingWordSentences": [
         {
-          "text": "___, I can do it!",
+          "text": "___, I can do it.",
           "missingWord": "yes",
           "missingIndex": 0,
           "options": [
@@ -1094,7 +1094,7 @@
             "zip"
           ],
           "oddOneOut": 3,
-          "explanation": "'zip' starts with /z/ — the others all start with /y/!"
+          "explanation": "'zip' starts with /z/, but the others all start with /y/."
         },
         {
           "words": [
@@ -1104,7 +1104,7 @@
             "van"
           ],
           "oddOneOut": 3,
-          "explanation": "'van' starts with /v/ — the others all start with /y/!"
+          "explanation": "'van' starts with /v/, but the others all start with /y/."
         },
         {
           "words": [
@@ -1114,7 +1114,7 @@
             "web"
           ],
           "oddOneOut": 3,
-          "explanation": "'web' starts with /w/ — the others all start with /y/!"
+          "explanation": "'web' starts with /w/, but the others all start with /y/."
         }
       ],
       "writeItSentences": [
@@ -1139,7 +1139,7 @@
           ]
         },
         {
-          "text": "Not yet!",
+          "text": "Not yet.",
           "targetSounds": [
             "y"
           ],
@@ -1167,7 +1167,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -1329,7 +1329,7 @@
             "yam"
           ],
           "oddOneOut": 3,
-          "explanation": "'yam' starts with /y/ — the others all start with /z/!"
+          "explanation": "'yam' starts with /y/, but the others all start with /z/."
         },
         {
           "words": [
@@ -1339,7 +1339,7 @@
             "jet"
           ],
           "oddOneOut": 3,
-          "explanation": "'jet' starts with /j/ — the others all start with /z/!"
+          "explanation": "'jet' starts with /j/, but the others all start with /z/."
         },
         {
           "words": [
@@ -1349,7 +1349,7 @@
             "web"
           ],
           "oddOneOut": 3,
-          "explanation": "'web' starts with /w/ — the others all start with /z/!"
+          "explanation": "'web' starts with /w/, but the others all start with /z/."
         }
       ],
       "writeItSentences": [
@@ -1403,7 +1403,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -1567,7 +1567,7 @@
             "zip"
           ],
           "oddOneOut": 3,
-          "explanation": "'zip' has one z — the others all end with /zz/!"
+          "explanation": "'zip' has one z, but the others all end with /zz/."
         },
         {
           "words": [
@@ -1577,7 +1577,7 @@
             "yell"
           ],
           "oddOneOut": 3,
-          "explanation": "'yell' ends with /ll/ — the others all end with /zz/!"
+          "explanation": "'yell' ends with /ll/, but the others all end with /zz/."
         },
         {
           "words": [
@@ -1587,7 +1587,7 @@
             "van"
           ],
           "oddOneOut": 3,
-          "explanation": "'van' has no /zz/ — the others all have /zz/ in the middle!"
+          "explanation": "'van' has no /zz/, but the others all have /zz/ in the middle."
         }
       ],
       "writeItSentences": [
@@ -1638,7 +1638,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -1797,7 +1797,7 @@
             "yam"
           ],
           "oddOneOut": 3,
-          "explanation": "'yam' starts with /y/ — the others all start with /qu/!"
+          "explanation": "'yam' starts with /y/, but the others all start with /qu/."
         },
         {
           "words": [
@@ -1807,7 +1807,7 @@
             "buzz"
           ],
           "oddOneOut": 3,
-          "explanation": "'buzz' ends with /zz/ — the others all start with /qu/!"
+          "explanation": "'buzz' ends with /zz/, but the others all start with /qu/."
         },
         {
           "words": [
@@ -1817,7 +1817,7 @@
             "web"
           ],
           "oddOneOut": 3,
-          "explanation": "'web' starts with /w/ — the others all start with /qu/!"
+          "explanation": "'web' starts with /w/, but the others all start with /qu/."
         }
       ],
       "writeItSentences": [
@@ -1870,7 +1870,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -2065,7 +2065,7 @@
             "chat"
           ],
           "oddOneOut": 2,
-          "explanation": "'shed' has the /sh/ sound — the others all have /ch/!"
+          "explanation": "'shed' has the /sh/ sound, but the others all have /ch/."
         },
         {
           "words": [
@@ -2075,7 +2075,7 @@
             "shop"
           ],
           "oddOneOut": 3,
-          "explanation": "'shop' has the /sh/ sound — the others all have /ch/!"
+          "explanation": "'shop' has the /sh/ sound, but the others all have /ch/."
         },
         {
           "words": [
@@ -2085,7 +2085,7 @@
             "thank"
           ],
           "oddOneOut": 3,
-          "explanation": "'thank' has the /th/ sound — the others all end with /ch/!"
+          "explanation": "'thank' has the /th/ sound, but the others all end with /ch/."
         }
       ],
       "writeItSentences": [
@@ -2139,7 +2139,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -2337,7 +2337,7 @@
             "shed"
           ],
           "oddOneOut": 2,
-          "explanation": "'chin' has the /ch/ sound — the others all have /sh/!"
+          "explanation": "'chin' has the /ch/ sound, but the others all have /sh/."
         },
         {
           "words": [
@@ -2347,7 +2347,7 @@
             "chip"
           ],
           "oddOneOut": 3,
-          "explanation": "'chip' has the /ch/ sound — the others all end with /sh/!"
+          "explanation": "'chip' has the /ch/ sound, but the others all end with /sh/."
         },
         {
           "words": [
@@ -2357,7 +2357,7 @@
             "that"
           ],
           "oddOneOut": 3,
-          "explanation": "'that' has the /th/ sound — the others all have /sh/!"
+          "explanation": "'that' has the /th/ sound, but the others all have /sh/."
         }
       ],
       "writeItSentences": [
@@ -2413,7 +2413,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -2609,7 +2609,7 @@
             "shop"
           ],
           "oddOneOut": 3,
-          "explanation": "'shop' has the /sh/ sound — the others all have /th/!"
+          "explanation": "'shop' has the /sh/ sound, but the others all have /th/."
         },
         {
           "words": [
@@ -2619,7 +2619,7 @@
             "chip"
           ],
           "oddOneOut": 3,
-          "explanation": "'chip' has the /ch/ sound — the others all end with /th/!"
+          "explanation": "'chip' has the /ch/ sound, but the others all end with /th/."
         },
         {
           "words": [
@@ -2629,7 +2629,7 @@
             "shed"
           ],
           "oddOneOut": 3,
-          "explanation": "'shed' has the /sh/ sound — the others all have /th/!"
+          "explanation": "'shed' has the /sh/ sound, but the others all have /th/."
         }
       ],
       "writeItSentences": [
@@ -2684,7 +2684,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -2878,7 +2878,7 @@
             "thank"
           ],
           "oddOneOut": 3,
-          "explanation": "'thank' has the /th/ sound — the others all end with /ng/!"
+          "explanation": "'thank' has the /th/ sound, but the others all end with /ng/."
         },
         {
           "words": [
@@ -2888,7 +2888,7 @@
             "shop"
           ],
           "oddOneOut": 3,
-          "explanation": "'shop' has the /sh/ sound — the others all end with /ng/!"
+          "explanation": "'shop' has the /sh/ sound, but the others all end with /ng/."
         },
         {
           "words": [
@@ -2898,7 +2898,7 @@
             "chat"
           ],
           "oddOneOut": 3,
-          "explanation": "'chat' has the /ch/ sound — the others all end with /ng/!"
+          "explanation": "'chat' has the /ch/ sound, but the others all end with /ng/."
         }
       ],
       "writeItSentences": [
@@ -2953,7 +2953,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -3153,7 +3153,7 @@
             "tail"
           ],
           "oddOneOut": 2,
-          "explanation": "'feet' has the /ee/ sound — the others all have /ai/!"
+          "explanation": "'feet' has the /ee/ sound, but the others all have /ai/."
         },
         {
           "words": [
@@ -3163,7 +3163,7 @@
             "boat"
           ],
           "oddOneOut": 3,
-          "explanation": "'boat' has the /oa/ sound — the others all have /ai/!"
+          "explanation": "'boat' has the /oa/ sound, but the others all have /ai/."
         },
         {
           "words": [
@@ -3173,7 +3173,7 @@
             "night"
           ],
           "oddOneOut": 3,
-          "explanation": "'night' has the /igh/ sound — the others all have /ai/!"
+          "explanation": "'night' has the /igh/ sound, but the others all have /ai/."
         }
       ],
       "writeItSentences": [
@@ -3231,7 +3231,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -3428,7 +3428,7 @@
             "keep"
           ],
           "oddOneOut": 2,
-          "explanation": "'rain' has the /ai/ sound — the others all have /ee/!"
+          "explanation": "'rain' has the /ai/ sound, but the others all have /ee/."
         },
         {
           "words": [
@@ -3438,7 +3438,7 @@
             "boat"
           ],
           "oddOneOut": 3,
-          "explanation": "'boat' has the /oa/ sound — the others all have /ee/!"
+          "explanation": "'boat' has the /oa/ sound, but the others all have /ee/."
         },
         {
           "words": [
@@ -3448,7 +3448,7 @@
             "night"
           ],
           "oddOneOut": 3,
-          "explanation": "'night' has the /igh/ sound — the others all have /ee/!"
+          "explanation": "'night' has the /igh/ sound, but the others all have /ee/."
         }
       ],
       "writeItSentences": [
@@ -3506,7 +3506,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -3703,7 +3703,7 @@
             "right"
           ],
           "oddOneOut": 2,
-          "explanation": "'rain' has the /ai/ sound — the others all have /igh/!"
+          "explanation": "'rain' has the /ai/ sound, but the others all have /igh/."
         },
         {
           "words": [
@@ -3713,7 +3713,7 @@
             "feet"
           ],
           "oddOneOut": 3,
-          "explanation": "'feet' has the /ee/ sound — the others all have /igh/!"
+          "explanation": "'feet' has the /ee/ sound, but the others all have /igh/."
         },
         {
           "words": [
@@ -3723,7 +3723,7 @@
             "boat"
           ],
           "oddOneOut": 3,
-          "explanation": "'boat' has the /oa/ sound — the others all have /igh/!"
+          "explanation": "'boat' has the /oa/ sound, but the others all have /igh/."
         }
       ],
       "writeItSentences": [
@@ -3779,7 +3779,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -3981,7 +3981,7 @@
             "road"
           ],
           "oddOneOut": 2,
-          "explanation": "'night' has the /igh/ sound — the others all have /oa/!"
+          "explanation": "'night' has the /igh/ sound, but the others all have /oa/."
         },
         {
           "words": [
@@ -3991,7 +3991,7 @@
             "feet"
           ],
           "oddOneOut": 3,
-          "explanation": "'feet' has the /ee/ sound — the others all have /oa/!"
+          "explanation": "'feet' has the /ee/ sound, but the others all have /oa/."
         },
         {
           "words": [
@@ -4001,7 +4001,7 @@
             "rain"
           ],
           "oddOneOut": 3,
-          "explanation": "'rain' has the /ai/ sound — the others all have /oa/!"
+          "explanation": "'rain' has the /ai/ sound, but the others all have /oa/."
         }
       ],
       "writeItSentences": [
@@ -4058,7 +4058,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -4257,7 +4257,7 @@
             "cook"
           ],
           "oddOneOut": 2,
-          "explanation": "'moon' has the long /oo/ sound — the others have the short /oo/!"
+          "explanation": "'moon' has the long /oo/ sound, but the others have the short /oo/."
         },
         {
           "words": [
@@ -4267,7 +4267,7 @@
             "boot"
           ],
           "oddOneOut": 3,
-          "explanation": "'boot' has the long /oo/ sound — the others have the short /oo/!"
+          "explanation": "'boot' has the long /oo/ sound, but the others have the short /oo/."
         },
         {
           "words": [
@@ -4277,7 +4277,7 @@
             "zoom"
           ],
           "oddOneOut": 3,
-          "explanation": "'zoom' has the long /oo/ sound — the others have the short /oo/!"
+          "explanation": "'zoom' has the long /oo/ sound, but the others have the short /oo/."
         }
       ],
       "writeItSentences": [
@@ -4333,7 +4333,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -4532,7 +4532,7 @@
             "zoom"
           ],
           "oddOneOut": 2,
-          "explanation": "'book' has the short /oo/ sound — the others have the long /oo/!"
+          "explanation": "'book' has the short /oo/ sound, but the others have the long /oo/."
         },
         {
           "words": [
@@ -4542,7 +4542,7 @@
             "foot"
           ],
           "oddOneOut": 3,
-          "explanation": "'foot' has the short /oo/ sound — the others have the long /oo/!"
+          "explanation": "'foot' has the short /oo/ sound, but the others have the long /oo/."
         },
         {
           "words": [
@@ -4552,7 +4552,7 @@
             "wood"
           ],
           "oddOneOut": 3,
-          "explanation": "'wood' has the short /oo/ sound — the others have the long /oo/!"
+          "explanation": "'wood' has the short /oo/ sound, but the others have the long /oo/."
         }
       ],
       "writeItSentences": [
@@ -4608,7 +4608,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -4637,7 +4637,7 @@
             1,
             2
           ],
-          "explanation": "The 'as' makes an /oz/ sound — very tricky!"
+          "explanation": "The 'as' makes an /oz/ sound, very tricky."
         }
       ],
       "words": [
@@ -4803,7 +4803,7 @@
             "dark"
           ],
           "oddOneOut": 2,
-          "explanation": "'fork' has the /or/ sound — the others all have /ar/!"
+          "explanation": "'fork' has the /or/ sound, but the others all have /ar/."
         },
         {
           "words": [
@@ -4813,7 +4813,7 @@
             "burn"
           ],
           "oddOneOut": 3,
-          "explanation": "'burn' has the /ur/ sound — the others all have /ar/!"
+          "explanation": "'burn' has the /ur/ sound, but the others all have /ar/."
         },
         {
           "words": [
@@ -4823,7 +4823,7 @@
             "coin"
           ],
           "oddOneOut": 3,
-          "explanation": "'coin' has the /oi/ sound — the others all have /ar/!"
+          "explanation": "'coin' has the /oi/ sound, but the others all have /ar/."
         }
       ],
       "writeItSentences": [
@@ -4884,7 +4884,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -4913,7 +4913,7 @@
             1,
             2
           ],
-          "explanation": "The 'as' makes an /oz/ sound — very tricky!"
+          "explanation": "The 'as' makes an /oz/ sound, very tricky."
         }
       ],
       "words": [
@@ -5083,7 +5083,7 @@
             "born"
           ],
           "oddOneOut": 2,
-          "explanation": "'dark' has the /ar/ sound — the others all have /or/!"
+          "explanation": "'dark' has the /ar/ sound, but the others all have /or/."
         },
         {
           "words": [
@@ -5093,7 +5093,7 @@
             "surf"
           ],
           "oddOneOut": 3,
-          "explanation": "'surf' has the /ur/ sound — the others all have /or/!"
+          "explanation": "'surf' has the /ur/ sound, but the others all have /or/."
         },
         {
           "words": [
@@ -5103,7 +5103,7 @@
             "coin"
           ],
           "oddOneOut": 3,
-          "explanation": "'coin' has the /oi/ sound — the others all have /or/!"
+          "explanation": "'coin' has the /oi/ sound, but the others all have /or/."
         }
       ],
       "writeItSentences": [
@@ -5160,7 +5160,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -5189,7 +5189,7 @@
             1,
             2
           ],
-          "explanation": "The 'as' makes an /oz/ sound — very tricky!"
+          "explanation": "The 'as' makes an /oz/ sound, very tricky."
         }
       ],
       "words": [
@@ -5369,7 +5369,7 @@
             "turn"
           ],
           "oddOneOut": 2,
-          "explanation": "'fork' has the /or/ sound — the others all have /ur/!"
+          "explanation": "'fork' has the /or/ sound, but the others all have /ur/."
         },
         {
           "words": [
@@ -5379,7 +5379,7 @@
             "farm"
           ],
           "oddOneOut": 3,
-          "explanation": "'farm' has the /ar/ sound — the others all have /ur/!"
+          "explanation": "'farm' has the /ar/ sound, but the others all have /ur/."
         },
         {
           "words": [
@@ -5389,7 +5389,7 @@
             "coin"
           ],
           "oddOneOut": 3,
-          "explanation": "'coin' has the /oi/ sound — the others all have /ur/!"
+          "explanation": "'coin' has the /oi/ sound, but the others all have /ur/."
         }
       ],
       "writeItSentences": [
@@ -5442,7 +5442,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -5644,7 +5644,7 @@
             "down"
           ],
           "oddOneOut": 2,
-          "explanation": "'surf' has the /ur/ sound — the others all have /ow/!"
+          "explanation": "'surf' has the /ur/ sound, but the others all have /ow/."
         },
         {
           "words": [
@@ -5654,7 +5654,7 @@
             "coin"
           ],
           "oddOneOut": 3,
-          "explanation": "'coin' has the /oi/ sound — the others all have /ow/!"
+          "explanation": "'coin' has the /oi/ sound, but the others all have /ow/."
         },
         {
           "words": [
@@ -5664,7 +5664,7 @@
             "barn"
           ],
           "oddOneOut": 3,
-          "explanation": "'barn' has the /ar/ sound — the others all have /ow/!"
+          "explanation": "'barn' has the /ar/ sound, but the others all have /ow/."
         }
       ],
       "writeItSentences": [
@@ -5720,7 +5720,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -5925,7 +5925,7 @@
             "boil"
           ],
           "oddOneOut": 2,
-          "explanation": "'cow' has the /ow/ sound — the others all have /oi/!"
+          "explanation": "'cow' has the /ow/ sound, but the others all have /oi/."
         },
         {
           "words": [
@@ -5935,7 +5935,7 @@
             "burn"
           ],
           "oddOneOut": 3,
-          "explanation": "'burn' has the /ur/ sound — the others all have /oi/!"
+          "explanation": "'burn' has the /ur/ sound, but the others all have /oi/."
         },
         {
           "words": [
@@ -5945,7 +5945,7 @@
             "town"
           ],
           "oddOneOut": 3,
-          "explanation": "'town' has the /ow/ sound — the others all have /oi/!"
+          "explanation": "'town' has the /ow/ sound, but the others all have /oi/."
         }
       ],
       "writeItSentences": [
@@ -6002,7 +6002,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "are",
@@ -6034,7 +6034,7 @@
             1,
             2
           ],
-          "explanation": "The 'a' makes an /or/ sound before 'll' — very tricky!"
+          "explanation": "The 'a' makes an /or/ sound before 'll', very tricky."
         }
       ],
       "words": [
@@ -6181,7 +6181,7 @@
             "fear"
           ],
           "oddOneOut": 2,
-          "explanation": "'fair' has the /air/ sound — the others all have /ear/!"
+          "explanation": "'fair' has the /air/ sound, but the others all have /ear/."
         },
         {
           "words": [
@@ -6191,7 +6191,7 @@
             "hair"
           ],
           "oddOneOut": 3,
-          "explanation": "'hair' has the /air/ sound — the others all have /ear/!"
+          "explanation": "'hair' has the /air/ sound, but the others all have /ear/."
         },
         {
           "words": [
@@ -6201,7 +6201,7 @@
             "sure"
           ],
           "oddOneOut": 3,
-          "explanation": "'sure' has the /ure/ sound — the others all have /ear/!"
+          "explanation": "'sure' has the /ure/ sound, but the others all have /ear/."
         }
       ],
       "writeItSentences": [
@@ -6256,7 +6256,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "are",
@@ -6288,7 +6288,7 @@
             1,
             2
           ],
-          "explanation": "The 'a' makes an /or/ sound before 'll' — very tricky!"
+          "explanation": "The 'a' makes an /or/ sound before 'll', very tricky."
         }
       ],
       "words": [
@@ -6444,7 +6444,7 @@
             "pair"
           ],
           "oddOneOut": 2,
-          "explanation": "'near' has the /ear/ sound — the others all have /air/!"
+          "explanation": "'near' has the /ear/ sound, but the others all have /air/."
         },
         {
           "words": [
@@ -6454,7 +6454,7 @@
             "year"
           ],
           "oddOneOut": 3,
-          "explanation": "'year' has the /ear/ sound — the others all have /air/!"
+          "explanation": "'year' has the /ear/ sound, but the others all have /air/."
         },
         {
           "words": [
@@ -6464,7 +6464,7 @@
             "sure"
           ],
           "oddOneOut": 3,
-          "explanation": "'sure' has the /ure/ sound — the others all have /air/!"
+          "explanation": "'sure' has the /ure/ sound, but the others all have /air/."
         }
       ],
       "writeItSentences": [
@@ -6522,7 +6522,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "are",
@@ -6554,7 +6554,7 @@
             1,
             2
           ],
-          "explanation": "The 'a' makes an /or/ sound before 'll' — very tricky!"
+          "explanation": "The 'a' makes an /or/ sound before 'll', very tricky."
         }
       ],
       "words": [
@@ -6628,7 +6628,8 @@
         "picture": [
           "p",
           "i",
-          "ct",
+          "c",
+          "t",
           "ure"
         ],
         "treasure": [
@@ -6733,7 +6734,7 @@
             "hair"
           ],
           "oddOneOut": 3,
-          "explanation": "'hair' has the /air/ sound — the others all have /ure/!"
+          "explanation": "'hair' has the /air/ sound, but the others all have /ure/."
         },
         {
           "words": [
@@ -6743,7 +6744,7 @@
             "near"
           ],
           "oddOneOut": 3,
-          "explanation": "'near' has the /ear/ sound — the others all have /ure/!"
+          "explanation": "'near' has the /ear/ sound, but the others all have /ure/."
         },
         {
           "words": [
@@ -6753,7 +6754,7 @@
             "fair"
           ],
           "oddOneOut": 3,
-          "explanation": "'fair' has the /air/ sound — the others all have /ure/!"
+          "explanation": "'fair' has the /air/ sound, but the others all have /ure/."
         }
       ],
       "writeItSentences": [
@@ -6809,7 +6810,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "are",
@@ -6841,7 +6842,7 @@
             1,
             2
           ],
-          "explanation": "The 'a' makes an /or/ sound before 'll' — very tricky!"
+          "explanation": "The 'a' makes an /or/ sound before 'll', very tricky."
         }
       ],
       "words": [
@@ -7028,7 +7029,7 @@
             "letter"
           ],
           "oddOneOut": 2,
-          "explanation": "'surf' has the /ur/ sound — the others all end with /er/!"
+          "explanation": "'surf' has the /ur/ sound, but the others all end with /er/."
         },
         {
           "words": [
@@ -7038,7 +7039,7 @@
             "coin"
           ],
           "oddOneOut": 3,
-          "explanation": "'coin' has the /oi/ sound — the others all end with /er/!"
+          "explanation": "'coin' has the /oi/ sound, but the others all end with /er/."
         },
         {
           "words": [
@@ -7048,7 +7049,7 @@
             "farm"
           ],
           "oddOneOut": 3,
-          "explanation": "'farm' has the /ar/ sound — the others all end with /er/!"
+          "explanation": "'farm' has the /ar/ sound, but the others all end with /er/."
         }
       ],
       "writeItSentences": [

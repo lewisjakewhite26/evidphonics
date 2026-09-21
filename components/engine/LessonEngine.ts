@@ -770,7 +770,7 @@ export function buildLessonFromGraphemes(
     type: 'speedySounds' as const,
     title: 'Speedy Sounds',
     emoji: '🎵',
-    instruction: 'Say the sound when the card flips!',
+    instruction: 'Say the sound when the card flips.',
     graphemes: [...speedyCore, ...speedyRevisionObjs],
   }
 
@@ -788,7 +788,7 @@ export function buildLessonFromGraphemes(
     type: 'soundBlender' as const,
     title: 'Sound Blender',
     emoji: '🚀',
-    instruction: 'Drag the rocket to blend the sounds!',
+    instruction: 'Drag the rocket to blend the sounds.',
     words: blendWords.map((word) => ({
       word,
       audioUrl: wordAudioUrl(word),
@@ -812,7 +812,7 @@ export function buildLessonFromGraphemes(
           type: 'trickyTrap' as const,
           title: 'Tricky Trap',
           emoji: '💡',
-          instruction: 'Tap the word to find the tricky part!',
+          instruction: 'Tap the word to find the tricky part.',
           words: trickyTrapSlice.map((entry) => ({
             word: entry.word,
             trickyLetters: entry.trickyLetters,
@@ -835,7 +835,7 @@ export function buildLessonFromGraphemes(
     type: 'missingSound' as const,
     title: 'Missing Sound',
     emoji: '🔍',
-    instruction: 'Tap the grapheme that completes the word!',
+    instruction: 'Tap the grapheme that completes the word.',
     words: missingSoundWords,
   }
 
@@ -855,7 +855,7 @@ export function buildLessonFromGraphemes(
     pairs: rhymePairs,
   } satisfies RhymeTimeData
 
-  /** Omit Sound Sort when the paired grapheme (`sortPair`) is missing from curriculum — never show raw ids as anchor “words”. */
+  /** Omit Sound Sort when the paired grapheme (`sortPair`) is missing from curriculum. Never show raw ids as anchor “words”. */
   const soundSort: Extract<Activity, { type: 'soundSort' }> | null =
     selection.length >= 2
       ? (() => {
@@ -866,7 +866,7 @@ export function buildLessonFromGraphemes(
             type: 'soundSort' as const,
             title: 'Sound Sort',
             emoji: '🎯',
-            instruction: 'Sort the words into the correct sound zone!',
+            instruction: 'Sort the words into the correct sound zone.',
             anchorWords: [
               {
                 id: 'target',
@@ -901,7 +901,7 @@ export function buildLessonFromGraphemes(
             type: 'soundSort' as const,
             title: 'Sound Sort',
             emoji: '🎯',
-            instruction: 'Sort the words into the correct sound zone!',
+            instruction: 'Sort the words into the correct sound zone.',
             anchorWords: [
               {
                 id: 'target',
@@ -978,7 +978,7 @@ export function buildLessonFromGraphemes(
     type: 'quickReview' as const,
     title: 'Quick Review',
     emoji: '⚡',
-    instruction: 'Click each word and read it aloud!',
+    instruction: 'Click each word and read it aloud.',
     words: quickReviewWords,
   }
 
@@ -1001,7 +1001,7 @@ export function buildLessonFromGraphemes(
     type: 'oddOneOut' as const,
     title: 'Odd One Out',
     emoji: '🔎',
-    instruction: 'Three words share a sound — which one is different?',
+    instruction: 'Three words share a sound. Which one is different?',
     sets: oddOneOutSets,
   }
 
@@ -1017,7 +1017,7 @@ export function buildLessonFromGraphemes(
     type: 'wordBuilder',
     title: 'Word Builder',
     emoji: '🧱',
-    instruction: 'Build the word using the sound tiles!',
+    instruction: 'Build the word using the sound tiles.',
     words: chosenBuilderWords.map((word) => {
       const tiles = chooseWordBuilderTiles(word, merged, allGraphemes)
       return {

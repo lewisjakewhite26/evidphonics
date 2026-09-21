@@ -1,4 +1,4 @@
-/** Botanical reader — sage accent, forest ink, rose warmth. Spend colour in one place. */
+/** Botanical reader: sage accent, forest ink, rose warmth. Spend colour in one place. */
 
 export const BRAND_ACCENT = '#59AB86'
 export const BRAND_ACCENT_DARK = '#3D8A6A'

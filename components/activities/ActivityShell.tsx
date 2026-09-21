@@ -50,7 +50,7 @@ export function ActivityShell({ activityType, activityData, onComplete }: Activi
   const navigate = useNavigate()
 
   if (!activityData || activityData.type !== activityType) {
-    console.error('[EvidPhonics ActivityShell] Activity payload mismatch — lesson step will not advance.', {
+    console.error('[EvidPhonics ActivityShell] Activity payload mismatch, lesson step will not advance.', {
       expectedActivityType: activityType,
       receivedType: activityData?.type ?? '(no payload)',
       receivedId: activityData && 'id' in activityData ? activityData.id : undefined,

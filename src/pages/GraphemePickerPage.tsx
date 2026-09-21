@@ -34,10 +34,10 @@ const LOGO_MARK_MASK_STYLE: CSSProperties = {
 }
 
 const PHASE_SECTION_TITLE: Record<number, string> = {
-  2: 'Phase 2 — Basic Code',
-  3: 'Phase 3 — Digraphs',
-  4: 'Phase 4 — Consonant Clusters',
-  5: 'Phase 5 — Alternative Spellings',
+  2: 'Phase 2: Basic Code',
+  3: 'Phase 3: Digraphs',
+  4: 'Phase 4: Consonant Clusters',
+  5: 'Phase 5: Alternative Spellings',
 }
 
 const PHASE_SHORT_TITLE: Record<number, string> = {
@@ -334,7 +334,7 @@ export default function GraphemePickerPage() {
                 } `}
               >
                 {modalPhaseSelectedCount > 0
-                  ? `✓ Done — ${modalPhaseSelectedCount} grapheme${modalPhaseSelectedCount === 1 ? '' : 's'} added`
+                  ? `✓ Done: ${modalPhaseSelectedCount} grapheme${modalPhaseSelectedCount === 1 ? '' : 's'} added`
                   : modalGraphemes.length === 0
                     ? 'No graphemes yet'
                     : 'Select graphemes above'}

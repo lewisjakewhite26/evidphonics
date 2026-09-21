@@ -2,7 +2,7 @@
 
 import { BRAND_SURFACE } from '@/lib/brandAccent'
 
-/** Flat suite wash — single lavender surface, no multi-stop gradient. */
+/** Flat suite wash: single lavender surface, no multi-stop gradient. */
 export function SuitePageAmbient() {
   return (
     <div

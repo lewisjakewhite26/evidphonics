@@ -173,7 +173,7 @@
             "pat"
           ],
           "oddOneOut": 3,
-          "explanation": "'pat' starts with /p/ — the others all start with /s/!"
+          "explanation": "'pat' starts with /p/, but the others all start with /s/."
         },
         {
           "words": [
@@ -183,7 +183,7 @@
             "tip"
           ],
           "oddOneOut": 3,
-          "explanation": "'tip' starts with /t/ — the others all start with /s/!"
+          "explanation": "'tip' starts with /t/, but the others all start with /s/."
         },
         {
           "words": [
@@ -193,7 +193,7 @@
             "ant"
           ],
           "oddOneOut": 3,
-          "explanation": "'ant' starts with /a/ — the others all start with /s/!"
+          "explanation": "'ant' starts with /a/, but the others all start with /s/."
         }
       ],
       "writeItSentences": [
@@ -382,7 +382,7 @@
             "sit"
           ],
           "oddOneOut": 3,
-          "explanation": "'sit' has the short /i/ sound — the others all have the short /a/ sound!"
+          "explanation": "'sit' has the short /i/ sound, but the others all have the short /a/ sound."
         },
         {
           "words": [
@@ -392,7 +392,7 @@
             "hot"
           ],
           "oddOneOut": 3,
-          "explanation": "'hot' has the short /o/ sound — the others all have the short /a/ sound!"
+          "explanation": "'hot' has the short /o/ sound, but the others all have the short /a/ sound."
         },
         {
           "words": [
@@ -402,7 +402,7 @@
             "end"
           ],
           "oddOneOut": 3,
-          "explanation": "'end' has the short /e/ sound — the others all have the short /a/ sound!"
+          "explanation": "'end' has the short /e/ sound, but the others all have the short /a/ sound."
         }
       ],
       "writeItSentences": [
@@ -602,7 +602,7 @@
             "sap"
           ],
           "oddOneOut": 3,
-          "explanation": "'sap' starts with /s/ — the others all start with /t/!"
+          "explanation": "'sap' starts with /s/, but the others all start with /t/."
         },
         {
           "words": [
@@ -612,7 +612,7 @@
             "pan"
           ],
           "oddOneOut": 3,
-          "explanation": "'pan' starts with /p/ — the others all start with /t/!"
+          "explanation": "'pan' starts with /p/, but the others all start with /t/."
         },
         {
           "words": [
@@ -622,7 +622,7 @@
             "drop"
           ],
           "oddOneOut": 3,
-          "explanation": "'drop' starts with /d/ — the others all start with /t/!"
+          "explanation": "'drop' starts with /d/, but the others all start with /t/."
         }
       ],
       "writeItSentences": [
@@ -818,7 +818,7 @@
             "sat"
           ],
           "oddOneOut": 3,
-          "explanation": "'sat' starts with /s/ — the others all start with /p/!"
+          "explanation": "'sat' starts with /s/, but the others all start with /p/."
         },
         {
           "words": [
@@ -828,7 +828,7 @@
             "tan"
           ],
           "oddOneOut": 3,
-          "explanation": "'tan' starts with /t/ — the others all start with /p/!"
+          "explanation": "'tan' starts with /t/, but the others all start with /p/."
         },
         {
           "words": [
@@ -838,7 +838,7 @@
             "clan"
           ],
           "oddOneOut": 3,
-          "explanation": "'clan' starts with /cl/ — the others all start with /pl/!"
+          "explanation": "'clan' starts with /cl/, but the others all start with /pl/."
         }
       ],
       "writeItSentences": [
@@ -957,7 +957,8 @@
           "n",
           "s",
           "e",
-          "ct"
+          "c",
+          "t"
         ],
         "into": [
           "i",
@@ -1026,7 +1027,7 @@
             "bat"
           ],
           "oddOneOut": 3,
-          "explanation": "'bat' has the short /a/ sound — the others all have the short /i/ sound!"
+          "explanation": "'bat' has the short /a/ sound, but the others all have the short /i/ sound."
         },
         {
           "words": [
@@ -1036,7 +1037,7 @@
             "hot"
           ],
           "oddOneOut": 3,
-          "explanation": "'hot' has the short /o/ sound — the others all have the short /i/ sound!"
+          "explanation": "'hot' has the short /o/ sound, but the others all have the short /i/ sound."
         },
         {
           "words": [
@@ -1046,7 +1047,7 @@
             "at"
           ],
           "oddOneOut": 3,
-          "explanation": "'at' has the short /a/ sound — the others all have the short /i/ sound!"
+          "explanation": "'at' has the short /a/ sound, but the others all have the short /i/ sound."
         }
       ],
       "writeItSentences": [
@@ -1247,7 +1248,7 @@
             "set"
           ],
           "oddOneOut": 3,
-          "explanation": "'set' starts with /s/ — the others all start with /n/!"
+          "explanation": "'set' starts with /s/, but the others all start with /n/."
         },
         {
           "words": [
@@ -1257,7 +1258,7 @@
             "but"
           ],
           "oddOneOut": 3,
-          "explanation": "'but' starts with /b/ — the others all start with /n/!"
+          "explanation": "'but' starts with /b/, but the others all start with /n/."
         },
         {
           "words": [
@@ -1267,7 +1268,7 @@
             "clap"
           ],
           "oddOneOut": 3,
-          "explanation": "'clap' starts with /cl/ — the others all start with /sn/!"
+          "explanation": "'clap' starts with /cl/, but the others all start with /sn/."
         }
       ],
       "writeItSentences": [
@@ -1465,7 +1466,7 @@
             "tap"
           ],
           "oddOneOut": 3,
-          "explanation": "'tap' starts with /t/ — the others all start with /m/!"
+          "explanation": "'tap' starts with /t/, but the others all start with /m/."
         },
         {
           "words": [
@@ -1475,7 +1476,7 @@
             "bud"
           ],
           "oddOneOut": 3,
-          "explanation": "'bud' starts with /b/ — the others all start with /m/!"
+          "explanation": "'bud' starts with /b/, but the others all start with /m/."
         },
         {
           "words": [
@@ -1485,7 +1486,7 @@
             "fist"
           ],
           "oddOneOut": 3,
-          "explanation": "'fist' starts with /f/ — the others all start with /m/!"
+          "explanation": "'fist' starts with /f/, but the others all start with /m/."
         }
       ],
       "writeItSentences": [
@@ -1686,7 +1687,7 @@
             "log"
           ],
           "oddOneOut": 3,
-          "explanation": "'log' starts with /l/ — the others all start with /d/!"
+          "explanation": "'log' starts with /l/, but the others all start with /d/."
         },
         {
           "words": [
@@ -1696,7 +1697,7 @@
             "hen"
           ],
           "oddOneOut": 3,
-          "explanation": "'hen' starts with /h/ — the others all start with /d/!"
+          "explanation": "'hen' starts with /h/, but the others all start with /d/."
         },
         {
           "words": [
@@ -1706,7 +1707,7 @@
             "trim"
           ],
           "oddOneOut": 3,
-          "explanation": "'trim' starts with /tr/ — the others all start with /dr/!"
+          "explanation": "'trim' starts with /tr/, but the others all start with /dr/."
         }
       ],
       "writeItSentences": [
@@ -1905,7 +1906,7 @@
             "dot"
           ],
           "oddOneOut": 3,
-          "explanation": "'dot' starts with /d/ — the others all start with /g/!"
+          "explanation": "'dot' starts with /d/, but the others all start with /g/."
         },
         {
           "words": [
@@ -1915,7 +1916,7 @@
             "but"
           ],
           "oddOneOut": 3,
-          "explanation": "'but' starts with /b/ — the others all start with /g/!"
+          "explanation": "'but' starts with /b/, but the others all start with /g/."
         },
         {
           "words": [
@@ -1925,7 +1926,7 @@
             "trim"
           ],
           "oddOneOut": 3,
-          "explanation": "'trim' starts with /tr/ — the others all start with /gr/!"
+          "explanation": "'trim' starts with /tr/, but the others all start with /gr/."
         }
       ],
       "writeItSentences": [
@@ -2114,7 +2115,7 @@
             "hit"
           ],
           "oddOneOut": 3,
-          "explanation": "'hit' has the short /i/ sound — the others all have the short /o/ sound!"
+          "explanation": "'hit' has the short /i/ sound, but the others all have the short /o/ sound."
         },
         {
           "words": [
@@ -2124,7 +2125,7 @@
             "tip"
           ],
           "oddOneOut": 3,
-          "explanation": "'tip' has the short /i/ sound — the others all have the short /o/ sound!"
+          "explanation": "'tip' has the short /i/ sound, but the others all have the short /o/ sound."
         },
         {
           "words": [
@@ -2134,7 +2135,7 @@
             "an"
           ],
           "oddOneOut": 3,
-          "explanation": "'an' has the short /a/ sound — the others all have the short /o/ sound!"
+          "explanation": "'an' has the short /a/ sound, but the others all have the short /o/ sound."
         }
       ],
       "writeItSentences": [
@@ -2332,7 +2333,7 @@
             "pat"
           ],
           "oddOneOut": 3,
-          "explanation": "'pat' starts with /p/ — the others all start with /c/!"
+          "explanation": "'pat' starts with /p/, but the others all start with /c/."
         },
         {
           "words": [
@@ -2342,7 +2343,7 @@
             "pup"
           ],
           "oddOneOut": 3,
-          "explanation": "'pup' starts with /p/ — the others all start with /c/!"
+          "explanation": "'pup' starts with /p/, but the others all start with /c/."
         },
         {
           "words": [
@@ -2352,7 +2353,7 @@
             "flap"
           ],
           "oddOneOut": 3,
-          "explanation": "'flap' starts with /fl/ — the others all start with /cl/!"
+          "explanation": "'flap' starts with /fl/, but the others all start with /cl/."
         }
       ],
       "writeItSentences": [
@@ -2556,7 +2557,7 @@
             "bit"
           ],
           "oddOneOut": 3,
-          "explanation": "'bit' starts with /b/ — the others all start with /k/!"
+          "explanation": "'bit' starts with /b/, but the others all start with /k/."
         },
         {
           "words": [
@@ -2566,7 +2567,7 @@
             "mind"
           ],
           "oddOneOut": 3,
-          "explanation": "'mind' starts with /m/ — the others all start with /k/!"
+          "explanation": "'mind' starts with /m/, but the others all start with /k/."
         },
         {
           "words": [
@@ -2576,7 +2577,7 @@
             "drip"
           ],
           "oddOneOut": 3,
-          "explanation": "'drip' starts with /dr/ — the others all start with /sk/!"
+          "explanation": "'drip' starts with /dr/, but the others all start with /sk/."
         }
       ],
       "writeItSentences": [
@@ -2620,7 +2621,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -2792,7 +2793,7 @@
             "dug"
           ],
           "oddOneOut": 3,
-          "explanation": "'dug' ends with /g/ — the others all end with /ck/!"
+          "explanation": "'dug' ends with /g/, but the others all end with /ck/."
         },
         {
           "words": [
@@ -2802,7 +2803,7 @@
             "log"
           ],
           "oddOneOut": 3,
-          "explanation": "'log' ends with /g/ — the others all end with /ck/!"
+          "explanation": "'log' ends with /g/, but the others all end with /ck/."
         },
         {
           "words": [
@@ -2812,7 +2813,7 @@
             "bag"
           ],
           "oddOneOut": 3,
-          "explanation": "'bag' ends with /g/ — the others all end with /ck/!"
+          "explanation": "'bag' ends with /g/, but the others all end with /ck/."
         }
       ],
       "writeItSentences": [
@@ -2859,7 +2860,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -3030,7 +3031,7 @@
             "got"
           ],
           "oddOneOut": 3,
-          "explanation": "'got' has the short /o/ sound — the others all have the short /e/ sound!"
+          "explanation": "'got' has the short /o/ sound, but the others all have the short /e/ sound."
         },
         {
           "words": [
@@ -3040,7 +3041,7 @@
             "bid"
           ],
           "oddOneOut": 3,
-          "explanation": "'bid' has the short /i/ sound — the others all have the short /e/ sound!"
+          "explanation": "'bid' has the short /i/ sound, but the others all have the short /e/ sound."
         },
         {
           "words": [
@@ -3050,7 +3051,7 @@
             "old"
           ],
           "oddOneOut": 3,
-          "explanation": "'old' starts with the long /o/ sound — the others all have the short /e/ sound!"
+          "explanation": "'old' starts with the long /o/ sound, but the others all have the short /e/ sound."
         }
       ],
       "writeItSentences": [
@@ -3092,7 +3093,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -3261,7 +3262,7 @@
             "cap"
           ],
           "oddOneOut": 3,
-          "explanation": "'cap' has the short /a/ sound — the others all have the short /u/ sound!"
+          "explanation": "'cap' has the short /a/ sound, but the others all have the short /u/ sound."
         },
         {
           "words": [
@@ -3271,7 +3272,7 @@
             "ran"
           ],
           "oddOneOut": 3,
-          "explanation": "'ran' has the short /a/ sound — the others all have the short /u/ sound!"
+          "explanation": "'ran' has the short /a/ sound, but the others all have the short /u/ sound."
         },
         {
           "words": [
@@ -3281,7 +3282,7 @@
             "mad"
           ],
           "oddOneOut": 3,
-          "explanation": "'mad' has the short /a/ sound — the others all have the short /u/ sound!"
+          "explanation": "'mad' has the short /a/ sound, but the others all have the short /u/ sound."
         }
       ],
       "writeItSentences": [
@@ -3326,7 +3327,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -3503,7 +3504,7 @@
             "cat"
           ],
           "oddOneOut": 3,
-          "explanation": "'cat' starts with /c/ — the others all start with /r/!"
+          "explanation": "'cat' starts with /c/, but the others all start with /r/."
         },
         {
           "words": [
@@ -3513,7 +3514,7 @@
             "bug"
           ],
           "oddOneOut": 3,
-          "explanation": "'bug' starts with /b/ — the others all start with /r/!"
+          "explanation": "'bug' starts with /b/, but the others all start with /r/."
         },
         {
           "words": [
@@ -3523,7 +3524,7 @@
             "trip"
           ],
           "oddOneOut": 3,
-          "explanation": "'trip' starts with /tr/ — the others all start with /dr/!"
+          "explanation": "'trip' starts with /tr/, but the others all start with /dr/."
         }
       ],
       "writeItSentences": [
@@ -3566,7 +3567,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -3749,7 +3750,7 @@
             "bat"
           ],
           "oddOneOut": 3,
-          "explanation": "'bat' starts with /b/ — the others all start with /h/!"
+          "explanation": "'bat' starts with /b/, but the others all start with /h/."
         },
         {
           "words": [
@@ -3759,7 +3760,7 @@
             "ten"
           ],
           "oddOneOut": 3,
-          "explanation": "'ten' starts with /t/ — the others all start with /h/!"
+          "explanation": "'ten' starts with /t/, but the others all start with /h/."
         },
         {
           "words": [
@@ -3769,7 +3770,7 @@
             "bug"
           ],
           "oddOneOut": 3,
-          "explanation": "'bug' starts with /b/ — the others all start with /h/!"
+          "explanation": "'bug' starts with /b/, but the others all start with /h/."
         }
       ],
       "writeItSentences": [
@@ -3814,7 +3815,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -3998,7 +3999,7 @@
             "dag"
           ],
           "oddOneOut": 3,
-          "explanation": "'dag' starts with /d/ — the others all start with /b/!"
+          "explanation": "'dag' starts with /d/, but the others all start with /b/."
         },
         {
           "words": [
@@ -4008,7 +4009,7 @@
             "dig"
           ],
           "oddOneOut": 3,
-          "explanation": "'dig' starts with /d/ — the others all start with /b/!"
+          "explanation": "'dig' starts with /d/, but the others all start with /b/."
         },
         {
           "words": [
@@ -4018,7 +4019,7 @@
             "clot"
           ],
           "oddOneOut": 3,
-          "explanation": "'clot' starts with /cl/ — the others all start with /bl/ or /br/!"
+          "explanation": "'clot' starts with /cl/, but the others all start with /bl/ or /br/."
         }
       ],
       "writeItSentences": [
@@ -4063,7 +4064,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -4254,7 +4255,7 @@
             "bat"
           ],
           "oddOneOut": 3,
-          "explanation": "'bat' starts with /b/ — the others all start with /f/!"
+          "explanation": "'bat' starts with /b/, but the others all start with /f/."
         },
         {
           "words": [
@@ -4264,7 +4265,7 @@
             "ban"
           ],
           "oddOneOut": 3,
-          "explanation": "'ban' starts with /b/ — the others all start with /f/!"
+          "explanation": "'ban' starts with /b/, but the others all start with /f/."
         },
         {
           "words": [
@@ -4274,7 +4275,7 @@
             "clap"
           ],
           "oddOneOut": 3,
-          "explanation": "'clap' starts with /cl/ — the others all start with /fl/ or /fr/!"
+          "explanation": "'clap' starts with /cl/, but the others all start with /fl/ or /fr/."
         }
       ],
       "writeItSentences": [
@@ -4317,7 +4318,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -4517,7 +4518,7 @@
             "pub"
           ],
           "oddOneOut": 3,
-          "explanation": "'pub' ends with /b/ — the others all end with /ff/!"
+          "explanation": "'pub' ends with /b/, but the others all end with /ff/."
         },
         {
           "words": [
@@ -4527,7 +4528,7 @@
             "stab"
           ],
           "oddOneOut": 3,
-          "explanation": "'stab' ends with /b/ — the others all end with /ff/!"
+          "explanation": "'stab' ends with /b/, but the others all end with /ff/."
         },
         {
           "words": [
@@ -4537,7 +4538,7 @@
             "drip"
           ],
           "oddOneOut": 3,
-          "explanation": "'drip' ends with /p/ — the others all end with /ff/!"
+          "explanation": "'drip' ends with /p/, but the others all end with /ff/."
         }
       ],
       "writeItSentences": [
@@ -4585,7 +4586,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -4776,7 +4777,7 @@
             "peg"
           ],
           "oddOneOut": 3,
-          "explanation": "'peg' starts with /p/ — the others all start with /l/!"
+          "explanation": "'peg' starts with /p/, but the others all start with /l/."
         },
         {
           "words": [
@@ -4786,7 +4787,7 @@
             "dip"
           ],
           "oddOneOut": 3,
-          "explanation": "'dip' starts with /d/ — the others all start with /l/!"
+          "explanation": "'dip' starts with /d/, but the others all start with /l/."
         },
         {
           "words": [
@@ -4796,7 +4797,7 @@
             "clap"
           ],
           "oddOneOut": 3,
-          "explanation": "'clap' starts with /cl/ — the others all start with /fl/!"
+          "explanation": "'clap' starts with /cl/, but the others all start with /fl/."
         }
       ],
       "writeItSentences": [
@@ -4840,7 +4841,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -5027,7 +5028,7 @@
             "belt"
           ],
           "oddOneOut": 3,
-          "explanation": "'belt' ends with /t/ — the others all end with /ll/!"
+          "explanation": "'belt' ends with /t/, but the others all end with /ll/."
         },
         {
           "words": [
@@ -5037,7 +5038,7 @@
             "bat"
           ],
           "oddOneOut": 3,
-          "explanation": "'bat' ends with /t/ — the others all end with /ll/!"
+          "explanation": "'bat' ends with /t/, but the others all end with /ll/."
         },
         {
           "words": [
@@ -5047,7 +5048,7 @@
             "hit"
           ],
           "oddOneOut": 3,
-          "explanation": "'hit' ends with /t/ — the others all end with /ll/!"
+          "explanation": "'hit' ends with /t/, but the others all end with /ll/."
         }
       ],
       "writeItSentences": [
@@ -5092,7 +5093,7 @@
             1,
             2
           ],
-          "explanation": "The whole word is tricky at this stage!"
+          "explanation": "The whole word is tricky at this stage."
         },
         {
           "word": "to",
@@ -5283,7 +5284,7 @@
             "his"
           ],
           "oddOneOut": 3,
-          "explanation": "'his' ends with /s/ — the others all end with /ss/!"
+          "explanation": "'his' ends with /s/, but the others all end with /ss/."
         },
         {
           "words": [
@@ -5293,7 +5294,7 @@
             "met"
           ],
           "oddOneOut": 3,
-          "explanation": "'met' ends with /t/ — the others all end with /ss/!"
+          "explanation": "'met' ends with /t/, but the others all end with /ss/."
         },
         {
           "words": [
@@ -5303,7 +5304,7 @@
             "drip"
           ],
           "oddOneOut": 3,
-          "explanation": "'drip' ends with /p/ — the others all end with /ss/!"
+          "explanation": "'drip' ends with /p/, but the others all end with /ss/."
         }
       ],
       "writeItSentences": [

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ChevronRight } from 'lucide-react'
 
-/** Legacy API — main app uses sidebar. Kept for small in-app trails if needed. */
+/** Legacy API. Main app uses sidebar. Kept for small in-app trails if needed. */
 export function Breadcrumb({ items }: { items: { label: string; href?: string }[] }) {
   return (
     <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-xs px-lg py-sm text-label text-text-sub">

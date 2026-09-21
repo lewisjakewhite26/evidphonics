@@ -5,7 +5,7 @@ export const motionSpring: Transition = { type: 'spring', stiffness: 300, dampin
 
 export const motionInstant: Transition = { duration: 0 }
 
-/** Use with Framer Motion `useReducedMotion()` — respects system reduced-motion preference. */
+/** Use with Framer Motion `useReducedMotion()`. Respects system reduced-motion preference. */
 export function motionSpringOrInstant(reduceMotion: boolean | null): Transition {
   return reduceMotion ? motionInstant : motionSpring
 }

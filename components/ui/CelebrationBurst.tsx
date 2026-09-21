@@ -15,7 +15,7 @@ export interface CelebrationBurstProps {
 
 /**
  * Gentle “success” burst: soft purple glow, tiny dots and short pills in
- * brand primary / accent / success — fits Evid phonics without star shapes or emoji.
+ * brand primary / accent / success, fits Evid phonics without star shapes or emoji.
  */
 export function CelebrationBurst({ x, y, onComplete }: CelebrationBurstProps) {
   const particles = useMemo(

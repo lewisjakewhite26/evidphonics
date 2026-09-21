@@ -126,7 +126,7 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
             transition={{ duration: 0.25 }}
             className="text-center text-base font-semibold text-primary"
           >
-            Good try! Have another go.
+            Good try. Have another go.
           </motion.p>
         ) : null}
       </AnimatePresence>

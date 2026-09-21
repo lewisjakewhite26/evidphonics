@@ -129,7 +129,7 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
 
         {wrongHint && (
           <p className="text-center text-sm font-medium text-text-sub">
-            Nice try — listen again, then choose!
+            Nice try. Listen again, then choose.
           </p>
         )}
 
@@ -140,14 +140,14 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
             disabled={advanceLock}
             className="sm:max-w-xs sm:flex-1"
           >
-            ✅ They rhyme!
+            ✅ They rhyme
           </TactileButton>
           <TactileButton
             onClick={() => handleChoice(false)}
             disabled={advanceLock}
             className="sm:max-w-xs sm:flex-1"
           >
-            ❌ They don&apos;t rhyme!
+            ❌ They don&apos;t rhyme
           </TactileButton>
         </div>
       </div>

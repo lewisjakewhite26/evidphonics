@@ -1,6 +1,6 @@
 'use client'
 
-/** Legacy — lesson UI uses `LessonHeader` in `components/layout/`. */
+/** Legacy: lesson UI uses `LessonHeader` in `components/layout/`. */
 export function ActivityHeader() {
   return null
 }

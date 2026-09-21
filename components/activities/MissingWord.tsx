@@ -76,7 +76,7 @@ export function MissingWord({ data, onComplete }: MissingWordProps) {
       }, 1500)
     } else {
       setWrongKey(word)
-      setFeedback('Good try! Have another go.')
+      setFeedback('Good try. Have another go.')
       window.setTimeout(() => setWrongKey(null), 500)
     }
   }

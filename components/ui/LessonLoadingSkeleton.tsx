@@ -3,7 +3,7 @@
 import { LESSON_SHELL_ACCENT, LESSON_SHELL_BG } from '@/lib/lessonShellGradient'
 import { Skeleton } from '@/components/ui/Skeleton'
 
-/** Suspense fallback — mirrors lesson header + activity card layout. */
+/** Suspense fallback. Mirrors lesson header + activity card layout. */
 export function LessonLoadingSkeleton() {
   return (
     <div

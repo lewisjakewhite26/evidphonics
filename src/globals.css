@@ -83,7 +83,7 @@ body {
   }
 }
 
-/* Welcome hero — soft float + bounce on scroll hint */
+/* Welcome hero: soft float + bounce on scroll hint */
 @keyframes welcome-float {
   0%,
   100% {
@@ -101,7 +101,7 @@ body {
   animation: welcome-float 2.4s ease-in-out infinite;
 }
 
-/* EvidPhonics skeleton — sage shimmer */
+/* EvidPhonics skeleton: sage shimmer */
 @keyframes skeleton-shimmer {
   0% {
     background-position: 200% 0;
