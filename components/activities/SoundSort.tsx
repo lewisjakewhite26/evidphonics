@@ -2,8 +2,8 @@
 
 import { useCallback, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
+import { CaretLeft } from '@phosphor-icons/react'
 import type { AnchorWord, SoundSortData } from '@/data/types'
-import { speakWord } from '@/lib/audio'
 import { motionSpring } from '@/lib/celebrations'
 import { AudioButton } from '@/components/ui/AudioButton'
 import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
@@ -98,11 +98,28 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
     }
   }
 
+  /** Un-sort the previous word from whichever zone it landed in (words only ever advance on a
+   * correct placement, so sortWords[idx-1] is always exactly the most recently added chip). */
+  const handlePrevious = () => {
+    if (idx === 0) return
+    const prevWord = sortWords[idx - 1]
+    if (!prevWord) return
+    if (correctSideForWord(prevWord) === 0) {
+      setLeftChips((c) => c.slice(0, -1))
+    } else {
+      setRightChips((c) => c.slice(0, -1))
+    }
+    setShakeCard(false)
+    setIdx((i) => Math.max(0, i - 1))
+  }
+
   const completion = useMemo(() => {
     if (!finished) return null
     return (
-      <ActivityCardFrame emoji={data.emoji} title={data.title} instruction={data.instruction}>
+      <ActivityCardFrame activityType={data.type} title={data.title} instruction={data.instruction}>
         <motion.div
+          role="status"
+          aria-live="polite"
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={motionSpring}
@@ -144,11 +161,11 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
         </motion.div>
       </ActivityCardFrame>
     )
-  }, [finished, total, leftChips, rightChips, a0?.word, a1?.word, onComplete, data.emoji, data.title, data.instruction])
+  }, [finished, total, leftChips, rightChips, a0?.word, a1?.word, onComplete, data.type, data.title, data.instruction])
 
   if (!a0 || !a1 || sortWords.length === 0) {
     return (
-      <ActivityCardFrame emoji={data.emoji} title={data.title} instruction={data.instruction}>
+      <ActivityCardFrame activityType={data.type} title={data.title} instruction={data.instruction}>
         <p className="text-center text-sm text-text-sub">Sound Sort needs two anchor words and sort words.</p>
       </ActivityCardFrame>
     )
@@ -160,7 +177,7 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={
@@ -173,6 +190,20 @@ export function SoundSort({ data, onComplete }: SoundSortProps) {
           : undefined
       }
     >
+      {sortWords.length > 1 && idx > 0 && (
+        <div className="flex w-full justify-start">
+          <TactileButton
+            variant="ghost"
+            onClick={handlePrevious}
+            className="!px-4 !min-h-0 !py-2 !text-sm"
+          >
+            <span className="inline-flex items-center gap-1.5">
+              <CaretLeft className="h-4 w-4" />
+              Previous
+            </span>
+          </TactileButton>
+        </div>
+      )}
       <div className="relative flex min-h-[min(70vh,520px)] w-full flex-1 flex-row overflow-hidden rounded-xl border border-border">
         <button
           type="button"

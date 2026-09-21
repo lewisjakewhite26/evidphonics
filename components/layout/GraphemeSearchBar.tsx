@@ -2,8 +2,11 @@
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
 import { MagnifyingGlass, X } from '@phosphor-icons/react'
-import { allGraphemes, graphemeMap } from '@/data/graphemes'
-import type { GraphemeData } from '@/data/types'
+import {
+  ALL_GRAPHEME_INDEX as allGraphemes,
+  GRAPHEME_INDEX_MAP as graphemeMap,
+  type GraphemeIndexEntry,
+} from '@/data/graphemeIndex'
 import { GraphemeMark } from '@/components/ui/GraphemeMark'
 import { curriculumKey, searchGraphemes } from '@/lib/graphemeSearch'
 
@@ -38,7 +41,7 @@ export function GraphemeSearchBar({ selected, onToggle }: GraphemeSearchBarProps
   }, [showList, closeList])
 
   const handleToggle = useCallback(
-    (entry: GraphemeData) => {
+    (entry: GraphemeIndexEntry) => {
       onToggle(curriculumKey(entry))
       inputRef.current?.focus()
     },

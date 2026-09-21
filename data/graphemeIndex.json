@@ -1,0 +1,503 @@
+{
+  "byPhase": {
+    "2": [
+      {
+        "grapheme": "s",
+        "keyword": "sun",
+        "phase": 2
+      },
+      {
+        "grapheme": "a",
+        "keyword": "apple",
+        "phase": 2
+      },
+      {
+        "grapheme": "t",
+        "keyword": "tap",
+        "phase": 2
+      },
+      {
+        "grapheme": "p",
+        "keyword": "pig",
+        "phase": 2
+      },
+      {
+        "grapheme": "i",
+        "keyword": "ink",
+        "phase": 2
+      },
+      {
+        "grapheme": "n",
+        "keyword": "net",
+        "phase": 2
+      },
+      {
+        "grapheme": "m",
+        "keyword": "mouse",
+        "phase": 2
+      },
+      {
+        "grapheme": "d",
+        "keyword": "dog",
+        "phase": 2
+      },
+      {
+        "grapheme": "g",
+        "keyword": "goat",
+        "phase": 2
+      },
+      {
+        "grapheme": "o",
+        "keyword": "orange",
+        "phase": 2
+      },
+      {
+        "grapheme": "c",
+        "keyword": "cat",
+        "phase": 2
+      },
+      {
+        "grapheme": "k",
+        "keyword": "kite",
+        "phase": 2
+      },
+      {
+        "grapheme": "ck",
+        "keyword": "duck",
+        "phase": 2
+      },
+      {
+        "grapheme": "e",
+        "keyword": "egg",
+        "phase": 2
+      },
+      {
+        "grapheme": "u",
+        "keyword": "umbrella",
+        "phase": 2
+      },
+      {
+        "grapheme": "r",
+        "keyword": "rat",
+        "phase": 2
+      },
+      {
+        "grapheme": "h",
+        "keyword": "hat",
+        "phase": 2
+      },
+      {
+        "grapheme": "b",
+        "keyword": "bag",
+        "phase": 2
+      },
+      {
+        "grapheme": "f",
+        "keyword": "fish",
+        "phase": 2
+      },
+      {
+        "grapheme": "ff",
+        "keyword": "puff",
+        "phase": 2
+      },
+      {
+        "grapheme": "l",
+        "keyword": "leg",
+        "phase": 2
+      },
+      {
+        "grapheme": "ll",
+        "keyword": "bell",
+        "phase": 2
+      },
+      {
+        "grapheme": "ss",
+        "keyword": "hiss",
+        "phase": 2
+      }
+    ],
+    "3": [
+      {
+        "grapheme": "j",
+        "keyword": "jam",
+        "phase": 3
+      },
+      {
+        "grapheme": "v",
+        "keyword": "van",
+        "phase": 3
+      },
+      {
+        "grapheme": "w",
+        "keyword": "web",
+        "phase": 3
+      },
+      {
+        "grapheme": "x",
+        "keyword": "fox",
+        "phase": 3
+      },
+      {
+        "grapheme": "y",
+        "keyword": "yes",
+        "phase": 3
+      },
+      {
+        "grapheme": "z",
+        "keyword": "zip",
+        "phase": 3
+      },
+      {
+        "grapheme": "zz",
+        "keyword": "buzz",
+        "phase": 3
+      },
+      {
+        "grapheme": "qu",
+        "keyword": "queen",
+        "phase": 3
+      },
+      {
+        "grapheme": "ch",
+        "keyword": "chip",
+        "phase": 3
+      },
+      {
+        "grapheme": "sh",
+        "keyword": "shop",
+        "phase": 3
+      },
+      {
+        "grapheme": "th",
+        "keyword": "thing",
+        "phase": 3
+      },
+      {
+        "grapheme": "ng",
+        "keyword": "ring",
+        "phase": 3
+      },
+      {
+        "grapheme": "ai",
+        "keyword": "rain",
+        "phase": 3
+      },
+      {
+        "grapheme": "ee",
+        "keyword": "feet",
+        "phase": 3
+      },
+      {
+        "grapheme": "igh",
+        "keyword": "night",
+        "phase": 3
+      },
+      {
+        "grapheme": "oa",
+        "keyword": "boat",
+        "phase": 3
+      },
+      {
+        "grapheme": "oo-short",
+        "keyword": "book",
+        "phase": 3
+      },
+      {
+        "grapheme": "oo-long",
+        "keyword": "moon",
+        "phase": 3
+      },
+      {
+        "grapheme": "ar",
+        "keyword": "farm",
+        "phase": 3
+      },
+      {
+        "grapheme": "or",
+        "keyword": "fork",
+        "phase": 3
+      },
+      {
+        "grapheme": "ur",
+        "keyword": "surf",
+        "phase": 3
+      },
+      {
+        "grapheme": "ow",
+        "keyword": "cow",
+        "phase": 3
+      },
+      {
+        "grapheme": "oi",
+        "keyword": "coin",
+        "phase": 3
+      },
+      {
+        "grapheme": "ear",
+        "keyword": "near",
+        "phase": 3
+      },
+      {
+        "grapheme": "air",
+        "keyword": "fair",
+        "phase": 3
+      },
+      {
+        "grapheme": "ure",
+        "keyword": "sure",
+        "phase": 3
+      },
+      {
+        "grapheme": "er",
+        "keyword": "hammer",
+        "phase": 3
+      }
+    ],
+    "4": [
+      {
+        "grapheme": "s",
+        "keyword": "step",
+        "phase": 4,
+        "id": "s-p4"
+      },
+      {
+        "grapheme": "t",
+        "keyword": "trip",
+        "phase": 4,
+        "id": "t-p4"
+      },
+      {
+        "grapheme": "p",
+        "keyword": "plug",
+        "phase": 4,
+        "id": "p-p4"
+      },
+      {
+        "grapheme": "n",
+        "keyword": "snap",
+        "phase": 4,
+        "id": "n-p4"
+      },
+      {
+        "grapheme": "m",
+        "keyword": "drip",
+        "phase": 4,
+        "id": "m-p4"
+      },
+      {
+        "grapheme": "d",
+        "keyword": "drip",
+        "phase": 4,
+        "id": "d-p4"
+      },
+      {
+        "grapheme": "g",
+        "keyword": "grip",
+        "phase": 4,
+        "id": "g-p4"
+      },
+      {
+        "grapheme": "l",
+        "keyword": "clap",
+        "phase": 4,
+        "id": "l-p4"
+      },
+      {
+        "grapheme": "f",
+        "keyword": "frog",
+        "phase": 4,
+        "id": "f-p4"
+      },
+      {
+        "grapheme": "r",
+        "keyword": "grip",
+        "phase": 4,
+        "id": "r-p4"
+      },
+      {
+        "grapheme": "sh",
+        "keyword": "shelf",
+        "phase": 4,
+        "id": "sh-p4"
+      },
+      {
+        "grapheme": "th",
+        "keyword": "thick",
+        "phase": 4,
+        "id": "th-p4"
+      },
+      {
+        "grapheme": "ch",
+        "keyword": "chest",
+        "phase": 4,
+        "id": "ch-p4"
+      },
+      {
+        "grapheme": "ng",
+        "keyword": "string",
+        "phase": 4,
+        "id": "ng-p4"
+      },
+      {
+        "grapheme": "ee",
+        "keyword": "street",
+        "phase": 4,
+        "id": "ee-p4"
+      },
+      {
+        "grapheme": "ai",
+        "keyword": "train",
+        "phase": 4,
+        "id": "ai-p4"
+      },
+      {
+        "grapheme": "oa",
+        "keyword": "float",
+        "phase": 4,
+        "id": "oa-p4"
+      },
+      {
+        "grapheme": "oo",
+        "keyword": "drool",
+        "phase": 4,
+        "id": "oo-long-p4"
+      },
+      {
+        "grapheme": "ar",
+        "keyword": "scarf",
+        "phase": 4,
+        "id": "ar-p4"
+      },
+      {
+        "grapheme": "or",
+        "keyword": "storm",
+        "phase": 4,
+        "id": "or-p4"
+      }
+    ],
+    "5": [
+      {
+        "grapheme": "ay",
+        "keyword": "play",
+        "phase": 5
+      },
+      {
+        "grapheme": "ou",
+        "keyword": "cloud",
+        "phase": 5
+      },
+      {
+        "grapheme": "ie",
+        "keyword": "tie",
+        "phase": 5
+      },
+      {
+        "grapheme": "ea",
+        "keyword": "beach",
+        "phase": 5
+      },
+      {
+        "grapheme": "oy",
+        "keyword": "boy",
+        "phase": 5
+      },
+      {
+        "grapheme": "ir",
+        "keyword": "bird",
+        "phase": 5
+      },
+      {
+        "grapheme": "ue",
+        "keyword": "blue",
+        "phase": 5
+      },
+      {
+        "grapheme": "aw",
+        "keyword": "claw",
+        "phase": 5
+      },
+      {
+        "grapheme": "wh",
+        "keyword": "wheel",
+        "phase": 5
+      },
+      {
+        "grapheme": "ph",
+        "keyword": "phone",
+        "phase": 5
+      },
+      {
+        "grapheme": "ew",
+        "keyword": "grew",
+        "phase": 5
+      },
+      {
+        "grapheme": "oe",
+        "keyword": "toe",
+        "phase": 5
+      },
+      {
+        "grapheme": "au",
+        "keyword": "sauce",
+        "phase": 5
+      },
+      {
+        "grapheme": "a-e",
+        "keyword": "cake",
+        "phase": 5
+      },
+      {
+        "grapheme": "i-e",
+        "keyword": "kite",
+        "phase": 5
+      },
+      {
+        "grapheme": "o-e",
+        "keyword": "home",
+        "phase": 5
+      },
+      {
+        "grapheme": "u-e",
+        "keyword": "cube",
+        "phase": 5
+      },
+      {
+        "grapheme": "e-e",
+        "keyword": "these",
+        "phase": 5
+      },
+      {
+        "grapheme": "ey",
+        "keyword": "monkey",
+        "phase": 5
+      },
+      {
+        "grapheme": "eigh",
+        "keyword": "eight",
+        "phase": 5
+      },
+      {
+        "grapheme": "aigh",
+        "keyword": "straight",
+        "phase": 5
+      },
+      {
+        "grapheme": "ough",
+        "keyword": "through",
+        "phase": 5
+      }
+    ]
+  },
+  "activityAllowlist": {
+    "4": [
+      "speedySounds",
+      "soundBlender",
+      "missingSound",
+      "missingWord",
+      "oddOneOut",
+      "wordBuilder",
+      "writeIt"
+    ]
+  }
+}

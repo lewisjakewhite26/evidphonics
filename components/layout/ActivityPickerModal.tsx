@@ -18,8 +18,12 @@ import {
   WarningOctagon,
   Waveform,
 } from '@phosphor-icons/react'
-import { graphemeMap, intersectActivityAllowlistForSelection } from '@/data/graphemes'
-import type { ActivityType, GraphemeData } from '@/data/types'
+import {
+  GRAPHEME_INDEX_MAP as graphemeMap,
+  intersectActivityAllowlistForIndexSelection as intersectActivityAllowlistForSelection,
+  type GraphemeIndexEntry,
+} from '@/data/graphemeIndex'
+import type { ActivityType } from '@/data/types'
 import { GraphemeMark } from '@/components/ui/GraphemeMark'
 import { ACTIVITY_LABELS, ACTIVITY_ORDER, sortActivitiesByPedagogy } from '@/lib/lessonConstants'
 import { useModalFocusTrap } from '@/src/hooks/useModalFocusTrap'
@@ -45,7 +49,7 @@ const ACTIVITY_ICONS: Record<ActivityType, Icon> = {
 /** Mirrors `buildLessonFromGraphemes` activity inclusion rules (type-level only). */
 function isActivityAvailable(
   type: ActivityType,
-  selection: GraphemeData[],
+  selection: GraphemeIndexEntry[],
   phaseAllow: Set<ActivityType> | null,
 ): boolean {
   if (phaseAllow !== null && !phaseAllow.has(type)) return false
@@ -76,7 +80,7 @@ export function ActivityPickerModal({ open, graphemeIds, onClose, onStartLesson 
   useModalFocusTrap(open, dialogRef, onClose)
 
   const selectionData = useMemo(
-    () => graphemeIds.map((id) => graphemeMap.get(id)).filter((g): g is GraphemeData => Boolean(g)),
+    () => graphemeIds.map((id) => graphemeMap.get(id)).filter((g): g is GraphemeIndexEntry => Boolean(g)),
     [graphemeIds],
   )
 

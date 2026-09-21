@@ -44,7 +44,7 @@ export function WordSplitter({ data, onComplete }: WordSplitterProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={total > 1 ? { current: idx + 1, total } : undefined}

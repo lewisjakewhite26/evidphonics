@@ -74,7 +74,6 @@ export interface SpeedySoundsData {
   id: string
   type: 'speedySounds'
   title: string
-  emoji: string
   instruction: string
   graphemes: Grapheme[]
 }
@@ -83,7 +82,6 @@ export interface SoundBlenderData {
   id: string
   type: 'soundBlender'
   title: string
-  emoji: string
   instruction: string
   words: BlendWord[]
 }
@@ -92,7 +90,6 @@ export interface TrickyTrapData {
   id: string
   type: 'trickyTrap'
   title: string
-  emoji: string
   instruction: string
   words: TrickyWord[]
 }
@@ -101,7 +98,6 @@ export interface MissingSoundData {
   id: string
   type: 'missingSound'
   title: string
-  emoji: string
   instruction: string
   words: MissingSoundWord[]
 }
@@ -110,7 +106,6 @@ export interface RhymeTimeData {
   id: string
   type: 'rhymeTime'
   title: 'Rhyme Time'
-  emoji: '🎵'
   instruction: string
   pairs: Array<{
     word1: string
@@ -123,7 +118,6 @@ export interface SoundSortData {
   id: string
   type: 'soundSort'
   title: string
-  emoji: string
   instruction: string
   anchorWords: AnchorWord[]
   sortWords: SortWord[]
@@ -133,7 +127,6 @@ export interface AlienOrRealData {
   id: string
   type: 'alienOrReal'
   title: string
-  emoji: string
   instruction: string
   words: { word: string; isReal: boolean; audioUrl?: string }[]
 }
@@ -142,7 +135,6 @@ export interface WriteItData {
   id: string
   type: 'writeIt'
   title: string
-  emoji: string
   instruction: string
   sentences: DictationSentence[]
 }
@@ -151,7 +143,6 @@ export interface QuickReviewData {
   id: string
   type: 'quickReview'
   title: string
-  emoji: string
   instruction: string
   words: string[]
 }
@@ -160,7 +151,6 @@ export interface MissingWordData {
   id: string
   type: 'missingWord'
   title: string
-  emoji: string
   instruction: string
   sentences: {
     text: string
@@ -175,7 +165,6 @@ export interface OddOneOutData {
   id: string
   type: 'oddOneOut'
   title: string
-  emoji: string
   instruction: string
   sets: {
     words: string[]
@@ -188,7 +177,6 @@ export interface WordBuilderData {
   id: string
   type: 'wordBuilder'
   title: string
-  emoji: string
   instruction: string
   words: {
     word: string
@@ -209,7 +197,6 @@ export interface WordChangerData {
   id: string
   type: 'wordChanger'
   title: 'Word Changer'
-  emoji: '🔄'
   instruction: string
   steps: WordChangerStep[]
 }
@@ -225,7 +212,6 @@ export interface WordSplitterData {
   id: string
   type: 'wordSplitter'
   title: 'Word Splitter'
-  emoji: '✂️'
   instruction: string
   items: WordSplitterItem[]
 }
@@ -240,7 +226,6 @@ export interface MeaningMatchData {
   id: string
   type: 'meaningMatch'
   title: 'Meaning Match'
-  emoji: '🧩'
   instruction: string
   pairs: MeaningMatchPair[]
 }
@@ -258,7 +243,6 @@ export interface RootHuntData {
   id: string
   type: 'rootHunt'
   title: 'Root Hunt'
-  emoji: '🔍'
   instruction: string
   items: RootHuntItem[]
 }
@@ -277,7 +261,8 @@ export type Activity =
   | OddOneOutData
   | WordBuilderData
 
-/** Canonical phonics curriculum phase ids (matches bundled phase JSON). */
+/** Canonical phonics curriculum phase ids (matches bundled phase JSON). Stops at 5 on purpose:
+ * Phase 6 (morphology) is EvidLex's phase, not EvidPhonics's — see data/graphemes.ts. */
 export type CurriculumPhaseNumber = 2 | 3 | 4 | 5
 
 export interface LessonData {

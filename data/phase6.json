@@ -2509,12 +2509,10 @@
       "words": [
         "lamb",
         "climb",
-        "bomb",
         "thumb",
         "comb",
         "crumb",
         "limb",
-        "dumb",
         "numb",
         "tomb",
         "womb",
@@ -2526,12 +2524,10 @@
       "alienWords": [
         "lambt",
         "climbt",
-        "bombt",
         "thumbt",
         "combt",
         "crumbt",
-        "limbt",
-        "dumbt"
+        "limbt"
       ],
       "segments": {
         "lamb": [
@@ -2543,11 +2539,6 @@
           "c",
           "l",
           "i",
-          "mb"
-        ],
-        "bomb": [
-          "b",
-          "o",
           "mb"
         ],
         "thumb": [
@@ -2569,11 +2560,6 @@
         "limb": [
           "l",
           "i",
-          "mb"
-        ],
-        "dumb": [
-          "d",
-          "u",
           "mb"
         ],
         "numb": [
@@ -2629,7 +2615,7 @@
           "options": [
             "lamb",
             "limb",
-            "bomb"
+            "comb"
           ]
         },
         {
@@ -2648,7 +2634,7 @@
           "missingIndex": 3,
           "options": [
             "thumb",
-            "bomb",
+            "numb",
             "comb"
           ]
         },
@@ -2669,7 +2655,7 @@
             "lamb",
             "climb",
             "knife",
-            "bomb"
+            "numb"
           ],
           "oddOneOut": 2,
           "explanation": "'knife' has the silent /kn/, but the others all have the silent /mb/."
@@ -2687,7 +2673,7 @@
         {
           "words": [
             "limb",
-            "dumb",
+            "tomb",
             "numb",
             "gnome"
           ],
@@ -2727,10 +2713,6 @@
           "cli",
           "mb"
         ],
-        "bomb": [
-          "bo",
-          "mb"
-        ],
         "thumb": [
           "thu",
           "mb"
@@ -2745,10 +2727,6 @@
         ],
         "limb": [
           "li",
-          "mb"
-        ],
-        "dumb": [
-          "du",
           "mb"
         ],
         "numb": [
@@ -2776,12 +2754,10 @@
       "roots": {
         "lamb": "lamb",
         "climb": "climb",
-        "bomb": "bomb",
         "thumb": "thumb",
         "comb": "comb",
         "crumb": "crumb",
         "limb": "limb",
-        "dumb": "dumb",
         "numb": "numb",
         "tomb": "tomb",
         "womb": "womb",

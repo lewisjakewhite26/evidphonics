@@ -37,7 +37,7 @@ export function QuickReview({ data, onComplete }: QuickReviewProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={total > 1 ? { current: clickedWords.size, total } : undefined}

@@ -1,26 +1,28 @@
 'use client'
 
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { motion, useReducedMotion } from 'framer-motion'
+import { X } from '@phosphor-icons/react'
 import { ActivityType } from '@/data/types'
 import { motionSpringOrInstant } from '@/lib/celebrations'
 import { LESSON_SHELL_ACCENT } from '@/lib/lessonShellGradient'
+import { ACTIVITY_ICONS, DEFAULT_ACTIVITY_ICON } from '@/lib/activityIcons'
 import { useModalFocusTrap } from '@/src/hooks/useModalFocusTrap'
 
-const ACTIVITY_LABELS: Record<ActivityType, { title: string; emoji: string }> = {
-  speedySounds: { title: 'Speedy Sounds', emoji: '🎵' },
-  soundBlender: { title: 'Sound Blender', emoji: '🚀' },
-  trickyTrap: { title: 'Tricky Trap', emoji: '💡' },
-  missingSound: { title: 'Missing Sound', emoji: '🔍' },
-  rhymeTime: { title: 'Rhyme Time', emoji: '🎵' },
-  soundSort: { title: 'Sound Sort', emoji: '🎯' },
-  alienOrReal: { title: 'Alien or Real?', emoji: '👽' },
-  writeIt: { title: 'Write It', emoji: '✍️' },
-  quickReview: { title: 'Quick Review', emoji: '⚡' },
-  missingWord: { title: 'Missing Word', emoji: '📝' },
-  oddOneOut: { title: 'Odd One Out', emoji: '🔎' },
-  wordBuilder: { title: 'Word Builder', emoji: '🧱' },
+const ACTIVITY_TITLES: Record<ActivityType, string> = {
+  speedySounds: 'Speedy Sounds',
+  soundBlender: 'Sound Blender',
+  trickyTrap: 'Tricky Trap',
+  missingSound: 'Missing Sound',
+  rhymeTime: 'Rhyme Time',
+  soundSort: 'Sound Sort',
+  alienOrReal: 'Alien or Real?',
+  writeIt: 'Write It',
+  quickReview: 'Quick Review',
+  missingWord: 'Missing Word',
+  oddOneOut: 'Odd One Out',
+  wordBuilder: 'Word Builder',
 }
 
 interface LessonHeaderProps {
@@ -46,12 +48,27 @@ export default function LessonHeader({
 
   useModalFocusTrap(exitConfirmOpen, exitPanelRef, dismissConfirm)
 
+  /** Escape opens the exit-confirm dialog from anywhere in the lesson; once open, useModalFocusTrap's
+   * own Escape handler closes it again, so this only needs to handle the closed -> open direction. */
+  useEffect(() => {
+    if (exitConfirmOpen) return
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return
+      const target = e.target as HTMLElement | null
+      if (target && /^(input|textarea|select)$/i.test(target.tagName)) return
+      setExitConfirmOpen(true)
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => document.removeEventListener('keydown', onKeyDown)
+  }, [exitConfirmOpen])
+
   const confirmExit = useCallback(() => {
     setExitConfirmOpen(false)
     onExit()
   }, [onExit])
 
-  const info = ACTIVITY_LABELS[activityType] ?? { title: 'Activity', emoji: '📚' }
+  const title = ACTIVITY_TITLES[activityType] ?? 'Activity'
+  const Icon = ACTIVITY_ICONS[activityType] ?? DEFAULT_ACTIVITY_ICON
   const progressPct = totalCount > 0 ? (completedCount / totalCount) * 100 : 0
 
   return (
@@ -71,14 +88,12 @@ export default function LessonHeader({
           aria-expanded={exitConfirmOpen}
           title="End lesson"
         >
-          <span className="relative z-10 text-label text-primary">✕</span>
+          <X className="relative z-10 h-5 w-5 text-primary" weight="bold" aria-hidden />
         </button>
 
         <div className="flex min-w-0 flex-1 items-center justify-center gap-sm">
-          <span className="text-[18px]" aria-hidden>
-            {info.emoji}
-          </span>
-          <span className="truncate text-subheading font-bold text-ink">{info.title}</span>
+          <Icon className="h-5 w-5 text-primary" weight="duotone" aria-hidden />
+          <span className="truncate text-subheading font-bold text-ink">{title}</span>
         </div>
 
         <div className="flex flex-shrink-0 items-center gap-sm">

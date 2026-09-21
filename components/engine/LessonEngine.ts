@@ -12,6 +12,7 @@ import type {
 } from '@/data/types'
 import { intersectActivityAllowlistForSelection } from '@/data/graphemes'
 import { graphemeAudioUrl, normalizeAudioFilename, wordAudioUrl } from '@/lib/audioPaths'
+import { rimeKey } from '@/lib/rhyme'
 import { shuffle } from '@/lib/utils'
 
 const CHECKLIST = ['Capital letter', 'Finger spaces', 'Full stop'] as [string, string, string]
@@ -191,7 +192,7 @@ function chooseWordBuilderTiles(
   }
 
   const unique = [...new Set(pool)]
-  let distractors = sample(
+  const distractors = sample(
     unique.filter((d) => !used.has(d.toLowerCase())),
     3,
   )
@@ -325,11 +326,6 @@ function buildMissingSoundWords(
   return words.slice(0, 4)
 }
 
-function rimeKey(w: string): string {
-  const s = w.toLowerCase().replace(/[^a-z]/g, '')
-  if (s.length <= 2) return s
-  return s.slice(-3)
-}
 
 function pairDedupeKey(a: string, b: string): string {
   return a <= b ? `${a}|${b}` : `${b}|${a}`
@@ -387,8 +383,8 @@ function buildRhymeTimePairs(
     nonOptions.push({ word1: w1, word2: w2, rhymes: false })
   }
 
-  let rhymeSel = shuffle([...rhymeOptions]).slice(0, targetRhyme)
-  let nonSel = shuffle([...nonOptions]).slice(0, targetNon)
+  const rhymeSel = shuffle([...rhymeOptions]).slice(0, targetRhyme)
+  const nonSel = shuffle([...nonOptions]).slice(0, targetNon)
 
   let guard = 0
   while (rhymeSel.length < targetRhyme && rhymeOptions.length > 0 && guard++ < 50) {
@@ -414,7 +410,7 @@ function buildRhymeTimePairs(
     nonSel.push({ word1: w1, word2: w2, rhymes: false })
   }
 
-  let combined = shuffle([...rhymeSel, ...nonSel])
+  const combined = shuffle([...rhymeSel, ...nonSel])
 
   guard = 0
   while (combined.length < totalPairs && focus.length >= 2 && guard++ < 40) {
@@ -769,7 +765,6 @@ export function buildLessonFromGraphemes(
     id: `${idSlug}-speedySounds`,
     type: 'speedySounds' as const,
     title: 'Speedy Sounds',
-    emoji: '🎵',
     instruction: 'Say the sound when the card flips.',
     graphemes: [...speedyCore, ...speedyRevisionObjs],
   }
@@ -787,7 +782,6 @@ export function buildLessonFromGraphemes(
     id: `${idSlug}-soundBlender`,
     type: 'soundBlender' as const,
     title: 'Sound Blender',
-    emoji: '🚀',
     instruction: 'Drag the rocket to blend the sounds.',
     words: blendWords.map((word) => ({
       word,
@@ -811,7 +805,6 @@ export function buildLessonFromGraphemes(
           id: `${idSlug}-trickyTrap`,
           type: 'trickyTrap' as const,
           title: 'Tricky Trap',
-          emoji: '💡',
           instruction: 'Tap the word to find the tricky part.',
           words: trickyTrapSlice.map((entry) => ({
             word: entry.word,
@@ -834,7 +827,6 @@ export function buildLessonFromGraphemes(
     id: `${idSlug}-missingSound`,
     type: 'missingSound' as const,
     title: 'Missing Sound',
-    emoji: '🔍',
     instruction: 'Tap the grapheme that completes the word.',
     words: missingSoundWords,
   }
@@ -850,7 +842,6 @@ export function buildLessonFromGraphemes(
     id: `${idSlug}-rhymeTime`,
     type: 'rhymeTime' as const,
     title: 'Rhyme Time' as const,
-    emoji: '🎵' as const,
     instruction: 'Listen to both words. Do they rhyme?',
     pairs: rhymePairs,
   } satisfies RhymeTimeData
@@ -865,7 +856,6 @@ export function buildLessonFromGraphemes(
             id: `${idSlug}-soundSort`,
             type: 'soundSort' as const,
             title: 'Sound Sort',
-            emoji: '🎯',
             instruction: 'Sort the words into the correct sound zone.',
             anchorWords: [
               {
@@ -900,7 +890,6 @@ export function buildLessonFromGraphemes(
             id: `${idSlug}-soundSort`,
             type: 'soundSort' as const,
             title: 'Sound Sort',
-            emoji: '🎯',
             instruction: 'Sort the words into the correct sound zone.',
             anchorWords: [
               {
@@ -953,7 +942,6 @@ export function buildLessonFromGraphemes(
     id: `${idSlug}-alienOrReal`,
     type: 'alienOrReal' as const,
     title: 'Alien or Real?',
-    emoji: '👽',
     instruction: 'Is it a real word or an alien word?',
     words: alienOrRealWords.map((entry) => ({ ...entry, audioUrl: wordAudioUrl(entry.word) })),
   }
@@ -963,7 +951,6 @@ export function buildLessonFromGraphemes(
     id: `${idSlug}-writeIt`,
     type: 'writeIt',
     title: 'Write It',
-    emoji: '✍️',
     instruction: 'Listen, then write the sentence.',
     sentences: writeItSentences.map((sentence) => ({
       ...sentence,
@@ -977,7 +964,6 @@ export function buildLessonFromGraphemes(
     id: `${idSlug}-quickReview`,
     type: 'quickReview' as const,
     title: 'Quick Review',
-    emoji: '⚡',
     instruction: 'Click each word and read it aloud.',
     words: quickReviewWords,
   }
@@ -987,7 +973,6 @@ export function buildLessonFromGraphemes(
     id: `${idSlug}-missingWord`,
     type: 'missingWord' as const,
     title: 'Missing Word',
-    emoji: '📝',
     instruction: 'Which word completes the sentence?',
     sentences: missingWordSentences.map((sentence) => ({
       ...sentence,
@@ -1000,7 +985,6 @@ export function buildLessonFromGraphemes(
     id: `${idSlug}-oddOneOut`,
     type: 'oddOneOut' as const,
     title: 'Odd One Out',
-    emoji: '🔎',
     instruction: 'Three words share a sound. Which one is different?',
     sets: oddOneOutSets,
   }
@@ -1016,7 +1000,6 @@ export function buildLessonFromGraphemes(
     id: `${idSlug}-wordBuilder`,
     type: 'wordBuilder',
     title: 'Word Builder',
-    emoji: '🧱',
     instruction: 'Build the word using the sound tiles.',
     words: chosenBuilderWords.map((word) => {
       const tiles = chooseWordBuilderTiles(word, merged, allGraphemes)

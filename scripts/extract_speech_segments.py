@@ -31,20 +31,21 @@ WRITE_IT_CHECKLIST = ("Capital letter", "Finger spaces", "Full stop")
 # Feedback / encouragement shown in activities (for future spoken feedback TTS)
 STATIC_FEEDBACK = (
     "Well done!",
-    "Good try! Have another go.",
-    "Good try — look for the sound that is different.",
+    "Good try. Have another go.",
+    "Good try. Look for the sound that is different.",
     "Correct! That's a real word!",
     "Correct! That's an alien word!",
-    "That's actually a real word!",
-    "That's actually an alien word!",
+    "That's actually a real word.",
+    "That's actually an alien word.",
+    "Nice try. Listen again, then choose.",
 )
 
 # Activity UI copy (displayed today; included for future spoken feedback)
 STATIC_UI_FEEDBACK = (
     "Found it! That's the odd one out.",
     "Sorting complete!",
-    "Complete! You blended all the sounds!",
-    "Start dragging to blend the sounds!",
+    "Complete. You blended all the sounds! 🎉",
+    "Start dragging to blend the sounds.",
     "What happened?",
 )
 

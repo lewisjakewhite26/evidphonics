@@ -44,7 +44,7 @@ export function SpeedySounds({ data, onComplete }: SpeedySoundsProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={

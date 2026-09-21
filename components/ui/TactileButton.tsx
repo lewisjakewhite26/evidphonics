@@ -3,6 +3,7 @@
 import type { MouseEventHandler, ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { motionSpring } from '@/lib/celebrations'
+import { HotkeyBadge } from '@/components/ui/HotkeyBadge'
 
 interface TactileButtonProps {
   children: ReactNode
@@ -13,6 +14,8 @@ interface TactileButtonProps {
   className?: string
   type?: 'button' | 'submit'
   'aria-label'?: string
+  /** 1–9: shows a corner number badge and lets the matching number key click this button. */
+  hotkey?: number
 }
 
 const variantBase =
@@ -27,6 +30,7 @@ export function TactileButton({
   className = '',
   type = 'button',
   'aria-label': ariaLabel,
+  hotkey,
 }: TactileButtonProps) {
   const sizeCls = size === 'lg' ? 'min-h-[72px] px-12 text-[22px] sm:text-[26px]' : ''
 
@@ -40,8 +44,8 @@ export function TactileButton({
   const hoverTap =
     variant === 'primary' && !disabled
       ? {
-          whileHover: { y: -2, boxShadow: '0 12px 25px rgba(89, 171, 134, 0.36)' },
-          whileTap: { y: 0, boxShadow: '0 6px 16px rgba(89, 171, 134, 0.24)' },
+          whileHover: { y: -2, boxShadow: '0 12px 25px rgba(46, 95, 176, 0.36)' },
+          whileTap: { y: 0, boxShadow: '0 6px 16px rgba(46, 95, 176, 0.24)' },
         }
       : variant === 'ghost' && !disabled
         ? {
@@ -61,11 +65,13 @@ export function TactileButton({
       disabled={disabled}
       onClick={disabled ? undefined : onClick}
       aria-label={ariaLabel}
-      className={`${variantBase} ${variantCls} ${sizeCls} ${className}`}
+      data-hotkey={hotkey}
+      className={`relative ${variantBase} ${variantCls} ${sizeCls} ${className}`}
       {...hoverTap}
       transition={motionSpring}
     >
       {children}
+      {hotkey !== undefined && !disabled ? <HotkeyBadge n={hotkey} /> : null}
     </motion.button>
   )
 }

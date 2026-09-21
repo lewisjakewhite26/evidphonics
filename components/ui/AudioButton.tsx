@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Volume2 } from 'lucide-react'
+import { SpeakerHigh } from '@phosphor-icons/react'
 import { speakWithHooks } from '@/lib/audio'
 import { motionSpring } from '@/lib/celebrations'
 
@@ -35,7 +35,7 @@ export function AudioButton({ text, rate = 0.85 }: AudioButtonProps) {
           transition={{ repeat: Infinity, duration: 1, ease: 'easeInOut' }}
         />
       )}
-      <Volume2 className="relative z-10 h-7 w-7" strokeWidth={2.5} />
+      <SpeakerHigh className="relative z-10 h-7 w-7" weight="bold" />
     </motion.button>
   )
 }

@@ -2,6 +2,10 @@ import phase2Raw from './phase2.json'
 import phase3Raw from './phase3.json'
 import phase5Raw from './phase5.json'
 import phase4Raw from '@/src/data/phase4.json'
+// phase6.json (morphology: un-/dis-/-tion/-ful etc.) is intentionally not imported here.
+// It's scaffolding for EvidLex, a separate morphology-focused product, not part of the
+// EvidPhonics lesson picker — see the EvidLex references in ./types.ts and lib/activityIcons.ts.
+// CurriculumPhaseNumber correspondingly stops at 5.
 import type { ActivityType, GraphemeData, WeekMeta, CurriculumPhaseNumber } from './types'
 import {
   extractEnabledActivitiesFromPhaseJson,

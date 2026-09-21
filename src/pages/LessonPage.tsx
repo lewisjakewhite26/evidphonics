@@ -51,11 +51,13 @@ function LessonContent() {
   const [lessonFinished, setLessonFinished] = useState(false)
   const reduceMotion = useReducedMotion()
 
+  const activitiesKey = activities.join(',')
+
   useEffect(() => {
     setCurrentIndex(0)
     setCompletedCount(0)
     setLessonFinished(false)
-  }, [lessonData?.id, activities.join(',')])
+  }, [lessonData?.id, activitiesKey])
 
   const handleActivityComplete = useCallback(() => {
     setCompletedCount((c) => {

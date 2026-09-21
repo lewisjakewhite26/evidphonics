@@ -3,10 +3,9 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import type { MutableRefObject, ReactNode, RefObject } from 'react'
 import { motion } from 'framer-motion'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { CaretLeft, CaretRight, Confetti, Rocket } from '@phosphor-icons/react'
 import type { BlendWord, SoundBlenderData, WordSegment } from '@/data/types'
 import { speakPhoneme, speakWord } from '@/lib/audio'
-import { AudioButton } from '@/components/ui/AudioButton'
 import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
@@ -193,28 +192,78 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
     [tryMarkSlideComplete],
   )
 
+  /** Slider position (0–100%) that reproduces a given phoneme step index once fed back
+   * through the sliderPosition -> currentPhonemeIndex formula above. */
+  const positionForStep = useCallback(
+    (step: number) => {
+      if (step <= -1) return 0
+      if (step >= n) return 100
+      return Math.min(100, ((step + 0.5) / Math.max(1, n)) * 100)
+    },
+    [n],
+  )
+
+  /** Arrow keys step one phoneme at a time; Home/End jump to the ends. Keyboard-equivalent
+   * of dragging the rocket, since the drag gesture itself has no native keyboard fallback. */
+  const handleSliderKeyDown = useCallback(
+    (e: React.KeyboardEvent) => {
+      if (!['ArrowRight', 'ArrowUp', 'ArrowLeft', 'ArrowDown', 'Home', 'End'].includes(e.key)) return
+      e.preventDefault()
+      e.stopPropagation()
+
+      if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+        const next = Math.min(n, currentPhonemeIndex + 1)
+        const pos = positionForStep(next)
+        setSliderPosition(pos)
+        tryMarkSlideComplete(pos)
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+        setSliderPosition(positionForStep(Math.max(-1, currentPhonemeIndex - 1)))
+      } else if (e.key === 'Home') {
+        setSliderPosition(0)
+      } else if (e.key === 'End') {
+        setSliderPosition(100)
+        tryMarkSlideComplete(100)
+      }
+    },
+    [currentPhonemeIndex, n, positionForStep, tryMarkSlideComplete],
+  )
+
   const handleReset = () => {
     setSliderPosition(0)
     lastSpokenIndexRef.current = null
   }
 
-  const handleNextWord = () => {
+  const handleNextWord = useCallback(() => {
     if (currentWordIndex < wordList.length - 1) {
       setCurrentWordIndex(currentWordIndex + 1)
       setSliderPosition(0)
       lastSpokenIndexRef.current = null
       endCelebrationDoneRef.current = false
     }
-  }
+  }, [currentWordIndex, wordList.length])
 
-  const handlePreviousWord = () => {
+  const handlePreviousWord = useCallback(() => {
     if (currentWordIndex > 0) {
       setCurrentWordIndex(currentWordIndex - 1)
       setSliderPosition(0)
       lastSpokenIndexRef.current = null
       endCelebrationDoneRef.current = false
     }
-  }
+  }, [currentWordIndex])
+
+  /** Left/Right arrow keys mirror the Previous/Next buttons. */
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowRight') {
+        if (currentWordIndex === wordList.length - 1) onComplete()
+        else handleNextWord()
+      } else if (e.key === 'ArrowLeft') {
+        handlePreviousWord()
+      }
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => document.removeEventListener('keydown', onKeyDown)
+  }, [currentWordIndex, wordList.length, onComplete, handleNextWord, handlePreviousWord])
 
   useEffect(() => {
     if (currentPhonemeIndex < 0 || currentPhonemeIndex >= n) return
@@ -626,7 +675,7 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
 
   if (!currentWordData || n === 0) {
     return (
-      <ActivityCardFrame emoji={data.emoji} title={data.title} instruction={data.instruction}>
+      <ActivityCardFrame activityType={data.type} title={data.title} instruction={data.instruction}>
         <TactileButton onClick={onComplete}>Next Activity →</TactileButton>
       </ActivityCardFrame>
     )
@@ -638,7 +687,7 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={
@@ -692,9 +741,24 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
 
             <div
               data-rocket
-              className="absolute top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 cursor-grab touch-none active:cursor-grabbing"
+              role="slider"
+              tabIndex={0}
+              aria-label={`Blend the sounds in ${word}`}
+              aria-orientation="horizontal"
+              aria-valuemin={0}
+              aria-valuemax={n}
+              aria-valuenow={Math.max(0, currentPhonemeIndex)}
+              aria-valuetext={
+                currentPhonemeIndex < 0
+                  ? 'Not started'
+                  : currentPhonemeIndex >= n
+                    ? 'Complete'
+                    : `Sound ${currentPhonemeIndex + 1} of ${n}: ${statusPhonemeLabel}`
+              }
+              className="absolute top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 cursor-grab touch-none rounded-full active:cursor-grabbing focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
               style={{ left: `${sliderPosition}%` }}
               onPointerDown={startDragRocket}
+              onKeyDown={handleSliderKeyDown}
             >
               <motion.div
                 animate={{
@@ -702,9 +766,7 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
                 }}
               >
                 <div className="flex h-20 w-20 select-none items-center justify-center rounded-full border-[3px] border-primary bg-white shadow-lg leading-none">
-                  <span className="text-4xl" aria-hidden>
-                    🚀
-                  </span>
+                  <Rocket className="h-10 w-10 text-primary" weight="duotone" aria-hidden />
                 </div>
               </motion.div>
             </div>
@@ -714,8 +776,11 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
             {currentPhonemeIndex < 0 ? (
               <p className="text-sm text-text-sub">Start dragging to blend the sounds.</p>
             ) : currentPhonemeIndex >= n ? (
-              <p className="text-sm text-text-sub">
-                <span className="font-semibold text-primary">Complete. You blended all the sounds! 🎉</span>
+              <p role="status" aria-live="polite" className="text-sm text-text-sub">
+                <span className="inline-flex items-center gap-1.5 font-semibold text-primary">
+                  <Confetti className="h-4 w-4" weight="duotone" aria-hidden />
+                  Complete. You blended all the sounds!
+                </span>
               </p>
             ) : (
               <p className="text-sm text-text-sub">
@@ -742,7 +807,7 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
             className="!px-6"
           >
             <span className="inline-flex items-center gap-2">
-              <ChevronLeft className="h-5 w-5" />
+              <CaretLeft className="h-5 w-5" />
               Previous
             </span>
           </TactileButton>
@@ -751,14 +816,14 @@ export function SoundBlender({ data, onComplete }: SoundBlenderProps) {
             <TactileButton onClick={onComplete}>
               <span className="inline-flex items-center gap-2">
                 Done
-                <ChevronRight className="h-5 w-5" />
+                <CaretRight className="h-5 w-5" />
               </span>
             </TactileButton>
           ) : (
             <TactileButton onClick={handleNextWord}>
               <span className="inline-flex items-center gap-2">
                 Next
-                <ChevronRight className="h-5 w-5" />
+                <CaretRight className="h-5 w-5" />
               </span>
             </TactileButton>
           )}

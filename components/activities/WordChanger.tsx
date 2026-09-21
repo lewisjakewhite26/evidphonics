@@ -110,7 +110,7 @@ export function WordChanger({ data, onComplete }: WordChangerProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={total > 1 ? { current: idx + 1, total } : undefined}
@@ -163,6 +163,8 @@ export function WordChanger({ data, onComplete }: WordChangerProps) {
 
         {quizSolved ? (
           <motion.div
+            role="status"
+            aria-live="polite"
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             transition={motionSpring}

@@ -123,7 +123,7 @@ function assignSlots(word: string, merged: MergedUnit[]): LetterSlot[] | null {
       if (!letters) {
         continue
       }
-      let start = w.indexOf(letters, cursor)
+      const start = w.indexOf(letters, cursor)
       if (start < 0) {
         return null
       }
@@ -211,7 +211,7 @@ export function buildBlendWordLayout(
     return null
   }
 
-  const steps: PhonemeStepMeta[] = merged.map((unit, idx) => ({
+  const steps: PhonemeStepMeta[] = merged.map((unit) => ({
     speakLabel: speakLabelForUnit(unit, segments),
     isMagicE: unit.kind === 'magicE',
   }))

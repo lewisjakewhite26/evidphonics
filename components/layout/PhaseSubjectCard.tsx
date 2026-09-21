@@ -11,7 +11,7 @@ type PhaseMeta = {
   description: string
 }
 
-export const PHASE_META: Record<number, PhaseMeta> = {
+const PHASE_META: Record<number, PhaseMeta> = {
   2: {
     icon: BookOpen,
     description: 'Single letters & first sounds',

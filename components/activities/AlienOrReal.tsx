@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Alien, CaretLeft, CheckCircle } from '@phosphor-icons/react'
 import type { AlienOrRealData } from '@/data/types'
 import { speakWord } from '@/lib/audio'
 import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
@@ -84,11 +85,31 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={total > 1 ? { current: currentWordIndex + 1, total } : undefined}
     >
+      {total > 1 && currentWordIndex > 0 && (
+        <div className="flex w-full justify-start">
+          <TactileButton
+            variant="ghost"
+            disabled={answered}
+            onClick={() => {
+              setSelectedAnswer(null)
+              setAnswered(false)
+              setBurst(null)
+              setCurrentWordIndex((i) => Math.max(0, i - 1))
+            }}
+            className="!px-4 !min-h-0 !py-2 !text-sm"
+          >
+            <span className="inline-flex items-center gap-1.5">
+              <CaretLeft className="h-4 w-4" />
+              Previous
+            </span>
+          </TactileButton>
+        </div>
+      )}
       <motion.div
         key={currentWordIndex}
         initial={{ opacity: 0, y: 8 }}
@@ -105,12 +126,11 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
             variant="success"
             onClick={() => handleAnswer(true)}
             disabled={answered}
+            hotkey={1}
             className={`!px-4 ${realBtnClass}`}
           >
             <span className="flex flex-col items-center gap-1">
-              <span className="text-3xl" aria-hidden>
-                ✅
-              </span>
+              <CheckCircle className="h-8 w-8" weight="duotone" aria-hidden />
               <span>Real Word</span>
             </span>
           </TactileButton>
@@ -118,19 +138,18 @@ export function AlienOrReal({ data, onComplete }: AlienOrRealProps) {
           <TactileButton
             onClick={() => handleAnswer(false)}
             disabled={answered}
+            hotkey={2}
             className={`!px-4 ${alienBtnClass}`}
           >
             <span className="flex flex-col items-center gap-1">
-              <span className="text-3xl" aria-hidden>
-                👽
-              </span>
+              <Alien className="h-8 w-8" weight="duotone" aria-hidden />
               <span>Alien Word</span>
             </span>
           </TactileButton>
         </div>
 
         {answered && (
-          <div className="text-center">
+          <div role="status" aria-live="polite" className="text-center">
             <p
               className={`inline-block rounded-2xl border-2 px-6 py-3 text-sm font-semibold ${
                 selectedAnswer === currentWord.isReal

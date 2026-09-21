@@ -5,9 +5,9 @@ import { useEffect, useRef } from 'react'
 const PHONEME_SYMBOLS = ['s', 'a', 't', 'p', 'i', 'n', 'ch', 'sh', 'th', 'ng', 'ai', 'ee', 'igh', 'oa']
 
 const PARTICLE_COLORS = [
-  'rgba(89, 171, 134, 0.28)',
-  'rgba(21, 41, 32, 0.14)',
-  'rgba(207, 140, 170, 0.18)',
+  'rgba(46, 95, 176, 0.28)',
+  'rgba(22, 35, 61, 0.14)',
+  'rgba(217, 139, 31, 0.18)',
 ]
 
 const FRICTION = 0.9

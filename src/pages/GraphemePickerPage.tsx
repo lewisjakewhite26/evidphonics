@@ -4,8 +4,12 @@ import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties }
 import { createPortal } from 'react-dom'
 import { useReducedMotion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
-import type { ActivityType, GraphemeData } from '@/data/types'
-import { graphemesByPhase, CURRICULUM_PHASES_ORDERED } from '@/data/graphemes'
+import type { ActivityType } from '@/data/types'
+import {
+  GRAPHEME_INDEX_BY_PHASE as graphemesByPhase,
+  CURRICULUM_PHASES_ORDERED,
+  type GraphemeIndexEntry,
+} from '@/data/graphemeIndex'
 import { ActivityPickerModal } from '@/components/layout/ActivityPickerModal'
 import { GraphemeSearchBar } from '@/components/layout/GraphemeSearchBar'
 import { PhaseSubjectCard } from '@/components/layout/PhaseSubjectCard'
@@ -60,7 +64,7 @@ export default function GraphemePickerPage() {
   const phaseEntries = useMemo(
     () =>
       CURRICULUM_PHASES_ORDERED.map(
-        (phaseNum) => [String(phaseNum), graphemesByPhase[phaseNum] ?? []] as [string, GraphemeData[]],
+        (phaseNum) => [String(phaseNum), graphemesByPhase[phaseNum] ?? []] as [string, GraphemeIndexEntry[]],
       ),
     [],
   )
@@ -122,7 +126,10 @@ export default function GraphemePickerPage() {
     }
   }, [openPhase, activityModalOpen])
 
-  const modalGraphemes = openPhase !== null ? (graphemesByPhase[openPhase] ?? []) : []
+  const modalGraphemes = useMemo(
+    () => (openPhase !== null ? (graphemesByPhase[openPhase] ?? []) : []),
+    [openPhase],
+  )
 
   const showOoLegend = useMemo(() => {
     const ids = new Set(modalGraphemes.map((e) => e.grapheme))

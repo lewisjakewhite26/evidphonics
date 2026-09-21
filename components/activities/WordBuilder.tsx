@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
+import { CaretLeft, SpeakerHigh } from '@phosphor-icons/react'
 import type { WordBuilderData } from '@/data/types'
 import { speakWord } from '@/lib/audio'
 import { motionSpring } from '@/lib/celebrations'
@@ -40,7 +41,6 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
   const [burst, setBurst] = useState<{ x: number; y: number } | null>(null)
 
   const current = words[wordIdx]
-  const n = current?.graphemes.length ?? 0
 
   const resetWord = useCallback(() => {
     if (!current) return
@@ -56,7 +56,7 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
     if (!current) return
     resetWord()
     speakWord(current.word)
-  }, [wordIdx, resetWord])
+  }, [current, resetWord])
 
   const idToLabel = useMemo(() => {
     const m = new Map<string, string>()
@@ -121,7 +121,7 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
 
   if (!current || words.length === 0) {
     return (
-      <ActivityCardFrame emoji={data.emoji} title={data.title} instruction={data.instruction}>
+      <ActivityCardFrame activityType={data.type} title={data.title} instruction={data.instruction}>
         <p className="text-center text-sm text-text-sub">No words for this activity.</p>
       </ActivityCardFrame>
     )
@@ -129,11 +129,26 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={words.length > 1 ? { current: wordIdx + 1, total: words.length } : undefined}
     >
+      {words.length > 1 && wordIdx > 0 && (
+        <div className="flex w-full justify-start">
+          <TactileButton
+            variant="ghost"
+            disabled={celebrate}
+            onClick={() => setWordIdx((w) => Math.max(0, w - 1))}
+            className="!px-4 !min-h-0 !py-2 !text-sm"
+          >
+            <span className="inline-flex items-center gap-1.5">
+              <CaretLeft className="h-4 w-4" />
+              Previous
+            </span>
+          </TactileButton>
+        </div>
+      )}
       <div className="flex w-full justify-center">
         <TactileButton
           variant="ghost"
@@ -144,7 +159,10 @@ export function WordBuilder({ data, onComplete }: WordBuilderProps) {
           className="!min-h-16 !px-10 !text-lg"
           aria-label="Hear the word"
         >
-          🔊 Hear the word
+          <span className="inline-flex items-center gap-2">
+            <SpeakerHigh className="h-5 w-5" weight="bold" aria-hidden />
+            Hear the word
+          </span>
         </TactileButton>
       </div>
 

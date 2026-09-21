@@ -5,7 +5,13 @@ import {
   wordAudioUrl,
 } from '@/lib/audioPaths'
 
-type SpeechRate = number
+/**
+ * Temporary kill switch: the pre-rendered TTS audio was generated with shouty prosody baked
+ * into the actual MP3s (see ROADMAP.md Phase 1.2) and re-rendering it needs an API key that
+ * isn't available right now. Flip this back to `true` once the audio has been regenerated —
+ * nothing else needs to change.
+ */
+const SOUND_ENABLED = false
 
 let activeAudio: HTMLAudioElement | null = null
 
@@ -18,11 +24,19 @@ function cancelActiveAudio(): void {
   activeAudio = null
 }
 
-/** Play a pre-rendered MP3 from /public/audio. Silent if the file is missing or fails. */
+/** Play a pre-rendered MP3 from /public/audio. Silent if the file is missing, fails, or SOUND_ENABLED is false. */
 export function playAudioUrl(url: string, rate = 0.85, onEnd?: () => void): void {
   if (typeof window === 'undefined') return
 
   cancelActiveAudio()
+
+  if (!SOUND_ENABLED) {
+    // Still resolve onEnd asynchronously so callers that gate UI state on "audio finished"
+    // (button pulse animations, auto-advance timers, etc.) behave exactly as if a very short
+    // clip had played.
+    if (onEnd) window.setTimeout(onEnd, 0)
+    return
+  }
 
   const audio = new Audio(url)
   audio.playbackRate = rate

@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { Trophy } from '@phosphor-icons/react'
 import { motionSpring } from '@/lib/celebrations'
 import { LESSON_SHELL_BG } from '@/lib/lessonShellGradient'
 
@@ -19,10 +20,10 @@ export default function LessonComplete({ count, onHome }: LessonCompleteProps) {
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ ...motionSpring, delay: 0.1 }}
-        className="mb-lg flex h-24 w-24 items-center justify-center rounded-full bg-white text-grapheme shadow-card"
+        className="mb-lg flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-card"
         aria-hidden
       >
-        🏆
+        <Trophy className="h-12 w-12 text-primary" weight="duotone" />
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 16 }}

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useState, useRef, useEffect } from 'react'
-import { Eraser, Eye, EyeOff, Play, Pause, ChevronRight, Check } from 'lucide-react'
+import { Eraser, Eye, EyeSlash, Play, Pause, CaretLeft, CaretRight, Check } from '@phosphor-icons/react'
 import type { WriteItData } from '@/data/types'
 import { TactileButton } from '@/components/ui/TactileButton'
 import { ActivityCardFrame } from '@/components/activities/ActivityCardFrame'
@@ -371,7 +371,7 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={
@@ -382,6 +382,16 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
     >
       <div className="flex w-full flex-col gap-6">
         <div className="flex w-full items-center gap-4">
+          {currentSentenceIndex > 0 && (
+            <TactileButton
+              variant="ghost"
+              onClick={() => setCurrentSentenceIndex((i) => Math.max(0, i - 1))}
+              className="!shrink-0 !px-4"
+              aria-label="Previous sentence"
+            >
+              <CaretLeft className="h-6 w-6" />
+            </TactileButton>
+          )}
           <div className={`min-w-0 flex-1 transition-all duration-300 ${isHidden ? 'blur-md grayscale' : ''}`}>
             <p className="text-center font-andika text-4xl font-bold leading-relaxed text-ink md:text-5xl">
               {sentence}
@@ -392,7 +402,7 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
             className="!shrink-0 !px-4"
             aria-label={isLastSentence ? 'Finish activity' : 'Next sentence'}
           >
-            <ChevronRight className="h-6 w-6" />
+            <CaretRight className="h-6 w-6" />
           </TactileButton>
         </div>
 
@@ -419,7 +429,7 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
                       item.checked ? 'border-primary bg-primary text-white' : 'border-border-strong bg-white'
                     }`}
                   >
-                    {item.checked && <Check className="h-3 w-3" strokeWidth={3} />}
+                    {item.checked && <Check className="h-3 w-3" weight="bold" />}
                   </span>
                   {item.label}
                 </span>
@@ -565,7 +575,7 @@ export function WriteIt({ data, onComplete }: WriteItProps) {
               </TactileButton>
               <TactileButton variant="ghost" onClick={() => setIsHidden(!isHidden)} className="!px-6">
                 <span className="inline-flex items-center gap-2">
-                  {isHidden ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
+                  {isHidden ? <EyeSlash className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
                   {isHidden ? 'Show' : 'Hide'}
                 </span>
               </TactileButton>

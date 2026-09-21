@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
+import { CaretLeft } from '@phosphor-icons/react'
 import type { OddOneOutData } from '@/data/types'
 import { motionSpring } from '@/lib/celebrations'
 import { shuffle } from '@/lib/utils'
@@ -40,7 +41,7 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
       words: shuffled.map((item) => item.word),
       oddIndex: shuffled.findIndex((item) => item.isOdd),
     }
-  }, [current, setIdx])
+  }, [current])
 
   useEffect(() => {
     setPhase('pick')
@@ -79,11 +80,26 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={total > 1 ? { current: setIdx + 1, total } : undefined}
     >
+      {total > 1 && setIdx > 0 && (
+        <div className="flex w-full justify-start">
+          <TactileButton
+            variant="ghost"
+            disabled={phase === 'reveal'}
+            onClick={() => setSetIdx((s) => Math.max(0, s - 1))}
+            className="!px-4 !min-h-0 !py-2 !text-sm"
+          >
+            <span className="inline-flex items-center gap-1.5">
+              <CaretLeft className="h-4 w-4" />
+              Previous
+            </span>
+          </TactileButton>
+        </div>
+      )}
       <motion.div
         key={setIdx}
         initial={{ opacity: 0, y: 10 }}
@@ -111,6 +127,7 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
                   variant="ghost"
                   disabled={phase === 'reveal'}
                   onClick={() => handlePick(i)}
+                  hotkey={i + 1}
                   className={`relative !h-auto !min-h-24 !w-full !max-w-none !whitespace-normal !px-4 !py-6 font-andika text-4xl font-bold text-ink ${
                     isWrong ? '!border-warning !bg-warning-light' : ''
                   } ${glowMatch ? '!border-success !ring-2 !ring-success/40' : ''} ${
@@ -125,7 +142,7 @@ export function OddOneOut({ data, onComplete }: OddOneOutProps) {
         </div>
 
         {phase === 'reveal' && (
-          <div className="flex flex-col gap-3 text-center">
+          <div role="status" aria-live="polite" className="flex flex-col gap-3 text-center">
             <p className="font-andika text-2xl font-bold text-primary md:text-3xl">
               Found it! That&apos;s the odd one out.
             </p>

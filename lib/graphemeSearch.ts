@@ -1,11 +1,19 @@
-import type { GraphemeData } from '@/data/types'
 import { graphemeAccessibilityShort } from '@/lib/graphemeDisplay'
 
-export function curriculumKey(entry: GraphemeData): string {
+/** Structural shape shared by full `GraphemeData` and the lightweight picker-page index —
+ * search/selection only ever needs these four fields, never the heavy per-word content. */
+export interface CurriculumEntryLike {
+  id?: string
+  grapheme: string
+  keyword: string
+  phase: number
+}
+
+export function curriculumKey(entry: CurriculumEntryLike): string {
   return entry.id ?? entry.grapheme
 }
 
-function scoreGraphemeSearchMatch(entry: GraphemeData, q: string): number {
+function scoreGraphemeSearchMatch(entry: CurriculumEntryLike, q: string): number {
   const g = entry.grapheme.toLowerCase()
   const id = curriculumKey(entry).toLowerCase()
   const kw = entry.keyword.toLowerCase()
@@ -19,11 +27,11 @@ function scoreGraphemeSearchMatch(entry: GraphemeData, q: string): number {
 }
 
 /** Ranked grapheme matches for lesson-builder quick search (grapheme, id, keyword). */
-export function searchGraphemes(
+export function searchGraphemes<T extends CurriculumEntryLike>(
   query: string,
-  pool: GraphemeData[],
+  pool: T[],
   limit = 12,
-): GraphemeData[] {
+): T[] {
   const q = query.trim().toLowerCase()
   if (!q) return []
 

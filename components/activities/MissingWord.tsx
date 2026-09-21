@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
+import { CaretLeft } from '@phosphor-icons/react'
 import type { MissingWordData } from '@/data/types'
 import { speakSentence } from '@/lib/audio'
 import { motionSpring } from '@/lib/celebrations'
@@ -86,11 +87,25 @@ export function MissingWord({ data, onComplete }: MissingWordProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={total > 1 ? { current: idx + 1, total } : undefined}
     >
+      {total > 1 && idx > 0 && (
+        <div className="flex w-full justify-start">
+          <TactileButton
+            variant="ghost"
+            onClick={() => setIdx((i) => Math.max(0, i - 1))}
+            className="!px-4 !min-h-0 !py-2 !text-sm"
+          >
+            <span className="inline-flex items-center gap-1.5">
+              <CaretLeft className="h-4 w-4" />
+              Previous
+            </span>
+          </TactileButton>
+        </div>
+      )}
       <motion.div
         key={idx}
         initial={{ opacity: 0, y: 10 }}
@@ -112,7 +127,7 @@ export function MissingWord({ data, onComplete }: MissingWordProps) {
         </p>
 
         <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-3">
-          {current.options.map((opt) => {
+          {current.options.map((opt, i) => {
             const isWrong = wrongKey === opt
             return (
               <motion.div
@@ -125,6 +140,7 @@ export function MissingWord({ data, onComplete }: MissingWordProps) {
                   variant="ghost"
                   disabled={solved}
                   onClick={() => handlePick(opt)}
+                  hotkey={i + 1}
                   className={`!w-full !max-w-none !px-4 font-andika text-4xl font-bold text-ink ${
                     isWrong ? '!border-error !bg-error-light' : ''
                   } ${solved ? 'opacity-60' : ''}`}
@@ -138,6 +154,8 @@ export function MissingWord({ data, onComplete }: MissingWordProps) {
 
         {feedback && (
           <motion.p
+            role="status"
+            aria-live="polite"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className={`text-center text-sm font-medium ${solved ? 'text-success' : 'text-text-sub'}`}

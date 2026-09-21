@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { CaretLeft } from '@phosphor-icons/react'
 import { MissingSoundData } from '@/data/types'
 import { speakPhoneme, speakWord } from '@/lib/audio'
 import { motionSpring } from '@/lib/celebrations'
@@ -85,11 +86,31 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={total > 1 ? { current: idx + 1, total } : undefined}
     >
+      {total > 1 && idx > 0 && (
+        <div className="flex w-full justify-start">
+          <TactileButton
+            variant="ghost"
+            disabled={advancing}
+            onClick={() => {
+              setWrongIdx(null)
+              setWrongTint(null)
+              setEncourage(false)
+              setIdx((i) => Math.max(0, i - 1))
+            }}
+            className="!px-4 !min-h-0 !py-2 !text-sm"
+          >
+            <span className="inline-flex items-center gap-1.5">
+              <CaretLeft className="h-4 w-4" />
+              Previous
+            </span>
+          </TactileButton>
+        </div>
+      )}
       <p className="text-center font-andika text-4xl font-bold text-ink md:text-5xl">{item.display}</p>
       <div className="grid w-full grid-cols-2 gap-4">
         {item.options.map((opt, i) => {
@@ -106,6 +127,7 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
                 variant="ghost"
                 disabled={advancing}
                 onClick={() => onPick(i)}
+                hotkey={i + 1}
                 className={`!w-full !max-w-none !px-4 font-andika text-4xl font-bold text-ink transition-colors duration-[600ms] ease-out ${
                   showTint ? '!bg-red-500/35' : ''
                 }`}
@@ -120,6 +142,8 @@ export function MissingSound({ data, onComplete }: MissingSoundProps) {
         {encourage ? (
           <motion.p
             key="encourage-msg"
+            role="status"
+            aria-live="polite"
             initial={{ opacity: 0, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}

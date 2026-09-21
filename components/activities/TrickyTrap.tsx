@@ -43,7 +43,7 @@ export function TrickyTrap({ data, onComplete }: TrickyTrapProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={total > 1 ? { current: completedWords.size, total } : undefined}
@@ -134,6 +134,8 @@ export function TrickyTrap({ data, onComplete }: TrickyTrapProps) {
 
                 {isCompleted && (
                   <motion.div
+                    role="status"
+                    aria-live="polite"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.2 }}

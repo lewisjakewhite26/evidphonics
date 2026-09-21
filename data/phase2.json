@@ -1750,7 +1750,7 @@
         "gig",
         "gas",
         "gut",
-        "gun",
+        "gum",
         "gel",
         "gem",
         "grid",
@@ -1797,10 +1797,10 @@
           "u",
           "t"
         ],
-        "gun": [
+        "gum": [
           "g",
           "u",
-          "n"
+          "m"
         ],
         "gel": [
           "g",
@@ -1911,7 +1911,7 @@
         {
           "words": [
             "gut",
-            "gun",
+            "gum",
             "gel",
             "but"
           ],
@@ -2406,7 +2406,7 @@
         "skill",
         "skin",
         "skip",
-        "skull",
+        "skunk",
         "skid",
         "sketch"
       ],
@@ -2476,11 +2476,11 @@
           "i",
           "p"
         ],
-        "skull": [
+        "skunk": [
           "s",
           "k",
           "u",
-          "ll"
+          "nk"
         ],
         "skid": [
           "s",
@@ -3121,7 +3121,7 @@
         "fun",
         "bus",
         "bun",
-        "gun",
+        "jug",
         "mud",
         "bug",
         "dug",
@@ -3181,10 +3181,10 @@
           "u",
           "n"
         ],
-        "gun": [
-          "g",
+        "jug": [
+          "j",
           "u",
-          "n"
+          "g"
         ],
         "mud": [
           "m",
@@ -3228,7 +3228,7 @@
           "missingIndex": 4,
           "options": [
             "bun",
-            "gun",
+            "jug",
             "run"
           ]
         },

@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Volume2 } from 'lucide-react'
+import { CaretLeft, CheckCircle, SpeakerHigh, XCircle } from '@phosphor-icons/react'
 import type { RhymeTimeData } from '@/data/types'
 import { speakWithHooks } from '@/lib/audio'
 import { CelebrationBurst } from '@/components/ui/CelebrationBurst'
@@ -94,11 +94,31 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={total > 1 ? { current: index + 1, total } : undefined}
     >
+      {total > 1 && index > 0 && (
+        <div className="flex w-full justify-start">
+          <TactileButton
+            variant="ghost"
+            disabled={advanceLock}
+            onClick={() => {
+              setWrongHint(false)
+              setShake(false)
+              setAudioActive(false)
+              setIndex((i) => Math.max(0, i - 1))
+            }}
+            className="!px-4 !min-h-0 !py-2 !text-sm"
+          >
+            <span className="inline-flex items-center gap-1.5">
+              <CaretLeft className="h-4 w-4" />
+              Previous
+            </span>
+          </TactileButton>
+        </div>
+      )}
       <div className="flex w-full flex-col gap-8">
         <div ref={wordsRowRef} className="flex flex-wrap items-stretch justify-center gap-4 md:flex-nowrap">
           {wordTile(pair.word1, shake, correctFlash)}
@@ -121,14 +141,14 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
                     aria-hidden
                   />
                 )}
-                <Volume2 className="relative z-10 h-7 w-7 text-primary" strokeWidth={2.5} />
+                <SpeakerHigh className="relative z-10 h-7 w-7 text-primary" weight="bold" />
               </span>
             </TactileButton>
           </div>
         </div>
 
         {wrongHint && (
-          <p className="text-center text-sm font-medium text-text-sub">
+          <p role="status" aria-live="polite" className="text-center text-sm font-medium text-text-sub">
             Nice try. Listen again, then choose.
           </p>
         )}
@@ -138,16 +158,24 @@ export function RhymeTime({ data, onComplete }: RhymeTimeProps) {
             variant="success"
             onClick={() => handleChoice(true)}
             disabled={advanceLock}
+            hotkey={1}
             className="sm:max-w-xs sm:flex-1"
           >
-            ✅ They rhyme
+            <span className="inline-flex items-center gap-2">
+              <CheckCircle className="h-5 w-5" weight="bold" aria-hidden />
+              They rhyme
+            </span>
           </TactileButton>
           <TactileButton
             onClick={() => handleChoice(false)}
             disabled={advanceLock}
+            hotkey={2}
             className="sm:max-w-xs sm:flex-1"
           >
-            ❌ They don&apos;t rhyme
+            <span className="inline-flex items-center gap-2">
+              <XCircle className="h-5 w-5" weight="bold" aria-hidden />
+              They don&apos;t rhyme
+            </span>
           </TactileButton>
         </div>
       </div>

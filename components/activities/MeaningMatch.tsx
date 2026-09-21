@@ -39,7 +39,7 @@ export function MeaningMatch({ data, onComplete }: MeaningMatchProps) {
     const rest = shuffle(meaningPool.filter((m) => m !== correct))
     const d1 = rest[0] ?? PAD_MEANINGS.find((m) => m !== correct) ?? 'again'
     return shuffle([correct, d1])
-  }, [current, meaningPool, idx])
+  }, [current, meaningPool])
 
   const speak = useCallback(() => {
     if (!current) return
@@ -78,7 +78,7 @@ export function MeaningMatch({ data, onComplete }: MeaningMatchProps) {
 
   return (
     <ActivityCardFrame
-      emoji={data.emoji}
+      activityType={data.type}
       title={data.title}
       instruction={data.instruction}
       progress={total > 1 ? { current: idx + 1, total } : undefined}

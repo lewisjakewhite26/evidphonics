@@ -5,9 +5,9 @@
 :root {
   --font-poppins: 'Poppins', system-ui, -apple-system, sans-serif;
   --font-andika: 'Andika', sans-serif;
-  --brand-accent: #59ab86;
-  --brand-ink: #152920;
-  --brand-warmth: #cf8caa;
+  --brand-accent: #2e5fb0;
+  --brand-ink: #16233d;
+  --brand-warmth: #d98b1f;
 }
 
 @keyframes suite-breathe {
@@ -37,7 +37,7 @@ body,
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: rgba(89, 171, 134, 0.45) rgba(244, 247, 245, 0.8);
+  scrollbar-color: rgba(46, 95, 176, 0.45) rgba(245, 247, 250, 0.8);
 }
 
 *::-webkit-scrollbar {
@@ -46,18 +46,18 @@ body,
 }
 
 *::-webkit-scrollbar-track {
-  background: rgba(244, 247, 245, 0.8);
+  background: rgba(245, 247, 250, 0.8);
 }
 
 *::-webkit-scrollbar-thumb {
-  background: rgba(89, 171, 134, 0.45);
+  background: rgba(46, 95, 176, 0.45);
   border-radius: 999px;
-  border: 2px solid rgba(244, 247, 245, 0.8);
+  border: 2px solid rgba(245, 247, 250, 0.8);
 }
 
 body {
   font-family: var(--font-poppins);
-  color: #2a4035;
+  color: #1e2c46;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -118,11 +118,11 @@ body {
 }
 
 .skeleton-tone-surface {
-  background-color: rgba(89, 171, 134, 0.08);
+  background-color: rgba(46, 95, 176, 0.08);
 }
 
 .skeleton-tone-card {
-  background-color: rgba(89, 171, 134, 0.1);
+  background-color: rgba(46, 95, 176, 0.1);
 }
 
 .skeleton-tone-on-dark {
@@ -137,9 +137,9 @@ body {
     105deg,
     transparent 0%,
     transparent 38%,
-    rgba(89, 171, 134, 0.14) 48%,
+    rgba(46, 95, 176, 0.14) 48%,
     rgba(255, 255, 255, 0.55) 52%,
-    rgba(207, 140, 170, 0.16) 62%,
+    rgba(217, 139, 31, 0.16) 62%,
     transparent 72%,
     transparent 100%
   );
@@ -152,9 +152,9 @@ body {
     105deg,
     transparent 0%,
     transparent 38%,
-    rgba(89, 171, 134, 0.22) 48%,
+    rgba(46, 95, 176, 0.22) 48%,
     rgba(255, 255, 255, 0.35) 52%,
-    rgba(207, 140, 170, 0.2) 62%,
+    rgba(217, 139, 31, 0.2) 62%,
     transparent 72%,
     transparent 100%
   );
@@ -163,9 +163,9 @@ body {
 .skeleton-progress-bar.skeleton-shimmer::after {
   background-image: linear-gradient(
     90deg,
-    rgba(89, 171, 134, 0.5) 0%,
-    rgba(207, 140, 170, 0.75) 50%,
-    rgba(89, 171, 134, 0.5) 100%
+    rgba(46, 95, 176, 0.5) 0%,
+    rgba(217, 139, 31, 0.75) 50%,
+    rgba(46, 95, 176, 0.5) 100%
   );
   opacity: 0.9;
 }

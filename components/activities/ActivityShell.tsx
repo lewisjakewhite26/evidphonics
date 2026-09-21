@@ -2,6 +2,7 @@
 
 import type { ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useAnswerHotkeys } from '@/src/hooks/useAnswerHotkeys'
 import type { Activity } from '@/data/types'
 import {
   ActivityType,
@@ -40,14 +41,15 @@ interface ActivityShellProps {
 
 function ActivityStage({ children }: { children: ReactNode }) {
   return (
-    <div className="flex h-full min-h-0 items-start justify-center overflow-y-auto p-4 sm:p-6 md:p-8">
-      <div className="font-andika flex w-full min-h-0 flex-col items-center pb-8">{children}</div>
+    <div className="flex h-full min-h-0 items-start justify-center overflow-y-auto p-4 sm:p-6 md:p-8 lg:items-center">
+      <div className="font-andika flex w-full min-h-0 flex-col items-center py-4 lg:py-8">{children}</div>
     </div>
   )
 }
 
 export function ActivityShell({ activityType, activityData, onComplete }: ActivityShellProps) {
   const navigate = useNavigate()
+  useAnswerHotkeys(Boolean(activityData && activityData.type === activityType))
 
   if (!activityData || activityData.type !== activityType) {
     console.error('[EvidPhonics ActivityShell] Activity payload mismatch, lesson step will not advance.', {
